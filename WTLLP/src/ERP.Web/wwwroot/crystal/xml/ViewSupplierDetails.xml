@@ -1,0 +1,73 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:MainDataTable="ViewSupplierDetails" msdata:UseCurrentLocale="true">
+      <xs:complexType>
+        <xs:choice minOccurs="0" maxOccurs="unbounded">
+          <xs:element name="ViewSupplierDetails">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="BlackListed" type="xs:int" minOccurs="0" />
+                <xs:element name="CID" type="xs:int" />
+                <xs:element name="CityId" type="xs:int" />
+                <xs:element name="CityName" type="xs:string" minOccurs="0" />
+                <xs:element name="CName" type="xs:string" minOccurs="0" />
+                <xs:element name="ContactPerson" type="xs:string" minOccurs="0" />
+                <xs:element name="CountryId" type="xs:int" />
+                <xs:element name="CountryName" type="xs:string" minOccurs="0" />
+                <xs:element name="CSName" type="xs:string" minOccurs="0" />
+                <xs:element name="GSTN" type="xs:string" minOccurs="0" />
+                <xs:element name="Pincode" type="xs:string" minOccurs="0" />
+                <xs:element name="PType" type="xs:long" minOccurs="0" />
+                <xs:element name="StateCode" type="xs:string" minOccurs="0" />
+                <xs:element name="StateId" type="xs:int" />
+                <xs:element name="StateName" type="xs:string" minOccurs="0" />
+                <xs:element name="SupplierAddress" type="xs:string" minOccurs="0" />
+                <xs:element name="SupplierCode" type="xs:string" minOccurs="0" />
+                <xs:element name="SupplierCSTNo" type="xs:string" minOccurs="0" />
+                <xs:element name="SupplierDesc" type="xs:string" minOccurs="0" />
+                <xs:element name="SupplierEmail" type="xs:string" minOccurs="0" />
+                <xs:element name="SupplierFaxNo" type="xs:string" minOccurs="0" />
+                <xs:element name="SupplierId" type="xs:long" />
+                <xs:element name="SupplierLocalTAX" type="xs:string" minOccurs="0" />
+                <xs:element name="SupplierMobileNo" type="xs:string" minOccurs="0" />
+                <xs:element name="SupplierName" type="xs:string" minOccurs="0" />
+                <xs:element name="SupplierPANNo" type="xs:string" minOccurs="0" />
+                <xs:element name="SupplierPhoneNo" type="xs:string" minOccurs="0" />
+                <xs:element name="SupplierTerms" type="xs:string" minOccurs="0" />
+                <xs:element name="SupplierTINNo" type="xs:string" minOccurs="0" />
+                <xs:element name="SupplierUPTTNo" type="xs:string" minOccurs="0" />
+                <xs:element name="SupplierWeb" type="xs:string" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+        </xs:choice>
+      </xs:complexType>
+    </xs:element>
+  </xs:schema>
+  <ViewSupplierDetails>
+    <BlackListed>0</BlackListed>
+    <CID>4</CID>
+    <CityId>37</CityId>
+    <CityName>LUCKNOW</CityName>
+    <CName>RS</CName>
+    <ContactPerson>Pooja tiwari</ContactPerson>
+    <CountryId>1</CountryId>
+    <CountryName>INDIA</CountryName>
+    <CSName>Rs</CSName>
+    <GSTN>09AAJPO4904G1ZL</GSTN>
+    <Pincode>226002</Pincode>
+    <PType>0</PType>
+    <StateCode>UP</StateCode>
+    <StateId>1</StateId>
+    <StateName>Uttar Pradesh</StateName>
+    <SupplierAddress>ADARSH NAGAR, LILMATHA, LUCKNOW CANTT-226002</SupplierAddress>
+    <SupplierCode>299</SupplierCode>
+    <SupplierEmail>aenterprises313@gmail.com</SupplierEmail>
+    <SupplierId>299</SupplierId>
+    <SupplierMobileNo>9682891846</SupplierMobileNo>
+    <SupplierName>A K ENTERPRISES</SupplierName>
+    <SupplierPANNo>AAJPO4904G</SupplierPANNo>
+    <SupplierPhoneNo>7844023402</SupplierPhoneNo>
+  </ViewSupplierDetails>
+</NewDataSet>

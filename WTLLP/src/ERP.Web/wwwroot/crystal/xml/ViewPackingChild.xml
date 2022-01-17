@@ -1,0 +1,53 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:MainDataTable="ViewPackingChild" msdata:UseCurrentLocale="true">
+      <xs:complexType>
+        <xs:choice minOccurs="0" maxOccurs="unbounded">
+          <xs:element name="ViewPackingChild">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="Barcode" type="xs:string" minOccurs="0" />
+                <xs:element name="BuyerCode" type="xs:string" minOccurs="0" />
+                <xs:element name="BuyerID" type="xs:long" />
+                <xs:element name="BuyerName" type="xs:string" minOccurs="0" />
+                <xs:element name="CartonID" type="xs:int" />
+                <xs:element name="CartonNo" type="xs:int" />
+                <xs:element name="CLName" type="xs:string" minOccurs="0" />
+                <xs:element name="CName" type="xs:string" minOccurs="0" />
+                <xs:element name="Code" type="xs:string" minOccurs="0" />
+                <xs:element name="Color" type="xs:int" />
+                <xs:element name="CSName" type="xs:string" minOccurs="0" />
+                <xs:element name="CurrencyID" type="xs:int" />
+                <xs:element name="Description" type="xs:string" minOccurs="0" />
+                <xs:element name="Dimension" type="xs:string" minOccurs="0" />
+                <xs:element name="FitemId" type="xs:long" />
+                <xs:element name="Name" type="xs:string" minOccurs="0" />
+                <xs:element name="OrderChildID" type="xs:long" />
+                <xs:element name="OrderMasterID" type="xs:long" />
+                <xs:element name="OrderNo" type="xs:string" minOccurs="0" />
+                <xs:element name="PackingChildID" type="xs:long" />
+                <xs:element name="PackingDate" type="xs:dateTime" />
+                <xs:element name="PackingID" type="xs:long" />
+                <xs:element name="PackingNo" type="xs:string" minOccurs="0" />
+                <xs:element name="PackingQty" type="xs:int" />
+                <xs:element name="PackingSerial" type="xs:long" />
+                <xs:element name="PartyCode" type="xs:string" minOccurs="0" />
+                <xs:element name="Price" type="xs:double" />
+                <xs:element name="ProductSizeId" type="xs:int" />
+                <xs:element name="ProductSizeName" type="xs:string" minOccurs="0" />
+                <xs:element name="Qty" type="xs:int" />
+                <xs:element name="ShoesCartonMasterId" type="xs:long" />
+                <xs:element name="SNo" type="xs:int" />
+                <xs:element name="TemplateID" type="xs:int" />
+                <xs:element name="TotalPackingQty" type="xs:int" />
+                <xs:element name="Unit" type="xs:string" minOccurs="0" />
+                <xs:element name="BarcodeImage" type="xs:base64Binary" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+        </xs:choice>
+      </xs:complexType>
+    </xs:element>
+  </xs:schema>
+</NewDataSet>

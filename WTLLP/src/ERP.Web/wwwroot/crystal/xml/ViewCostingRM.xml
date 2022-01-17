@@ -1,0 +1,67 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:MainDataTable="ViewCostingRM" msdata:UseCurrentLocale="true">
+      <xs:complexType>
+        <xs:choice minOccurs="0" maxOccurs="unbounded">
+          <xs:element name="ViewCostingRM">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="BOMAfterWas" type="xs:double" />
+                <xs:element name="BOMWAS" type="xs:double" />
+                <xs:element name="CAfterWAS" type="xs:double" />
+                <xs:element name="CategoryID" type="xs:long" />
+                <xs:element name="CategoryName" type="xs:string" minOccurs="0" />
+                <xs:element name="Code" type="xs:string" minOccurs="0" />
+                <xs:element name="CostingID" type="xs:long" />
+                <xs:element name="CostingRMID" type="xs:long" />
+                <xs:element name="CostUnit" type="xs:int" />
+                <xs:element name="CostUnitName" type="xs:string" minOccurs="0" />
+                <xs:element name="CostUnitSName" type="xs:string" minOccurs="0" />
+                <xs:element name="CWAS" type="xs:double" />
+                <xs:element name="Full_Name" type="xs:string" minOccurs="0" />
+                <xs:element name="IsComponent" type="xs:int" />
+                <xs:element name="Name" type="xs:string" minOccurs="0" />
+                <xs:element name="RItemID" type="xs:long" />
+                <xs:element name="RMBAmount" type="xs:double" />
+                <xs:element name="RMCAmount" type="xs:double" />
+                <xs:element name="RMPrice" type="xs:double" />
+                <xs:element name="RMQty" type="xs:double" />
+                <xs:element name="SerialNo" type="xs:int" />
+                <xs:element name="SubCategoryID" type="xs:long" />
+                <xs:element name="SubCategoryName" type="xs:string" minOccurs="0" />
+                <xs:element name="Title" type="xs:string" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+        </xs:choice>
+      </xs:complexType>
+    </xs:element>
+  </xs:schema>
+  <ViewCostingRM>
+    <BOMAfterWas>1</BOMAfterWas>
+    <BOMWAS>0</BOMWAS>
+    <CAfterWAS>1</CAfterWAS>
+    <CategoryID>11</CategoryID>
+    <CategoryName>Fittings</CategoryName>
+    <Code>BUC-00083-BR-NI-40m</Code>
+    <CostingID>30303</CostingID>
+    <CostingRMID>61134</CostingRMID>
+    <CostUnit>3</CostUnit>
+    <CostUnitName>Pieces</CostUnitName>
+    <CostUnitSName>Pcs</CostUnitSName>
+    <CWAS>0</CWAS>
+    <Full_Name>Belt Buckle Plain B/N 40 mm</Full_Name>
+    <IsComponent>0</IsComponent>
+    <Name>Belt Buckle Plain B/N 40 mm</Name>
+    <RItemID>1534</RItemID>
+    <RMBAmount>20</RMBAmount>
+    <RMCAmount>20</RMCAmount>
+    <RMPrice>20</RMPrice>
+    <RMQty>1</RMQty>
+    <SerialNo>1</SerialNo>
+    <SubCategoryID>203</SubCategoryID>
+    <SubCategoryName>Brass Buckles</SubCategoryName>
+    <Title>uploads/rmphotos/rmphoto.jpg</Title>
+  </ViewCostingRM>
+</NewDataSet>

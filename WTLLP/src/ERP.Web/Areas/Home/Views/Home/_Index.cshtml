@@ -1,0 +1,99 @@
+﻿@model ERP.Web.Areas.Home.Models.HomeModel
+@using NonFactors.Mvc.Grid;
+@{
+    Layout = null;
+}
+
+<div class="container">
+    <div class="row clearleft-custom flow-offset-1">
+        <div class="col-xs-12">
+            <div class="thumbnail">
+                <div style="height:250px; overflow:auto;">
+                    @(Html
+                     .Grid(Model.ViewDashBoardBuyerLastOrder)
+                     .Build(columns =>
+                     {
+                         columns.Add(model => model.BuyerCode).Titled("Buyer").Css("td-nowrap");
+                         columns.Add(model => model.OrderNo).Titled("Last Order").Css("td-nowrap");
+                         columns.Add(model => model.OrderDate.ToString("dd/MMM/yyyy")).Titled("Last Order On").Css("td-nowrap");
+                         columns.Add(model => model.NoOfDaysToLastOrder + " Days Before").Titled("").Css("td-nowrap");
+                     })
+                    //.Css("table-hover")
+                    //.RowCss(model => model.OrderMasterID % 2 == 1 ? "even" : "odd")
+                    )
+                </div>
+            </div>
+        </div>
+
+        <div class="col-xs-12">
+            <div class="thumbnail">
+                <div style="height:250px; overflow:auto;">
+                    <table class="table table-responsive ">
+                        <thead>
+                            <tr>
+                                <th>Buyer</th>
+                                <th>Order</th>
+                                <th>Del Dt.</th>
+                                <th>&nbsp;</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var v in Model.ViewDashBoardOrderToBeDeliver)
+                            {
+                                <tr class="firstrow">
+                                    <td class="td-nowrap">@v.BuyerCode</td>
+                                    <td class="orderno td-nowrap">@v.OrderNo</td>
+                                    <td class="td-nowrap">@v.MyDeliveryDate.ToString("dd/MMM/yyyy")</td>
+                                    @if (v.NoOfDaysLeftToDelivery < 0)
+                                    {
+                                        <td class="td-nowrap"> @Convert.ToInt16(v.NoOfDaysLeftToDelivery *-1) Days delay</td>
+                                    }
+                                    else
+                                    {
+                                        <td class="td-nowrap"> @v.NoOfDaysLeftToDelivery Days Left</td>
+                                    }
+                                    <td><a href="javascript:void(0)" class="wip">WIP</a></td>                                  
+                                </tr>
+
+                                <tr class="hidden secondrow">
+                                    <td colspan="5">
+                                        <div class="details" style="margin-bottom:40px;">
+                                            <table class="wiptable"></table>
+                                        </div>
+                                    </td>
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript" >
+    $('.wip').click(function () {
+        $(this).parents('tbody').find('tr').each(function (index, element) {
+            $(element).css('background-color', 'white');          
+        });
+
+        $(this).parents('tbody').find('tr.secondrow').each(function (index, element) {
+            $(element).addClass("hidden");
+        });
+
+        $(this).parents("tr").css("background", "#5f9ea0");
+
+        $('.wiptable').empty();
+
+        var orderno = $(this).parents("tr").find('.orderno').text();
+        var data = {
+            OrderNo: orderno,
+        }
+        var url = '@Url.Action("WIP_Partial", "WorkPlan" , new { area= "WorkPlan" })';
+
+        $(this).parents("tr").next("tr").removeClass("hidden");
+        $(this).parents("tr").next("tr").find('.wiptable').load(url, { ps: data, }, function () {
+
+        });
+    });
+</script>

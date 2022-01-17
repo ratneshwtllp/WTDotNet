@@ -1,0 +1,270 @@
+﻿@model ERP.Web.Areas.RM.Models.RawMaterialModel
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewData["Title"] = "RM in Product";
+}
+
+<div id="loading" style="margin: 0px; padding: 0px; position: fixed; right: 0px;
+    top: 0px; width: 100%; height: 100%; background-color: #666666; z-index: 30001;
+    opacity: .8; filter: alpha(opacity=70);display:none">
+    <p style="position: absolute; top: 30%; left: 45%; color: White;">
+        Loading, please wait...<img src="../../images/ajax-loading.gif" />
+    </p>
+</div>
+
+<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="" />
+<meta name="keywords" content="" />
+
+<link rel="stylesheet" type="text/css" href="~/lib/bootstrap/dist/css/bootstrap-select.css" />
+<script src="~/lib/bootstrap/dist/js/bootstrap-select.js"></script>
+
+@section Scripts {
+    <script type="text/javascript">
+        $(function () {
+            $("#cbo_rm").change(function () {
+                var ritemid = $("#cbo_rm :selected").val();
+                //alert(ritemid);
+                $("#ddlproducts").html('');
+            });
+        });
+
+        $(function () {
+            $('#refresh').click(function () {
+                window.location.href = '@Url.Action("RMForProduct", "RM")';
+            });
+        });
+
+        $(function () {
+            $(document).on('change', '.selectall', function () {
+                if ($(this).prop('checked')) {
+                    $('tbody tr td .chk').each(function () {
+                        $(this).prop('checked', true);
+                    });
+                } else {
+                    $('tbody tr td .chk').each(function () {
+                        $(this).prop('checked', false);
+                    });
+                }
+            });
+        });
+
+        $(function () {
+            $(document).on('click', '.chk', function () {
+                $('tbody tr td input[type="checkbox"]').each(function () {
+                    if ($(this).prop('checked')) {
+                        $(this).parents('tr').css('background-color', '#b3daf1');
+                    }
+                    else {
+                        $(this).parents('tr').css('background-color', 'white');
+                    }
+
+                });
+            });
+        });
+
+        $(function () {
+            $('#search').click(function () {
+                var rmid = $("#cbo_rm :selected").val();
+                if (rmid == 0) {
+                    alert("Please select Raw Meterial");
+                    return;
+                }
+                $("#loading").show();
+                var url = '@Url.Action("RMForProduct_Partial", "RM")';               
+                $('#ddlproducts').load(url, { rmcatid: 0, rmscatid: 0, ritemid: rmid, CostingID: 0 }, function () {
+                    $("#loading").hide();
+                });
+
+                var url1 = '@Url.Action("RMSizeForProduct_Partial", "RM")';
+                $('#rmsizeproduct').load(url1, { ritemid: rmid }, function () {
+                    $("#loading").hide();
+                });
+            });
+        });
+
+        $('#updaterm').click(function () {
+            var norow = $('#ddlproducts').html();
+            //alert(norow);
+            if (norow === undefined || norow == "") {
+                alert("Please Click on Show RM");
+                return;
+            }
+            var ritemid = $("#cbo_rm :selected").val();
+            var UpdateRItemID = $("#cbo_rmupdate :selected").val();
+            if (UpdateRItemID == "") {
+                alert("Please Select RM You Want Update");
+                return;
+            }
+            var list = [];
+            var rmids = {};
+            var t = 0;
+            var status = 0;
+            $('#ddlproducts .table tbody tr').each(function (index, ele) {
+                if ($(this).find('.chk').prop("checked") == true) {
+                    //alert("Checkbox is checked.");
+                    var data = {
+                        FItem_Id: parseInt($(this).find('.fitemid').text()),
+                        CostingID: parseInt($(this).find('.costingid').text()),
+                        //SizeId: parseInt($(this).find('.sizeid').text()),
+                        RitemId: ritemid,
+                        UpdateRItemID: UpdateRItemID,
+                    }
+                    list.push(data);
+                    //var re = JSON.stringify(data);
+                    //alert(re);
+                    status = 1;
+                }
+            });
+
+            if (status == 0) {
+                alert("Please check at least one Product.");
+                return;
+            }
+            $.ajax({
+                cache: false,
+                type: 'POST',
+                url: '@Url.Action("PutRMinProduct")',
+                data: { obj: list },
+                dataType: 'JSON',
+                success: function (data) {
+                    alert(data);
+                    $('#search').trigger('click');
+                }
+            });
+        });
+
+        //RM Size Wise Product
+
+        $('#updatermsizewise').click(function () {          
+
+            var norow = $('#rmsizeproduct').html();
+            //alert(norow);
+            if (norow === undefined || norow == "") {
+                alert("Please Click on Show RM");
+                return;
+            }
+            var ritemid = $("#cbo_rm :selected").val();
+            var UpdateRItemID = $("#cbo_rmupdate :selected").val();
+            if (UpdateRItemID == "") {
+                alert("Please Select RM You Want Update");
+                return;
+            }
+            var list = [];
+            var rmids = {};
+            var t = 0;
+            var status = 0;
+            $('#rmsizeproduct .table tbody tr').each(function (index, ele) {
+                if ($(this).find('.chk').prop("checked") == true) {
+                    //alert("Checkbox is checked.");
+                    //return;
+                    var data = {
+                        FItem_Id: parseInt($(this).find('.fitemid').text()),
+                        CostingID: parseInt($(this).find('.costingid').text()),
+                        SizeId: parseInt($(this).find('.sizeid').text()),
+                        RitemId: ritemid,
+                        UpdateRItemID: UpdateRItemID,
+                    }
+                    list.push(data);
+                    //var re = JSON.stringify(data);
+                    //alert(re);
+                    status = 1;
+                }
+            });
+
+
+            if (status == 0) {
+                alert("Please check at least one Product.");
+                return;
+            }
+
+            $.ajax({
+                cache: false,
+                type: 'POST',
+                url: '@Url.Action("PutRMinProductSizeWise")',
+                data: { obj: list },
+                dataType: 'JSON',
+                success: function (data) {
+                    alert(data);
+                    $('#search').trigger('click');                    
+                }
+            });
+    
+           
+        });
+    </script>
+}
+<script type="text/javascript">
+    $(document).ajaxStart(function () {
+        // Show image container
+        $("#loading").show();
+    });
+    $(document).ajaxComplete(function () {
+        // Hide image container
+        $("#loading").hide();
+    });
+
+    $(document).ready(function () {
+        $('.selectpicker').selectpicker({
+            liveSearch: true,
+            showSubtext: true
+        });
+    });
+</script>
+
+<form asp-controller="RM" asp-action="RMForProduct" enctype="multipart/form-data" method="post">
+    <div class="clear"></div>
+    <div class="row clearleft-custom flow-offset-1">
+        <div class="col-xs-12 col-sm-6 col-lg-4">
+            <div class="thumbnail thumbnail-mod-1 bordernone">
+                <div class="form">
+
+                    <p class="contact">
+                        @Html.LabelFor(a => a.RItem_ID)
+                    </p>
+                    @Html.DropDownListFor(a => a.RItem_ID, new SelectList(Model.RawMaterialList, "Value", "Text", Model.RItem_ID), "-- Select --", new { id = "cbo_rm", @required = "true", @class = "selectpicker show-tick" })
+
+                </div>
+
+            </div>
+        </div>
+
+        <div class="col-xs-12 col-sm-6 col-lg-4">
+            <div class="thumbnail thumbnail-mod-1 bordernone">
+                <div class="form">
+                    <input id="search" type="button" value="Show Product" class="button" />
+                    <input id="refresh" type="button" value="Refresh" class="button" />
+                </div>
+            </div>
+        </div>
+    </div>
+    <ul class="nav nav-tabs">
+        <li class="active"><a data-toggle="tab" href="#tab1">RM Use In Product(Common RM)</a></li>
+   
+        <li><a data-toggle="tab" href="#tab2">RM Use In Product(Size Wise RM)</a></li>
+
+    </ul>
+    <div class="tab-content">
+        <div id="tab1" class="tab-pane active">
+            <div id="ddlproducts" style="height:350px; overflow:auto;">
+            </div>
+        </div>
+        <div id="tab2" class="tab-pane">
+            <div id="rmsizeproduct" style="height:350px; overflow:auto;">
+            </div>
+        </div>
+    </div>
+    <br>
+    <div style="border:groove;">
+        <label>RM For Update : </label>
+        @Html.DropDownListFor(a => a.RItem_ID, new SelectList(Model.RawMaterialList, "Value", "Text", Model.RItem_ID), "-- Select --", new { id = "cbo_rmupdate", @required = "true", @class = "selectpicker show-tick" })
+        <strong>
+            <a id="updaterm" href="#">Update RM(Common RM)</a>
+            <a id="updatermsizewise" href="#" style="margin:150px;">Update RM(Size Wise RM)</a>
+        </strong>
+    </div>
+
+</form>
+

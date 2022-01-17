@@ -1,0 +1,223 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:MainDataTable="RMMovement" msdata:UseCurrentLocale="true">
+      <xs:complexType>
+        <xs:choice minOccurs="0" maxOccurs="unbounded">
+          <xs:element name="RMMovement">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="CategoryName" type="xs:string" minOccurs="0" />
+                <xs:element name="Code" type="xs:string" minOccurs="0" />
+                <xs:element name="CostUnitName" type="xs:string" minOccurs="0" />
+                <xs:element name="CurrentStock" type="xs:double" />
+                <xs:element name="DamageStock_today" type="xs:double" />
+                <xs:element name="DecreaseStock_today" type="xs:double" />
+                <xs:element name="Full_Name" type="xs:string" minOccurs="0" />
+                <xs:element name="IncreaseStock_today" type="xs:double" />
+                <xs:element name="IssueQty_today" type="xs:double" />
+                <xs:element name="IsTransactionToday" type="xs:int" />
+                <xs:element name="JWRecvQty_today" type="xs:double" />
+                <xs:element name="JWSendQty_today" type="xs:double" />
+                <xs:element name="MoveInStock_today" type="xs:double" />
+                <xs:element name="MoveOutStock_today" type="xs:double" />
+                <xs:element name="Name" type="xs:string" minOccurs="0" />
+                <xs:element name="OPDate" type="xs:dateTime" />
+                <xs:element name="OPStock_today" type="xs:double" />
+                <xs:element name="RequestIssueQty_today" type="xs:double" />
+                <xs:element name="ReturnRecvQty_today" type="xs:double" />
+                <xs:element name="RitemID" type="xs:long" />
+                <xs:element name="RTSQty_today" type="xs:double" />
+                <xs:element name="StoreKeepingStock_today" type="xs:double" />
+                <xs:element name="SubCategoryName" type="xs:string" minOccurs="0" />
+                <xs:element name="WPReturnQty_today" type="xs:double" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+        </xs:choice>
+      </xs:complexType>
+    </xs:element>
+  </xs:schema>
+  <RMMovement>
+    <CategoryName>Fittings</CategoryName>
+    <Code>FTG-00271-SS-CF-68</Code>
+    <CostUnitName>Pieces</CostUnitName>
+    <CurrentStock>1164</CurrentStock>
+    <DamageStock_today>0</DamageStock_today>
+    <DecreaseStock_today>0</DecreaseStock_today>
+    <Full_Name>Alpak Thick Stainless Steel 6/8"</Full_Name>
+    <IncreaseStock_today>16</IncreaseStock_today>
+    <IssueQty_today>0</IssueQty_today>
+    <IsTransactionToday>1</IsTransactionToday>
+    <JWRecvQty_today>0</JWRecvQty_today>
+    <JWSendQty_today>0</JWSendQty_today>
+    <MoveInStock_today>0</MoveInStock_today>
+    <MoveOutStock_today>0</MoveOutStock_today>
+    <Name>Alpak Thick Stainless Steel 6/8"</Name>
+    <OPDate>2018-12-27T00:00:00+05:30</OPDate>
+    <OPStock_today>0</OPStock_today>
+    <RequestIssueQty_today>0</RequestIssueQty_today>
+    <ReturnRecvQty_today>0</ReturnRecvQty_today>
+    <RitemID>595</RitemID>
+    <RTSQty_today>0</RTSQty_today>
+    <StoreKeepingStock_today>1148</StoreKeepingStock_today>
+    <SubCategoryName>SS Fittings</SubCategoryName>
+    <WPReturnQty_today>0</WPReturnQty_today>
+  </RMMovement>
+  <RMMovement>
+    <CategoryName>Fittings</CategoryName>
+    <Code>BUC-00151-BR-PO-88</Code>
+    <CostUnitName>Pieces</CostUnitName>
+    <CurrentStock>100</CurrentStock>
+    <DamageStock_today>0</DamageStock_today>
+    <DecreaseStock_today>0</DecreaseStock_today>
+    <Full_Name>Dandedar Buckle Heavy Brass Polish for Braided D.C. 1" </Full_Name>
+    <IncreaseStock_today>0</IncreaseStock_today>
+    <IssueQty_today>0</IssueQty_today>
+    <IsTransactionToday>1</IsTransactionToday>
+    <JWRecvQty_today>0</JWRecvQty_today>
+    <JWSendQty_today>0</JWSendQty_today>
+    <MoveInStock_today>0</MoveInStock_today>
+    <MoveOutStock_today>0</MoveOutStock_today>
+    <Name>Dandedar Buckle Heavy Brass Polish for Braided D.C. 1" </Name>
+    <OPDate>2018-12-27T00:00:00+05:30</OPDate>
+    <OPStock_today>0</OPStock_today>
+    <RequestIssueQty_today>0</RequestIssueQty_today>
+    <ReturnRecvQty_today>0</ReturnRecvQty_today>
+    <RitemID>3213</RitemID>
+    <RTSQty_today>0</RTSQty_today>
+    <StoreKeepingStock_today>100</StoreKeepingStock_today>
+    <SubCategoryName>Brass Buckles</SubCategoryName>
+    <WPReturnQty_today>0</WPReturnQty_today>
+  </RMMovement>
+  <RMMovement>
+    <CategoryName>Fittings</CategoryName>
+    <Code>BUC-00278-SS-CF-168</Code>
+    <CostUnitName>Pieces</CostUnitName>
+    <CurrentStock>245</CurrentStock>
+    <DamageStock_today>0</DamageStock_today>
+    <DecreaseStock_today>0</DecreaseStock_today>
+    <Full_Name>Garari Buckle Stainless Steel Flat  2" for D.C.</Full_Name>
+    <IncreaseStock_today>0</IncreaseStock_today>
+    <IssueQty_today>0</IssueQty_today>
+    <IsTransactionToday>1</IsTransactionToday>
+    <JWRecvQty_today>0</JWRecvQty_today>
+    <JWSendQty_today>0</JWSendQty_today>
+    <MoveInStock_today>0</MoveInStock_today>
+    <MoveOutStock_today>0</MoveOutStock_today>
+    <Name>Garari Buckle Stainless Steel Flat  2" for D.C.</Name>
+    <OPDate>2018-12-27T00:00:00+05:30</OPDate>
+    <OPStock_today>74</OPStock_today>
+    <RequestIssueQty_today>0</RequestIssueQty_today>
+    <ReturnRecvQty_today>0</ReturnRecvQty_today>
+    <RitemID>571</RitemID>
+    <RTSQty_today>0</RTSQty_today>
+    <StoreKeepingStock_today>171</StoreKeepingStock_today>
+    <SubCategoryName>SS Buckles</SubCategoryName>
+    <WPReturnQty_today>0</WPReturnQty_today>
+  </RMMovement>
+  <RMMovement>
+    <CategoryName>Fittings</CategoryName>
+    <Code>BUC-00279-SS-CF-88</Code>
+    <CostUnitName>Pieces</CostUnitName>
+    <CurrentStock>480</CurrentStock>
+    <DamageStock_today>0</DamageStock_today>
+    <DecreaseStock_today>0</DecreaseStock_today>
+    <Full_Name>Garari Buckle Stainless Steel Flat 1" for D.C.</Full_Name>
+    <IncreaseStock_today>0</IncreaseStock_today>
+    <IssueQty_today>0</IssueQty_today>
+    <IsTransactionToday>1</IsTransactionToday>
+    <JWRecvQty_today>0</JWRecvQty_today>
+    <JWSendQty_today>0</JWSendQty_today>
+    <MoveInStock_today>0</MoveInStock_today>
+    <MoveOutStock_today>0</MoveOutStock_today>
+    <Name>Garari Buckle Stainless Steel Flat 1" for D.C.</Name>
+    <OPDate>2018-12-27T00:00:00+05:30</OPDate>
+    <OPStock_today>127</OPStock_today>
+    <RequestIssueQty_today>0</RequestIssueQty_today>
+    <ReturnRecvQty_today>0</ReturnRecvQty_today>
+    <RitemID>1054</RitemID>
+    <RTSQty_today>0</RTSQty_today>
+    <StoreKeepingStock_today>353</StoreKeepingStock_today>
+    <SubCategoryName>SS Buckles</SubCategoryName>
+    <WPReturnQty_today>0</WPReturnQty_today>
+  </RMMovement>
+  <RMMovement>
+    <CategoryName>Fittings</CategoryName>
+    <Code>BUC-00282-SS-CF-68</Code>
+    <CostUnitName>Pieces</CostUnitName>
+    <CurrentStock>1025</CurrentStock>
+    <DamageStock_today>0</DamageStock_today>
+    <DecreaseStock_today>0</DecreaseStock_today>
+    <Full_Name>Garari Buckle Stainless Steel Flat 6/8" for D.C.</Full_Name>
+    <IncreaseStock_today>0</IncreaseStock_today>
+    <IssueQty_today>0</IssueQty_today>
+    <IsTransactionToday>1</IsTransactionToday>
+    <JWRecvQty_today>0</JWRecvQty_today>
+    <JWSendQty_today>0</JWSendQty_today>
+    <MoveInStock_today>0</MoveInStock_today>
+    <MoveOutStock_today>0</MoveOutStock_today>
+    <Name>Garari Buckle Stainless Steel Flat 6/8" for D.C.</Name>
+    <OPDate>2018-12-27T00:00:00+05:30</OPDate>
+    <OPStock_today>0</OPStock_today>
+    <RequestIssueQty_today>0</RequestIssueQty_today>
+    <ReturnRecvQty_today>0</ReturnRecvQty_today>
+    <RitemID>3169</RitemID>
+    <RTSQty_today>0</RTSQty_today>
+    <StoreKeepingStock_today>1025</StoreKeepingStock_today>
+    <SubCategoryName>SS Buckles</SubCategoryName>
+    <WPReturnQty_today>0</WPReturnQty_today>
+  </RMMovement>
+  <RMMovement>
+    <CategoryName>Fittings</CategoryName>
+    <Code>BUC-00024-BR-NI-68</Code>
+    <CostUnitName>Pieces</CostUnitName>
+    <CurrentStock>1236</CurrentStock>
+    <DamageStock_today>0</DamageStock_today>
+    <DecreaseStock_today>0</DecreaseStock_today>
+    <Full_Name>Khutidar Buckle Brass Nickle 6/8"</Full_Name>
+    <IncreaseStock_today>0</IncreaseStock_today>
+    <IssueQty_today>0</IssueQty_today>
+    <IsTransactionToday>1</IsTransactionToday>
+    <JWRecvQty_today>0</JWRecvQty_today>
+    <JWSendQty_today>0</JWSendQty_today>
+    <MoveInStock_today>0</MoveInStock_today>
+    <MoveOutStock_today>0</MoveOutStock_today>
+    <Name>Khutidar Buckle Brass Nickel 6/8"</Name>
+    <OPDate>2018-12-27T00:00:00+05:30</OPDate>
+    <OPStock_today>936</OPStock_today>
+    <RequestIssueQty_today>0</RequestIssueQty_today>
+    <ReturnRecvQty_today>300</ReturnRecvQty_today>
+    <RitemID>410</RitemID>
+    <RTSQty_today>0</RTSQty_today>
+    <StoreKeepingStock_today>0</StoreKeepingStock_today>
+    <SubCategoryName>Brass Buckles</SubCategoryName>
+    <WPReturnQty_today>0</WPReturnQty_today>
+  </RMMovement>
+  <RMMovement>
+    <CategoryName>Fittings</CategoryName>
+    <Code>FTG-00395-SS-CF-98</Code>
+    <CostUnitName>Pieces</CostUnitName>
+    <CurrentStock>1941</CurrentStock>
+    <DamageStock_today>0</DamageStock_today>
+    <DecreaseStock_today>0</DecreaseStock_today>
+    <Full_Name>Ring Stainless Steel Thin 9/8" (41 x 53)</Full_Name>
+    <IncreaseStock_today>0</IncreaseStock_today>
+    <IssueQty_today>0</IssueQty_today>
+    <IsTransactionToday>1</IsTransactionToday>
+    <JWRecvQty_today>0</JWRecvQty_today>
+    <JWSendQty_today>0</JWSendQty_today>
+    <MoveInStock_today>0</MoveInStock_today>
+    <MoveOutStock_today>0</MoveOutStock_today>
+    <Name>Ring Stainless Steel Thin 9/8" (41 x 53)</Name>
+    <OPDate>2018-12-27T00:00:00+05:30</OPDate>
+    <OPStock_today>1803</OPStock_today>
+    <RequestIssueQty_today>0</RequestIssueQty_today>
+    <ReturnRecvQty_today>0</ReturnRecvQty_today>
+    <RitemID>627</RitemID>
+    <RTSQty_today>0</RTSQty_today>
+    <StoreKeepingStock_today>138</StoreKeepingStock_today>
+    <SubCategoryName>SS Fittings</SubCategoryName>
+    <WPReturnQty_today>0</WPReturnQty_today>
+  </RMMovement>
+</NewDataSet>

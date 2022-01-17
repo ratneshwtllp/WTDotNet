@@ -1,0 +1,12 @@
+﻿@model ERP.Web.Areas.UserAsSupervisor.Models.UserAsSupervisorModel
+<div class="form">
+    @for (int i = 0; i < Model.ContractorModel.Count; i++)
+    {
+        <div class="chkboxmenu">
+            @Html.CheckBoxFor(m => m.ContractorModel[i].Selected, new { @class = "suppliercheckbox", id = "chk_contactor" })
+            @Html.HiddenFor(m => m.ContractorModel[i].ContractorID, new { @class = "contractorid" })
+            @Html.LabelFor(m => m.ContractorModel[i].ContractorName, Model.ContractorModel[i].ContractorName)
+            <br />
+        </div>
+    }
+</div>

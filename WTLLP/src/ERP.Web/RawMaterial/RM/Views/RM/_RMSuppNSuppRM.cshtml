@@ -1,0 +1,43 @@
+﻿@model ERP.Web.Areas.RM.Models.RawMaterialModel
+
+<div class="form">
+    <table class="table table-responsive" id="elementorderdetailsItems">
+        <thead>
+            <tr>
+                <td class="ratewidth tableheading">Code</td>
+                <td class="selectwidth tableheading">Raw Material</td>
+                @*<td class="ratewidth tableheading">Cost Price</td>
+                    <td class="ratewidth tableheading">Cost Unit</td>*@
+                <td class="selectwidth tableheading">RM Supplier</td>
+                <td class="ratewidth tableheading">Supplier Price</td>
+                <td class="selectwidth tableheading">Supplier Unit</td>
+                <td class="ratewidth tableheading">Currency</td>
+                @*<td class="ratewidth tableheading">Purchase Unit</td>*@
+                <td class="ratewidth tableheading">Min Days</td>
+            </tr>
+        </thead>
+        <tbody>
+            @if (Model.RItemSuppModel != null)
+            {
+                @for (int i = 0; i < Model.RItemSuppModel.Count; i++)
+                {
+                    <tr>
+                        @Html.HiddenFor(m => m.RItemSuppModel[i].RItem_Id, new { @class = "rmid" })
+                        @Html.HiddenFor(m => m.RItemSuppModel[i].SupplierId, new { @class = "supplierid" })
+                        @Html.HiddenFor(m => m.RItemSuppModel[i].RItemSuppID, new { @class = "ritemsuppid" })
+
+                        <td>@Html.DisplayFor(m => m.RItemSuppModel[i].Code)</td>
+                        <td>@Html.DisplayFor(m => m.RItemSuppModel[i].Full_Name)</td>
+                        <td>@Html.DisplayFor(m => m.RItemSuppModel[i].SupplierName)</td>
+                        <td>@Html.TextBoxFor(m => m.RItemSuppModel[i].Rate, "{0:0.000}",new {@class="rightalign" })</td>
+                        <td>@Html.DisplayFor(m => m.RItemSuppModel[i].SuppUnitSName)</td>
+                        <td>@Html.DisplayFor(m => m.RItemSuppModel[i].CurrencyName)</td>
+                        @*<td>@Html.DisplayFor(m => m.RItemSuppModel[i].PUnitSName)</td>*@
+                        <td>@Html.DisplayFor(m => m.RItemSuppModel[i].Min_Days, new { @class = "mindays" })</td>
+                    </tr>
+                }
+            }
+        </tbody>
+    </table>
+</div>
+

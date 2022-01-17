@@ -1,0 +1,58 @@
+﻿@model ERP.Web.Areas.RMProperty.Models.MappingModel
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewData["Title"] = "RM Mapping List";
+}
+<div id="loading" style="margin: 0px; padding: 0px; position: fixed; right: 0px;
+    top: 0px; width: 100%; height: 100%; background-color: #666666; z-index: 30001;
+    opacity: .8; filter: alpha(opacity=70);display:none">
+    <p style="position: absolute; top: 30%; left: 45%; color: White;">
+        Loading, please wait...<img src="../../images/ajax-loading.gif" />
+    </p>
+</div>
+
+<link rel="stylesheet" type="text/css" href="~/lib/bootstrap/dist/css/bootstrap-select.css" />
+<script src="~/lib/bootstrap/dist/js/bootstrap-select.js"></script>
+
+
+@section Scripts {
+    <script type="text/javascript">       
+        $(function () {
+            $('#search').click(function () {
+                $("#loading").show();
+                $("#list").html('');
+                var data = {                    
+                    CategoryID: $("#cbo_cate :selected").val(),
+                }
+                var url = '@Url.Action("RMMapingList_Partial", "RMProperties")';
+                $('#list').load(url, { rms: data, }, function () {
+                   $("#loading").hide();
+                });
+            });
+        });
+    </script>
+}
+
+<div class="clear"></div>
+<div class="row clearleft-custom flow-offset-1">
+    <div class="col-xs-12 col-sm-6 col-lg-4">
+        <div class="thumbnail thumbnail-mod-1 bordernone">
+            <div class="form">               
+                <p class="contact">
+                    <label>Category</label>
+                </p>
+                @Html.DropDownListFor(a => a.CategoryID, new SelectList(Model.RMCategoryList, "Value", "Text", Model.CategoryID), "-- Select --", new { id = "cbo_cate" })
+                                
+            </div>
+        </div>
+    </div>  
+    <div class="col-xs-12 col-sm-6 col-lg-4">
+        <div class="thumbnail thumbnail-mod-1 bordernone">
+            <div class="form">
+                <p class="contact">&nbsp;</p>
+                <input type="submit" value="Search" class="" id="search" />
+            </div>
+        </div>
+    </div>
+</div>
+<div id="list" style="min-height:400px;"></div>

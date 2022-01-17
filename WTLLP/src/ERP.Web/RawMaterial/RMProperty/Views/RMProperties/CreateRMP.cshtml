@@ -1,0 +1,135 @@
+﻿@model ERP.Web.Areas.RMProperty.Models.RMPropertiesModel
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewData["Title"] = "Create RM Properties";
+}
+
+<script src="~/js/1.7.1/jquery.min.js"></script>
+<script src="~/js/1.9.1/jquery-ui.min.js"></script>
+<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+
+<link rel="stylesheet" type="text/css" href="~/lib/bootstrap/dist/css/bootstrap-select.css" />
+<script src="~/lib/bootstrap/dist/js/bootstrap-select.js"></script>
+
+@section Scripts {
+    <script type="text/javascript">
+        $(function () {
+            $('#submit').click(function () {
+                //alert("hello");
+
+                var RMPropertiesName = $('#RMPropertiesName ').val();
+                if (RMPropertiesName == "") {
+                    alert("Please Enter RMProperties Name");
+                    $('#RMPropertiesName ').focus();
+                    return;
+                }
+                //var IsPrintOnPo = $('#Po_Id :selected ').val();
+                //if (IsPrintOnPo == "") {
+                //    alert("Please select RMProperties IsPrint On Po");
+                //    $('#Po_Id').focus();
+                //    return;
+                //}
+
+                var isAllValid = true;
+
+                if (isAllValid) {
+                    var masterdata = {
+                        RMPropertiesID: 1,
+                        RMPropertiesID: $('#RMPropertiesID').val(),
+                        RMPropertiesName: $('#RMPropertiesName').val(),
+                        RMPropertiesRemark: $('#RMPropertiesRemark').val(),
+                        RMPropertiesIsPrintOnPo: $('#Po_Id :selected').val(),
+                        RMPropertiesIsMaster: $('#Master_Id :selected').val(),
+                        EditMode: $('#EditMode').val(),
+                        }
+                    //alert(masterdata);
+                    //$(this).val('Please wait...');
+                    $.ajax({
+                        type: 'POST',
+                        url: '@Url.Action("SaveRMP")',
+                        data: JSON.stringify(masterdata),
+                        contentType: 'application/json',
+                        success: function (data) {
+                            if(data == "Record Save") {
+                                alert('Successfully Saved');
+                                window.location.href = '@Url.Action("CreateRMP", "RMProperties")';
+                            }
+                            else 
+                                {
+                                alert('Successfully updated');
+                                window.location.href = '@Url.Action("RMPList", "RMProperties")';
+                            }
+                        },
+                        error: function (error) {
+                            console.log(error);
+                            $('#submit').val('Record Save');
+                        }
+                    });
+                }
+            });
+        });
+        //$(document).ready(function () {
+        //    $('.selectpicker').selectpicker({
+        //        liveSearch: true,
+        //        showSubtext: true
+        //    });
+        //});
+        $(document).on('blur', '#RMPropertiesName', function () {
+            var value = $("#RMPropertiesName").val();
+            var rmpid = parseInt($("#RMPropertiesID").val());
+            if (value == null || value == "") {
+                return;
+            }
+            //alert(value);
+            $.ajax({
+                cache: false,
+                url: '@Url.Action("CheckRMP")',
+                type: "GET",
+                data: { value: value, rmpid: rmpid },
+                dataType: 'JSON',
+                success: function (data) {
+                    var data = JSON.parse(data);
+                    if (data == 0) {
+
+                    }
+                    else {
+                        alert("RMP already exists");
+                        $("#RMPropertiesName").val('');
+                        $("#RMPropertiesName").focus();
+                        return;
+                    }
+                }
+            });
+        });
+    </script>
+}
+
+<div class="clear"></div>
+<div class="container containerheight">
+    <p>
+        @Html.ActionLink("RM Properties List", "RMPList", "RMProperties", "", new { @class = "btn btn-info" })
+    </p> 
+    <div class="row clearleft-custom flow-offset-1">
+        <div class="col-xs-12 col-sm-6 col-lg-4">
+            <div class="thumbnail thumbnail-mod-1">
+                @Html.HiddenFor(a => a.EditMode)
+                @Html.HiddenFor(a => a.RMPropertiesID)
+               <div class="form">
+                    <p class="contact">@Html.LabelFor(a => a.RMPropertiesName)</p>
+                    @Html.TextBoxFor(a => a.RMPropertiesName, new { @required = "true", autocomplete = "off", maxlength = "50" })                   
+                    <p class="contact">@Html.LabelFor(a => a.RMPropertiesIsPrintOnPo)</p>
+                    @Html.DropDownListFor(a => a.RMPropertiesIsPrintOnPo, new SelectList(Model.IsPrintOnPoList, "Value", "Text", Model.RMPropertiesIsPrintOnPo), "-- Select --", new { id = "Po_Id", @required = "true" })
+                    <p class="contact">@Html.LabelFor(a => a.RMPropertiesIsMaster)</p>
+                    @Html.DropDownListFor(a => a.RMPropertiesIsMaster, new SelectList(Model.IsMasterList, "Value", "Text", Model.RMPropertiesIsMaster), "-- Select --", new { id = "Master_Id", @required = "true" })
+                    <p class="contact">@Html.LabelFor(a => a.RMPropertiesRemark)</p>
+                    @Html.TextAreaFor(a => a.RMPropertiesRemark, new { autocomplete = "off", rows = "4"})
+                    <p class="contact">&nbsp;</p>
+                        <input id="submit" type="submit" value="Save" />
+                   </div>
+              </div>
+        </div>
+    </div>
+</div>
+
+
+ 

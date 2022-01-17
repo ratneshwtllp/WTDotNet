@@ -1,0 +1,17 @@
+﻿@using NonFactors.Mvc.Grid;
+@model ERP.Web.Areas.RM.Models.RawMaterialModel
+
+@(Html
+    .Grid(Model.RItemSuppModel)
+    .Build(columns =>
+    {
+        columns.Add(model => $"<a href='" + @Url.Content("~/" + model.PhotoPath) + "' target='_blank' ><img src=" + @Url.Content("~/" + model.PhotoPath) + " width='20' height='20' ></a>").Encoded(false);
+        columns.Add(model => model.MiniLevelCode).Titled("Code").Css("rm");
+        columns.Add(model => model.MiniLevelRMName).Titled("Raw Material").Css("rm");
+        columns.Add(model => model.MiniLevelStock ).Titled("Stock").Formatted("{0:0.000}");
+        columns.Add(model => model.MiniLevelUnit).Titled("Unit").Css("unit");
+        columns.Add(model => model.MiniLevel).Titled("Minimum Level");
+        columns.Add(model => model.RItem_Id).Titled("Ritemid").Css("ritemid hidden");
+    })
+    .Css("table-hover")
+)

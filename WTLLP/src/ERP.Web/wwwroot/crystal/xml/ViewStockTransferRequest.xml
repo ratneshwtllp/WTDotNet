@@ -1,0 +1,81 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:MainDataTable="ViewStockTransferRequest" msdata:UseCurrentLocale="true">
+      <xs:complexType>
+        <xs:choice minOccurs="0" maxOccurs="unbounded">
+          <xs:element name="ViewStockTransferRequest">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="Address" type="xs:string" minOccurs="0" />
+                <xs:element name="AddressOffice" type="xs:string" minOccurs="0" />
+                <xs:element name="AddressWork" type="xs:string" minOccurs="0" />
+                <xs:element name="BranchName" type="xs:string" minOccurs="0" />
+                <xs:element name="CategoryID" type="xs:long" />
+                <xs:element name="CategoryName" type="xs:string" minOccurs="0" />
+                <xs:element name="CName" type="xs:string" minOccurs="0" />
+                <xs:element name="Code" type="xs:string" minOccurs="0" />
+                <xs:element name="CurrentStock" type="xs:double" />
+                <xs:element name="EntryDate" type="xs:dateTime" />
+                <xs:element name="Full_Name" type="xs:string" minOccurs="0" />
+                <xs:element name="IssueQty" type="xs:double" />
+                <xs:element name="LogoPath" type="xs:string" minOccurs="0" />
+                <xs:element name="RequestBranchId" type="xs:long" />
+                <xs:element name="RequestQty" type="xs:double" />
+                <xs:element name="RequestRemark" type="xs:string" minOccurs="0" />
+                <xs:element name="RequestToAddress" type="xs:string" minOccurs="0" />
+                <xs:element name="RequestToBranchId" type="xs:long" />
+                <xs:element name="RequestToBranchName" type="xs:string" minOccurs="0" />
+                <xs:element name="RitemId" type="xs:long" />
+                <xs:element name="RitemRemark" type="xs:string" minOccurs="0" />
+                <xs:element name="SessionYear" type="xs:string" minOccurs="0" />
+                <xs:element name="StockTransferRequestChildId" type="xs:long" />
+                <xs:element name="StockTransferRequestDate" type="xs:dateTime" />
+                <xs:element name="StockTransferRequestId" type="xs:long" />
+                <xs:element name="StockTransferRequestNo" type="xs:string" minOccurs="0" />
+                <xs:element name="StockTransferRequestSNo" type="xs:long" />
+                <xs:element name="SubCategoryID" type="xs:long" />
+                <xs:element name="SubCategoryName" type="xs:string" minOccurs="0" />
+                <xs:element name="Unit" type="xs:string" minOccurs="0" />
+                <xs:element name="UserId" type="xs:int" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+        </xs:choice>
+      </xs:complexType>
+    </xs:element>
+  </xs:schema>
+  <ViewStockTransferRequest>
+    <Address>#620 A, Safipur 1st, Harjinder Nagar, Kanpur-208007</Address>
+    <AddressOffice>#620 A, Safipur 1st, Harjinder Nagar, Kanpur-208007</AddressOffice>
+    <AddressWork>#620 A, Safipur 1st, Harjinder Nagar, Kanpur-208007</AddressWork>
+    <BranchName>SB International	</BranchName>
+    <CategoryID>11</CategoryID>
+    <CategoryName>Fittings</CategoryName>
+    <CName>SB International</CName>
+    <Code>FTG-00027-BR-PO-88</Code>
+    <CurrentStock>212</CurrentStock>
+    <EntryDate>2020-03-21T00:00:00+05:30</EntryDate>
+    <Full_Name>Dee wire 1" Brass Polish  for Braided D.C.</Full_Name>
+    <IssueQty>1</IssueQty>
+    <LogoPath>uploads/logo/1.jpg</LogoPath>
+    <RequestBranchId>1</RequestBranchId>
+    <RequestQty>40</RequestQty>
+    <RequestRemark>test1</RequestRemark>
+    <RequestToAddress>#620 A, Safipur 1st, Harjinder Nagar, Kanpur-208007</RequestToAddress>
+    <RequestToBranchId>2</RequestToBranchId>
+    <RequestToBranchName>Angel Exports</RequestToBranchName>
+    <RitemId>3215</RitemId>
+    <RitemRemark>abc</RitemRemark>
+    <SessionYear>19-20</SessionYear>
+    <StockTransferRequestChildId>1</StockTransferRequestChildId>
+    <StockTransferRequestDate>2020-03-21T00:00:00+05:30</StockTransferRequestDate>
+    <StockTransferRequestId>1</StockTransferRequestId>
+    <StockTransferRequestNo>SBI/SREQ/19-20/0001</StockTransferRequestNo>
+    <StockTransferRequestSNo>1</StockTransferRequestSNo>
+    <SubCategoryID>204</SubCategoryID>
+    <SubCategoryName>Brass Fittngs</SubCategoryName>
+    <Unit>Pcs</Unit>
+    <UserId>1</UserId>
+  </ViewStockTransferRequest>
+</NewDataSet>

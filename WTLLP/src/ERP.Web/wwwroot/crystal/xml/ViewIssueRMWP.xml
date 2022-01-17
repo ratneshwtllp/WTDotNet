@@ -1,0 +1,103 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:MainDataTable="ViewIssueRMWP" msdata:UseCurrentLocale="true">
+      <xs:complexType>
+        <xs:choice minOccurs="0" maxOccurs="unbounded">
+          <xs:element name="ViewIssueRMWP">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="CancelStatus" type="xs:int" />
+                <xs:element name="CategoryID" type="xs:long" />
+                <xs:element name="CategoryName" type="xs:string" minOccurs="0" />
+                <xs:element name="Code" type="xs:string" minOccurs="0" />
+                <xs:element name="Comments" type="xs:string" minOccurs="0" />
+                <xs:element name="ContractorID" type="xs:long" />
+                <xs:element name="ContractorName" type="xs:string" minOccurs="0" />
+                <xs:element name="CostUnit" type="xs:int" />
+                <xs:element name="CostUnitName" type="xs:string" minOccurs="0" />
+                <xs:element name="CostUnitSName" type="xs:string" minOccurs="0" />
+                <xs:element name="ExtraIssue" type="xs:int" />
+                <xs:element name="Full_Name" type="xs:string" minOccurs="0" />
+                <xs:element name="IssueBy" type="xs:string" minOccurs="0" />
+                <xs:element name="IssueChildID" type="xs:long" />
+                <xs:element name="IssueDate" type="xs:dateTime" />
+                <xs:element name="IssueID" type="xs:long" />
+                <xs:element name="IssueNo" type="xs:string" minOccurs="0" />
+                <xs:element name="IssueQty" type="xs:double" />
+                <xs:element name="IssueSNo" type="xs:long" />
+                <xs:element name="LotNo" type="xs:string" minOccurs="0" />
+                <xs:element name="Name" type="xs:string" minOccurs="0" />
+                <xs:element name="PCKIssue" type="xs:int" />
+                <xs:element name="PlanDate" type="xs:dateTime" />
+                <xs:element name="PlanId" type="xs:long" />
+                <xs:element name="PlanNo" type="xs:string" minOccurs="0" />
+                <xs:element name="PRMasterId" type="xs:long" />
+                <xs:element name="PRNo" type="xs:string" minOccurs="0" />
+                <xs:element name="ProcessName" type="xs:string" minOccurs="0" />
+                <xs:element name="RackId" type="xs:long" />
+                <xs:element name="RackNo" type="xs:string" minOccurs="0" />
+                <xs:element name="ReceiveBy" type="xs:string" minOccurs="0" />
+                <xs:element name="ReqQty" type="xs:double" />
+                <xs:element name="RitemId" type="xs:long" />
+                <xs:element name="SessionYear" type="xs:string" minOccurs="0" />
+                <xs:element name="Side" type="xs:double" />
+                <xs:element name="SNo" type="xs:int" />
+                <xs:element name="SubCategoryID" type="xs:long" />
+                <xs:element name="SubCategoryName" type="xs:string" minOccurs="0" />
+                <xs:element name="SupplierCode" type="xs:string" minOccurs="0" />
+                <xs:element name="SupplierId" type="xs:long" />
+                <xs:element name="SupplierName" type="xs:string" minOccurs="0" />
+                <xs:element name="Title" type="xs:string" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+        </xs:choice>
+      </xs:complexType>
+    </xs:element>
+  </xs:schema>
+  <ViewIssueRMWP>
+    <CancelStatus>0</CancelStatus>
+    <CategoryID>20</CategoryID>
+    <CategoryName>Threads</CategoryName>
+    <Code>THR-0511-10926-WHT</Code>
+    <Comments>mn</Comments>
+    <ContractorID>11</ContractorID>
+    <ContractorName>Amit Supervisor</ContractorName>
+    <CostUnit>4</CostUnit>
+    <CostUnitName>Metres</CostUnitName>
+    <CostUnitSName>Mtr</CostUnitSName>
+    <ExtraIssue>0</ExtraIssue>
+    <Full_Name>Bondex White Art.no 926 TKT-10 (12 Ply)</Full_Name>
+    <IssueBy>test</IssueBy>
+    <IssueChildID>790</IssueChildID>
+    <IssueDate>2020-05-04T00:00:00+05:30</IssueDate>
+    <IssueID>331</IssueID>
+    <IssueNo>SB/ISUWP/20-21/00006</IssueNo>
+    <IssueQty>1</IssueQty>
+    <IssueSNo>6</IssueSNo>
+    <LotNo>NA</LotNo>
+    <Name>Bondex White Art.no 926 TKT-10 (12 Ply)</Name>
+    <PCKIssue>0</PCKIssue>
+    <PlanDate>2020-04-30T00:00:00+05:30</PlanDate>
+    <PlanId>337</PlanId>
+    <PlanNo>SB/WP/20-21/00002</PlanNo>
+    <PRMasterId>11886</PRMasterId>
+    <PRNo>SBI/PR/20-21/0001</PRNo>
+    <ProcessName />
+    <RackId>1080</RackId>
+    <RackNo>R1/080</RackNo>
+    <ReceiveBy>abc</ReceiveBy>
+    <ReqQty>10</ReqQty>
+    <RitemId>3555</RitemId>
+    <SessionYear>20-21</SessionYear>
+    <Side>0</Side>
+    <SNo>1</SNo>
+    <SubCategoryID>341</SubCategoryID>
+    <SubCategoryName>Thread</SubCategoryName>
+    <SupplierCode>235</SupplierCode>
+    <SupplierId>235</SupplierId>
+    <SupplierName>Threads India Limited</SupplierName>
+    <Title>uploads/rmphotos/rmphoto.jpg</Title>
+  </ViewIssueRMWP>
+</NewDataSet>

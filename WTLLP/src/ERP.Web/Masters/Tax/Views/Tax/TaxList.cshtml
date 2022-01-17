@@ -1,0 +1,25 @@
+﻿@model ERP.Domain.Entities.TaxDetails
+@using NonFactors.Mvc.Grid;
+
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewData["Title"] = "Tax List";
+}
+<p>
+    @Html.ActionLink("Create New Tax", "CreateTax", "Tax", "", new { @class = "btn btn-info" }) &nbsp;&nbsp;&nbsp; Search Tax &nbsp;&nbsp;<input class="grid-search" />
+</p>
+@Html.AjaxGrid(Url.Action("TaxList_Partial"))
+
+@section Scripts {
+    <script type="text/javascript">
+
+        $(document).on('keyup', '.grid-search', function () {
+            //alert("query");
+            $('.mvc-grid').mvcgrid({
+                query: 'search=' + this.value,
+                reload: true
+            });
+
+        });
+    </script>
+}

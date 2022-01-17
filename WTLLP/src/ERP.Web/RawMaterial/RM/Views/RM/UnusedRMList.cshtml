@@ -1,0 +1,19 @@
+﻿@using NonFactors.Mvc.Grid;
+@model ERP.Web.Areas.RM.Models.RItemSuppModel
+
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewData["Title"] = "Unused RM List";
+}
+<p>
+    <h4>Based on Material Anlysis</h4> 
+</p>
+
+@Html.AjaxGrid(Url.Action("UnusedRMList_Partial"))
+
+@section Scripts {
+    <script type="text/javascript">
+    </script>
+}
+
+

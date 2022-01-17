@@ -1,0 +1,113 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:MainDataTable="ViewIssueRMForChange" msdata:UseCurrentLocale="true">
+      <xs:complexType>
+        <xs:choice minOccurs="0" maxOccurs="unbounded">
+          <xs:element name="ViewIssueRMForChange">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="AddressOffice" type="xs:string" minOccurs="0" />
+                <xs:element name="AddressWork" type="xs:string" minOccurs="0" />
+                <xs:element name="AfterTax" type="xs:double" />
+                <xs:element name="Amount" type="xs:double" />
+                <xs:element name="AmountInWords" type="xs:string" minOccurs="0" />
+                <xs:element name="BelongTo" type="xs:int" />
+                <xs:element name="CGSTAmt" type="xs:double" />
+                <xs:element name="CGSTPer" type="xs:double" />
+                <xs:element name="CName" type="xs:string" minOccurs="0" />
+                <xs:element name="Code" type="xs:string" minOccurs="0" />
+                <xs:element name="Comments" type="xs:string" minOccurs="0" />
+                <xs:element name="ConsumeQtyF" type="xs:double" />
+                <xs:element name="ConsumeQtyS" type="xs:double" />
+                <xs:element name="GSTN" type="xs:string" minOccurs="0" />
+                <xs:element name="HSNCode" type="xs:string" minOccurs="0" />
+                <xs:element name="IGSTAmt" type="xs:double" />
+                <xs:element name="IGSTPer" type="xs:double" />
+                <xs:element name="IsAddIn_JWOutBal" type="xs:int" />
+                <xs:element name="IssueQty" type="xs:double" />
+                <xs:element name="IssueRMChangeChildID" type="xs:long" />
+                <xs:element name="IssueRMChangeDate" type="xs:dateTime" />
+                <xs:element name="IssueRMChangeID" type="xs:long" />
+                <xs:element name="IssueRMChangeNo" type="xs:string" minOccurs="0" />
+                <xs:element name="IssueRMChangeSNo" type="xs:long" />
+                <xs:element name="LotNo" type="xs:string" minOccurs="0" />
+                <xs:element name="Name" type="xs:string" minOccurs="0" />
+                <xs:element name="RackId" type="xs:long" />
+                <xs:element name="RackNo" type="xs:string" minOccurs="0" />
+                <xs:element name="Rate" type="xs:double" />
+                <xs:element name="RItem_Id" type="xs:long" />
+                <xs:element name="SGSTAmt" type="xs:double" />
+                <xs:element name="SGSTPer" type="xs:double" />
+                <xs:element name="Side" type="xs:int" />
+                <xs:element name="SQty" type="xs:double" />
+                <xs:element name="SubCategoryName" type="xs:string" minOccurs="0" />
+                <xs:element name="SUnit" type="xs:string" minOccurs="0" />
+                <xs:element name="SupplierId" type="xs:long" />
+                <xs:element name="SupplierName" type="xs:string" minOccurs="0" />
+                <xs:element name="TaxFullName" type="xs:string" minOccurs="0" />
+                <xs:element name="TaxId" type="xs:int" />
+                <xs:element name="TaxPer" type="xs:double" />
+                <xs:element name="TotalAmount" type="xs:double" />
+                <xs:element name="TotalAmountAfterTax" type="xs:double" />
+                <xs:element name="TotalCGST" type="xs:double" />
+                <xs:element name="TotalIGST" type="xs:double" />
+                <xs:element name="TotalSGST" type="xs:double" />
+                <xs:element name="USName" type="xs:string" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+        </xs:choice>
+      </xs:complexType>
+    </xs:element>
+  </xs:schema>
+  <ViewIssueRMForChange>
+    <AddressOffice>#620 A, Safipur 1st, Harjinder Nagar, Kanpur-208007</AddressOffice>
+    <AddressWork>#620 A, Safipur 1st, Harjinder Nagar, Kanpur-208007</AddressWork>
+    <AfterTax>2655</AfterTax>
+    <Amount>2250</Amount>
+    <AmountInWords>RUPEES TWO THOUSAND SIX HUNDRED FIFTY FIVE ONLY</AmountInWords>
+    <BelongTo>206</BelongTo>
+    <CGSTAmt>202.5</CGSTAmt>
+    <CGSTPer>9</CGSTPer>
+    <CName>SB International</CName>
+    <Code>CON-00014-ZN-NI-108</Code>
+    <Comments>-</Comments>
+    <ConsumeQtyF>0</ConsumeQtyF>
+    <ConsumeQtyS>0</ConsumeQtyS>
+    <GSTN>09AAWFS7900H1ZL</GSTN>
+    <HSNCode>8308</HSNCode>
+    <IGSTAmt>0</IGSTAmt>
+    <IGSTPer>0</IGSTPer>
+    <IsAddIn_JWOutBal>1</IsAddIn_JWOutBal>
+    <IssueQty>150</IssueQty>
+    <IssueRMChangeChildID>1</IssueRMChangeChildID>
+    <IssueRMChangeDate>2020-06-05T00:00:00+05:30</IssueRMChangeDate>
+    <IssueRMChangeID>1</IssueRMChangeID>
+    <IssueRMChangeNo>SBI/JW/20-21/001</IssueRMChangeNo>
+    <IssueRMChangeSNo>1</IssueRMChangeSNo>
+    <LotNo>NA</LotNo>
+    <Name>Berry Conchos Zinc Nickel 1.25" </Name>
+    <RackId>315</RackId>
+    <RackNo>L1/315</RackNo>
+    <Rate>15</Rate>
+    <RItem_Id>2191</RItem_Id>
+    <SGSTAmt>202.5</SGSTAmt>
+    <SGSTPer>9</SGSTPer>
+    <Side>0</Side>
+    <SQty>150</SQty>
+    <SubCategoryName>Conchos</SubCategoryName>
+    <SUnit>Pcs</SUnit>
+    <SupplierId>215</SupplierId>
+    <SupplierName>S F Enterprises</SupplierName>
+    <TaxFullName>GST 18%</TaxFullName>
+    <TaxId>1</TaxId>
+    <TaxPer>18</TaxPer>
+    <TotalAmount>2250</TotalAmount>
+    <TotalAmountAfterTax>2655</TotalAmountAfterTax>
+    <TotalCGST>202.5</TotalCGST>
+    <TotalIGST>0</TotalIGST>
+    <TotalSGST>202.5</TotalSGST>
+    <USName>Pcs</USName>
+  </ViewIssueRMForChange>
+</NewDataSet>

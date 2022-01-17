@@ -1,0 +1,18 @@
+﻿@model ERP.Web.Areas.UserRight.Models.UserModel
+<script>
+    $(function () {
+        $("select[id='MenuName']").removeAttr('multiple');
+    });
+
+    $('#MenuName').change(function () {
+        var rr ;
+        $('.menu :selected').each(function (i, selected) {
+            rr = $(selected).text();
+        });
+        $('#selectedmenu').html(rr);
+    });
+</script>
+
+<div class="form" >
+    @Html.ListBoxFor(m => m.MenuName, Model.MenuList, new { size = 25 , @class="menu" })
+</div>

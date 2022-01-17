@@ -1,0 +1,87 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:MainDataTable="ViewZWPBOMSUM" msdata:UseCurrentLocale="true">
+      <xs:complexType>
+        <xs:choice minOccurs="0" maxOccurs="unbounded">
+          <xs:element name="ViewZWPBOMSUM">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="CompGroupName" type="xs:string" minOccurs="0" />
+                <xs:element name="FitemId" type="xs:long" />
+                <xs:element name="GroupId" type="xs:int" />
+                <xs:element name="GSM" type="xs:double" />
+                <xs:element name="PasteQty" type="xs:double" />
+                <xs:element name="PlanId" type="xs:long" />
+                <xs:element name="PlanNo" type="xs:string" minOccurs="0" />
+                <xs:element name="PlanQty" type="xs:int" />
+                <xs:element name="ProductSubCategoryName" type="xs:string" minOccurs="0" />
+                <xs:element name="RowId" type="xs:long" />
+                <xs:element name="SizeID" type="xs:int" />
+                <xs:element name="SizeName" type="xs:string" minOccurs="0" />
+                <xs:element name="TotalQty" type="xs:double" />
+                <xs:element name="ZCostingId" type="xs:long" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+        </xs:choice>
+      </xs:complexType>
+    </xs:element>
+  </xs:schema>
+  <ViewZWPBOMSUM>
+    <CompGroupName>PREESKIN</CompGroupName>
+    <FitemId>0</FitemId>
+    <GroupId>0</GroupId>
+    <GSM>0</GSM>
+    <PasteQty>0</PasteQty>
+    <PlanId>0</PlanId>
+    <PlanQty>0</PlanQty>
+    <ProductSubCategoryName>CZ-02009X</ProductSubCategoryName>
+    <RowId>0</RowId>
+    <SizeID>0</SizeID>
+    <TotalQty>0</TotalQty>
+    <ZCostingId>0</ZCostingId>
+  </ViewZWPBOMSUM>
+  <ViewZWPBOMSUM>
+    <CompGroupName>SKIN</CompGroupName>
+    <FitemId>0</FitemId>
+    <GroupId>0</GroupId>
+    <GSM>0</GSM>
+    <PasteQty>87</PasteQty>
+    <PlanId>0</PlanId>
+    <PlanQty>0</PlanQty>
+    <ProductSubCategoryName>CZ-02009X</ProductSubCategoryName>
+    <RowId>0</RowId>
+    <SizeID>0</SizeID>
+    <TotalQty>0</TotalQty>
+    <ZCostingId>0</ZCostingId>
+  </ViewZWPBOMSUM>
+  <ViewZWPBOMSUM>
+    <CompGroupName>FOAM</CompGroupName>
+    <FitemId>0</FitemId>
+    <GroupId>0</GroupId>
+    <GSM>0</GSM>
+    <PasteQty>1044</PasteQty>
+    <PlanId>0</PlanId>
+    <PlanQty>0</PlanQty>
+    <ProductSubCategoryName>CZ-02009X</ProductSubCategoryName>
+    <RowId>0</RowId>
+    <SizeID>0</SizeID>
+    <TotalQty>0</TotalQty>
+    <ZCostingId>0</ZCostingId>
+  </ViewZWPBOMSUM>
+  <ViewZWPBOMSUM>
+    <CompGroupName>ADHESIVE</CompGroupName>
+    <FitemId>0</FitemId>
+    <GroupId>0</GroupId>
+    <GSM>0</GSM>
+    <PasteQty>115.99999999999999</PasteQty>
+    <PlanId>0</PlanId>
+    <PlanQty>0</PlanQty>
+    <ProductSubCategoryName>CZ-02009X</ProductSubCategoryName>
+    <RowId>0</RowId>
+    <SizeID>0</SizeID>
+    <TotalQty>0</TotalQty>
+    <ZCostingId>0</ZCostingId>
+  </ViewZWPBOMSUM>
+</NewDataSet>

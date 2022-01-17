@@ -1,0 +1,208 @@
+﻿@model ERP.Web.Areas.User.Models.UserModel
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewData["Title"] = "User";
+}
+
+<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="" />
+<meta name="keywords" content="" />
+
+@section Scripts {
+    <script type="text/javascript">
+        prevententertosubmit();
+
+        $(document).ready(function () {
+            $("#txt_CnfrmPwd").keyup(checkPasswordMatch);
+        });
+        function checkPasswordMatch() {
+            var password = $("#txt_pwd").val();
+            var confirmPassword = $("#txt_CnfrmPwd").val();
+            if (confirmPassword == '') {
+                $(document).ready(function () {
+                    $("#txt_CnfrmPwd").css("background-color", "#ffffff");
+                });
+            }
+            else if (password == '' && confirmPassword == '') {
+                if (password == confirmPassword) {
+                    $(document).ready(function () {
+                        $("#txt_CnfrmPwd").css("background-color", "#ffffff");
+                    });
+                }
+            }
+            else if (password != confirmPassword) {
+                $(document).ready(function () {
+                    $("#txt_CnfrmPwd").css("background-color", "#ff5c33");
+                });
+            }
+            else {
+                $(document).ready(function () {
+                    $("#txt_CnfrmPwd").css("background-color", "#ffffff");
+                });
+            }
+        }
+        $(document).ready(function () {
+            $("#txt_pwd").change(checkPasswordMatch1);
+        });
+        function checkPasswordMatch1() {
+            var password = $("#txt_pwd").val();
+            var confirmPassword = $("#txt_CnfrmPwd").val();
+            if (confirmPassword == '')
+            {
+                $("#txt_CnfrmPwd").css("background-color", "#ffffff");
+            }
+            else if (password == '' && confirmPassword == '') {
+                if (password == confirmPassword) {
+                    $(document).ready(function () {
+                        $("#txt_CnfrmPwd").css("background-color", "#ffffff");
+                    });
+                }
+            }
+            else if (password == confirmPassword) {
+                $(document).ready(function () {
+                    $("#txt_CnfrmPwd").css("background-color", "#ffffff");
+                });
+            }
+            else {
+                $("#txt_CnfrmPwd").css("background-color", "#ff5c33");
+            }
+        }
+        //$(document).ready(function () {
+        //    $("#txt_phone, #txt_mobile").on("keypress", function (e) {
+        //        if (!jQuery.isNumeric(String.fromCharCode(e.which)))
+        //            return false;
+        //    });
+        //});
+        var IsActive = 0;
+        $('input[name="ChkIsActive"]').on('click', function () {
+
+            if ($(this).is(':checked')) {
+                IsActive = 1;
+            }
+            else
+            {
+                IsActive = 0;
+            }
+        });
+
+
+</script>
+}
+
+<script type="text/javascript">
+    function ShowSuccess(data) {
+        if (data == "Record Save") {
+            $(".container").find("input:text").val('');
+            $(".container").find("textarea").val('');
+            $(".container").find("input:password").val('');
+            $("#txt_email").val('');
+            alert(data);
+        }
+        else {
+            alert("Password and ConfirmPassword Must Match");
+        }
+    }
+
+    function HideForm() {
+        //When the form is submitted, we hide the form
+        $("#form-area").hide();
+    }
+
+    function ShowFailure(data) {
+        alert("Already Exist");
+        //In the case that the AJAX call fails to communicate with the server
+        //(e.g. the user's internet connection cuts out), we should display a message to that effect
+        //$('#message-area').html("<div class='alert alert-danger'><strong>Error!</strong>The server could not be contacted and your message has not been sent. Please check your internet connection and try again later.</div>");
+    }
+</script>
+
+<form asp-controller="User" asp-action="CreateUser" data-ajax="true" data-ajax-success="ShowSuccess" data-ajax-failure="ShowFailure" data-ajax-method="POST">
+    @Html.ValidationSummary(true)
+    <div class="clear"></div>
+    <div class="container">
+        <div class="row clearleft-custom flow-offset-1">
+            <div class="col-xs-12">
+                <div class="thumbnail thumbnail-mod-1">
+                    <div class="form">
+                        <div>
+                            <h3>@Html.ActionLink("User List", "UserList", "User")</h3>
+                        </div>
+
+                        <div>
+                            <h2>User Details</h2>
+                        </div>
+                        @Html.HiddenFor(a => a.UserId)
+
+                        <p class="contact">
+                            <label>Department</label>
+                        </p>
+                        @Html.DropDownListFor(a => a.DepartmentId, new SelectList(Model.DepartmentList, "Value", "Text", Model.DepartmentId), "-- Select --", new { @required = "true", })
+
+                        <p class="contact">
+                            <label>User Name </label>
+                        </p>
+                        @Html.TextBoxFor(a => a.UserName, new { @required = "true", autocomplete = "off", maxlength = "50" })
+
+                        <p class="contact">
+                            <label>Login Name </label>
+                        </p>
+                        @Html.TextBoxFor(a => a.LoginName, new { @required = "true", autocomplete = "off", maxlength = "50" })
+
+                        <p class="contact">
+                            <label>Password</label>
+                        </p>
+                        @Html.TextBoxFor(a => a.Password, new { @required = "true", autocomplete = "off", maxlength = "20", type = "password", @id="txt_pwd" })
+                        
+                        <p class="contact">
+                            <label>Confirm Password</label>
+                        </p>
+                        @Html.TextBoxFor(a => a.ConfirmPassword, new { @required = "true", autocomplete = "off", maxlength = "20" , type = "password", @id = "txt_CnfrmPwd" })
+                        
+                        <p class="contact">
+                            <label>Address</label>
+                        </p>
+                        @Html.TextBoxFor(a => a.Address, new { @required = "true", autocomplete = "off" })
+                        
+                        <p class="contact">
+                            <label>Email</label>
+                        </p>
+                        @Html.TextBoxFor(a => a.Email, new { @required = "true", autocomplete = "off", @type="email" , id="txt_email"})
+
+                        <p class="contact">
+                            <label>Phone No</label>
+                        </p>
+                        @Html.TextBoxFor(a => a.PhoneNo, new { @required = "true", autocomplete = "off", id="txt_phone" })
+
+                        <p class="contact">
+                            <label>Mobile No</label>
+                        </p>
+                        @Html.TextBoxFor(a => a.MobileNo, new { @required = "true", autocomplete = "off", id = "txt_mobile" })
+
+                        <p class="contact">
+                            <label>User Type</label>
+                        </p>
+                        @Html.DropDownListFor(a => a.UserTypeId, new SelectList(Model.UserTypeList , "Value", "Text", Model.UserTypeId), "-- Select --", new { @required = "true", })
+                        
+
+                        @Html.CheckBoxFor(x => x.ChkIsActive, new { @class = "suppliercheck" })
+                        <p class="contact">
+                            <label>Is Active ?</label>
+                        </p>
+                        
+                        
+                        <p class="contact">
+                            <label>&nbsp;</label>
+                        </p>
+                        <p class="contact">
+                            <label>&nbsp;</label>
+                        </p>
+                        <input id="Submit1" type="submit" value="Save User" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
+

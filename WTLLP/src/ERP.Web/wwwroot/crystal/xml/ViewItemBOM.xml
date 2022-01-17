@@ -1,0 +1,151 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:MainDataTable="ViewItemBOM" msdata:UseCurrentLocale="true">
+      <xs:complexType>
+        <xs:choice minOccurs="0" maxOccurs="unbounded">
+          <xs:element name="ViewItemBOM">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="BelongTo" type="xs:long" />
+                <xs:element name="BOMAfterWas" type="xs:double" />
+                <xs:element name="BOMWAS" type="xs:double" />
+                <xs:element name="CAfterWAS" type="xs:double" />
+                <xs:element name="CategoryID" type="xs:long" />
+                <xs:element name="CategoryName" type="xs:string" minOccurs="0" />
+                <xs:element name="CLName" type="xs:string" minOccurs="0" />
+                <xs:element name="Code" type="xs:string" minOccurs="0" />
+                <xs:element name="Color" type="xs:int" />
+                <xs:element name="CostingID" type="xs:long" />
+                <xs:element name="CostingRMID" type="xs:long" />
+                <xs:element name="CostUnit" type="xs:int" />
+                <xs:element name="CostUnitName" type="xs:string" minOccurs="0" />
+                <xs:element name="CostUnitSName" type="xs:string" minOccurs="0" />
+                <xs:element name="CWAS" type="xs:double" />
+                <xs:element name="FitemID" type="xs:long" />
+                <xs:element name="Full_Name" type="xs:string" minOccurs="0" />
+                <xs:element name="Name" type="xs:string" minOccurs="0" />
+                <xs:element name="ProductCategoryID" type="xs:long" />
+                <xs:element name="ProductCategoryName" type="xs:string" minOccurs="0" />
+                <xs:element name="ProductCode" type="xs:string" minOccurs="0" />
+                <xs:element name="ProductSubCategoryID" type="xs:long" />
+                <xs:element name="ProductSubCategoryName" type="xs:string" minOccurs="0" />
+                <xs:element name="RItemID" type="xs:long" />
+                <xs:element name="RMBAmount" type="xs:double" />
+                <xs:element name="RMCAmount" type="xs:double" />
+                <xs:element name="RMPrice" type="xs:double" />
+                <xs:element name="RMQty" type="xs:double" />
+                <xs:element name="SerialNo" type="xs:int" />
+                <xs:element name="Size" type="xs:string" minOccurs="0" />
+                <xs:element name="SubCategoryID" type="xs:long" />
+                <xs:element name="SubCategoryName" type="xs:string" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+        </xs:choice>
+      </xs:complexType>
+    </xs:element>
+  </xs:schema>
+  <ViewItemBOM>
+    <BelongTo>844</BelongTo>
+    <BOMAfterWas>3</BOMAfterWas>
+    <BOMWAS>0</BOMWAS>
+    <CAfterWAS>3</CAfterWAS>
+    <CategoryID>11</CategoryID>
+    <CategoryName>Fittings</CategoryName>
+    <CLName>BR.PINK</CLName>
+    <Code>CON-00232-GS-108</Code>
+    <Color>22</Color>
+    <CostingID>906</CostingID>
+    <CostingRMID>2136</CostingRMID>
+    <CostUnit>1</CostUnit>
+    <CostUnitName>Kilograms</CostUnitName>
+    <CostUnitSName>Kgs</CostUnitSName>
+    <CWAS>0</CWAS>
+    <FitemID>21567</FitemID>
+    <Full_Name>German Silver Star Conchos Rstd 1.25" (DISCONT.)</Full_Name>
+    <Name>German Silver Star Conchos Rstd 1.25" (DISCONT.)</Name>
+    <ProductCategoryID>86</ProductCategoryID>
+    <ProductCategoryName>Western Tack</ProductCategoryName>
+    <ProductCode>2036 TN</ProductCode>
+    <ProductSubCategoryID>844</ProductSubCategoryID>
+    <ProductSubCategoryName>One Ear Headstall</ProductSubCategoryName>
+    <RItemID>499</RItemID>
+    <RMBAmount>66</RMBAmount>
+    <RMCAmount>66</RMCAmount>
+    <RMPrice>22</RMPrice>
+    <RMQty>3</RMQty>
+    <SerialNo>2</SerialNo>
+    <Size>-</Size>
+    <SubCategoryID>206</SubCategoryID>
+    <SubCategoryName>Conchos</SubCategoryName>
+  </ViewItemBOM>
+  <ViewItemBOM>
+    <BelongTo>844</BelongTo>
+    <BOMAfterWas>199</BOMAfterWas>
+    <BOMWAS>0</BOMWAS>
+    <CAfterWAS>199</CAfterWAS>
+    <CategoryID>11</CategoryID>
+    <CategoryName>Fittings</CategoryName>
+    <CLName>BR.PINK</CLName>
+    <Code>SPO-00118</Code>
+    <Color>22</Color>
+    <CostingID>906</CostingID>
+    <CostingRMID>2137</CostingRMID>
+    <CostUnit>3</CostUnit>
+    <CostUnitName>Pieces</CostUnitName>
+    <CostUnitSName>Pcs</CostUnitSName>
+    <CWAS>0</CWAS>
+    <FitemID>21567</FitemID>
+    <Full_Name>Spot 5mm Stainless Steel with 4.5mm(Small) leg</Full_Name>
+    <Name>Spot 5mm Stainless Steel with 4.5mm(Small) leg</Name>
+    <ProductCategoryID>86</ProductCategoryID>
+    <ProductCategoryName>Western Tack</ProductCategoryName>
+    <ProductCode>2036 TN</ProductCode>
+    <ProductSubCategoryID>844</ProductSubCategoryID>
+    <ProductSubCategoryName>One Ear Headstall</ProductSubCategoryName>
+    <RItemID>632</RItemID>
+    <RMBAmount>45.770000457763672</RMBAmount>
+    <RMCAmount>45.770000457763672</RMCAmount>
+    <RMPrice>0.23000000417232513</RMPrice>
+    <RMQty>199</RMQty>
+    <SerialNo>3</SerialNo>
+    <Size>-</Size>
+    <SubCategoryID>212</SubCategoryID>
+    <SubCategoryName>Spots</SubCategoryName>
+  </ViewItemBOM>
+  <ViewItemBOM>
+    <BelongTo>844</BelongTo>
+    <BOMAfterWas>2</BOMAfterWas>
+    <BOMWAS>0</BOMWAS>
+    <CAfterWAS>2</CAfterWAS>
+    <CategoryID>11</CategoryID>
+    <CategoryName>Fittings</CategoryName>
+    <CLName>BR.PINK</CLName>
+    <Code>BUC-00270-SS-CF-58</Code>
+    <Color>22</Color>
+    <CostingID>906</CostingID>
+    <CostingRMID>2135</CostingRMID>
+    <CostUnit>3</CostUnit>
+    <CostUnitName>Pieces</CostUnitName>
+    <CostUnitSName>Pcs</CostUnitSName>
+    <CWAS>0</CWAS>
+    <FitemID>21567</FitemID>
+    <Full_Name>Fancy Buckle New Stainless Steel 5/8"</Full_Name>
+    <Name>Fancy Buckle New Stainless Steel 5/8"</Name>
+    <ProductCategoryID>86</ProductCategoryID>
+    <ProductCategoryName>Western Tack</ProductCategoryName>
+    <ProductCode>2036 TN</ProductCode>
+    <ProductSubCategoryID>844</ProductSubCategoryID>
+    <ProductSubCategoryName>One Ear Headstall</ProductSubCategoryName>
+    <RItemID>581</RItemID>
+    <RMBAmount>14</RMBAmount>
+    <RMCAmount>14</RMCAmount>
+    <RMPrice>7</RMPrice>
+    <RMQty>2</RMQty>
+    <SerialNo>1</SerialNo>
+    <Size>-</Size>
+    <SubCategoryID>210</SubCategoryID>
+    <SubCategoryName>SS Buckles</SubCategoryName>
+  </ViewItemBOM>
+</NewDataSet>

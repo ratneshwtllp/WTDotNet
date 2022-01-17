@@ -1,0 +1,546 @@
+﻿@model ERP.Web.Areas.RM.Models.RawMaterialModel
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewData["Title"] = "Create New Raw Material";
+}
+
+<link rel="stylesheet" type="text/css" href="~/lib/bootstrap/dist/css/bootstrap-select.css" />
+<script src="~/lib/bootstrap/dist/js/bootstrap-select.js"></script>
+
+@section Scripts {
+    <script type="text/javascript">
+        prevententertosubmit();
+
+        $(function () {
+            $("#cbo_cate").change(function () {
+                var value = $("#cbo_cate :selected").val(); //cat id
+                $("#Cat_Id").val(value);
+                $.ajax({
+                    cache: false,
+                    url: '@Url.Action("GetSubCategory")',
+                    type: "GET",
+                    data: { id: value },
+                    dataType: 'JSON',
+                    success: function (data) {
+                        var data = JSON.parse(data);
+                        var items = [];
+                        items.push("<option value=''>" + "-- Select --" + "</option>");
+                        for (var i = 0; i < data.length; i++) {
+                            items.push("<option value=" + data[i].id + ">" + data[i].value + "</option>");
+                        }
+
+                        $("#cbo_subcate").html(items.join(' '));
+                        $("#cbo_subcate").selectpicker('refresh');
+                    },
+                });
+
+                var rmpurl = '@Url.Action("RMPValueList", "RM")';
+                $('#rmpropertiesvalue').load(rmpurl, { catid: value }, function () {
+                });
+
+
+            });
+        });
+
+        $(function () {
+            $("#cbo_subcate").change(function () {
+                var sub_cat = $("#cbo_subcate :selected").val();
+                $("#Subcat_Id").val(sub_cat);
+
+                $.ajax({
+                    cache: false,
+                    url: '@Url.Action("GetSubCategoryDetails")',
+                    type: "GET",
+                    data: { id: sub_cat },
+                    dataType: 'JSON',
+                    success: function (data) {
+                        $("#cbo_hsn").val(data.hsnId);
+                        $("#cbo_hsn").selectpicker('refresh');
+                    },
+                });
+            });
+        });
+
+        $(document).ready(function () {
+            $("#Submit1").on("click", function () {
+                //alert('Your Message');
+            });
+        });
+
+        function readfile(input) {
+            if (input.files && input.files[0]) {
+                var reader = new FileReader();
+                reader.onload = function (e) {
+                    $('#image_preview').attr('src', e.target.result);
+                }
+                reader.readAsDataURL(input.files[0]);
+            }
+        }
+
+        $("#MinDeliveryDays").keypress(function (e) {
+            if (e.which != 8 && e.which != 0 && (e.which < 48 || e.which > 57)) {
+                $("#MinDeliveryDays").va("");
+                alert("only number allowed");
+                //$("#errmsg").html("only number allowed").show().fadeOut("slow");
+                return false;
+            }
+        });
+
+        $(document).ready(function () {
+            var edit = $('#EditMode').val();
+            //alert(edit);
+            if (edit == "True") {
+                Edit();
+            }
+        });
+        function Edit() {
+            //alert("Edit");
+            var rmid = $("#RItem_ID").val();
+            //alert("rmid " + rmid);
+            var catid = $("#Cat_Id").val();
+            //alert("catid " + catid);
+            var rmpurl = '@Url.Action("EdidRMChild", "RM")';
+            $('#rmpropertiesvalue').load(rmpurl, { rmid: rmid, catid: catid }, function () {
+            });
+        }
+
+        $(function () {
+            $("#refreshcategory").click(function () {
+                //alert(value);
+                $.ajax({
+                    cache: false,
+                    url: '@Url.Action("RefreshCategory")',
+                    type: "GET",
+                    data: {},
+                    dataType: 'JSON',
+                    success: function (data) {
+                        var data = JSON.parse(data);
+                        var items = [];
+                        items.push("<option value=''>" + "-- Select --" + "</option>");
+                        for (var i = 0; i < data.length; i++) {
+                            items.push("<option value=" + data[i].id + ">" + data[i].value + "</option>");
+                        }
+                        $("#cbo_cate").html(items.join(' '));
+                        $("#cbo_cate").selectpicker('refresh');
+                    },
+                });
+            });
+
+        });
+
+        $(function () {
+            $("#refreshsubcategory").click(function () {
+                var value = $("#cbo_cate :selected").val(); //cat id
+
+                $.ajax({
+                    cache: false,
+                    url: '@Url.Action("GetSubCategory")',
+                    type: "GET",
+                    data: { id: value },
+                    dataType: 'JSON',
+                    success: function (data) {
+                        var data = JSON.parse(data);
+                        var items = [];
+                        items.push("<option value=''>" + "-- Select --" + "</option>");
+                        for (var i = 0; i < data.length; i++) {
+                            items.push("<option value=" + data[i].id + ">" + data[i].value + "</option>");
+                        }
+
+                        $("#cbo_subcate").html(items.join(' '));
+                        $("#cbo_subcate").selectpicker('refresh');
+                    },
+                });
+
+            });
+        });
+
+        $(function () {
+            $("#refreshcolor").click(function () {
+                //alert(value);
+                $.ajax({
+                    cache: false,
+                    url: '@Url.Action("RefreshColorList")',
+                    type: "GET",
+                    data: {},
+                    dataType: 'JSON',
+                    success: function (data) {
+                        var data = JSON.parse(data);
+                        var items = [];
+                        items.push("<option value=''>" + "-- Select --" + "</option>");
+                        for (var i = 0; i < data.length; i++) {
+                            items.push("<option value=" + data[i].id + ">" + data[i].value + "</option>");
+                        }
+                        $("#cbo_color").html(items.join(' '));
+                        $("#cbo_color").selectpicker('refresh');
+                    },
+                });
+            });
+        });
+
+        $(function () {
+            $("#refreshsize").click(function () {
+                //alert(value);
+                $.ajax({
+                    cache: false,
+                    url: '@Url.Action("RefreshSizeList")',
+                    type: "GET",
+                    data: {},
+                    dataType: 'JSON',
+                    success: function (data) {
+                        var data = JSON.parse(data);
+                        var items = [];
+                        items.push("<option value=''>" + "-- Select --" + "</option>");
+                        for (var i = 0; i < data.length; i++) {
+                            items.push("<option value=" + data[i].id + ">" + data[i].value + "</option>");
+                        }
+                        $("#cbo_size").html(items.join(' '));
+                        $("#cbo_size").selectpicker('refresh');
+                    },
+                });
+            });
+        });
+        //
+        $(function () {
+            $("#refreshunit").click(function () {
+                //alert(value);
+                $.ajax({
+                    cache: false,
+                    url: '@Url.Action("RefreshUnitList")',
+                    type: "GET",
+                    data: {},
+                    dataType: 'JSON',
+                    success: function (data) {
+                        var data = JSON.parse(data);
+                        var items = [];
+                        items.push("<option value=''>" + "-- Select --" + "</option>");
+                        for (var i = 0; i < data.length; i++) {
+                            items.push("<option value=" + data[i].id + ">" + data[i].value + "</option>");
+                        }
+                        $("#cbo_punit").html(items.join(' '));
+                        $("#cbo_punit").selectpicker('refresh');
+                    },
+                });
+            });
+
+        });
+
+        $(function () {
+            $("#refreshcunit").click(function () {
+                //alert(value);
+                $.ajax({
+                    cache: false,
+                    url: '@Url.Action("RefreshUnitList")',
+                    type: "GET",
+                    data: {},
+                    dataType: 'JSON',
+                    success: function (data) {
+                        var data = JSON.parse(data);
+                        var items = [];
+                        items.push("<option value=''>" + "-- Select --" + "</option>");
+                        for (var i = 0; i < data.length; i++) {
+                            items.push("<option value=" + data[i].id + ">" + data[i].value + "</option>");
+                        }
+                        $("#cbo_costunit").html(items.join(' '));
+                        $("#cbo_costunit").selectpicker('refresh');
+                    },
+                });
+            });
+
+        });
+
+        $(function () {
+            $("#refreshsn").click(function () {
+                //alert(value);
+                $.ajax({
+                    cache: false,
+                    url: '@Url.Action("RefreshsnList")',
+                    type: "GET",
+                    data: {},
+                    dataType: 'JSON',
+                    success: function (data) {
+                        var data = JSON.parse(data);
+                        var items = [];
+                        items.push("<option value=''>" + "-- Select --" + "</option>");
+                        for (var i = 0; i < data.length; i++) {
+                            items.push("<option value=" + data[i].id + ">" + data[i].value + "</option>");
+                        }
+                        $("#cbo_hsn").html(items.join(' '));
+                        $("#cbo_hsn").selectpicker('refresh');
+                    },
+                });
+            });
+
+        });
+
+        $(function () {
+            $("#refreshcat").click(function () {
+                var value = $("#cbo_cate :selected").val(); //cat id
+                var rmpurl = '@Url.Action("RMPValueList", "RM")';
+                $('#rmpropertiesvalue').load(rmpurl, { catid: value }, function () {
+                });
+            });
+
+        });
+
+        $(document).ready(function () {
+            $('.selectpicker').selectpicker({
+                liveSearch: true,
+                showSubtext: true
+            });
+        });
+
+        $(document).on('blur', '#Name', function () {
+            var value = $("#Name").val();
+            var rmid = parseInt($("#RItem_ID").val());
+            if (value == null || value == "") {
+                return;
+            }
+            //alert(value);
+            $.ajax({
+                cache: false,
+                url: '@Url.Action("GetCheckRMCode")',
+                type: "GET",
+                data: { code: value, rmid: rmid },
+                dataType: 'JSON',
+                success: function (data) {
+                    var data = JSON.parse(data);
+                    if (data == 0) {
+
+                    }
+                    else {
+                        alert("RM already exists");
+                        $("#Name").val('');
+                        $("#Name").focus();
+                        return;
+                    }
+                }
+            });
+        });
+    </script>
+}
+
+<form asp-controller="RM" enctype="multipart/form-data" method="post">
+    <div class="clear"></div>
+    <div class="container">
+        <ul class="nav nav-tabs">
+            <li class="active"><a data-toggle="tab" href="#tab1"><strong>RM Details</strong> </a></li>
+            <li><a data-toggle="tab" href="#tab2">Suppliers </a></li>
+            <li><a data-toggle="tab" href="#tab3"> Photo </a></li>
+            <li><a data-toggle="tab" href="#tab4"> QuickTest </a></li>
+        </ul>
+        <div class="tab-content">
+            <div id="tab1" class="tab-pane active">
+                <div id="rm">
+                    <div class="row clearleft-custom flow-offset-1">
+                        <div class="col-xs-12 col-sm-6 col-lg-4">
+                            <div class="thumbnail thumbnail-mod-1">
+                                <div class="form" >
+                                    <p class="contact">
+                                       
+                                        @Html.HiddenFor(a => a.Cat_Id)
+                                        @Html.HiddenFor(a => a.RItem_ID)
+                                        @Html.HiddenFor(a => a.Subcat_Id)
+                                        @Html.HiddenFor(a => a.Title)
+                                        @Html.HiddenFor(a => a.EditMode)
+                                  
+                                    <strong><a href="@Url.Action("CreateRMCategory", "RMCat" , new { @area = "RMCat" }) " target='_blank' style="display:inline;"> Category </a></strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    <a href="#" id="refreshcategory" style="display:inline;"><span class="glyphicon glyphicon-refresh "></span></a>
+                                    </p>
+
+                                    @Html.DropDownListFor(a => a.Cat_Id, new SelectList(Model.RMCategoryList, "Value", "Text", Model.Cat_Id), "-- Select --", new { id = "cbo_cate" , @class = "selectpicker show-tick" })
+                                   
+                                    <p class="contact">
+                                     <strong><a href="@Url.Action("CreateRMSubCategory", "RMSubCat" , new { @area = "RMSubCat" }) " target='_blank' style="display:inline;">Sub Category</a></strong>&nbsp;&nbsp;
+                                    <a href="#" id="refreshsubcategory" style="display:inline;"><span class="glyphicon glyphicon-refresh "></span></a>
+                                    </p>
+
+                                    @Html.DropDownListFor(a => a.Subcat_Id, new SelectList(Model.RMSubCategoryList, "Value", "Text", Model.Subcat_Id), "-- Select --", new { id = "cbo_subcate", @class = "selectpicker show-tick" })
+
+                                    <p class="contact">
+                                        @Html.LabelFor(a => a.Code)
+                                    </p>
+                                    @Html.TextBoxFor(a => a.Code, new { @required = "true", autocomplete = "off" })
+
+                                    <p class="contact">
+                                        @Html.LabelFor(a => a.Name)
+                                    </p>
+                                    @Html.TextAreaFor(a => a.Name, new { autocomplete = "off" })
+                                    @Html.ValidationMessageFor(a => a.Name)
+
+                                    <p class="contact">
+                                       @*<label>Rating</label>*@
+                                        <strong><a href="@Url.Action("CreateColor", "Color" , new { @area = "Color" }) " target='_blank' style="display:inline;"> Color </a></strong>&nbsp;&nbsp;&nbsp;
+                                        <a href="#" id="refreshcolor" style="display:inline;"><span class="glyphicon glyphicon-refresh "></span></a>
+                                    </p>
+                                    @Html.DropDownListFor(a => a.ColorId, new SelectList(Model.ColorList, "Value", "Text", Model.ColorId), "-- Select --", new { id = "cbo_color", @required = "true", @class = "selectpicker show-tick" })
+                                        
+                                    <p class="contact">
+                                        @*@Html.LabelFor(a => a.SizeName)*@
+                                        <strong><a href="@Url.Action("CreateSize", "Size" , new { @area = "Size" }) " target='_blank' style="display:inline;"> Size </a></strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                        <a href="#" id="refreshsize" style="display:inline;"><span class="glyphicon glyphicon-refresh "></span></a>
+                                    </p>
+                                    @Html.DropDownListFor(a => a.SizeID, new SelectList(Model.SizeList, "Value", "Text", Model.SizeID), "-- Select --", new { id = "cbo_size", @required = "true" , @class = "selectpicker show-tick" })
+
+                                    <p class="contact">
+                                        @*@Html.LabelFor(a => a.HSNId)*@
+                                        <strong><a href="@Url.Action("CreateHSN", "HSN" , new { @area = "HSN" }) " target='_blank' style="display:inline;">HSN </a></strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                        <a href="#" id="refreshsn" style="display:inline;"><strong> <span class="glyphicon glyphicon-refresh "></span></strong></a>
+                                    </p>
+                                    @Html.DropDownListFor(a => a.HSNId, new SelectList(Model.HSNList, "Value", "Text", Model.HSNId), "-- Select --", new { @required = "true", id = "cbo_hsn" , @class = "selectpicker show-tick" })
+
+                                    <p class="contact">
+                                        @*@Html.LabelFor(a => a.PUnit)*@
+                                        <strong><a href="@Url.Action("CreateUnit", "Unit" , new { @area = "Unit" }) " target='_blank' style="display:inline;"> Supp. Unit </a></strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                        <a href="#" id="refreshunit" style="display:inline;"><strong> <span class="glyphicon glyphicon-refresh "></span></strong></a>
+                                    </p>
+                                    @Html.DropDownListFor(a => a.PUnit, new SelectList(Model.PurchaseUnitList, "Value", "Text", Model.PUnit), "-- Select --", new { id = "cbo_punit", @required = "true", @class = "selectpicker show-tick" })
+
+                                    <p class="contact">
+                                        @*@Html.LabelFor(a => a.CostUnit)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*@
+                                        @*<a href="#" id="refreshcunit" style="display:inline;"><span class="glyphicon glyphicon-refresh "></span></a>*@
+                                       <strong><a href="@Url.Action("CreateUnit", "Unit" , new { @area = "Unit" }) " target='_blank' style="display:inline;"> Factory Unit </a></strong>&nbsp;&nbsp;&nbsp;
+                                        <a href="#" id="refreshcunit" style="display:inline;"><strong> <span class="glyphicon glyphicon-refresh "></span></strong></a>
+                                    </p>
+                                    @Html.DropDownListFor(a => a.CostUnit, new SelectList(Model.CostUnitList, "Value", "Text", Model.CostUnit), "-- Select --", new { id = "cbo_costunit", @required = "true", @class = "selectpicker show-tick" })
+
+                                    <p class="contact">
+                                        @Html.LabelFor(a => a.ConversionFactor)
+                                    </p>
+                                    @Html.TextBoxFor(a => a.ConversionFactor, new { autocomplete = "off", @type = "number", @required = "true" })
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-xs-12 col-sm-6 col-lg-4">
+                            <div class="thumbnail thumbnail-mod-1">
+                                <div class="form">
+                                    <p class="contact">
+                                        @Html.LabelFor(a => a.Min_Stock)
+                                    </p>
+                                    @Html.TextBoxFor(a => a.Min_Stock, new { autocomplete = "off", @type = "number" })
+
+                                    <p class="contact">
+                                        @Html.LabelFor(a => a.Max_Stock)
+                                    </p>
+                                    @Html.TextBoxFor(a => a.Max_Stock, new { autocomplete = "off", @type = "number" })
+
+                                    <p class="contact">
+                                        @Html.LabelFor(a => a.WAS)
+                                    </p>
+                                    @Html.TextBoxFor(a => a.WAS, new { autocomplete = "off", @type = "number" })
+
+                                    <p class="contact">
+                                        @Html.LabelFor(a => a.BOM_WAS_Percent)
+                                    </p>
+                                    @Html.TextBoxFor(a => a.BOM_WAS_Percent, new { autocomplete = "off", @type = "number" })
+
+                                    <p class="contact">
+                                        @Html.LabelFor(a => a.Max_Wastage)
+                                    </p>
+
+                                    @Html.TextBoxFor(a => a.Max_Wastage, new { autocomplete = "off", @type = "number" })
+
+                                    <p class="contact">
+                                        @Html.LabelFor(a => a.ActualPurPrice)
+                                    </p>
+
+                                    @Html.TextBoxFor(a => a.ActualPurPrice, new { autocomplete = "off", @type = "number" })
+
+                                    <p class="contact">
+                                        @Html.LabelFor(a => a.Description)
+                                    </p>
+                                    @Html.TextAreaFor(a => a.Description, new { rows = "4" })
+
+                                    <p class="contact">
+                                        @Html.LabelFor(a => a.SuppCode)
+                                    </p>
+                                    @Html.TextAreaFor(a => a.SuppCode, new { rows = "4" })
+
+                                    <p class="contact">
+                                        @Html.LabelFor(a => a.CertReqForPuchaseId)
+                                    </p>
+                                    @Html.DropDownListFor(a => a.CertReqForPuchaseId, new SelectList(Model.CertificateRequiredForPuchaseList, "Value", "Text", Model.CertReqForPuchaseId), "-- Select --", new { @required = "true" })
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-xs-12 col-sm-6 col-lg-4">
+                            <div class="thumbnail thumbnail-mod-1">
+                                <div class="form">
+                                   <div id="rmpropertiesvalue">
+
+                                   </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+
+            <div id="tab2" class="tab-pane">
+                <div id="supp">
+                    <div class="row clearleft-custom flow-offset-1">
+                        <div class="col-xs-12 col-sm-6 col-lg-4">
+                            <div class="thumbnail thumbnail-mod-1">
+                                <div class="form">
+                                    <div style="height:450px; overflow:auto">
+                                        @for (int i = 0; i < Model.RItemSuppModel.Count; i++)
+                                        {
+                                            @Html.CheckBoxFor(m => m.RItemSuppModel[i].Selected, new { @class = "suppliercheckbox" })
+                                            @Html.HiddenFor(m => m.RItemSuppModel[i].SupplierId)
+                                            @Html.LabelFor(m => m.RItemSuppModel[i].SupplierName, Model.RItemSuppModel[i].SupplierName)
+                                            <br />
+                                        }
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="tab3" class="tab-pane">
+                <div id="photo">
+                    <div class="row clearleft-custom flow-offset-1">
+                        <div class="col-xs-12 col-sm-6 col-lg-4">
+                            <div class="thumbnail thumbnail-mod-1">
+                                <div class="form">
+                                    <input type="file" onchange="readfile(this);" id="fileupload" name="file" multiple />
+                                    <img id="image_preview" src="@Url.Content("~/" + Model.Title)" alt="your image" width="300" height="200" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="tab4" class="tab-pane">
+                <div id="Quicktest">
+                    <div class="row clearleft-custom flow-offset-1">
+                        <div class="col-xs-12 col-sm-6 col-lg-4">
+                            <div class="thumbnail thumbnail-mod-1">
+                                <div class="form">
+                                    <div style="height:450px; overflow:auto">
+                                        @for (int i = 0; i < Model.QuickTestModel.Count; i++)
+                                        {
+                                            @Html.CheckBoxFor(m => m.QuickTestModel[i].Selected, new { @class = "suppliercheckbox" })
+                                            @Html.HiddenFor(m => m.QuickTestModel[i].ID)
+                                            @Html.LabelFor(m => m.QuickTestModel[i].TestName, Model.QuickTestModel[i].TestName)
+                                            <br />
+                                        }
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+        </div>
+        <div class="form"style="padding-right">
+            <p class="contact">&nbsp;</p>
+            <input id="Submit1" type="submit" value="Save Raw Material" />
+            </div>
+        </div>
+</form>

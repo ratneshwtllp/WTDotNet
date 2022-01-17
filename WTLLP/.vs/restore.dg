@@ -1,0 +1,5 @@
+#:D:\WT\SB\SB\src\ERP.Web\ERP.Web.xproj
+D:\WT\SB\SB\src\ERP.Web\ERP.Web.xproj|D:\WT\SB\SB\src\ERP.Business\ERP.Business.xproj
+D:\WT\SB\SB\src\ERP.Business\ERP.Business.xproj|D:\WT\SB\SB\src\ERP.Business.Contracts\ERP.Business.Contracts.xproj
+D:\WT\SB\SB\src\ERP.Business\ERP.Business.xproj|D:\WT\SB\SB\src\ERP.Helper\ERP.Helper.xproj
+D:\WT\SB\SB\src\ERP.Business.Contracts\ERP.Business.Contracts.xproj|D:\WT\SB\SB\src\ERP.Domain.Entities\ERP.Domain.Entities.xproj

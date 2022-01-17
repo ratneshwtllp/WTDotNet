@@ -1,0 +1,855 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:MainDataTable="ViewInvoicePrint" msdata:UseCurrentLocale="true">
+      <xs:complexType>
+        <xs:choice minOccurs="0" maxOccurs="unbounded">
+          <xs:element name="ViewInvoicePrint">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="AccountNo" type="xs:string" minOccurs="0" />
+                <xs:element name="AddressOffice" type="xs:string" minOccurs="0" />
+                <xs:element name="AddressWork" type="xs:string" minOccurs="0" />
+                <xs:element name="Amount" type="xs:double" />
+                <xs:element name="AmtWords" type="xs:string" minOccurs="0" />
+                <xs:element name="AwbbINo" type="xs:string" minOccurs="0" />
+                <xs:element name="BLAWB" type="xs:string" minOccurs="0" />
+                <xs:element name="BranchId" type="xs:long" />
+                <xs:element name="BuyerAddress" type="xs:string" minOccurs="0" />
+                <xs:element name="BuyerCode" type="xs:string" minOccurs="0" />
+                <xs:element name="BuyerID" type="xs:long" />
+                <xs:element name="BuyerifOther" type="xs:string" minOccurs="0" />
+                <xs:element name="BuyerName" type="xs:string" minOccurs="0" />
+                <xs:element name="BuyerOrderno" type="xs:string" minOccurs="0" />
+                <xs:element name="CartonsDimension" type="xs:string" minOccurs="0" />
+                <xs:element name="CID" type="xs:int" />
+                <xs:element name="CLID" type="xs:int" />
+                <xs:element name="CLName" type="xs:string" minOccurs="0" />
+                <xs:element name="CName" type="xs:string" minOccurs="0" />
+                <xs:element name="Code" type="xs:string" minOccurs="0" />
+                <xs:element name="CompanyId" type="xs:int" />
+                <xs:element name="ConsigneeAdd" type="xs:string" minOccurs="0" />
+                <xs:element name="ConsigneeAddress" type="xs:string" minOccurs="0" />
+                <xs:element name="ConsigneeCode" type="xs:string" minOccurs="0" />
+                <xs:element name="ConsigneeId" type="xs:long" />
+                <xs:element name="ConsigneeMobile" type="xs:string" minOccurs="0" />
+                <xs:element name="ConsigneeName" type="xs:string" minOccurs="0" />
+                <xs:element name="ConsigneePhone" type="xs:string" minOccurs="0" />
+                <xs:element name="CountryofDestination" type="xs:string" minOccurs="0" />
+                <xs:element name="CountryofOrigin" type="xs:string" minOccurs="0" />
+                <xs:element name="CurrencyID" type="xs:int" />
+                <xs:element name="CurrName" type="xs:string" minOccurs="0" />
+                <xs:element name="CurrSName" type="xs:string" minOccurs="0" />
+                <xs:element name="CustomPIDate" type="xs:dateTime" />
+                <xs:element name="CustomPIPayment" type="xs:string" minOccurs="0" />
+                <xs:element name="CustomPITerm" type="xs:string" minOccurs="0" />
+                <xs:element name="Description" type="xs:string" minOccurs="0" />
+                <xs:element name="Email" type="xs:string" minOccurs="0" />
+                <xs:element name="ExporterRefrence" type="xs:string" minOccurs="0" />
+                <xs:element name="Fax" type="xs:string" minOccurs="0" />
+                <xs:element name="FinalDestination" type="xs:string" minOccurs="0" />
+                <xs:element name="FitemID" type="xs:long" />
+                <xs:element name="FOBCIF" type="xs:string" minOccurs="0" />
+                <xs:element name="FOBCIFID" type="xs:int" />
+                <xs:element name="Freight" type="xs:double" />
+                <xs:element name="GrossWeight" type="xs:double" />
+                <xs:element name="GSTN" type="xs:string" minOccurs="0" />
+                <xs:element name="ID" type="xs:int" />
+                <xs:element name="IECode" type="xs:string" minOccurs="0" />
+                <xs:element name="InvoiceAmount" type="xs:double" />
+                <xs:element name="InvoiceChildID" type="xs:long" />
+                <xs:element name="InvoiceDate" type="xs:dateTime" />
+                <xs:element name="InvoiceID" type="xs:long" />
+                <xs:element name="InvoiceNo" type="xs:string" minOccurs="0" />
+                <xs:element name="InvoiceSNo" type="xs:long" />
+                <xs:element name="InvoiceType" type="xs:string" minOccurs="0" />
+                <xs:element name="Name" type="xs:string" minOccurs="0" />
+                <xs:element name="NetWeight" type="xs:double" />
+                <xs:element name="Notify" type="xs:string" minOccurs="0" />
+                <xs:element name="OtherRefrence" type="xs:string" minOccurs="0" />
+                <xs:element name="PackingID" type="xs:long" />
+                <xs:element name="PackingMarks" type="xs:string" minOccurs="0" />
+                <xs:element name="PackingRemark" type="xs:string" minOccurs="0" />
+                <xs:element name="PANNo" type="xs:string" minOccurs="0" />
+                <xs:element name="PartyCode" type="xs:string" minOccurs="0" />
+                <xs:element name="PayemntTerm" type="xs:string" minOccurs="0" />
+                <xs:element name="Phone" type="xs:string" minOccurs="0" />
+                <xs:element name="PlaceofReceipt" type="xs:string" minOccurs="0" />
+                <xs:element name="PortofDelivery" type="xs:string" minOccurs="0" />
+                <xs:element name="PortofDischarge" type="xs:string" minOccurs="0" />
+                <xs:element name="PortofLoading" type="xs:string" minOccurs="0" />
+                <xs:element name="Precarrigeby" type="xs:string" minOccurs="0" />
+                <xs:element name="Price" type="xs:double" />
+                <xs:element name="Qty" type="xs:int" />
+                <xs:element name="ShippingMarks" type="xs:string" minOccurs="0" />
+                <xs:element name="SizeID" type="xs:int" />
+                <xs:element name="SizeName" type="xs:string" minOccurs="0" />
+                <xs:element name="SNo" type="xs:int" />
+                <xs:element name="Terms" type="xs:string" minOccurs="0" />
+                <xs:element name="TotalAmount" type="xs:double" />
+                <xs:element name="TotalCarton" type="xs:int" />
+                <xs:element name="TotalQty" type="xs:int" />
+                <xs:element name="TotalVol5" type="xs:double" />
+                <xs:element name="TotalVol6" type="xs:double" />
+                <xs:element name="Transport" type="xs:string" minOccurs="0" />
+                <xs:element name="VesselFlightNo" type="xs:string" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+        </xs:choice>
+      </xs:complexType>
+    </xs:element>
+  </xs:schema>
+  <ViewInvoicePrint>
+    <AccountNo>-</AccountNo>
+    <AddressOffice>89/1 &amp; 2, TV Tower Compound, Akrampur, Unnao-209801</AddressOffice>
+    <AddressWork>89/1 &amp; 2, TV Tower Compound, Akrampur, Unnao-209801</AddressWork>
+    <Amount>80</Amount>
+    <AmtWords>USD ONE THOUSAND NINE HUNDRED SIXTY FIVE AND ZERO ONLY</AmtWords>
+    <AwbbINo>-</AwbbINo>
+    <BLAWB>-</BLAWB>
+    <BranchId>1</BranchId>
+    <BuyerAddress>7540 CR 201</BuyerAddress>
+    <BuyerCode>BMW</BuyerCode>
+    <BuyerID>29</BuyerID>
+    <BuyerifOther>rty</BuyerifOther>
+    <BuyerName>WEAVER LEATHER LLC</BuyerName>
+    <BuyerOrderno>try</BuyerOrderno>
+    <CartonsDimension>84X45X50 -2Cartons,
+84X42X58 -2Cartons,
+74X45X45 -1Cartons,
+74X37X25 -1Cartons,
+70X45X45 -1Cartons,
+60X60X36 -2Cartons,
+60X60X30 -1Cartons,
+110X25X22 -2Cartons,
+</CartonsDimension>
+    <CID>1</CID>
+    <CLID>243</CLID>
+    <CLName>LIGHT OIL TT</CLName>
+    <CName>SB International</CName>
+    <Code>DC 326 17 NAT TT</Code>
+    <CompanyId>1</CompanyId>
+    <ConsigneeAdd>ARIAT INTERNATIONAL 3242 WHIPPLE ROAD PH:null</ConsigneeAdd>
+    <ConsigneeAddress>3242 WHIPPLE ROAD</ConsigneeAddress>
+    <ConsigneeCode>CON008</ConsigneeCode>
+    <ConsigneeId>8</ConsigneeId>
+    <ConsigneeName>ARIAT INTERNATIONAL</ConsigneeName>
+    <CountryofDestination>try</CountryofDestination>
+    <CountryofOrigin>INDIA</CountryofOrigin>
+    <CurrencyID>1</CurrencyID>
+    <CurrName>Dollar</CurrName>
+    <CurrSName>USD</CurrSName>
+    <CustomPIDate>2019-12-19T00:00:00+05:30</CustomPIDate>
+    <CustomPIPayment>-</CustomPIPayment>
+    <CustomPITerm>-</CustomPITerm>
+    <Description>Dog Collar with Floral Carving &amp; TT Finishing</Description>
+    <Email>sales@sbleathers.com</Email>
+    <ExporterRefrence>-</ExporterRefrence>
+    <Fax>0512-2405420</Fax>
+    <FinalDestination>try</FinalDestination>
+    <FitemID>37833</FitemID>
+    <FOBCIF>CIF</FOBCIF>
+    <FOBCIFID>2</FOBCIFID>
+    <Freight>0</Freight>
+    <GrossWeight>1266</GrossWeight>
+    <GSTN>09AABFI6571P1ZQ</GSTN>
+    <ID>1</ID>
+    <IECode>9896595656</IECode>
+    <InvoiceAmount>1965</InvoiceAmount>
+    <InvoiceChildID>1</InvoiceChildID>
+    <InvoiceDate>2019-12-19T00:00:00+05:30</InvoiceDate>
+    <InvoiceID>1</InvoiceID>
+    <InvoiceNo>SB/INV/2019-20/0001</InvoiceNo>
+    <InvoiceSNo>1</InvoiceSNo>
+    <InvoiceType>-</InvoiceType>
+    <Name>Dog Collar</Name>
+    <NetWeight>1231.3</NetWeight>
+    <Notify>try</Notify>
+    <OtherRefrence>-</OtherRefrence>
+    <PackingID>1</PackingID>
+    <PackingMarks>ert</PackingMarks>
+    <PackingRemark>-</PackingRemark>
+    <PANNo>AAWFS7900H</PANNo>
+    <PartyCode>06-1911-17</PartyCode>
+    <PayemntTerm>try</PayemntTerm>
+    <Phone>985825825</Phone>
+    <PlaceofReceipt>KANPUR INDIA</PlaceofReceipt>
+    <PortofDelivery>-</PortofDelivery>
+    <PortofDischarge>try</PortofDischarge>
+    <PortofLoading>try</PortofLoading>
+    <Precarrigeby>try</Precarrigeby>
+    <Price>1</Price>
+    <Qty>80</Qty>
+    <ShippingMarks>retret</ShippingMarks>
+    <SizeID>174</SizeID>
+    <SizeName>3/4" X 17"</SizeName>
+    <SNo>1</SNo>
+    <Terms>try</Terms>
+    <TotalAmount>1965</TotalAmount>
+    <TotalCarton>12</TotalCarton>
+    <TotalQty>472</TotalQty>
+    <TotalVol5>1.635</TotalVol5>
+    <TotalVol6>1.635</TotalVol6>
+    <Transport>-</Transport>
+    <VesselFlightNo>try</VesselFlightNo>
+  </ViewInvoicePrint>
+  <ViewInvoicePrint>
+    <AccountNo>-</AccountNo>
+    <AddressOffice>89/1 &amp; 2, TV Tower Compound, Akrampur, Unnao-209801</AddressOffice>
+    <AddressWork>89/1 &amp; 2, TV Tower Compound, Akrampur, Unnao-209801</AddressWork>
+    <Amount>4</Amount>
+    <AmtWords>USD ONE THOUSAND NINE HUNDRED SIXTY FIVE AND ZERO ONLY</AmtWords>
+    <AwbbINo>-</AwbbINo>
+    <BLAWB>-</BLAWB>
+    <BranchId>1</BranchId>
+    <BuyerAddress>7540 CR 201</BuyerAddress>
+    <BuyerCode>BMW</BuyerCode>
+    <BuyerID>29</BuyerID>
+    <BuyerifOther>rty</BuyerifOther>
+    <BuyerName>WEAVER LEATHER LLC</BuyerName>
+    <BuyerOrderno>try</BuyerOrderno>
+    <CartonsDimension>84X45X50 -2Cartons,
+84X42X58 -2Cartons,
+74X45X45 -1Cartons,
+74X37X25 -1Cartons,
+70X45X45 -1Cartons,
+60X60X36 -2Cartons,
+60X60X30 -1Cartons,
+110X25X22 -2Cartons,
+</CartonsDimension>
+    <CID>1</CID>
+    <CLID>30</CLID>
+    <CLName>Chestnut</CLName>
+    <CName>SB International</CName>
+    <Code>DC 330 21 RUS</Code>
+    <CompanyId>1</CompanyId>
+    <ConsigneeAdd>ARIAT INTERNATIONAL 3242 WHIPPLE ROAD PH:null</ConsigneeAdd>
+    <ConsigneeAddress>3242 WHIPPLE ROAD</ConsigneeAddress>
+    <ConsigneeCode>CON008</ConsigneeCode>
+    <ConsigneeId>8</ConsigneeId>
+    <ConsigneeName>ARIAT INTERNATIONAL</ConsigneeName>
+    <CountryofDestination>try</CountryofDestination>
+    <CountryofOrigin>INDIA</CountryofOrigin>
+    <CurrencyID>1</CurrencyID>
+    <CurrName>Dollar</CurrName>
+    <CurrSName>USD</CurrSName>
+    <CustomPIDate>2019-12-19T00:00:00+05:30</CustomPIDate>
+    <CustomPIPayment>-</CustomPIPayment>
+    <CustomPITerm>-</CustomPITerm>
+    <Description>Dog Collar with Floral Carving &amp; Black Color Inlay</Description>
+    <Email>sales@sbleathers.com</Email>
+    <ExporterRefrence>-</ExporterRefrence>
+    <Fax>0512-2405420</Fax>
+    <FinalDestination>try</FinalDestination>
+    <FitemID>37841</FitemID>
+    <FOBCIF>CIF</FOBCIF>
+    <FOBCIFID>2</FOBCIFID>
+    <Freight>0</Freight>
+    <GrossWeight>1266</GrossWeight>
+    <GSTN>09AABFI6571P1ZQ</GSTN>
+    <ID>1</ID>
+    <IECode>9896595656</IECode>
+    <InvoiceAmount>1965</InvoiceAmount>
+    <InvoiceChildID>2</InvoiceChildID>
+    <InvoiceDate>2019-12-19T00:00:00+05:30</InvoiceDate>
+    <InvoiceID>1</InvoiceID>
+    <InvoiceNo>SB/INV/2019-20/0001</InvoiceNo>
+    <InvoiceSNo>1</InvoiceSNo>
+    <InvoiceType>-</InvoiceType>
+    <Name>Dog Collar</Name>
+    <NetWeight>1231.3</NetWeight>
+    <Notify>try</Notify>
+    <OtherRefrence>-</OtherRefrence>
+    <PackingID>1</PackingID>
+    <PackingMarks>ert</PackingMarks>
+    <PackingRemark>-</PackingRemark>
+    <PANNo>AAWFS7900H</PANNo>
+    <PartyCode>06-1932-21</PartyCode>
+    <PayemntTerm>try</PayemntTerm>
+    <Phone>985825825</Phone>
+    <PlaceofReceipt>KANPUR INDIA</PlaceofReceipt>
+    <PortofDelivery>-</PortofDelivery>
+    <PortofDischarge>try</PortofDischarge>
+    <PortofLoading>try</PortofLoading>
+    <Precarrigeby>try</Precarrigeby>
+    <Price>2</Price>
+    <Qty>2</Qty>
+    <ShippingMarks>retret</ShippingMarks>
+    <SizeID>176</SizeID>
+    <SizeName>1" X 21"</SizeName>
+    <SNo>2</SNo>
+    <Terms>try</Terms>
+    <TotalAmount>1965</TotalAmount>
+    <TotalCarton>12</TotalCarton>
+    <TotalQty>472</TotalQty>
+    <TotalVol5>1.635</TotalVol5>
+    <TotalVol6>1.635</TotalVol6>
+    <Transport>-</Transport>
+    <VesselFlightNo>try</VesselFlightNo>
+  </ViewInvoicePrint>
+  <ViewInvoicePrint>
+    <AccountNo>-</AccountNo>
+    <AddressOffice>89/1 &amp; 2, TV Tower Compound, Akrampur, Unnao-209801</AddressOffice>
+    <AddressWork>89/1 &amp; 2, TV Tower Compound, Akrampur, Unnao-209801</AddressWork>
+    <Amount>240</Amount>
+    <AmtWords>USD ONE THOUSAND NINE HUNDRED SIXTY FIVE AND ZERO ONLY</AmtWords>
+    <AwbbINo>-</AwbbINo>
+    <BLAWB>-</BLAWB>
+    <BranchId>1</BranchId>
+    <BuyerAddress>7540 CR 201</BuyerAddress>
+    <BuyerCode>BMW</BuyerCode>
+    <BuyerID>29</BuyerID>
+    <BuyerifOther>rty</BuyerifOther>
+    <BuyerName>WEAVER LEATHER LLC</BuyerName>
+    <BuyerOrderno>try</BuyerOrderno>
+    <CartonsDimension>84X45X50 -2Cartons,
+84X42X58 -2Cartons,
+74X45X45 -1Cartons,
+74X37X25 -1Cartons,
+70X45X45 -1Cartons,
+60X60X36 -2Cartons,
+60X60X30 -1Cartons,
+110X25X22 -2Cartons,
+</CartonsDimension>
+    <CID>1</CID>
+    <CLID>31</CLID>
+    <CLName>Dark Oil</CLName>
+    <CName>SB International</CName>
+    <Code>DC 331 19 DK BN</Code>
+    <CompanyId>1</CompanyId>
+    <ConsigneeAdd>ARIAT INTERNATIONAL 3242 WHIPPLE ROAD PH:null</ConsigneeAdd>
+    <ConsigneeAddress>3242 WHIPPLE ROAD</ConsigneeAddress>
+    <ConsigneeCode>CON008</ConsigneeCode>
+    <ConsigneeId>8</ConsigneeId>
+    <ConsigneeName>ARIAT INTERNATIONAL</ConsigneeName>
+    <CountryofDestination>try</CountryofDestination>
+    <CountryofOrigin>INDIA</CountryofOrigin>
+    <CurrencyID>1</CurrencyID>
+    <CurrName>Dollar</CurrName>
+    <CurrSName>USD</CurrSName>
+    <CustomPIDate>2019-12-19T00:00:00+05:30</CustomPIDate>
+    <CustomPIPayment>-</CustomPIPayment>
+    <CustomPITerm>-</CustomPITerm>
+    <Description>Dog Collar with Inlay Beads, Basket Tooling, &amp; C/A Spots</Description>
+    <Email>sales@sbleathers.com</Email>
+    <ExporterRefrence>-</ExporterRefrence>
+    <Fax>0512-2405420</Fax>
+    <FinalDestination>try</FinalDestination>
+    <FitemID>37827</FitemID>
+    <FOBCIF>CIF</FOBCIF>
+    <FOBCIFID>2</FOBCIFID>
+    <Freight>0</Freight>
+    <GrossWeight>1266</GrossWeight>
+    <GSTN>09AABFI6571P1ZQ</GSTN>
+    <ID>1</ID>
+    <IECode>9896595656</IECode>
+    <InvoiceAmount>1965</InvoiceAmount>
+    <InvoiceChildID>3</InvoiceChildID>
+    <InvoiceDate>2019-12-19T00:00:00+05:30</InvoiceDate>
+    <InvoiceID>1</InvoiceID>
+    <InvoiceNo>SB/INV/2019-20/0001</InvoiceNo>
+    <InvoiceSNo>1</InvoiceSNo>
+    <InvoiceType>-</InvoiceType>
+    <Name>Dog Collar</Name>
+    <NetWeight>1231.3</NetWeight>
+    <Notify>try</Notify>
+    <OtherRefrence>-</OtherRefrence>
+    <PackingID>1</PackingID>
+    <PackingMarks>ert</PackingMarks>
+    <PackingRemark>-</PackingRemark>
+    <PANNo>AAWFS7900H</PANNo>
+    <PartyCode>06-1902-19</PartyCode>
+    <PayemntTerm>try</PayemntTerm>
+    <Phone>985825825</Phone>
+    <PlaceofReceipt>KANPUR INDIA</PlaceofReceipt>
+    <PortofDelivery>-</PortofDelivery>
+    <PortofDischarge>try</PortofDischarge>
+    <PortofLoading>try</PortofLoading>
+    <Precarrigeby>try</Precarrigeby>
+    <Price>3</Price>
+    <Qty>80</Qty>
+    <ShippingMarks>retret</ShippingMarks>
+    <SizeID>175</SizeID>
+    <SizeName>1" X 19"</SizeName>
+    <SNo>3</SNo>
+    <Terms>try</Terms>
+    <TotalAmount>1965</TotalAmount>
+    <TotalCarton>12</TotalCarton>
+    <TotalQty>472</TotalQty>
+    <TotalVol5>1.635</TotalVol5>
+    <TotalVol6>1.635</TotalVol6>
+    <Transport>-</Transport>
+    <VesselFlightNo>try</VesselFlightNo>
+  </ViewInvoicePrint>
+  <ViewInvoicePrint>
+    <AccountNo>-</AccountNo>
+    <AddressOffice>89/1 &amp; 2, TV Tower Compound, Akrampur, Unnao-209801</AddressOffice>
+    <AddressWork>89/1 &amp; 2, TV Tower Compound, Akrampur, Unnao-209801</AddressWork>
+    <Amount>320</Amount>
+    <AmtWords>USD ONE THOUSAND NINE HUNDRED SIXTY FIVE AND ZERO ONLY</AmtWords>
+    <AwbbINo>-</AwbbINo>
+    <BLAWB>-</BLAWB>
+    <BranchId>1</BranchId>
+    <BuyerAddress>7540 CR 201</BuyerAddress>
+    <BuyerCode>BMW</BuyerCode>
+    <BuyerID>29</BuyerID>
+    <BuyerifOther>rty</BuyerifOther>
+    <BuyerName>WEAVER LEATHER LLC</BuyerName>
+    <BuyerOrderno>try</BuyerOrderno>
+    <CartonsDimension>84X45X50 -2Cartons,
+84X42X58 -2Cartons,
+74X45X45 -1Cartons,
+74X37X25 -1Cartons,
+70X45X45 -1Cartons,
+60X60X36 -2Cartons,
+60X60X30 -1Cartons,
+110X25X22 -2Cartons,
+</CartonsDimension>
+    <CID>1</CID>
+    <CLID>31</CLID>
+    <CLName>Dark Oil</CLName>
+    <CName>SB International</CName>
+    <Code>DC 332 13 DK BN</Code>
+    <CompanyId>1</CompanyId>
+    <ConsigneeAdd>ARIAT INTERNATIONAL 3242 WHIPPLE ROAD PH:null</ConsigneeAdd>
+    <ConsigneeAddress>3242 WHIPPLE ROAD</ConsigneeAddress>
+    <ConsigneeCode>CON008</ConsigneeCode>
+    <ConsigneeId>8</ConsigneeId>
+    <ConsigneeName>ARIAT INTERNATIONAL</ConsigneeName>
+    <CountryofDestination>try</CountryofDestination>
+    <CountryofOrigin>INDIA</CountryofOrigin>
+    <CurrencyID>1</CurrencyID>
+    <CurrName>Dollar</CurrName>
+    <CurrSName>USD</CurrSName>
+    <CustomPIDate>2019-12-19T00:00:00+05:30</CustomPIDate>
+    <CustomPIPayment>-</CustomPIPayment>
+    <CustomPITerm>-</CustomPITerm>
+    <Description>Dog Collar with Floral Carving, Turquoise Washing &amp; Heavy White Stitch</Description>
+    <Email>sales@sbleathers.com</Email>
+    <ExporterRefrence>-</ExporterRefrence>
+    <Fax>0512-2405420</Fax>
+    <FinalDestination>try</FinalDestination>
+    <FitemID>37822</FitemID>
+    <FOBCIF>CIF</FOBCIF>
+    <FOBCIFID>2</FOBCIFID>
+    <Freight>0</Freight>
+    <GrossWeight>1266</GrossWeight>
+    <GSTN>09AABFI6571P1ZQ</GSTN>
+    <ID>1</ID>
+    <IECode>9896595656</IECode>
+    <InvoiceAmount>1965</InvoiceAmount>
+    <InvoiceChildID>4</InvoiceChildID>
+    <InvoiceDate>2019-12-19T00:00:00+05:30</InvoiceDate>
+    <InvoiceID>1</InvoiceID>
+    <InvoiceNo>SB/INV/2019-20/0001</InvoiceNo>
+    <InvoiceSNo>1</InvoiceSNo>
+    <InvoiceType>-</InvoiceType>
+    <Name>Dog Collar</Name>
+    <NetWeight>1231.3</NetWeight>
+    <Notify>try</Notify>
+    <OtherRefrence>-</OtherRefrence>
+    <PackingID>1</PackingID>
+    <PackingMarks>ert</PackingMarks>
+    <PackingRemark>-</PackingRemark>
+    <PANNo>AAWFS7900H</PANNo>
+    <PartyCode>06-1921</PartyCode>
+    <PayemntTerm>try</PayemntTerm>
+    <Phone>985825825</Phone>
+    <PlaceofReceipt>KANPUR INDIA</PlaceofReceipt>
+    <PortofDelivery>-</PortofDelivery>
+    <PortofDischarge>try</PortofDischarge>
+    <PortofLoading>try</PortofLoading>
+    <Precarrigeby>try</Precarrigeby>
+    <Price>4</Price>
+    <Qty>80</Qty>
+    <ShippingMarks>retret</ShippingMarks>
+    <SizeID>172</SizeID>
+    <SizeName>3/4" X 13"</SizeName>
+    <SNo>4</SNo>
+    <Terms>try</Terms>
+    <TotalAmount>1965</TotalAmount>
+    <TotalCarton>12</TotalCarton>
+    <TotalQty>472</TotalQty>
+    <TotalVol5>1.635</TotalVol5>
+    <TotalVol6>1.635</TotalVol6>
+    <Transport>-</Transport>
+    <VesselFlightNo>try</VesselFlightNo>
+  </ViewInvoicePrint>
+  <ViewInvoicePrint>
+    <AccountNo>-</AccountNo>
+    <AddressOffice>89/1 &amp; 2, TV Tower Compound, Akrampur, Unnao-209801</AddressOffice>
+    <AddressWork>89/1 &amp; 2, TV Tower Compound, Akrampur, Unnao-209801</AddressWork>
+    <Amount>725</Amount>
+    <AmtWords>USD ONE THOUSAND NINE HUNDRED SIXTY FIVE AND ZERO ONLY</AmtWords>
+    <AwbbINo>-</AwbbINo>
+    <BLAWB>-</BLAWB>
+    <BranchId>1</BranchId>
+    <BuyerAddress>7540 CR 201</BuyerAddress>
+    <BuyerCode>BMW</BuyerCode>
+    <BuyerID>29</BuyerID>
+    <BuyerifOther>rty</BuyerifOther>
+    <BuyerName>WEAVER LEATHER LLC</BuyerName>
+    <BuyerOrderno>try</BuyerOrderno>
+    <CartonsDimension>84X45X50 -2Cartons,
+84X42X58 -2Cartons,
+74X45X45 -1Cartons,
+74X37X25 -1Cartons,
+70X45X45 -1Cartons,
+60X60X36 -2Cartons,
+60X60X30 -1Cartons,
+110X25X22 -2Cartons,
+</CartonsDimension>
+    <CID>1</CID>
+    <CLID>31</CLID>
+    <CLName>Dark Oil</CLName>
+    <CName>SB International</CName>
+    <Code>DC 332 17 DK BN</Code>
+    <CompanyId>1</CompanyId>
+    <ConsigneeAdd>ARIAT INTERNATIONAL 3242 WHIPPLE ROAD PH:null</ConsigneeAdd>
+    <ConsigneeAddress>3242 WHIPPLE ROAD</ConsigneeAddress>
+    <ConsigneeCode>CON008</ConsigneeCode>
+    <ConsigneeId>8</ConsigneeId>
+    <ConsigneeName>ARIAT INTERNATIONAL</ConsigneeName>
+    <CountryofDestination>try</CountryofDestination>
+    <CountryofOrigin>INDIA</CountryofOrigin>
+    <CurrencyID>1</CurrencyID>
+    <CurrName>Dollar</CurrName>
+    <CurrSName>USD</CurrSName>
+    <CustomPIDate>2019-12-19T00:00:00+05:30</CustomPIDate>
+    <CustomPIPayment>-</CustomPIPayment>
+    <CustomPITerm>-</CustomPITerm>
+    <Description>Dog Collar with Floral Carving, Turquoise Washing &amp; Heavy White Stitch</Description>
+    <Email>sales@sbleathers.com</Email>
+    <ExporterRefrence>-</ExporterRefrence>
+    <Fax>0512-2405420</Fax>
+    <FinalDestination>try</FinalDestination>
+    <FitemID>37844</FitemID>
+    <FOBCIF>CIF</FOBCIF>
+    <FOBCIFID>2</FOBCIFID>
+    <Freight>0</Freight>
+    <GrossWeight>1266</GrossWeight>
+    <GSTN>09AABFI6571P1ZQ</GSTN>
+    <ID>1</ID>
+    <IECode>9896595656</IECode>
+    <InvoiceAmount>1965</InvoiceAmount>
+    <InvoiceChildID>5</InvoiceChildID>
+    <InvoiceDate>2019-12-19T00:00:00+05:30</InvoiceDate>
+    <InvoiceID>1</InvoiceID>
+    <InvoiceNo>SB/INV/2019-20/0001</InvoiceNo>
+    <InvoiceSNo>1</InvoiceSNo>
+    <InvoiceType>-</InvoiceType>
+    <Name>Dog Collar</Name>
+    <NetWeight>1231.3</NetWeight>
+    <Notify>try</Notify>
+    <OtherRefrence>-</OtherRefrence>
+    <PackingID>1</PackingID>
+    <PackingMarks>ert</PackingMarks>
+    <PackingRemark>-</PackingRemark>
+    <PANNo>AAWFS7900H</PANNo>
+    <PartyCode>06-1921-17</PartyCode>
+    <PayemntTerm>try</PayemntTerm>
+    <Phone>985825825</Phone>
+    <PlaceofReceipt>KANPUR INDIA</PlaceofReceipt>
+    <PortofDelivery>-</PortofDelivery>
+    <PortofDischarge>try</PortofDischarge>
+    <PortofLoading>try</PortofLoading>
+    <Precarrigeby>try</Precarrigeby>
+    <Price>5</Price>
+    <Qty>145</Qty>
+    <ShippingMarks>retret</ShippingMarks>
+    <SizeID>174</SizeID>
+    <SizeName>3/4" X 17"</SizeName>
+    <SNo>5</SNo>
+    <Terms>try</Terms>
+    <TotalAmount>1965</TotalAmount>
+    <TotalCarton>12</TotalCarton>
+    <TotalQty>472</TotalQty>
+    <TotalVol5>1.635</TotalVol5>
+    <TotalVol6>1.635</TotalVol6>
+    <Transport>-</Transport>
+    <VesselFlightNo>try</VesselFlightNo>
+  </ViewInvoicePrint>
+  <ViewInvoicePrint>
+    <AccountNo>-</AccountNo>
+    <AddressOffice>89/1 &amp; 2, TV Tower Compound, Akrampur, Unnao-209801</AddressOffice>
+    <AddressWork>89/1 &amp; 2, TV Tower Compound, Akrampur, Unnao-209801</AddressWork>
+    <Amount>12</Amount>
+    <AmtWords>USD ONE THOUSAND NINE HUNDRED SIXTY FIVE AND ZERO ONLY</AmtWords>
+    <AwbbINo>-</AwbbINo>
+    <BLAWB>-</BLAWB>
+    <BranchId>1</BranchId>
+    <BuyerAddress>7540 CR 201</BuyerAddress>
+    <BuyerCode>BMW</BuyerCode>
+    <BuyerID>29</BuyerID>
+    <BuyerifOther>rty</BuyerifOther>
+    <BuyerName>WEAVER LEATHER LLC</BuyerName>
+    <BuyerOrderno>try</BuyerOrderno>
+    <CartonsDimension>84X45X50 -2Cartons,
+84X42X58 -2Cartons,
+74X45X45 -1Cartons,
+74X37X25 -1Cartons,
+70X45X45 -1Cartons,
+60X60X36 -2Cartons,
+60X60X30 -1Cartons,
+110X25X22 -2Cartons,
+</CartonsDimension>
+    <CID>1</CID>
+    <CLID>218</CLID>
+    <CLName>Light Oil/Two Tone</CLName>
+    <CName>SB International</CName>
+    <Code>HS 23506A NAT TT</Code>
+    <CompanyId>1</CompanyId>
+    <ConsigneeAdd>ARIAT INTERNATIONAL 3242 WHIPPLE ROAD PH:null</ConsigneeAdd>
+    <ConsigneeAddress>3242 WHIPPLE ROAD</ConsigneeAddress>
+    <ConsigneeCode>CON008</ConsigneeCode>
+    <ConsigneeId>8</ConsigneeId>
+    <ConsigneeName>ARIAT INTERNATIONAL</ConsigneeName>
+    <CountryofDestination>try</CountryofDestination>
+    <CountryofOrigin>INDIA</CountryofOrigin>
+    <CurrencyID>1</CurrencyID>
+    <CurrName>Dollar</CurrName>
+    <CurrSName>USD</CurrSName>
+    <CustomPIDate>2019-12-19T00:00:00+05:30</CustomPIDate>
+    <CustomPIPayment>-</CustomPIPayment>
+    <CustomPITerm>-</CustomPITerm>
+    <Description>One Ear  Headstall with Inlay Beads,SS Spots,Floral Carving in TT Finish &amp; Tie Ends</Description>
+    <Email>sales@sbleathers.com</Email>
+    <ExporterRefrence>-</ExporterRefrence>
+    <Fax>0512-2405420</Fax>
+    <FinalDestination>try</FinalDestination>
+    <FitemID>37793</FitemID>
+    <FOBCIF>CIF</FOBCIF>
+    <FOBCIFID>2</FOBCIFID>
+    <Freight>0</Freight>
+    <GrossWeight>1266</GrossWeight>
+    <GSTN>09AABFI6571P1ZQ</GSTN>
+    <ID>1</ID>
+    <IECode>9896595656</IECode>
+    <InvoiceAmount>1965</InvoiceAmount>
+    <InvoiceChildID>6</InvoiceChildID>
+    <InvoiceDate>2019-12-19T00:00:00+05:30</InvoiceDate>
+    <InvoiceID>1</InvoiceID>
+    <InvoiceNo>SB/INV/2019-20/0001</InvoiceNo>
+    <InvoiceSNo>1</InvoiceSNo>
+    <InvoiceType>-</InvoiceType>
+    <Name>HEADSTALL</Name>
+    <NetWeight>1231.3</NetWeight>
+    <Notify>try</Notify>
+    <OtherRefrence>-</OtherRefrence>
+    <PackingID>1</PackingID>
+    <PackingMarks>ert</PackingMarks>
+    <PackingRemark>-</PackingRemark>
+    <PANNo>AAWFS7900H</PANNo>
+    <PartyCode>45-0145</PartyCode>
+    <PayemntTerm>try</PayemntTerm>
+    <Phone>985825825</Phone>
+    <PlaceofReceipt>KANPUR INDIA</PlaceofReceipt>
+    <PortofDelivery>-</PortofDelivery>
+    <PortofDischarge>try</PortofDischarge>
+    <PortofLoading>try</PortofLoading>
+    <Precarrigeby>try</Precarrigeby>
+    <Price>6</Price>
+    <Qty>2</Qty>
+    <ShippingMarks>retret</ShippingMarks>
+    <SizeID>87</SizeID>
+    <SizeName>N/A</SizeName>
+    <SNo>6</SNo>
+    <Terms>try</Terms>
+    <TotalAmount>1965</TotalAmount>
+    <TotalCarton>12</TotalCarton>
+    <TotalQty>472</TotalQty>
+    <TotalVol5>1.635</TotalVol5>
+    <TotalVol6>1.635</TotalVol6>
+    <Transport>-</Transport>
+    <VesselFlightNo>try</VesselFlightNo>
+  </ViewInvoicePrint>
+  <ViewInvoicePrint>
+    <AccountNo>-</AccountNo>
+    <AddressOffice>89/1 &amp; 2, TV Tower Compound, Akrampur, Unnao-209801</AddressOffice>
+    <AddressWork>89/1 &amp; 2, TV Tower Compound, Akrampur, Unnao-209801</AddressWork>
+    <Amount>560</Amount>
+    <AmtWords>USD ONE THOUSAND NINE HUNDRED SIXTY FIVE AND ZERO ONLY</AmtWords>
+    <AwbbINo>-</AwbbINo>
+    <BLAWB>-</BLAWB>
+    <BranchId>1</BranchId>
+    <BuyerAddress>7540 CR 201</BuyerAddress>
+    <BuyerCode>BMW</BuyerCode>
+    <BuyerID>29</BuyerID>
+    <BuyerifOther>rty</BuyerifOther>
+    <BuyerName>WEAVER LEATHER LLC</BuyerName>
+    <BuyerOrderno>try</BuyerOrderno>
+    <CartonsDimension>84X45X50 -2Cartons,
+84X42X58 -2Cartons,
+74X45X45 -1Cartons,
+74X37X25 -1Cartons,
+70X45X45 -1Cartons,
+60X60X36 -2Cartons,
+60X60X30 -1Cartons,
+110X25X22 -2Cartons,
+</CartonsDimension>
+    <CID>1</CID>
+    <CLID>31</CLID>
+    <CLName>Dark Oil</CLName>
+    <CName>SB International</CName>
+    <Code>RR3038 5/8" X7 FT Brn</Code>
+    <CompanyId>1</CompanyId>
+    <ConsigneeAdd>ARIAT INTERNATIONAL 3242 WHIPPLE ROAD PH:null</ConsigneeAdd>
+    <ConsigneeAddress>3242 WHIPPLE ROAD</ConsigneeAddress>
+    <ConsigneeCode>CON008</ConsigneeCode>
+    <ConsigneeId>8</ConsigneeId>
+    <ConsigneeName>ARIAT INTERNATIONAL</ConsigneeName>
+    <CountryofDestination>try</CountryofDestination>
+    <CountryofOrigin>INDIA</CountryofOrigin>
+    <CurrencyID>1</CurrencyID>
+    <CurrName>Dollar</CurrName>
+    <CurrSName>USD</CurrSName>
+    <CustomPIDate>2019-12-19T00:00:00+05:30</CustomPIDate>
+    <CustomPIPayment>-</CustomPIPayment>
+    <CustomPITerm>-</CustomPITerm>
+    <Description>Plain Split Reins 5/8</Description>
+    <Email>sales@sbleathers.com</Email>
+    <ExporterRefrence>-</ExporterRefrence>
+    <Fax>0512-2405420</Fax>
+    <FinalDestination>try</FinalDestination>
+    <FitemID>36125</FitemID>
+    <FOBCIF>CIF</FOBCIF>
+    <FOBCIFID>2</FOBCIFID>
+    <Freight>0</Freight>
+    <GrossWeight>1266</GrossWeight>
+    <GSTN>09AABFI6571P1ZQ</GSTN>
+    <ID>1</ID>
+    <IECode>9896595656</IECode>
+    <InvoiceAmount>1965</InvoiceAmount>
+    <InvoiceChildID>7</InvoiceChildID>
+    <InvoiceDate>2019-12-19T00:00:00+05:30</InvoiceDate>
+    <InvoiceID>1</InvoiceID>
+    <InvoiceNo>SB/INV/2019-20/0001</InvoiceNo>
+    <InvoiceSNo>1</InvoiceSNo>
+    <InvoiceType>-</InvoiceType>
+    <Name>Reins</Name>
+    <NetWeight>1231.3</NetWeight>
+    <Notify>try</Notify>
+    <OtherRefrence>-</OtherRefrence>
+    <PackingID>1</PackingID>
+    <PackingMarks>ert</PackingMarks>
+    <PackingRemark>-</PackingRemark>
+    <PANNo>AAWFS7900H</PANNo>
+    <PartyCode>45-0500</PartyCode>
+    <PayemntTerm>try</PayemntTerm>
+    <Phone>985825825</Phone>
+    <PlaceofReceipt>KANPUR INDIA</PlaceofReceipt>
+    <PortofDelivery>-</PortofDelivery>
+    <PortofDischarge>try</PortofDischarge>
+    <PortofLoading>try</PortofLoading>
+    <Precarrigeby>try</Precarrigeby>
+    <Price>7</Price>
+    <Qty>80</Qty>
+    <ShippingMarks>retret</ShippingMarks>
+    <SizeID>305</SizeID>
+    <SizeName>5/8"X 7 FT</SizeName>
+    <SNo>7</SNo>
+    <Terms>try</Terms>
+    <TotalAmount>1965</TotalAmount>
+    <TotalCarton>12</TotalCarton>
+    <TotalQty>472</TotalQty>
+    <TotalVol5>1.635</TotalVol5>
+    <TotalVol6>1.635</TotalVol6>
+    <Transport>-</Transport>
+    <VesselFlightNo>try</VesselFlightNo>
+  </ViewInvoicePrint>
+  <ViewInvoicePrint>
+    <AccountNo>-</AccountNo>
+    <AddressOffice>89/1 &amp; 2, TV Tower Compound, Akrampur, Unnao-209801</AddressOffice>
+    <AddressWork>89/1 &amp; 2, TV Tower Compound, Akrampur, Unnao-209801</AddressWork>
+    <Amount>24</Amount>
+    <AmtWords>USD ONE THOUSAND NINE HUNDRED SIXTY FIVE AND ZERO ONLY</AmtWords>
+    <AwbbINo>-</AwbbINo>
+    <BLAWB>-</BLAWB>
+    <BranchId>1</BranchId>
+    <BuyerAddress>7540 CR 201</BuyerAddress>
+    <BuyerCode>BMW</BuyerCode>
+    <BuyerID>29</BuyerID>
+    <BuyerifOther>rty</BuyerifOther>
+    <BuyerName>WEAVER LEATHER LLC</BuyerName>
+    <BuyerOrderno>try</BuyerOrderno>
+    <CartonsDimension>84X45X50 -2Cartons,
+84X42X58 -2Cartons,
+74X45X45 -1Cartons,
+74X37X25 -1Cartons,
+70X45X45 -1Cartons,
+60X60X36 -2Cartons,
+60X60X30 -1Cartons,
+110X25X22 -2Cartons,
+</CartonsDimension>
+    <CID>1</CID>
+    <CLID>218</CLID>
+    <CLName>Light Oil/Two Tone</CLName>
+    <CName>SB International</CName>
+    <Code>SP 8411L NAT TT</Code>
+    <CompanyId>1</CompanyId>
+    <ConsigneeAdd>ARIAT INTERNATIONAL 3242 WHIPPLE ROAD PH:null</ConsigneeAdd>
+    <ConsigneeAddress>3242 WHIPPLE ROAD</ConsigneeAddress>
+    <ConsigneeCode>CON008</ConsigneeCode>
+    <ConsigneeId>8</ConsigneeId>
+    <ConsigneeName>ARIAT INTERNATIONAL</ConsigneeName>
+    <CountryofDestination>try</CountryofDestination>
+    <CountryofOrigin>INDIA</CountryofOrigin>
+    <CurrencyID>1</CurrencyID>
+    <CurrName>Dollar</CurrName>
+    <CurrSName>USD</CurrSName>
+    <CustomPIDate>2019-12-19T00:00:00+05:30</CustomPIDate>
+    <CustomPIPayment>-</CustomPIPayment>
+    <CustomPITerm>-</CustomPITerm>
+    <Description>Spur Strap  with Inlay Beads,SS Spots,Floral Carving in TT Finish</Description>
+    <Email>sales@sbleathers.com</Email>
+    <ExporterRefrence>-</ExporterRefrence>
+    <Fax>0512-2405420</Fax>
+    <FinalDestination>try</FinalDestination>
+    <FitemID>37813</FitemID>
+    <FOBCIF>CIF</FOBCIF>
+    <FOBCIFID>2</FOBCIFID>
+    <Freight>0</Freight>
+    <GrossWeight>1266</GrossWeight>
+    <GSTN>09AABFI6571P1ZQ</GSTN>
+    <ID>1</ID>
+    <IECode>9896595656</IECode>
+    <InvoiceAmount>1965</InvoiceAmount>
+    <InvoiceChildID>8</InvoiceChildID>
+    <InvoiceDate>2019-12-19T00:00:00+05:30</InvoiceDate>
+    <InvoiceID>1</InvoiceID>
+    <InvoiceNo>SB/INV/2019-20/0001</InvoiceNo>
+    <InvoiceSNo>1</InvoiceSNo>
+    <InvoiceType>-</InvoiceType>
+    <Name>SPUR STRAP</Name>
+    <NetWeight>1231.3</NetWeight>
+    <Notify>try</Notify>
+    <OtherRefrence>-</OtherRefrence>
+    <PackingID>1</PackingID>
+    <PackingMarks>ert</PackingMarks>
+    <PackingRemark>-</PackingRemark>
+    <PANNo>AAWFS7900H</PANNo>
+    <PartyCode>45-0426</PartyCode>
+    <PayemntTerm>try</PayemntTerm>
+    <Phone>985825825</Phone>
+    <PlaceofReceipt>KANPUR INDIA</PlaceofReceipt>
+    <PortofDelivery>-</PortofDelivery>
+    <PortofDischarge>try</PortofDischarge>
+    <PortofLoading>try</PortofLoading>
+    <Precarrigeby>try</Precarrigeby>
+    <Price>8</Price>
+    <Qty>3</Qty>
+    <ShippingMarks>retret</ShippingMarks>
+    <SizeID>29</SizeID>
+    <SizeName>LADIES</SizeName>
+    <SNo>8</SNo>
+    <Terms>try</Terms>
+    <TotalAmount>1965</TotalAmount>
+    <TotalCarton>12</TotalCarton>
+    <TotalQty>472</TotalQty>
+    <TotalVol5>1.635</TotalVol5>
+    <TotalVol6>1.635</TotalVol6>
+    <Transport>-</Transport>
+    <VesselFlightNo>try</VesselFlightNo>
+  </ViewInvoicePrint>
+</NewDataSet>

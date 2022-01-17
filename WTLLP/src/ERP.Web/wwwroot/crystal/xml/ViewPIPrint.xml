@@ -1,0 +1,336 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:MainDataTable="ViewPIPrint" msdata:UseCurrentLocale="true">
+      <xs:complexType>
+        <xs:choice minOccurs="0" maxOccurs="unbounded">
+          <xs:element name="ViewPIPrint">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="AccountNo" type="xs:string" minOccurs="0" />
+                <xs:element name="AddressOffice" type="xs:string" minOccurs="0" />
+                <xs:element name="AddressWork" type="xs:string" minOccurs="0" />
+                <xs:element name="Amount" type="xs:double" />
+                <xs:element name="AmtWords" type="xs:string" minOccurs="0" />
+                <xs:element name="AwbbINo" type="xs:string" minOccurs="0" />
+                <xs:element name="BLAWB" type="xs:string" minOccurs="0" />
+                <xs:element name="BranchId" type="xs:long" />
+                <xs:element name="BuyerAddress" type="xs:string" minOccurs="0" />
+                <xs:element name="BuyerCode" type="xs:string" minOccurs="0" />
+                <xs:element name="BuyerEmail" type="xs:string" minOccurs="0" />
+                <xs:element name="BuyerID" type="xs:long" />
+                <xs:element name="BuyerifOther" type="xs:string" minOccurs="0" />
+                <xs:element name="BuyerMobileNo" type="xs:string" minOccurs="0" />
+                <xs:element name="BuyerName" type="xs:string" minOccurs="0" />
+                <xs:element name="BuyerOrderno" type="xs:string" minOccurs="0" />
+                <xs:element name="BuyerPhoneNo" type="xs:string" minOccurs="0" />
+                <xs:element name="CID" type="xs:long" />
+                <xs:element name="CLID" type="xs:int" />
+                <xs:element name="CLName" type="xs:string" minOccurs="0" />
+                <xs:element name="CName" type="xs:string" minOccurs="0" />
+                <xs:element name="Code" type="xs:string" minOccurs="0" />
+                <xs:element name="CompanyId" type="xs:int" />
+                <xs:element name="CompanyName" type="xs:string" minOccurs="0" />
+                <xs:element name="ConsigneeAdd" type="xs:string" minOccurs="0" />
+                <xs:element name="ConsigneeAddress" type="xs:string" minOccurs="0" />
+                <xs:element name="ConsigneeCode" type="xs:string" minOccurs="0" />
+                <xs:element name="ConsigneeEmail" type="xs:string" minOccurs="0" />
+                <xs:element name="ConsigneeId" type="xs:long" />
+                <xs:element name="ConsigneeMobile" type="xs:string" minOccurs="0" />
+                <xs:element name="ConsigneeName" type="xs:string" minOccurs="0" />
+                <xs:element name="ConsigneePhone" type="xs:string" minOccurs="0" />
+                <xs:element name="CountryofDestination" type="xs:string" minOccurs="0" />
+                <xs:element name="CountryofOrigin" type="xs:string" minOccurs="0" />
+                <xs:element name="CSName" type="xs:string" minOccurs="0" />
+                <xs:element name="CurrencyID" type="xs:int" />
+                <xs:element name="CustomPIDate" type="xs:dateTime" />
+                <xs:element name="CustomPIPayment" type="xs:string" minOccurs="0" />
+                <xs:element name="CustomPITerm" type="xs:string" minOccurs="0" />
+                <xs:element name="Email" type="xs:string" minOccurs="0" />
+                <xs:element name="ExporterRefrence" type="xs:string" minOccurs="0" />
+                <xs:element name="Fax" type="xs:string" minOccurs="0" />
+                <xs:element name="FinalDestination" type="xs:string" minOccurs="0" />
+                <xs:element name="FitemID" type="xs:long" />
+                <xs:element name="FOBCIF" type="xs:string" minOccurs="0" />
+                <xs:element name="FOBCIFID" type="xs:int" />
+                <xs:element name="GSTN" type="xs:string" minOccurs="0" />
+                <xs:element name="ID" type="xs:int" />
+                <xs:element name="IECode" type="xs:string" minOccurs="0" />
+                <xs:element name="Name" type="xs:string" minOccurs="0" />
+                <xs:element name="Notify" type="xs:string" minOccurs="0" />
+                <xs:element name="OrderDate" type="xs:dateTime" />
+                <xs:element name="OrderId" type="xs:long" />
+                <xs:element name="OrderNo" type="xs:string" minOccurs="0" />
+                <xs:element name="OtherRefrence" type="xs:string" minOccurs="0" />
+                <xs:element name="PayemntTerm" type="xs:string" minOccurs="0" />
+                <xs:element name="Phone" type="xs:string" minOccurs="0" />
+                <xs:element name="PIAmount" type="xs:double" />
+                <xs:element name="PIChildId" type="xs:long" />
+                <xs:element name="PIDate" type="xs:dateTime" />
+                <xs:element name="PIMasterId" type="xs:long" />
+                <xs:element name="PINo" type="xs:string" minOccurs="0" />
+                <xs:element name="PIRemark" type="xs:string" minOccurs="0" />
+                <xs:element name="PISNo" type="xs:long" />
+                <xs:element name="PlaceofReceipt" type="xs:string" minOccurs="0" />
+                <xs:element name="PortofDelivery" type="xs:string" minOccurs="0" />
+                <xs:element name="PortofDischarge" type="xs:string" minOccurs="0" />
+                <xs:element name="PortofLoading" type="xs:string" minOccurs="0" />
+                <xs:element name="Precarrigeby" type="xs:string" minOccurs="0" />
+                <xs:element name="Price" type="xs:double" />
+                <xs:element name="Qty" type="xs:int" />
+                <xs:element name="SizeID" type="xs:int" />
+                <xs:element name="SizeName" type="xs:string" minOccurs="0" />
+                <xs:element name="SNo" type="xs:int" />
+                <xs:element name="Terms" type="xs:string" minOccurs="0" />
+                <xs:element name="TotalAmount" type="xs:double" />
+                <xs:element name="TotalQty" type="xs:int" />
+                <xs:element name="Transport" type="xs:string" minOccurs="0" />
+                <xs:element name="VesselFlightNo" type="xs:string" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+        </xs:choice>
+      </xs:complexType>
+    </xs:element>
+  </xs:schema>
+  <ViewPIPrint>
+    <AccountNo>-</AccountNo>
+    <AddressOffice>#620 A, Safipur 1st, Harjinder Nagar, Kanpur-208007</AddressOffice>
+    <AddressWork>#620 A, Safipur 1st, Harjinder Nagar, Kanpur-208007</AddressWork>
+    <Amount>1740</Amount>
+    <AmtWords>USD THREE THOUSAND THREE HUNDRED EIGHTY AND ZERO ONLY</AmtWords>
+    <AwbbINo />
+    <BLAWB>-</BLAWB>
+    <BranchId>1</BranchId>
+    <BuyerAddress>PO BOX 100-780,NSMC</BuyerAddress>
+    <BuyerCode>GTL</BuyerCode>
+    <BuyerEmail>sales@saddles.co.nz</BuyerEmail>
+    <BuyerID>25</BuyerID>
+    <BuyerifOther>-</BuyerifOther>
+    <BuyerMobileNo>508467734</BuyerMobileNo>
+    <BuyerName>GTL DISTRIBUTION LIMITED</BuyerName>
+    <BuyerOrderno />
+    <BuyerPhoneNo>508467734</BuyerPhoneNo>
+    <CID>1</CID>
+    <CLID>10</CLID>
+    <CLName>Brown</CLName>
+    <CName>$</CName>
+    <Code>CH 42B XL Brn</Code>
+    <CompanyId>1</CompanyId>
+    <CompanyName>SB International</CompanyName>
+    <ConsigneeAdd>RAFTER T RANCH COMPANY 1000 OX MILL CREEK ROAD PH:9729772434</ConsigneeAdd>
+    <ConsigneeAddress>1000 OX MILL CREEK ROAD</ConsigneeAddress>
+    <ConsigneeCode>CON021</ConsigneeCode>
+    <ConsigneeId>21</ConsigneeId>
+    <ConsigneeMobile>9729772434</ConsigneeMobile>
+    <ConsigneeName>RAFTER T RANCH COMPANY</ConsigneeName>
+    <ConsigneePhone>9729772434</ConsigneePhone>
+    <CountryofDestination />
+    <CountryofOrigin>INDIA</CountryofOrigin>
+    <CSName>USD</CSName>
+    <CurrencyID>1</CurrencyID>
+    <CustomPIDate>2018-11-15T00:00:00+05:30</CustomPIDate>
+    <CustomPIPayment>-</CustomPIPayment>
+    <CustomPITerm>-</CustomPITerm>
+    <Email>sales@sbleathers.com</Email>
+    <ExporterRefrence>-</ExporterRefrence>
+    <Fax>0512-2405420</Fax>
+    <FinalDestination />
+    <FitemID>33839</FitemID>
+    <FOBCIF>FOB</FOBCIF>
+    <FOBCIFID>1</FOBCIFID>
+    <GSTN>GST No</GSTN>
+    <ID>1</ID>
+    <IECode />
+    <Name>Chap</Name>
+    <Notify />
+    <OrderDate>2018-09-20T00:00:00+05:30</OrderDate>
+    <OrderId>3</OrderId>
+    <OrderNo>20Sep2018</OrderNo>
+    <OtherRefrence>-</OtherRefrence>
+    <PayemntTerm />
+    <Phone>0512-2406947</Phone>
+    <PIAmount>3380</PIAmount>
+    <PIChildId>7</PIChildId>
+    <PIDate>2018-11-15T00:00:00+05:30</PIDate>
+    <PIMasterId>2</PIMasterId>
+    <PINo>SBI/PI/2018-19/0002</PINo>
+    <PIRemark>-</PIRemark>
+    <PISNo>2</PISNo>
+    <PlaceofReceipt>KANPUR INDIA</PlaceofReceipt>
+    <PortofDelivery />
+    <PortofDischarge />
+    <PortofLoading />
+    <Precarrigeby />
+    <Price>58</Price>
+    <Qty>30</Qty>
+    <SizeID>42</SizeID>
+    <SizeName>X Large</SizeName>
+    <SNo>1</SNo>
+    <Terms>-</Terms>
+    <TotalAmount>3380</TotalAmount>
+    <TotalQty>60</TotalQty>
+    <Transport>-</Transport>
+    <VesselFlightNo>-</VesselFlightNo>
+  </ViewPIPrint>
+  <ViewPIPrint>
+    <AccountNo>-</AccountNo>
+    <AddressOffice>#620 A, Safipur 1st, Harjinder Nagar, Kanpur-208007</AddressOffice>
+    <AddressWork>#620 A, Safipur 1st, Harjinder Nagar, Kanpur-208007</AddressWork>
+    <Amount>1120</Amount>
+    <AmtWords>USD THREE THOUSAND THREE HUNDRED EIGHTY AND ZERO ONLY</AmtWords>
+    <AwbbINo />
+    <BLAWB>-</BLAWB>
+    <BranchId>1</BranchId>
+    <BuyerAddress>PO BOX 100-780,NSMC</BuyerAddress>
+    <BuyerCode>GTL</BuyerCode>
+    <BuyerEmail>sales@saddles.co.nz</BuyerEmail>
+    <BuyerID>25</BuyerID>
+    <BuyerifOther>-</BuyerifOther>
+    <BuyerMobileNo>508467734</BuyerMobileNo>
+    <BuyerName>GTL DISTRIBUTION LIMITED</BuyerName>
+    <BuyerOrderno />
+    <BuyerPhoneNo>508467734</BuyerPhoneNo>
+    <CID>1</CID>
+    <CLID>30</CLID>
+    <CLName>Chestnut</CLName>
+    <CName>$</CName>
+    <Code>S Bag 24 Rus</Code>
+    <CompanyId>1</CompanyId>
+    <CompanyName>SB International</CompanyName>
+    <ConsigneeAdd>RAFTER T RANCH COMPANY 1000 OX MILL CREEK ROAD PH:9729772434</ConsigneeAdd>
+    <ConsigneeAddress>1000 OX MILL CREEK ROAD</ConsigneeAddress>
+    <ConsigneeCode>CON021</ConsigneeCode>
+    <ConsigneeId>21</ConsigneeId>
+    <ConsigneeMobile>9729772434</ConsigneeMobile>
+    <ConsigneeName>RAFTER T RANCH COMPANY</ConsigneeName>
+    <ConsigneePhone>9729772434</ConsigneePhone>
+    <CountryofDestination />
+    <CountryofOrigin>INDIA</CountryofOrigin>
+    <CSName>USD</CSName>
+    <CurrencyID>1</CurrencyID>
+    <CustomPIDate>2018-11-15T00:00:00+05:30</CustomPIDate>
+    <CustomPIPayment>-</CustomPIPayment>
+    <CustomPITerm>-</CustomPITerm>
+    <Email>sales@sbleathers.com</Email>
+    <ExporterRefrence>-</ExporterRefrence>
+    <Fax>0512-2405420</Fax>
+    <FinalDestination />
+    <FitemID>33837</FitemID>
+    <FOBCIF>FOB</FOBCIF>
+    <FOBCIFID>1</FOBCIFID>
+    <GSTN>GST No</GSTN>
+    <ID>1</ID>
+    <IECode />
+    <Name>Saddle Bag</Name>
+    <Notify />
+    <OrderDate>2018-09-20T00:00:00+05:30</OrderDate>
+    <OrderId>3</OrderId>
+    <OrderNo>20Sep2018</OrderNo>
+    <OtherRefrence>-</OtherRefrence>
+    <PayemntTerm />
+    <Phone>0512-2406947</Phone>
+    <PIAmount>3380</PIAmount>
+    <PIChildId>8</PIChildId>
+    <PIDate>2018-11-15T00:00:00+05:30</PIDate>
+    <PIMasterId>2</PIMasterId>
+    <PINo>SBI/PI/2018-19/0002</PINo>
+    <PIRemark>-</PIRemark>
+    <PISNo>2</PISNo>
+    <PlaceofReceipt>KANPUR INDIA</PlaceofReceipt>
+    <PortofDelivery />
+    <PortofDischarge />
+    <PortofLoading />
+    <Precarrigeby />
+    <Price>56</Price>
+    <Qty>20</Qty>
+    <SizeID>87</SizeID>
+    <SizeName>NA</SizeName>
+    <SNo>2</SNo>
+    <Terms>-</Terms>
+    <TotalAmount>3380</TotalAmount>
+    <TotalQty>60</TotalQty>
+    <Transport>-</Transport>
+    <VesselFlightNo>-</VesselFlightNo>
+  </ViewPIPrint>
+  <ViewPIPrint>
+    <AccountNo>-</AccountNo>
+    <AddressOffice>#620 A, Safipur 1st, Harjinder Nagar, Kanpur-208007</AddressOffice>
+    <AddressWork>#620 A, Safipur 1st, Harjinder Nagar, Kanpur-208007</AddressWork>
+    <Amount>520</Amount>
+    <AmtWords>USD THREE THOUSAND THREE HUNDRED EIGHTY AND ZERO ONLY</AmtWords>
+    <AwbbINo />
+    <BLAWB>-</BLAWB>
+    <BranchId>1</BranchId>
+    <BuyerAddress>PO BOX 100-780,NSMC</BuyerAddress>
+    <BuyerCode>GTL</BuyerCode>
+    <BuyerEmail>sales@saddles.co.nz</BuyerEmail>
+    <BuyerID>25</BuyerID>
+    <BuyerifOther>-</BuyerifOther>
+    <BuyerMobileNo>508467734</BuyerMobileNo>
+    <BuyerName>GTL DISTRIBUTION LIMITED</BuyerName>
+    <BuyerOrderno />
+    <BuyerPhoneNo>508467734</BuyerPhoneNo>
+    <CID>1</CID>
+    <CLID>31</CLID>
+    <CLName>Dark Oil</CLName>
+    <CName>$</CName>
+    <Code>S Bag 27 Oily</Code>
+    <CompanyId>1</CompanyId>
+    <CompanyName>SB International</CompanyName>
+    <ConsigneeAdd>RAFTER T RANCH COMPANY 1000 OX MILL CREEK ROAD PH:9729772434</ConsigneeAdd>
+    <ConsigneeAddress>1000 OX MILL CREEK ROAD</ConsigneeAddress>
+    <ConsigneeCode>CON021</ConsigneeCode>
+    <ConsigneeId>21</ConsigneeId>
+    <ConsigneeMobile>9729772434</ConsigneeMobile>
+    <ConsigneeName>RAFTER T RANCH COMPANY</ConsigneeName>
+    <ConsigneePhone>9729772434</ConsigneePhone>
+    <CountryofDestination />
+    <CountryofOrigin>INDIA</CountryofOrigin>
+    <CSName>USD</CSName>
+    <CurrencyID>1</CurrencyID>
+    <CustomPIDate>2018-11-15T00:00:00+05:30</CustomPIDate>
+    <CustomPIPayment>-</CustomPIPayment>
+    <CustomPITerm>-</CustomPITerm>
+    <Email>sales@sbleathers.com</Email>
+    <ExporterRefrence>-</ExporterRefrence>
+    <Fax>0512-2405420</Fax>
+    <FinalDestination />
+    <FitemID>33836</FitemID>
+    <FOBCIF>FOB</FOBCIF>
+    <FOBCIFID>1</FOBCIFID>
+    <GSTN>GST No</GSTN>
+    <ID>1</ID>
+    <IECode />
+    <Name>Saddle Bag</Name>
+    <Notify />
+    <OrderDate>2018-09-20T00:00:00+05:30</OrderDate>
+    <OrderId>3</OrderId>
+    <OrderNo>20Sep2018</OrderNo>
+    <OtherRefrence>-</OtherRefrence>
+    <PayemntTerm />
+    <Phone>0512-2406947</Phone>
+    <PIAmount>3380</PIAmount>
+    <PIChildId>9</PIChildId>
+    <PIDate>2018-11-15T00:00:00+05:30</PIDate>
+    <PIMasterId>2</PIMasterId>
+    <PINo>SBI/PI/2018-19/0002</PINo>
+    <PIRemark>-</PIRemark>
+    <PISNo>2</PISNo>
+    <PlaceofReceipt>KANPUR INDIA</PlaceofReceipt>
+    <PortofDelivery />
+    <PortofDischarge />
+    <PortofLoading />
+    <Precarrigeby />
+    <Price>52</Price>
+    <Qty>10</Qty>
+    <SizeID>87</SizeID>
+    <SizeName>NA</SizeName>
+    <SNo>3</SNo>
+    <Terms>-</Terms>
+    <TotalAmount>3380</TotalAmount>
+    <TotalQty>60</TotalQty>
+    <Transport>-</Transport>
+    <VesselFlightNo>-</VesselFlightNo>
+  </ViewPIPrint>
+</NewDataSet>

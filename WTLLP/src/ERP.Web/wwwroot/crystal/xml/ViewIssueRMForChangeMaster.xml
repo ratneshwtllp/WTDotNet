@@ -1,0 +1,99 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:MainDataTable="ViewIssueRMForChangeMaster" msdata:UseCurrentLocale="true">
+      <xs:complexType>
+        <xs:choice minOccurs="0" maxOccurs="unbounded">
+          <xs:element name="ViewIssueRMForChangeMaster">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="AddressOffice" type="xs:string" minOccurs="0" />
+                <xs:element name="AddressWork" type="xs:string" minOccurs="0" />
+                <xs:element name="AmountInWords" type="xs:string" minOccurs="0" />
+                <xs:element name="Balance" type="xs:double" />
+                <xs:element name="CityId" type="xs:int" />
+                <xs:element name="CityName" type="xs:string" minOccurs="0" />
+                <xs:element name="CName" type="xs:string" minOccurs="0" />
+                <xs:element name="Code" type="xs:string" minOccurs="0" />
+                <xs:element name="GSTN" type="xs:string" minOccurs="0" />
+                <xs:element name="InHouse_Outdoor" type="xs:int" />
+                <xs:element name="IsComplete" type="xs:int" />
+                <xs:element name="IssueRMChangeDate" type="xs:dateTime" />
+                <xs:element name="IssueRMChangeID" type="xs:long" />
+                <xs:element name="IssueRMChangeItemID" type="xs:long" />
+                <xs:element name="IssueRMChangeNo" type="xs:string" minOccurs="0" />
+                <xs:element name="IssueRMChangeSNo" type="xs:long" />
+                <xs:element name="JWQty" type="xs:double" />
+                <xs:element name="Name" type="xs:string" minOccurs="0" />
+                <xs:element name="PlaceofSupply" type="xs:string" minOccurs="0" />
+                <xs:element name="Remark" type="xs:string" minOccurs="0" />
+                <xs:element name="RItem_Id" type="xs:long" />
+                <xs:element name="SNo" type="xs:int" />
+                <xs:element name="StateCode" type="xs:string" minOccurs="0" />
+                <xs:element name="StateName" type="xs:string" minOccurs="0" />
+                <xs:element name="SubCategoryName" type="xs:string" minOccurs="0" />
+                <xs:element name="SuppAddressId" type="xs:int" />
+                <xs:element name="SupplierAddress" type="xs:string" minOccurs="0" />
+                <xs:element name="SupplierCode" type="xs:string" minOccurs="0" />
+                <xs:element name="SupplierGSTIN" type="xs:string" minOccurs="0" />
+                <xs:element name="SupplierName" type="xs:string" minOccurs="0" />
+                <xs:element name="SupplierSecondAddress" type="xs:string" minOccurs="0" />
+                <xs:element name="TotalAmount" type="xs:double" />
+                <xs:element name="TotalAmountAfterTax" type="xs:double" />
+                <xs:element name="TotalCGST" type="xs:double" />
+                <xs:element name="TotalIGST" type="xs:double" />
+                <xs:element name="TotalSGST" type="xs:double" />
+                <xs:element name="Transport" type="xs:string" minOccurs="0" />
+                <xs:element name="TransportId" type="xs:int" />
+                <xs:element name="USName" type="xs:string" minOccurs="0" />
+                <xs:element name="VehicleNo" type="xs:string" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+        </xs:choice>
+      </xs:complexType>
+    </xs:element>
+  </xs:schema>
+  <ViewIssueRMForChangeMaster>
+    <AddressOffice>#620 A, Safipur 1st, Harjinder Nagar, Kanpur-208007</AddressOffice>
+    <AddressWork>#620 A, Safipur 1st, Harjinder Nagar, Kanpur-208007</AddressWork>
+    <AmountInWords>RUPEES TWO THOUSAND SIX HUNDRED FIFTY FIVE ONLY</AmountInWords>
+    <Balance>150</Balance>
+    <CityId>1</CityId>
+    <CityName>Kanpur</CityName>
+    <CName>SB International</CName>
+    <Code>CON-00014-ZN-NI-108</Code>
+    <GSTN>09AAWFS7900H1ZL</GSTN>
+    <InHouse_Outdoor>2</InHouse_Outdoor>
+    <IsComplete>0</IsComplete>
+    <IssueRMChangeDate>2020-06-05T00:00:00+05:30</IssueRMChangeDate>
+    <IssueRMChangeID>1</IssueRMChangeID>
+    <IssueRMChangeItemID>1</IssueRMChangeItemID>
+    <IssueRMChangeNo>SBI/JW/20-21/001</IssueRMChangeNo>
+    <IssueRMChangeSNo>1</IssueRMChangeSNo>
+    <JWQty>150</JWQty>
+    <Name>Berry Conchos Zinc Nickel 1.25" </Name>
+    <PlaceofSupply>-</PlaceofSupply>
+    <Remark>return after lacquer coating</Remark>
+    <RItem_Id>2191</RItem_Id>
+    <SNo>1</SNo>
+    <StateCode>UP</StateCode>
+    <StateName>Uttar Pradesh</StateName>
+    <SubCategoryName>Conchos</SubCategoryName>
+    <SuppAddressId>0</SuppAddressId>
+    <SupplierAddress>Civil Lines, kanpur Pin-208001</SupplierAddress>
+    <SupplierCode>53</SupplierCode>
+    <SupplierGSTIN>09AFFPS2936H1Z5</SupplierGSTIN>
+    <SupplierName>SB Metals</SupplierName>
+    <SupplierSecondAddress>-</SupplierSecondAddress>
+    <TotalAmount>2250</TotalAmount>
+    <TotalAmountAfterTax>2655</TotalAmountAfterTax>
+    <TotalCGST>202.5</TotalCGST>
+    <TotalIGST>0</TotalIGST>
+    <TotalSGST>202.5</TotalSGST>
+    <Transport />
+    <TransportId>0</TransportId>
+    <USName>Pcs</USName>
+    <VehicleNo />
+  </ViewIssueRMForChangeMaster>
+</NewDataSet>

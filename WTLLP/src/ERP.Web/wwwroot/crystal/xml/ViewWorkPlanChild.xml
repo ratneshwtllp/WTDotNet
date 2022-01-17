@@ -1,0 +1,146 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:MainDataTable="ViewWorkPlanChild" msdata:UseCurrentLocale="true">
+      <xs:complexType>
+        <xs:choice minOccurs="0" maxOccurs="unbounded">
+          <xs:element name="ViewWorkPlanChild">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="BalanceQty" type="xs:int" />
+                <xs:element name="BuyerCode" type="xs:string" minOccurs="0" />
+                <xs:element name="BuyerId" type="xs:long" />
+                <xs:element name="BuyerName" type="xs:string" minOccurs="0" />
+                <xs:element name="CLName" type="xs:string" minOccurs="0" />
+                <xs:element name="Code" type="xs:string" minOccurs="0" />
+                <xs:element name="Color" type="xs:int" />
+                <xs:element name="ContractorID" type="xs:long" />
+                <xs:element name="ContractorName" type="xs:string" minOccurs="0" />
+                <xs:element name="DiliveryDatePlan" type="xs:dateTime" />
+                <xs:element name="FitemId" type="xs:long" />
+                <xs:element name="Instruction1" type="xs:string" minOccurs="0" />
+                <xs:element name="Instruction2" type="xs:string" minOccurs="0" />
+                <xs:element name="IsPending" type="xs:int" />
+                <xs:element name="IsProcessReceive" type="xs:int" />
+                <xs:element name="LabourCharges" type="xs:double" />
+                <xs:element name="MyDeliveryDate" type="xs:dateTime" />
+                <xs:element name="Name" type="xs:string" minOccurs="0" />
+                <xs:element name="Order_Sample" type="xs:int" />
+                <xs:element name="OrderChildId" type="xs:long" />
+                <xs:element name="OrderId" type="xs:long" />
+                <xs:element name="OrderNo" type="xs:string" minOccurs="0" />
+                <xs:element name="PhotoPath" type="xs:string" minOccurs="0" />
+                <xs:element name="PlanBy" type="xs:string" minOccurs="0" />
+                <xs:element name="PlanChildId" type="xs:long" />
+                <xs:element name="PlanDate" type="xs:dateTime" />
+                <xs:element name="PlanId" type="xs:long" />
+                <xs:element name="PlanNo" type="xs:string" minOccurs="0" />
+                <xs:element name="PlanQty" type="xs:int" />
+                <xs:element name="ProductCategoryID" type="xs:long" />
+                <xs:element name="ProductCategoryName" type="xs:string" minOccurs="0" />
+                <xs:element name="ProductSizeId" type="xs:int" />
+                <xs:element name="ProductSizeName" type="xs:string" minOccurs="0" />
+                <xs:element name="ProductSubCategoryID" type="xs:long" />
+                <xs:element name="ProductSubCategoryName" type="xs:string" minOccurs="0" />
+                <xs:element name="ReceiveQty" type="xs:int" />
+                <xs:element name="RitemCode" type="xs:string" minOccurs="0" />
+                <xs:element name="RitemId" type="xs:long" />
+                <xs:element name="RitemName" type="xs:string" minOccurs="0" />
+                <xs:element name="SessionYear" type="xs:string" minOccurs="0" />
+                <xs:element name="ShortName" type="xs:string" minOccurs="0" />
+                <xs:element name="SNo" type="xs:int" />
+                <xs:element name="Unit" type="xs:string" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+        </xs:choice>
+      </xs:complexType>
+    </xs:element>
+  </xs:schema>
+  <ViewWorkPlanChild>
+    <BalanceQty>30</BalanceQty>
+    <BuyerCode>BMW</BuyerCode>
+    <BuyerId>29</BuyerId>
+    <BuyerName>WEAVER LEATHER LLC</BuyerName>
+    <CLName>Dark Oil</CLName>
+    <Code>BC 5737 Brn</Code>
+    <Color>31</Color>
+    <ContractorID>11</ContractorID>
+    <ContractorName>Amit Supervisor</ContractorName>
+    <DiliveryDatePlan>2021-12-21T00:00:00+05:30</DiliveryDatePlan>
+    <FitemId>36123</FitemId>
+    <Instruction1>प्लैन ब्रैस्टकोलर </Instruction1>
+    <Instruction2>1.लेदर = ब्राउन</Instruction2>
+    <IsPending>0</IsPending>
+    <IsProcessReceive>1</IsProcessReceive>
+    <LabourCharges>0</LabourCharges>
+    <MyDeliveryDate>2019-05-15T00:00:00+05:30</MyDeliveryDate>
+    <Name>BREAST COLLAR</Name>
+    <Order_Sample>1</Order_Sample>
+    <OrderChildId>391</OrderChildId>
+    <OrderId>26</OrderId>
+    <OrderNo>259085</OrderNo>
+    <PhotoPath>uploads/productphotos/36123.jpg</PhotoPath>
+    <PlanBy>rai</PlanBy>
+    <PlanChildId>3618</PlanChildId>
+    <PlanDate>2021-12-21T00:00:00+05:30</PlanDate>
+    <PlanId>458</PlanId>
+    <PlanNo>SB/WP/21-22/00001</PlanNo>
+    <PlanQty>30</PlanQty>
+    <ProductCategoryID>86</ProductCategoryID>
+    <ProductCategoryName>Western Tack</ProductCategoryName>
+    <ProductSizeId>87</ProductSizeId>
+    <ProductSizeName>N/A</ProductSizeName>
+    <ProductSubCategoryID>736</ProductSubCategoryID>
+    <ProductSubCategoryName>Breast Collar</ProductSubCategoryName>
+    <ReceiveQty>0</ReceiveQty>
+    <RitemId>0</RitemId>
+    <SessionYear>2021-22</SessionYear>
+    <ShortName>-</ShortName>
+    <SNo>2</SNo>
+    <Unit>Pcs</Unit>
+  </ViewWorkPlanChild>
+  <ViewWorkPlanChild>
+    <BalanceQty>30</BalanceQty>
+    <BuyerCode>BMW</BuyerCode>
+    <BuyerId>29</BuyerId>
+    <BuyerName>WEAVER LEATHER LLC</BuyerName>
+    <CLName>Dark Oil</CLName>
+    <Code>BC 5851 DK BN</Code>
+    <Color>31</Color>
+    <ContractorID>11</ContractorID>
+    <ContractorName>Amit Supervisor</ContractorName>
+    <DiliveryDatePlan>2021-12-21T00:00:00+05:30</DiliveryDatePlan>
+    <FitemId>37800</FitemId>
+    <Instruction1>ब्रेस्ट कालर विथ फ्लोरल कार्विंग टरक्वोइसे कलरिंग  &amp; हैवी सफ़ेद स्टिच </Instruction1>
+    <Instruction2>1.लेदर = ब्राउन </Instruction2>
+    <IsPending>0</IsPending>
+    <IsProcessReceive>1</IsProcessReceive>
+    <LabourCharges>0</LabourCharges>
+    <MyDeliveryDate>2019-05-15T00:00:00+05:30</MyDeliveryDate>
+    <Name>BREAST COLLAR</Name>
+    <Order_Sample>1</Order_Sample>
+    <OrderChildId>383</OrderChildId>
+    <OrderId>26</OrderId>
+    <OrderNo>259085</OrderNo>
+    <PhotoPath>uploads/productphotos/37800.jpg</PhotoPath>
+    <PlanBy>rai</PlanBy>
+    <PlanChildId>3617</PlanChildId>
+    <PlanDate>2021-12-21T00:00:00+05:30</PlanDate>
+    <PlanId>458</PlanId>
+    <PlanNo>SB/WP/21-22/00001</PlanNo>
+    <PlanQty>30</PlanQty>
+    <ProductCategoryID>86</ProductCategoryID>
+    <ProductCategoryName>Western Tack</ProductCategoryName>
+    <ProductSizeId>87</ProductSizeId>
+    <ProductSizeName>N/A</ProductSizeName>
+    <ProductSubCategoryID>736</ProductSubCategoryID>
+    <ProductSubCategoryName>Breast Collar</ProductSubCategoryName>
+    <ReceiveQty>0</ReceiveQty>
+    <RitemId>0</RitemId>
+    <SessionYear>2021-22</SessionYear>
+    <ShortName>-</ShortName>
+    <SNo>1</SNo>
+    <Unit>Pcs</Unit>
+  </ViewWorkPlanChild>
+</NewDataSet>

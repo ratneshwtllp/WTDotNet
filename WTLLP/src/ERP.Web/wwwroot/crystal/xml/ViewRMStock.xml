@@ -1,0 +1,134 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:MainDataTable="ViewRMStock" msdata:UseCurrentLocale="true">
+      <xs:complexType>
+        <xs:choice minOccurs="0" maxOccurs="unbounded">
+          <xs:element name="ViewRMStock">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="Amount" type="xs:double" />
+                <xs:element name="BelongTo" type="xs:int" />
+                <xs:element name="CategoryID" type="xs:long" />
+                <xs:element name="CategoryName" type="xs:string" minOccurs="0" />
+                <xs:element name="Code" type="xs:string" minOccurs="0" />
+                <xs:element name="CostUnit" type="xs:int" />
+                <xs:element name="CostUnitName" type="xs:string" minOccurs="0" />
+                <xs:element name="CostUnitSName" type="xs:string" minOccurs="0" />
+                <xs:element name="CurrentStock" type="xs:double" />
+                <xs:element name="Full_Name" type="xs:string" minOccurs="0" />
+                <xs:element name="Name" type="xs:string" minOccurs="0" />
+                <xs:element name="RItem_Id" type="xs:long" />
+                <xs:element name="SubCategoryID" type="xs:long" />
+                <xs:element name="SubCategoryName" type="xs:string" minOccurs="0" />
+                <xs:element name="Title" type="xs:string" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+        </xs:choice>
+      </xs:complexType>
+    </xs:element>
+  </xs:schema>
+  <ViewRMStock>
+    <Amount>0</Amount>
+    <BelongTo>203</BelongTo>
+    <CategoryID>11</CategoryID>
+    <CategoryName>Fittings</CategoryName>
+    <Code>BUC-00001-BR-NI-88</Code>
+    <CostUnit>3</CostUnit>
+    <CostUnitName>Pieces</CostUnitName>
+    <CostUnitSName>Pcs</CostUnitSName>
+    <CurrentStock>136</CurrentStock>
+    <Full_Name>Anda Buckle Ordinary Brass Nickel 1"</Full_Name>
+    <Name>Anda Buckle Ordinary Brass Nickel 1"</Name>
+    <RItem_Id>380</RItem_Id>
+    <SubCategoryID>203</SubCategoryID>
+    <SubCategoryName>Brass Buckles</SubCategoryName>
+    <Title>uploads/rmphotos\380.jpg</Title>
+  </ViewRMStock>
+  <ViewRMStock>
+    <Amount>0</Amount>
+    <BelongTo>203</BelongTo>
+    <CategoryID>11</CategoryID>
+    <CategoryName>Fittings</CategoryName>
+    <Code>BUC-00023-BR-NI-88</Code>
+    <CostUnit>3</CostUnit>
+    <CostUnitName>Pieces</CostUnitName>
+    <CostUnitSName>Pcs</CostUnitSName>
+    <CurrentStock>0</CurrentStock>
+    <Full_Name>Dandedar Garari Buckle Brass Nickle 1"</Full_Name>
+    <Name>Dandedar Garari Buckle Brass Nickel 1"</Name>
+    <RItem_Id>409</RItem_Id>
+    <SubCategoryID>203</SubCategoryID>
+    <SubCategoryName>Brass Buckles</SubCategoryName>
+    <Title>uploads/rmphotos/rmphoto.jpg</Title>
+  </ViewRMStock>
+  <ViewRMStock>
+    <Amount>0</Amount>
+    <BelongTo>203</BelongTo>
+    <CategoryID>11</CategoryID>
+    <CategoryName>Fittings</CategoryName>
+    <Code>BUC-00025-BR-NI-88</Code>
+    <CostUnit>3</CostUnit>
+    <CostUnitName>Pieces</CostUnitName>
+    <CostUnitSName>Pcs</CostUnitSName>
+    <CurrentStock>3</CurrentStock>
+    <Full_Name>Khutidar Buckle Brass Nickle 1"</Full_Name>
+    <Name>Khutidar Buckle Brass Nickel 1"</Name>
+    <RItem_Id>411</RItem_Id>
+    <SubCategoryID>203</SubCategoryID>
+    <SubCategoryName>Brass Buckles</SubCategoryName>
+    <Title>uploads/rmphotos\411.jpg</Title>
+  </ViewRMStock>
+  <ViewRMStock>
+    <Amount>0</Amount>
+    <BelongTo>203</BelongTo>
+    <CategoryID>11</CategoryID>
+    <CategoryName>Fittings</CategoryName>
+    <Code>BUC-00058-BR-NI-88</Code>
+    <CostUnit>3</CostUnit>
+    <CostUnitName>Pieces</CostUnitName>
+    <CostUnitSName>Pcs</CostUnitSName>
+    <CurrentStock>915</CurrentStock>
+    <Full_Name>Dandedar Buckle Brass Nickle 1"</Full_Name>
+    <Name>Dandedar Buckle Brass Nickle 1"</Name>
+    <RItem_Id>1287</RItem_Id>
+    <SubCategoryID>203</SubCategoryID>
+    <SubCategoryName>Brass Buckles</SubCategoryName>
+    <Title>uploads/rmphotos\1287.jpg</Title>
+  </ViewRMStock>
+  <ViewRMStock>
+    <Amount>0</Amount>
+    <BelongTo>203</BelongTo>
+    <CategoryID>11</CategoryID>
+    <CategoryName>Fittings</CategoryName>
+    <Code>BUC-00078-BR-NI-88</Code>
+    <CostUnit>3</CostUnit>
+    <CostUnitName>Pieces</CostUnitName>
+    <CostUnitSName>Pcs</CostUnitSName>
+    <CurrentStock>0</CurrentStock>
+    <Full_Name>Dandedar Garari Buckle  Brass Nickle 1" </Full_Name>
+    <Name>Dandedar Garari Buckle  Brass Nickle 1" </Name>
+    <RItem_Id>1491</RItem_Id>
+    <SubCategoryID>203</SubCategoryID>
+    <SubCategoryName>Brass Buckles</SubCategoryName>
+    <Title>uploads/rmphotos/rmphoto.jpg</Title>
+  </ViewRMStock>
+  <ViewRMStock>
+    <Amount>0</Amount>
+    <BelongTo>203</BelongTo>
+    <CategoryID>11</CategoryID>
+    <CategoryName>Fittings</CategoryName>
+    <Code>BUC-00085-BR-NI-88</Code>
+    <CostUnit>3</CostUnit>
+    <CostUnitName>Pieces</CostUnitName>
+    <CostUnitSName>Pcs</CostUnitSName>
+    <CurrentStock>0</CurrentStock>
+    <Full_Name>Kutta Patta Buckle Brass Nickle 1"</Full_Name>
+    <Name>Kutta Patta Buckle Brass Nickle 1"</Name>
+    <RItem_Id>1544</RItem_Id>
+    <SubCategoryID>203</SubCategoryID>
+    <SubCategoryName>Brass Buckles</SubCategoryName>
+    <Title>uploads/rmphotos/rmphoto.jpg</Title>
+  </ViewRMStock>
+</NewDataSet>

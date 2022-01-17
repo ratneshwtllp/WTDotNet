@@ -1,0 +1,123 @@
+﻿@model ERP.Domain.Entities.CartonDetails
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewData["Title"] = "Edit Carton";
+}
+
+<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="" />
+<meta name="keywords" content="" />
+
+<div id="message-area"></div>
+
+<script type="text/javascript">
+    function ShowSuccess(data) {
+        window.location.href = "../../Carton/CartonList";
+        alert(data);
+    }
+
+    function HideForm() {
+        //When the form is submitted, we hide the form
+        $("#form-area").hide();
+    }
+
+    function ShowFailure(data) {
+        alert(data);
+        //In the case that the AJAX call fails to communicate with the server
+        //(e.g. the user's internet connection cuts out), we should display a message to that effect
+        $('#message-area').html("<div class='alert alert-danger'><strong>Error!</strong>The server could not be contacted and your message has not been sent. Please check your internet connection and try again later.</div>");
+    }
+</script>
+
+@section Scripts {
+    <script type="text/javascript">
+        prevententertosubmit();
+
+        $('#Length').on('input', function () {
+            var l = $("#Length").val();
+            var w = $("#Width").val();
+            var h = $("#Height").val();
+            var d = l + 'X' + w + 'X' + h;
+            $("#Dimension").val(d);
+        });
+
+        $('#Width').on('input', function () {
+            var l = $("#Length").val();
+            var w = $("#Width").val();
+            var h = $("#Height").val();
+            var d = l + 'X' + w + 'X' + h;
+            $("#Dimension").val(d);
+        });
+
+        $('#Height').on('input', function () {
+            var l = $("#Length").val();
+            var w = $("#Width").val();
+            var h = $("#Height").val();
+            var d = l + 'X' + w + 'X' + h;
+            $("#Dimension").val(d);
+        });
+
+    </script>
+}
+
+<form asp-controller="Carton" asp-action="EditCarton" data-ajax="true" data-ajax-success="ShowSuccess" data-ajax-failure="ShowFailure" data-ajax-method="POST">
+    @Html.ValidationSummary(true)
+
+    <div class="clear"></div>
+    <div class="container containerheight">
+        <p>
+            @Html.ActionLink("Carton List", "CartonList", "Carton", "", new { @class = "btn btn-info" })
+        </p>
+        <div class="row clearleft-custom flow-offset-1">
+            <div class="col-xs-12 col-sm-6 col-lg-4">
+                <div class="thumbnail thumbnail-mod-1">
+                    <div class="form">
+                        <div>
+                            <h2>Edit Carton</h2>
+                        </div>
+                        @Html.HiddenFor(a => a.CartonId)
+
+                        <p class="contact">
+                            <label>Length (cm)</label>
+                        </p>
+                        @Html.TextBoxFor(a => a.Length, new { @required = "true", autocomplete = "off" })
+
+                        <p class="contact">
+                            <label>Width (cm)</label>
+                        </p>
+                        @Html.TextBoxFor(a => a.Width, new { @required = "true", autocomplete = "off" })
+
+                        <p class="contact">
+                            <label>Height (cm)</label>
+                        </p>
+                        @Html.TextBoxFor(a => a.Height, new { @required = "true", autocomplete = "off" })
+
+                        <p class="contact">
+                            <label>Dimension</label>
+                        </p>
+                        @Html.TextBoxFor(a => a.Dimension, new { @required = "true", autocomplete = "off", @readonly = "readonly" })
+
+                        <p class="contact">
+                            <label>Weight (kg.)</label>
+                        </p>
+                        @Html.TextBoxFor(a => a.Weight, new { @required = "true", autocomplete = "off" })
+
+                        <p class="contact">
+                            <label>Remark</label>
+                        </p>
+                        @Html.TextAreaFor(a => a.Description, new { autocomplete = "off", rows = "4", maxlength = "100" })
+
+
+                        <p class="contact">
+                            <label>&nbsp;</label>
+                        </p>
+                        <input id="Submit1" type="submit" value="Edit Carton" />
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>

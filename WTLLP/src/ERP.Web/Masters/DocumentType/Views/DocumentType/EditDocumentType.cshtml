@@ -1,0 +1,69 @@
+﻿@model ERP.Domain.Entities.DocumentTypeDetails
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewData["Title"] = "Edit Document Type";
+}
+<script type="text/javascript">
+    function ShowSuccess(data) {
+        $(".container").find("input:text").val('');
+        $(".container").find("textarea").val('');
+        window.location.href = "../../DocumentType/DocumentTypeList";
+        alert(data);
+    }
+
+    function HideForm() {
+        //When the form is submitted, we hide the form
+        $("#form-area").hide();
+    }
+
+    function ShowFailure(data) {
+        // alert(data);
+        alert("Allready Exist");
+        //In the case that the AJAX call fails to communicate with the server
+        //(e.g. the user's internet connection cuts out), we should display a message to that effect
+        // $('#message-area').html("<div class='alert alert-danger'><strong>Error!</strong>The server could not be contacted and your message has not been sent. Please check your internet connection and try again later.</div>");
+    }
+</script>
+
+<form asp-controller="DocumentType" asp-action="EditDocumentType" data-ajax="true" data-ajax-success="ShowSuccess" data-ajax-failure="ShowFailure" data-ajax-method="POST">
+    @Html.ValidationSummary(true)
+
+    <div class="clear"></div>
+    <div class="container containerheight">
+        <p>
+            @Html.ActionLink("Consignee List", "ConsigneeList", "Consignee", "", new { @class = "btn btn-info" })
+        </p>
+        <div class="row clearleft-custom flow-offset-1">
+            <div class="col-xs-12 col-sm-6 col-lg-4">
+                <div class="thumbnail thumbnail-mod-1">
+                    <div class="form">
+                        <div>
+                            <h3>@Html.ActionLink("Document Type List", "DocumentTypeList", "DocumentType")</h3>
+                        </div>
+
+                        <div>
+                            <h2>Edit Document Type</h2>
+                        </div>
+                        @Html.HiddenFor(a => a.DocumentTypeId)
+
+                        <p class="contact">
+                            <label>Document Type</label>
+                        </p>
+                        @Html.TextBoxFor(a => a.DocumentTypeName, new { @required = "true", autocomplete = "off", maxlength = "50" })
+
+                        <p class="contact">
+                            <label>Remark</label>
+                        </p>
+                        @Html.TextAreaFor(a => a.Remark, new { autocomplete = "off", rows = "4", maxlength = "150" })
+
+                        <p class="contact">
+                            <label>&nbsp;</label>
+                        </p>
+                        <input id="Submit1" type="submit" value="Update" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</form>

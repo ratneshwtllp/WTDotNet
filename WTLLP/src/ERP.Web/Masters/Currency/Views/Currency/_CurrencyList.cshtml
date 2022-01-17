@@ -1,0 +1,131 @@
+﻿@using ERP.Domain.Entities;
+@using NonFactors.Mvc.Grid;
+
+@model IEnumerable<CurrencyDetails>
+
+@(Html
+        .Grid(Model)
+        .Build(columns =>
+        {
+
+            columns.Add(model => $"<a href='../Currency/EditCurrency/{model.Cid}'> <img src=\"../../images/edit.png\"></a>").Encoded(false);
+            //columns.Add(model => $"<a href='../Currency/CurrencyHistoryList_Partial/{model.Cid}'> Currency History</a>").Encoded(false);
+            //columns.Add(model => $"<a href='#' onclick=showJqueryDialogViewCurrHistory(\"{model.Cid}\");> Currency History </a>").Encoded(false);
+            columns.Add(model => $"<a href='#' onclick=showJqueryDialogViewCurrHistory(\"{model.Cid}\");> <img src=\"../../images/view.png\"></a>").Encoded(false);
+            columns.Add(model => $"<a href='#' > <img src=\"../../images/delete.png\"   onclick=showJqueryDialog(\"{model.Cid}\"); > </a>").Encoded(false);
+            columns.Add(model => model.Cid).Css("hidden");
+            columns.Add(model => model.Cname).Titled("Currency");
+            columns.Add(model => model.Csname).Titled("Short Name");
+            columns.Add(model => model.Crate).Titled("Rate");
+        })
+        .Filterable()
+         .Sortable()
+        .Pageable(pager =>
+        {
+            pager.PagesToDisplay = 10;
+            pager.CurrentPage = 1;
+            pager.RowsPerPage = 10;
+        })
+        .Empty("No data found")
+         .Css("table-hover")
+)
+<div id="CurrencyHistory"></div>
+
+<!-- The loading-area will be where we display a message during the AJAX call.
+    This way, the user knows something is happening in the background.-->
+<div id="loading-area" class="load" style="display:none;">
+    <div class='alert alert-info'><strong>Sending...</strong></div>
+</div>
+
+<!-- The message-area will be where we display a message after the AJAX call
+    about whether or not the contact form was successfully sent-->
+<div id="message-area"></div>
+
+<!--jQuery Modal Div-->
+<div id="dialog-confirm" title="Delete Confirmation" style="display:none;">
+    <p><span class="ui-icon ui-icon-alert" style="float:left; margin:12px 12px 20px 0;"></span>This items will be permanently deleted and cannot be recovered. Are you sure?</p>
+</div>
+
+
+<div id="dataConfirmModal" class="modal" role="dialog" aria-labelledby="dataConfirmLabel" aria-hidden="true">
+    <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+        <h3 id="dataConfirmLabel">Please Confirm</h3>
+    </div><div class="modal-body"></div><div class="modal-footer"><button class="btn" data-dismiss="modal" aria-hidden="true">Cancel</button><a class="btn btn-primary" id="dataConfirmOK">OK</a></div>
+</div>
+
+<!-- These methods are invoked at different stages of the AJAX call-->
+<script type="text/javascript">
+    function showJqueryDialog(id) {
+        $("#dialog-confirm").dialog({
+            resizable: false,
+            height: "auto",
+            width: 400,
+            modal: true,
+            buttons: {
+                "Yes": function () {
+
+                    $.ajax({
+                        cache: false,
+                        url: '@Url.Action("DeleteCurrency")',
+                        type: "GET",
+                        data: { id: id },
+                        dataType: 'JSON',
+                        success: function (data) {
+                        },
+                    });
+
+                    $(this).dialog("close");
+                    //ShowSuccess("Delete Sucessfully.");
+                    window.location.href = "../../currency/currency/currencyList";
+                },
+                Cancel: function () {
+                    $(this).dialog("close");
+                }
+            }
+        });
+    }
+
+    function showJqueryDialogViewCurrHistory(Cid) {      
+        var url = '@Url.Action("CurrencyHistoryList_Partial", "Currency")';
+         $("#CurrencyHistory").dialog({
+            title: 'Currency History',
+            autoOpen: false,
+            resizable: false,
+            height: 550,
+            width: 1250,
+            show: { effect: 'drop', direction: "up" },
+            modal: true,
+            draggable: true,
+            open: function (event, ui) {
+                $(this).load(url, { id: Cid });
+            },
+            close: function (event, ui) {
+                $(this).dialog('close');
+            }
+        });
+
+         $("#CurrencyHistory").dialog('open');
+        return false;
+    }
+
+    function showJavascriptDelete() {
+        var deleteUser = window.confirm('Are you sure you want to delete?');
+        if (deleteUser) {
+            //Logic to delete the item
+            alert('deleted');
+        }
+        else {
+            return false;
+        }
+    }
+
+    function ShowSuccess(data) {
+        alert(data);
+    }
+
+    function HideForm() {
+        //When the form is submitted, we hide the form
+        $("#form-area").hide();
+    }
+</script>

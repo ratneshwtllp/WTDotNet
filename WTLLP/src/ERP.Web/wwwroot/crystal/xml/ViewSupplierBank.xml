@@ -1,0 +1,30 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:MainDataTable="ViewSupplierBank" msdata:UseCurrentLocale="true">
+      <xs:complexType>
+        <xs:choice minOccurs="0" maxOccurs="unbounded">
+          <xs:element name="ViewSupplierBank">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="AccountNo" type="xs:string" minOccurs="0" />
+                <xs:element name="BankAddress" type="xs:string" minOccurs="0" />
+                <xs:element name="BankId" type="xs:int" />
+                <xs:element name="BankIFSCCode" type="xs:string" minOccurs="0" />
+                <xs:element name="BankName" type="xs:string" minOccurs="0" />
+                <xs:element name="BankSwiftCode" type="xs:string" minOccurs="0" />
+                <xs:element name="Beneficiary" type="xs:string" minOccurs="0" />
+                <xs:element name="ContactPerson" type="xs:string" minOccurs="0" />
+                <xs:element name="SupplierAddress" type="xs:string" minOccurs="0" />
+                <xs:element name="SupplierBankId" type="xs:long" />
+                <xs:element name="SupplierCode" type="xs:string" minOccurs="0" />
+                <xs:element name="SupplierId" type="xs:long" />
+                <xs:element name="SupplierName" type="xs:string" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+        </xs:choice>
+      </xs:complexType>
+    </xs:element>
+  </xs:schema>
+</NewDataSet>

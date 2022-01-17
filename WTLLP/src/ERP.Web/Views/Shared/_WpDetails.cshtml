@@ -1,0 +1,21 @@
+﻿@using NonFactors.Mvc.Grid;
+@using ERP.Domain.Entities;
+@model IEnumerable<ViewWorkPlanChild>
+@(Html
+    .Grid(Model)
+    .Build(columns =>
+    {
+        columns.Add(model => $"<a href='../../{model.PhotoPath}' target='_blank' ><img src=" + @Url.Content("~/" + model.PhotoPath) + " width='20' height='20' ></a>").Encoded(false);
+        columns.Add(model => model.Code).Titled("Code");
+        columns.Add(model => model.Name).Titled("Name").Formatted("{0:dd/MMM/yyyy}");
+        columns.Add(model => model.CLName).Titled("Color");
+        columns.Add(model => model.ProductSizeName).Titled("Size");
+        columns.Add(model => model.RitemName).Titled("Leather");
+        columns.Add(model => model.PlanQty).Titled("Qty");
+        columns.Add(model => model.LabourCharges).Titled("Charges");
+        columns.Add(model => model.Instruction1).Titled("Instruction1");
+        columns.Add(model => model.Instruction2).Titled("Instruction2");
+    })
+    .Css("table-hover")
+    .Empty("No data found")
+)

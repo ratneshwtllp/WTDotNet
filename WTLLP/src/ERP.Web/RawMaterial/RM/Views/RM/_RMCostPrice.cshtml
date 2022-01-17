@@ -1,0 +1,96 @@
+﻿@model List<ERP.Web.Areas.RM.Models.RawMaterialModel> 
+
+<script type="text/javascript">
+    $(function () {
+        $('#Submit1').click(function () {
+
+            var isAllValid = true;
+            var list = [];
+
+            $('#elementorderdetailsItems tr').each(function (index, ele) {
+                var RMItem = {
+                    RItem_ID: $('.rmid', this).val(),
+                    CostPrice: $('.costprice', this).val(),  
+                }
+                list.push(RMItem);
+                //alert(list);
+                //var re = JSON.stringify(RMItem);
+                //alert(re);
+            }) 
+            if (isAllValid) {
+                if (list == null) {
+                    return;
+                }
+
+                $(this).val('Please wait...');
+
+                $.ajax({
+                    type: 'POST',
+                    url: '@Url.Action("SaveRMCostPrice")',
+                    data: JSON.stringify(list),
+                    contentType: 'application/json',
+                    success: function (data) {
+                        if (data.status) {
+                            alert('Successfully saved');
+                            window.location.href = '@Url.Action("RMCostPrice", "RM")';
+                        }
+                        else {
+                            alert('Error');
+                        }
+                        $('#submit').val('Save');
+                    },
+                    error: function (error) {
+                        console.log(error);
+                        $('#submit').val('Save');
+                    }
+                });
+            }
+        });
+    });
+
+</script>
+
+<div class="form">
+    <table class="table table-responsive" id="elementorderdetailsItems">
+        <thead>
+            <tr>
+                <td class="ratewidth tableheading">RM Code</td>
+                <td class="selectwidth tableheading">Raw Material</td>
+                <td class="ratewidth tableheading">Cost Price</td>
+                <td class="ratewidth tableheading greenrow">Current Price</td>
+                <td class="ratewidth tableheading">Cost Unit</td>
+                <td class="ratewidth tableheading">Purchase Unit</td>
+                <td class="ratewidth tableheading">Conversion</td>
+                @*<td class="selectwidth tableheading">RM Supplier</td>
+                    <td class="ratewidth tableheading">Supplier Price</td>
+                    <td class="ratewidth tableheading">Currency</td>
+                    <td class="ratewidth tableheading">Purchase Unit</td>
+                    <td class="ratewidth tableheading">Min Days</td>*@
+            </tr>
+        </thead>
+        <tbody>
+            @if (Model != null)
+            {
+                @for (int i = 0; i < Model.Count; i++)
+                {
+                    <tr class="mycontainer">
+                        @Html.HiddenFor(model => model[i].RItem_ID, new { @class = "rmid" })
+                        <td>@Html.DisplayFor(m => m[i].Code)</td>
+                        <td>@Html.DisplayFor(m => m[i].Name)</td>
+                        <td>@Html.TextBoxFor(m => m[i].CostPrice, "{0:0.000}", new { @required = "true", @class = "rightalign costprice" })</td>
+                        <td class="greenrow">@Html.TextBoxFor(m => m[i].RMSuppMaxPrice, "{0:0.000}", new { @disabled = "true", @class = "rightalign" })</td>
+                        <td>@Html.DisplayFor(m => m[i].CostUnitSName)</td>
+                        <td>@Html.DisplayFor(m => m[i].PUnitSName)</td>
+                        <td>@Html.DisplayFor(m => m[i].ConversionFactor)</td>
+                        @*<td>@Html.DisplayFor(m => m[i].SupplierName)</td>
+                            <td>@Html.TextBoxFor(m => m[i].Rate, "{0:0.00}", new { @required = "true", @class = "price" })</td>
+                            <td>@Html.DisplayFor(m => m[i].CurrencyName)</td>
+                            <td>@Html.DisplayFor(m => m[i].PUnit)</td>
+                            <td>@Html.TextBoxFor(m => m[i].Min_Days, new { @class = "mindays" })</td>*@
+                    </tr>
+                }
+            } 
+        </tbody>
+    </table>
+    <input id="Submit1" type="submit" value="Save RM Cost Price" />
+</div>

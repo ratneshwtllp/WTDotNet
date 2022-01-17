@@ -1,0 +1,161 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:MainDataTable="ViewStockTransferIssue" msdata:UseCurrentLocale="true">
+      <xs:complexType>
+        <xs:choice minOccurs="0" maxOccurs="unbounded">
+          <xs:element name="ViewStockTransferIssue">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="AddressOffice" type="xs:string" minOccurs="0" />
+                <xs:element name="AddressWork" type="xs:string" minOccurs="0" />
+                <xs:element name="AfterTax" type="xs:double" />
+                <xs:element name="Amount" type="xs:double" />
+                <xs:element name="AmountInWords" type="xs:string" minOccurs="0" />
+                <xs:element name="BranchAddress" type="xs:string" minOccurs="0" />
+                <xs:element name="BranchName" type="xs:string" minOccurs="0" />
+                <xs:element name="BranchToAddress" type="xs:string" minOccurs="0" />
+                <xs:element name="BranchTOSateCode" type="xs:string" minOccurs="0" />
+                <xs:element name="BranchTOStateName" type="xs:string" minOccurs="0" />
+                <xs:element name="CategoryID" type="xs:long" />
+                <xs:element name="CategoryName" type="xs:string" minOccurs="0" />
+                <xs:element name="CGSTAmt" type="xs:double" />
+                <xs:element name="CGSTPer" type="xs:double" />
+                <xs:element name="CityId" type="xs:int" />
+                <xs:element name="CityName" type="xs:string" minOccurs="0" />
+                <xs:element name="CName" type="xs:string" minOccurs="0" />
+                <xs:element name="EntryDate" type="xs:dateTime" />
+                <xs:element name="Full_Name" type="xs:string" minOccurs="0" />
+                <xs:element name="GPDate" type="xs:dateTime" />
+                <xs:element name="GPNo" type="xs:string" minOccurs="0" />
+                <xs:element name="HSNCode" type="xs:string" minOccurs="0" />
+                <xs:element name="IGSTAmt" type="xs:double" />
+                <xs:element name="IGSTPer" type="xs:double" />
+                <xs:element name="IssueQty" type="xs:double" />
+                <xs:element name="LogoPath" type="xs:string" minOccurs="0" />
+                <xs:element name="LotNo" type="xs:string" minOccurs="0" />
+                <xs:element name="Name" type="xs:string" minOccurs="0" />
+                <xs:element name="RackId" type="xs:long" />
+                <xs:element name="RackNo" type="xs:string" minOccurs="0" />
+                <xs:element name="Rate" type="xs:double" />
+                <xs:element name="RequestBranchId" type="xs:long" />
+                <xs:element name="RequestQty" type="xs:double" />
+                <xs:element name="Requestqtyunit" type="xs:string" minOccurs="0" />
+                <xs:element name="RequestToBranchId" type="xs:long" />
+                <xs:element name="RequestToBranchName" type="xs:string" minOccurs="0" />
+                <xs:element name="RitemId" type="xs:long" />
+                <xs:element name="RitemRemark" type="xs:string" minOccurs="0" />
+                <xs:element name="SessionYear" type="xs:string" minOccurs="0" />
+                <xs:element name="SGSTAmt" type="xs:double" />
+                <xs:element name="SGSTPer" type="xs:double" />
+                <xs:element name="SNo" type="xs:int" />
+                <xs:element name="StateCode" type="xs:string" minOccurs="0" />
+                <xs:element name="StateName" type="xs:string" minOccurs="0" />
+                <xs:element name="StockTransferIssueChildId" type="xs:long" />
+                <xs:element name="StockTransferIssueDate" type="xs:dateTime" />
+                <xs:element name="StockTransferIssueId" type="xs:long" />
+                <xs:element name="StockTransferIssueNo" type="xs:string" minOccurs="0" />
+                <xs:element name="StockTransferRequestChildId" type="xs:long" />
+                <xs:element name="StockTransferRequestDate" type="xs:dateTime" />
+                <xs:element name="StockTransferRequestId" type="xs:long" />
+                <xs:element name="StockTransferRequestNo" type="xs:string" minOccurs="0" />
+                <xs:element name="SubCategoryID" type="xs:long" />
+                <xs:element name="SubCategoryName" type="xs:string" minOccurs="0" />
+                <xs:element name="SupplierId" type="xs:long" />
+                <xs:element name="SupplierName" type="xs:string" minOccurs="0" />
+                <xs:element name="SupplyDate" type="xs:dateTime" />
+                <xs:element name="TaxFullName" type="xs:string" minOccurs="0" />
+                <xs:element name="TaxId" type="xs:int" />
+                <xs:element name="TaxPer" type="xs:double" />
+                <xs:element name="TotalAmount" type="xs:double" />
+                <xs:element name="TotalAmountAfterTax" type="xs:double" />
+                <xs:element name="TotalCGST" type="xs:double" />
+                <xs:element name="TotalIGST" type="xs:double" />
+                <xs:element name="TotalSGST" type="xs:double" />
+                <xs:element name="TranportName" type="xs:string" minOccurs="0" />
+                <xs:element name="TransportId" type="xs:int" />
+                <xs:element name="Unit" type="xs:string" minOccurs="0" />
+                <xs:element name="UserId" type="xs:int" />
+                <xs:element name="VehicalNo" type="xs:string" minOccurs="0" />
+                <xs:element name="ReportType" type="xs:string" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+        </xs:choice>
+      </xs:complexType>
+    </xs:element>
+  </xs:schema>
+  <ViewStockTransferIssue>
+    <AddressOffice>#620 A, Safipur 1st, Harjinder Nagar, Kanpur-208007</AddressOffice>
+    <AddressWork>#620 A, Safipur 1st, Harjinder Nagar, Kanpur-208007</AddressWork>
+    <AfterTax>212</AfterTax>
+    <Amount>212</Amount>
+    <AmountInWords>RUPEES TWO HUNDRED TWELVE AND ZERO ONLY</AmountInWords>
+    <BranchAddress>#620 A, Safipur 1st, Harjinder Nagar, Kanpur-208007</BranchAddress>
+    <BranchName>SB International	</BranchName>
+    <BranchToAddress>#620 A, Safipur 1st, Harjinder Nagar, Kanpur-208007</BranchToAddress>
+    <BranchTOSateCode>UP</BranchTOSateCode>
+    <BranchTOStateName>Uttar Pradesh</BranchTOStateName>
+    <CategoryID>11</CategoryID>
+    <CategoryName>Fittings</CategoryName>
+    <CGSTAmt>0</CGSTAmt>
+    <CGSTPer>0</CGSTPer>
+    <CityId>1</CityId>
+    <CityName>Kanpur</CityName>
+    <CName>SB International</CName>
+    <EntryDate>2020-03-21T00:00:00+05:30</EntryDate>
+    <Full_Name>Dee wire 1" Brass Polish  for Braided D.C.</Full_Name>
+    <GPDate>2020-03-21T00:00:00+05:30</GPDate>
+    <GPNo>reter</GPNo>
+    <HSNCode>NA</HSNCode>
+    <IGSTAmt>0</IGSTAmt>
+    <IGSTPer>1</IGSTPer>
+    <IssueQty>1</IssueQty>
+    <LogoPath>uploads/logo/1.jpg</LogoPath>
+    <LotNo>NA</LotNo>
+    <Name>Dee wire 1" Brass Polish  for Braided D.C.</Name>
+    <RackId>49</RackId>
+    <RackNo>L1/049</RackNo>
+    <Rate>212</Rate>
+    <RequestBranchId>1</RequestBranchId>
+    <RequestQty>40</RequestQty>
+    <Requestqtyunit>Pcs</Requestqtyunit>
+    <RequestToBranchId>2</RequestToBranchId>
+    <RequestToBranchName>Angel Exports</RequestToBranchName>
+    <RitemId>3215</RitemId>
+    <RitemRemark>abc</RitemRemark>
+    <SessionYear>19-20</SessionYear>
+    <SGSTAmt>0</SGSTAmt>
+    <SGSTPer>0</SGSTPer>
+    <SNo>1</SNo>
+    <StateCode>UP</StateCode>
+    <StateName>Uttar Pradesh</StateName>
+    <StockTransferIssueChildId>1</StockTransferIssueChildId>
+    <StockTransferIssueDate>2020-03-21T00:00:00+05:30</StockTransferIssueDate>
+    <StockTransferIssueId>1</StockTransferIssueId>
+    <StockTransferIssueNo>SBI/SISU19-20/0001</StockTransferIssueNo>
+    <StockTransferRequestChildId>1</StockTransferRequestChildId>
+    <StockTransferRequestDate>2020-03-21T00:00:00+05:30</StockTransferRequestDate>
+    <StockTransferRequestId>1</StockTransferRequestId>
+    <StockTransferRequestNo>SBI/SREQ/19-20/0001</StockTransferRequestNo>
+    <SubCategoryID>204</SubCategoryID>
+    <SubCategoryName>Brass Fittngs</SubCategoryName>
+    <SupplierId>53</SupplierId>
+    <SupplierName>SB Metals</SupplierName>
+    <SupplyDate>2020-03-21T00:00:00+05:30</SupplyDate>
+    <TaxFullName>Default 0%</TaxFullName>
+    <TaxId>5</TaxId>
+    <TaxPer>0</TaxPer>
+    <TotalAmount>212</TotalAmount>
+    <TotalAmountAfterTax>212</TotalAmountAfterTax>
+    <TotalCGST>0</TotalCGST>
+    <TotalIGST>0</TotalIGST>
+    <TotalSGST>0</TotalSGST>
+    <TranportName>AIR</TranportName>
+    <TransportId>2</TransportId>
+    <Unit>Pcs</Unit>
+    <UserId>1</UserId>
+    <VehicalNo>sdfsdf</VehicalNo>
+    <ReportType>2</ReportType>
+  </ViewStockTransferIssue>
+</NewDataSet>

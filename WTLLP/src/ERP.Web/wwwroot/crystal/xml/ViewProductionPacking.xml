@@ -1,0 +1,65 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:MainDataTable="ViewProductionPacking" msdata:UseCurrentLocale="true">
+      <xs:complexType>
+        <xs:choice minOccurs="0" maxOccurs="unbounded">
+          <xs:element name="ViewProductionPacking">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="AddressOffice" type="xs:string" minOccurs="0" />
+                <xs:element name="Barcode" type="xs:string" minOccurs="0" />
+                <xs:element name="BuyerName" type="xs:string" minOccurs="0" />
+                <xs:element name="CLName" type="xs:string" minOccurs="0" />
+                <xs:element name="CName" type="xs:string" minOccurs="0" />
+                <xs:element name="Code" type="xs:string" minOccurs="0" />
+                <xs:element name="Color" type="xs:int" />
+                <xs:element name="CortonString" type="xs:string" minOccurs="0" />
+                <xs:element name="Description" type="xs:string" minOccurs="0" />
+                <xs:element name="FitemId" type="xs:long" />
+                <xs:element name="Name" type="xs:string" minOccurs="0" />
+                <xs:element name="OrderDate" type="xs:dateTime" />
+                <xs:element name="OrderMasterID" type="xs:long" />
+                <xs:element name="OrderNo" type="xs:string" minOccurs="0" />
+                <xs:element name="PackingDate" type="xs:dateTime" />
+                <xs:element name="PackingID" type="xs:long" />
+                <xs:element name="PackingNo" type="xs:string" minOccurs="0" />
+                <xs:element name="PartyCode" type="xs:string" minOccurs="0" />
+                <xs:element name="ProductSizeId" type="xs:int" />
+                <xs:element name="ProductSizeName" type="xs:string" minOccurs="0" />
+                <xs:element name="Qty" type="xs:int" />
+                <xs:element name="TotalCarton" type="xs:int" />
+                <xs:element name="TotalPackingQty" type="xs:int" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+        </xs:choice>
+      </xs:complexType>
+    </xs:element>
+  </xs:schema>
+  <ViewProductionPacking>
+    <AddressOffice>#620 A, Safipur 1st, Harjinder Nagar, Kanpur-208007</AddressOffice>
+    <Barcode>456365656</Barcode>
+    <BuyerName>WEAVER LEATHER LLC</BuyerName>
+    <CLName>Dark Oil</CLName>
+    <CName>SB International</CName>
+    <Code>DC 331 DK BN</Code>
+    <Color>31</Color>
+    <CortonString>&lt;strong&gt;1&lt;/strong&gt;-62</CortonString>
+    <Description>Dog Collar with Inlay Beads, Basket Tooling, &amp; C/A Spots</Description>
+    <FitemId>37824</FitemId>
+    <Name>Dog Collar</Name>
+    <OrderDate>2019-06-13T00:00:00+05:30</OrderDate>
+    <OrderMasterID>74</OrderMasterID>
+    <OrderNo>262406</OrderNo>
+    <PackingDate>2021-01-07T00:00:00+05:30</PackingDate>
+    <PackingID>23</PackingID>
+    <PackingNo>SBI/PCK/2020-21/0002</PackingNo>
+    <PartyCode>-</PartyCode>
+    <ProductSizeId>172</ProductSizeId>
+    <ProductSizeName>3/4" X 13"</ProductSizeName>
+    <Qty>80</Qty>
+    <TotalCarton>1</TotalCarton>
+    <TotalPackingQty>62</TotalPackingQty>
+  </ViewProductionPacking>
+</NewDataSet>

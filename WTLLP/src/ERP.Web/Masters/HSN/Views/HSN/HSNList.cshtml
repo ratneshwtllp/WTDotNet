@@ -1,0 +1,26 @@
+﻿@using ERP.Domain.Entities;
+@using NonFactors.Mvc.Grid;
+
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewData["Title"] = "HSN List";
+}
+<p>
+    @Html.ActionLink("New HSN", "CreateHSN", "HSN", "", new { @class = "btn btn-info" }) &nbsp;&nbsp;&nbsp; Search HSN  &nbsp;&nbsp;<input class="grid-search" />
+</p>
+
+@Html.AjaxGrid(Url.Action("HSNList_Partial"))
+
+@section Scripts {
+    <script type="text/javascript">
+
+        $(document).on('keyup', '.grid-search', function () {
+            //alert("query");
+            $('.mvc-grid').mvcgrid({
+                query: 'search=' + this.value,
+                reload: true
+            });
+
+        });
+    </script>
+}

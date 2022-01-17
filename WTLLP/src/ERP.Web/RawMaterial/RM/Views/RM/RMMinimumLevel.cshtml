@@ -1,0 +1,26 @@
+﻿@using NonFactors.Mvc.Grid;
+@model ERP.Web.Areas.RM.Models.RawMaterialModel
+
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewData["Title"] = "RM Minimum Level";
+}
+ 
+<p>
+    <strong>Minimum Level List  &nbsp;&nbsp;&nbsp;&nbsp;  </strong> <a href='javascript:void(0);'><img src="@Url.Content("~/images/print.png")" data-toggle='tooltip' data-placement='bottom' title='Print' id="printclick"></a>
+</p>
+
+@Html.AjaxGrid(Url.Action("RMMinimumLevel_Partial"))
+
+@section Scripts {
+    <script type="text/javascript">
+        $(function () {
+            $('#printclick').click(function () {
+                //var id = $("#RItem_Id :selected").val();
+                window.open('@Url.Action("MinimumRMPrint", "RM")');
+            });
+        });
+    </script>
+}
+
+

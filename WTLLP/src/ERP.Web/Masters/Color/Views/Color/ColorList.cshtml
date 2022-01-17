@@ -1,0 +1,27 @@
+﻿@model ERP.Domain.Entities.ColorDetails
+@using NonFactors.Mvc.Grid;
+
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewData["Title"] = "Color List";
+}
+<p>
+    @Html.ActionLink("Create New Color", "CreateColor", "Color", "", new { @class = "btn btn-info" }) &nbsp;&nbsp;&nbsp; Search Color  &nbsp;&nbsp;<input class="grid-search" />
+</p>
+
+
+@Html.AjaxGrid(Url.Action("ColorList_Partial"))
+
+@section Scripts {
+    <script type="text/javascript">
+
+        $(document).on('keyup', '.grid-search', function () {
+            //alert("query");
+            $('.mvc-grid').mvcgrid({
+                query: 'search=' + this.value,
+                reload: true
+            });
+
+        });
+    </script>
+}

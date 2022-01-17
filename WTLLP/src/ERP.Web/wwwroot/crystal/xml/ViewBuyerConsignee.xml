@@ -1,0 +1,37 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:MainDataTable="ViewBuyerConsignee" msdata:UseCurrentLocale="true">
+      <xs:complexType>
+        <xs:choice minOccurs="0" maxOccurs="unbounded">
+          <xs:element name="ViewBuyerConsignee">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="BuyerCode" type="xs:string" minOccurs="0" />
+                <xs:element name="BuyerConsigneeId" type="xs:long" />
+                <xs:element name="BuyerId" type="xs:long" />
+                <xs:element name="BuyerName" type="xs:string" minOccurs="0" />
+                <xs:element name="ConsigneeAddress" type="xs:string" minOccurs="0" />
+                <xs:element name="ConsigneeCode" type="xs:string" minOccurs="0" />
+                <xs:element name="ConsigneeId" type="xs:long" />
+                <xs:element name="ConsigneeName" type="xs:string" minOccurs="0" />
+                <xs:element name="ContactPerson" type="xs:string" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+        </xs:choice>
+      </xs:complexType>
+    </xs:element>
+  </xs:schema>
+  <ViewBuyerConsignee>
+    <BuyerCode>DP</BuyerCode>
+    <BuyerConsigneeId>2</BuyerConsigneeId>
+    <BuyerId>41</BuyerId>
+    <BuyerName>Dan Post Boot Company</BuyerName>
+    <ConsigneeAddress>P.O. BOX 30189</ConsigneeAddress>
+    <ConsigneeCode>CON022</ConsigneeCode>
+    <ConsigneeId>22</ConsigneeId>
+    <ConsigneeName>DAN POST BOOT COMPANY</ConsigneeName>
+    <ContactPerson>Terry Ray</ContactPerson>
+  </ViewBuyerConsignee>
+</NewDataSet>

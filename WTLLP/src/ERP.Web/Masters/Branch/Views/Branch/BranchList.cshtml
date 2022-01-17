@@ -1,0 +1,27 @@
+﻿@model ERP.Domain.Entities.BranchDetails
+@using NonFactors.Mvc.Grid;
+@using Microsoft.AspNetCore.Http;
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewData["Title"] = "Branch List";
+}
+<p>
+    @Html.ActionLink("Create New Branch", "CreateBranch", "Branch", "", new { @class = "btn btn-info" })
+</p>
+<script type="text/javascript">
+</script>
+
+@Html.AjaxGrid(Url.Action("BranchList_Partial"))
+
+@section Scripts {
+    <script type="text/javascript">
+
+        $(document).on('keyup', '.grid-search', function () {
+            //alert("query");
+            $('.mvc-grid').mvcgrid({
+                query: 'search=' + this.value,
+                reload: true
+            });
+        });
+    </script>
+}

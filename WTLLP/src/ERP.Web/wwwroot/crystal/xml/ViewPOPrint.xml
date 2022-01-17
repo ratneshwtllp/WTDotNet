@@ -1,0 +1,573 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:MainDataTable="ViewPOPrint" msdata:UseCurrentLocale="true">
+      <xs:complexType>
+        <xs:choice minOccurs="0" maxOccurs="unbounded">
+          <xs:element name="ViewPOPrint">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="AddressOffice" type="xs:string" minOccurs="0" />
+                <xs:element name="AddressWork" type="xs:string" minOccurs="0" />
+                <xs:element name="Amount" type="xs:double" />
+                <xs:element name="AmtAfterTax" type="xs:double" />
+                <xs:element name="Amtwords" type="xs:string" minOccurs="0" />
+                <xs:element name="BranchAddress" type="xs:string" minOccurs="0" />
+                <xs:element name="BranchID" type="xs:long" />
+                <xs:element name="BranchName" type="xs:string" minOccurs="0" />
+                <xs:element name="BranchStateId" type="xs:int" />
+                <xs:element name="BuyerId" type="xs:long" />
+                <xs:element name="BuyerName" type="xs:string" minOccurs="0" />
+                <xs:element name="CancelStatus" type="xs:short" minOccurs="0" />
+                <xs:element name="CategoryID" type="xs:long" />
+                <xs:element name="CGSTAmt" type="xs:double" />
+                <xs:element name="CGSTPer" type="xs:double" />
+                <xs:element name="ChangeDilervery" type="xs:int" minOccurs="0" />
+                <xs:element name="CID" type="xs:int" />
+                <xs:element name="CName" type="xs:string" minOccurs="0" />
+                <xs:element name="Code" type="xs:string" minOccurs="0" />
+                <xs:element name="CompanyGSTN" type="xs:string" minOccurs="0" />
+                <xs:element name="Complete" type="xs:int" />
+                <xs:element name="ContactPerson" type="xs:string" minOccurs="0" />
+                <xs:element name="ConversionFactor" type="xs:double" />
+                <xs:element name="CSName" type="xs:string" minOccurs="0" />
+                <xs:element name="CSTT" type="xs:string" minOccurs="0" />
+                <xs:element name="Declaration" type="xs:string" minOccurs="0" />
+                <xs:element name="DeliveryTerm" type="xs:string" minOccurs="0" />
+                <xs:element name="Destination" type="xs:string" minOccurs="0" />
+                <xs:element name="Dispatch" type="xs:string" minOccurs="0" />
+                <xs:element name="Dldate" type="xs:dateTime" />
+                <xs:element name="Email" type="xs:string" minOccurs="0" />
+                <xs:element name="EmailDate" type="xs:dateTime" />
+                <xs:element name="EmailStatus" type="xs:int" />
+                <xs:element name="EntryDate" type="xs:dateTime" />
+                <xs:element name="FactoryQty" type="xs:double" />
+                <xs:element name="FactoryUnit" type="xs:string" minOccurs="0" />
+                <xs:element name="Fax" type="xs:string" minOccurs="0" />
+                <xs:element name="ForAnyQuery" type="xs:string" minOccurs="0" />
+                <xs:element name="Freight" type="xs:double" />
+                <xs:element name="Full_Name" type="xs:string" minOccurs="0" />
+                <xs:element name="HSNCode" type="xs:string" minOccurs="0" />
+                <xs:element name="IGSTAmt" type="xs:double" />
+                <xs:element name="IGSTPer" type="xs:double" />
+                <xs:element name="IssuedBy" type="xs:int" minOccurs="0" />
+                <xs:element name="ItemCode" type="xs:string" minOccurs="0" />
+                <xs:element name="ItemId" type="xs:long" minOccurs="0" />
+                <xs:element name="Mode" type="xs:string" minOccurs="0" />
+                <xs:element name="MultipleOrders" type="xs:string" minOccurs="0" />
+                <xs:element name="NetAmount" type="xs:double" />
+                <xs:element name="NewDate" type="xs:dateTime" minOccurs="0" />
+                <xs:element name="OrderId" type="xs:long" minOccurs="0" />
+                <xs:element name="Orf" type="xs:string" minOccurs="0" />
+                <xs:element name="Other" type="xs:double" />
+                <xs:element name="PANNo" type="xs:string" minOccurs="0" />
+                <xs:element name="PaymentTerm" type="xs:string" minOccurs="0" />
+                <xs:element name="PCSTotalWeightKg" type="xs:double" />
+                <xs:element name="PCSWeightGrm" type="xs:double" />
+                <xs:element name="Phone" type="xs:string" minOccurs="0" />
+                <xs:element name="PoAgainstOrder" type="xs:int" minOccurs="0" />
+                <xs:element name="POChildID" type="xs:long" />
+                <xs:element name="Podate" type="xs:dateTime" />
+                <xs:element name="POFooter1" type="xs:string" minOccurs="0" />
+                <xs:element name="POFooter2" type="xs:string" minOccurs="0" />
+                <xs:element name="Poid" type="xs:long" />
+                <xs:element name="Pono" type="xs:string" minOccurs="0" />
+                <xs:element name="POSerial" type="xs:int" />
+                <xs:element name="Qty" type="xs:double" />
+                <xs:element name="Rate" type="xs:double" />
+                <xs:element name="RDesc" type="xs:string" minOccurs="0" />
+                <xs:element name="ReasonForChange" type="xs:string" minOccurs="0" />
+                <xs:element name="ReasonForModify" type="xs:string" minOccurs="0" />
+                <xs:element name="Remark" type="xs:string" minOccurs="0" />
+                <xs:element name="RItem_Id" type="xs:int" />
+                <xs:element name="RMTotal" type="xs:double" />
+                <xs:element name="RoundOff" type="xs:double" />
+                <xs:element name="SessionYear" type="xs:string" minOccurs="0" />
+                <xs:element name="SGSTAmt" type="xs:double" />
+                <xs:element name="SGSTPer" type="xs:double" />
+                <xs:element name="SH" type="xs:double" />
+                <xs:element name="Sid" type="xs:long" />
+                <xs:element name="SNo" type="xs:int" />
+                <xs:element name="Sref" type="xs:string" minOccurs="0" />
+                <xs:element name="SubCategoryID" type="xs:long" />
+                <xs:element name="SubCategoryName" type="xs:string" minOccurs="0" />
+                <xs:element name="SuppCode" type="xs:string" minOccurs="0" />
+                <xs:element name="SupplierAddress" type="xs:string" minOccurs="0" />
+                <xs:element name="SupplierCode" type="xs:string" minOccurs="0" />
+                <xs:element name="SupplierCSTNo" type="xs:string" minOccurs="0" />
+                <xs:element name="SupplierEmail" type="xs:string" minOccurs="0" />
+                <xs:element name="SupplierFaxNo" type="xs:string" minOccurs="0" />
+                <xs:element name="SupplierGSTN" type="xs:string" minOccurs="0" />
+                <xs:element name="SupplierMobileNo" type="xs:string" minOccurs="0" />
+                <xs:element name="SupplierName" type="xs:string" minOccurs="0" />
+                <xs:element name="SupplierPANNo" type="xs:string" minOccurs="0" />
+                <xs:element name="SupplierPhoneNo" type="xs:string" minOccurs="0" />
+                <xs:element name="SupplierRMCode" type="xs:string" minOccurs="0" />
+                <xs:element name="SupplierStateId" type="xs:int" />
+                <xs:element name="SupplierTINNo" type="xs:string" minOccurs="0" />
+                <xs:element name="SupplierUPTTNo" type="xs:string" minOccurs="0" />
+                <xs:element name="TaxAmount" type="xs:double" />
+                <xs:element name="TaxFullName" type="xs:string" minOccurs="0" />
+                <xs:element name="TaxPer" type="xs:double" />
+                <xs:element name="Terms" type="xs:string" minOccurs="0" />
+                <xs:element name="TIN" type="xs:string" minOccurs="0" />
+                <xs:element name="Title" type="xs:string" minOccurs="0" />
+                <xs:element name="TotalAmtAfterTax" type="xs:double" />
+                <xs:element name="TotalCGST" type="xs:double" />
+                <xs:element name="TotalIGST" type="xs:double" />
+                <xs:element name="TotalSGST" type="xs:double" />
+                <xs:element name="Transport" type="xs:string" minOccurs="0" />
+                <xs:element name="Unit" type="xs:string" minOccurs="0" />
+                <xs:element name="UPTT" type="xs:string" minOccurs="0" />
+                <xs:element name="UserId" type="xs:long" />
+                <xs:element name="Web" type="xs:string" minOccurs="0" />
+                <xs:element name="photo" type="xs:base64Binary" minOccurs="0" />
+                <xs:element name="isphotoprint" type="xs:short" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+        </xs:choice>
+      </xs:complexType>
+    </xs:element>
+  </xs:schema>
+  <ViewPOPrint>
+    <AddressOffice>#620 A, Safipur 1st, Harjinder Nagar, Kanpur-208007</AddressOffice>
+    <AddressWork>#620 A, Safipur 1st, Harjinder Nagar, Kanpur-208007</AddressWork>
+    <Amount>24000</Amount>
+    <AmtAfterTax>28320</AmtAfterTax>
+    <Amtwords>Rs ONE LAKHES TWELVE THOUSAND ONE HUNDRED TWELVE ONLY</Amtwords>
+    <BranchAddress>#620 A, Safipur 1st, Harjinder Nagar, Kanpur-208007</BranchAddress>
+    <BranchID>1</BranchID>
+    <BranchName>SB International	</BranchName>
+    <BranchStateId>1</BranchStateId>
+    <BuyerId>17</BuyerId>
+    <BuyerName>CY</BuyerName>
+    <CancelStatus>0</CancelStatus>
+    <CategoryID>11</CategoryID>
+    <CGSTAmt>2160</CGSTAmt>
+    <CGSTPer>9</CGSTPer>
+    <ChangeDilervery>0</ChangeDilervery>
+    <CID>4</CID>
+    <CName>SB International</CName>
+    <Code>BUC-00013-BR-NI-48</Code>
+    <CompanyGSTN>09AAWFS7900H1ZL</CompanyGSTN>
+    <Complete>0</Complete>
+    <ContactPerson>Rinku</ContactPerson>
+    <ConversionFactor>1</ConversionFactor>
+    <CSName>Rs</CSName>
+    <CSTT>KR-5753371/AC-15</CSTT>
+    <Declaration>-</Declaration>
+    <DeliveryTerm>-- Select --</DeliveryTerm>
+    <Destination>-</Destination>
+    <Dispatch>-</Dispatch>
+    <Dldate>2021-09-24T00:00:00+05:30</Dldate>
+    <Email>sales@sbleathers.com</Email>
+    <EmailDate>2021-08-28T00:00:00+05:30</EmailDate>
+    <EmailStatus>0</EmailStatus>
+    <EntryDate>2021-08-28T00:00:00+05:30</EntryDate>
+    <FactoryQty>3000</FactoryQty>
+    <FactoryUnit>Pcs</FactoryUnit>
+    <Fax>0512-2405420</Fax>
+    <ForAnyQuery>-</ForAnyQuery>
+    <Freight>0</Freight>
+    <Full_Name>Dandedar Buckle Thin Brass Nickel 4/8"</Full_Name>
+    <HSNCode>8308</HSNCode>
+    <IGSTAmt>0</IGSTAmt>
+    <IGSTPer>0</IGSTPer>
+    <IssuedBy>0</IssuedBy>
+    <ItemCode>-</ItemCode>
+    <ItemId>0</ItemId>
+    <Mode>-</Mode>
+    <MultipleOrders>0030894-00, 0030895-00</MultipleOrders>
+    <NetAmount>112112</NetAmount>
+    <NewDate>2021-08-28T00:00:00+05:30</NewDate>
+    <OrderId>0</OrderId>
+    <Orf>-</Orf>
+    <Other>0</Other>
+    <PANNo>AAWFS7900H</PANNo>
+    <PaymentTerm>-- Select --</PaymentTerm>
+    <PCSTotalWeightKg>31.5</PCSTotalWeightKg>
+    <PCSWeightGrm>10.5</PCSWeightGrm>
+    <Phone>0512-2406947</Phone>
+    <PoAgainstOrder>0</PoAgainstOrder>
+    <POChildID>8658</POChildID>
+    <Podate>2021-08-26T00:00:00+05:30</Podate>
+    <Poid>2339</Poid>
+    <Pono>SBI/PO/512/21-22</Pono>
+    <POSerial>512</POSerial>
+    <Qty>3000</Qty>
+    <Rate>8</Rate>
+    <RDesc>-</RDesc>
+    <ReasonForChange>-</ReasonForChange>
+    <ReasonForModify>-</ReasonForModify>
+    <Remark>-</Remark>
+    <RItem_Id>398</RItem_Id>
+    <RMTotal>95010</RMTotal>
+    <RoundOff>0.2</RoundOff>
+    <SessionYear>21-22</SessionYear>
+    <SGSTAmt>2160</SGSTAmt>
+    <SGSTPer>9</SGSTPer>
+    <SH>0</SH>
+    <Sid>53</Sid>
+    <SNo>3</SNo>
+    <Sref>-</Sref>
+    <SubCategoryID>203</SubCategoryID>
+    <SubCategoryName>Brass Buckles</SubCategoryName>
+    <SupplierAddress>Civil Lines, kanpur Pin-208001</SupplierAddress>
+    <SupplierCode>53</SupplierCode>
+    <SupplierEmail>sbit@sbleathers.com</SupplierEmail>
+    <SupplierGSTN>09AFFPS2936H1Z5</SupplierGSTN>
+    <SupplierMobileNo>9</SupplierMobileNo>
+    <SupplierName>SB Metals</SupplierName>
+    <SupplierPANNo>AFFPS2936H</SupplierPANNo>
+    <SupplierPhoneNo>- -</SupplierPhoneNo>
+    <SupplierRMCode>-</SupplierRMCode>
+    <SupplierStateId>1</SupplierStateId>
+    <TaxAmount>17101.8</TaxAmount>
+    <TaxFullName>GST 18%</TaxFullName>
+    <TaxPer>18</TaxPer>
+    <Terms>-</Terms>
+    <TIN>09345201673</TIN>
+    <Title>uploads/rmphotos\398.jpg</Title>
+    <TotalAmtAfterTax>112111.8</TotalAmtAfterTax>
+    <TotalCGST>8550.9</TotalCGST>
+    <TotalIGST>0</TotalIGST>
+    <TotalSGST>8550.9</TotalSGST>
+    <Transport>-- Select --</Transport>
+    <Unit>Pcs</Unit>
+    <UPTT>-</UPTT>
+    <UserId>2</UserId>
+    <Web>www.sbleathers.com</Web>
+    <isphotoprint>2</isphotoprint>
+  </ViewPOPrint>
+  <ViewPOPrint>
+    <AddressOffice>#620 A, Safipur 1st, Harjinder Nagar, Kanpur-208007</AddressOffice>
+    <AddressWork>#620 A, Safipur 1st, Harjinder Nagar, Kanpur-208007</AddressWork>
+    <Amount>5010</Amount>
+    <AmtAfterTax>5911.8</AmtAfterTax>
+    <Amtwords>Rs ONE LAKHES TWELVE THOUSAND ONE HUNDRED TWELVE ONLY</Amtwords>
+    <BranchAddress>#620 A, Safipur 1st, Harjinder Nagar, Kanpur-208007</BranchAddress>
+    <BranchID>1</BranchID>
+    <BranchName>SB International	</BranchName>
+    <BranchStateId>1</BranchStateId>
+    <BuyerId>17</BuyerId>
+    <BuyerName>CY</BuyerName>
+    <CancelStatus>0</CancelStatus>
+    <CategoryID>11</CategoryID>
+    <CGSTAmt>450.9</CGSTAmt>
+    <CGSTPer>9</CGSTPer>
+    <ChangeDilervery>0</ChangeDilervery>
+    <CID>4</CID>
+    <CName>SB International</CName>
+    <Code>FTG-00361-SS-CF-58</Code>
+    <CompanyGSTN>09AAWFS7900H1ZL</CompanyGSTN>
+    <Complete>0</Complete>
+    <ContactPerson>Rinku</ContactPerson>
+    <ConversionFactor>1</ConversionFactor>
+    <CSName>Rs</CSName>
+    <CSTT>KR-5753371/AC-15</CSTT>
+    <Declaration>-</Declaration>
+    <DeliveryTerm>-- Select --</DeliveryTerm>
+    <Destination>-</Destination>
+    <Dispatch>-</Dispatch>
+    <Dldate>2021-09-24T00:00:00+05:30</Dldate>
+    <Email>sales@sbleathers.com</Email>
+    <EmailDate>2021-08-28T00:00:00+05:30</EmailDate>
+    <EmailStatus>0</EmailStatus>
+    <EntryDate>2021-08-28T00:00:00+05:30</EntryDate>
+    <FactoryQty>3000</FactoryQty>
+    <FactoryUnit>Pcs</FactoryUnit>
+    <Fax>0512-2405420</Fax>
+    <ForAnyQuery>-</ForAnyQuery>
+    <Freight>0</Freight>
+    <Full_Name>Dee Stainless Steel Wire 5/8"</Full_Name>
+    <HSNCode>8308</HSNCode>
+    <IGSTAmt>0</IGSTAmt>
+    <IGSTPer>0</IGSTPer>
+    <IssuedBy>0</IssuedBy>
+    <ItemCode>-</ItemCode>
+    <ItemId>0</ItemId>
+    <Mode>-</Mode>
+    <MultipleOrders>0030894-00, 0030895-00</MultipleOrders>
+    <NetAmount>112112</NetAmount>
+    <NewDate>2021-08-28T00:00:00+05:30</NewDate>
+    <OrderId>0</OrderId>
+    <Orf>-</Orf>
+    <Other>0</Other>
+    <PANNo>AAWFS7900H</PANNo>
+    <PaymentTerm>-- Select --</PaymentTerm>
+    <PCSTotalWeightKg>12.54</PCSTotalWeightKg>
+    <PCSWeightGrm>4.18</PCSWeightGrm>
+    <Phone>0512-2406947</Phone>
+    <PoAgainstOrder>0</PoAgainstOrder>
+    <POChildID>8657</POChildID>
+    <Podate>2021-08-26T00:00:00+05:30</Podate>
+    <Poid>2339</Poid>
+    <Pono>SBI/PO/512/21-22</Pono>
+    <POSerial>512</POSerial>
+    <Qty>3000</Qty>
+    <Rate>1.67</Rate>
+    <RDesc>-</RDesc>
+    <ReasonForChange>-</ReasonForChange>
+    <ReasonForModify>-</ReasonForModify>
+    <Remark>-</Remark>
+    <RItem_Id>982</RItem_Id>
+    <RMTotal>95010</RMTotal>
+    <RoundOff>0.2</RoundOff>
+    <SessionYear>21-22</SessionYear>
+    <SGSTAmt>450.9</SGSTAmt>
+    <SGSTPer>9</SGSTPer>
+    <SH>0</SH>
+    <Sid>53</Sid>
+    <SNo>2</SNo>
+    <Sref>-</Sref>
+    <SubCategoryID>211</SubCategoryID>
+    <SubCategoryName>SS Fittings</SubCategoryName>
+    <SupplierAddress>Civil Lines, kanpur Pin-208001</SupplierAddress>
+    <SupplierCode>53</SupplierCode>
+    <SupplierEmail>sbit@sbleathers.com</SupplierEmail>
+    <SupplierGSTN>09AFFPS2936H1Z5</SupplierGSTN>
+    <SupplierMobileNo>9</SupplierMobileNo>
+    <SupplierName>SB Metals</SupplierName>
+    <SupplierPANNo>AFFPS2936H</SupplierPANNo>
+    <SupplierPhoneNo>- -</SupplierPhoneNo>
+    <SupplierRMCode>-</SupplierRMCode>
+    <SupplierStateId>1</SupplierStateId>
+    <TaxAmount>17101.8</TaxAmount>
+    <TaxFullName>GST 18%</TaxFullName>
+    <TaxPer>18</TaxPer>
+    <Terms>-</Terms>
+    <TIN>09345201673</TIN>
+    <Title>uploads/rmphotos/982.jpg</Title>
+    <TotalAmtAfterTax>112111.8</TotalAmtAfterTax>
+    <TotalCGST>8550.9</TotalCGST>
+    <TotalIGST>0</TotalIGST>
+    <TotalSGST>8550.9</TotalSGST>
+    <Transport>-- Select --</Transport>
+    <Unit>Pcs</Unit>
+    <UPTT>-</UPTT>
+    <UserId>2</UserId>
+    <Web>www.sbleathers.com</Web>
+    <isphotoprint>2</isphotoprint>
+  </ViewPOPrint>
+  <ViewPOPrint>
+    <AddressOffice>#620 A, Safipur 1st, Harjinder Nagar, Kanpur-208007</AddressOffice>
+    <AddressWork>#620 A, Safipur 1st, Harjinder Nagar, Kanpur-208007</AddressWork>
+    <Amount>9000</Amount>
+    <AmtAfterTax>10620</AmtAfterTax>
+    <Amtwords>Rs ONE LAKHES TWELVE THOUSAND ONE HUNDRED TWELVE ONLY</Amtwords>
+    <BranchAddress>#620 A, Safipur 1st, Harjinder Nagar, Kanpur-208007</BranchAddress>
+    <BranchID>1</BranchID>
+    <BranchName>SB International	</BranchName>
+    <BranchStateId>1</BranchStateId>
+    <BuyerId>17</BuyerId>
+    <BuyerName>CY</BuyerName>
+    <CancelStatus>0</CancelStatus>
+    <CategoryID>11</CategoryID>
+    <CGSTAmt>810</CGSTAmt>
+    <CGSTPer>9</CGSTPer>
+    <ChangeDilervery>0</ChangeDilervery>
+    <CID>4</CID>
+    <CName>SB International</CName>
+    <Code>BUC-00281-SS-CF-58</Code>
+    <CompanyGSTN>09AAWFS7900H1ZL</CompanyGSTN>
+    <Complete>0</Complete>
+    <ContactPerson>Rinku</ContactPerson>
+    <ConversionFactor>1</ConversionFactor>
+    <CSName>Rs</CSName>
+    <CSTT>KR-5753371/AC-15</CSTT>
+    <Declaration>-</Declaration>
+    <DeliveryTerm>-- Select --</DeliveryTerm>
+    <Destination>-</Destination>
+    <Dispatch>-</Dispatch>
+    <Dldate>2021-09-24T00:00:00+05:30</Dldate>
+    <Email>sales@sbleathers.com</Email>
+    <EmailDate>2021-08-28T00:00:00+05:30</EmailDate>
+    <EmailStatus>0</EmailStatus>
+    <EntryDate>2021-08-28T00:00:00+05:30</EntryDate>
+    <FactoryQty>1000</FactoryQty>
+    <FactoryUnit>Pcs</FactoryUnit>
+    <Fax>0512-2405420</Fax>
+    <ForAnyQuery>-</ForAnyQuery>
+    <Freight>0</Freight>
+    <Full_Name>Garari Buckle Stainless Steel Flat 5/8" for D.C.</Full_Name>
+    <HSNCode>8308</HSNCode>
+    <IGSTAmt>0</IGSTAmt>
+    <IGSTPer>0</IGSTPer>
+    <IssuedBy>0</IssuedBy>
+    <ItemCode>-</ItemCode>
+    <ItemId>0</ItemId>
+    <Mode>-</Mode>
+    <MultipleOrders>0030894-00, 0030895-00</MultipleOrders>
+    <NetAmount>112112</NetAmount>
+    <NewDate>2021-08-28T00:00:00+05:30</NewDate>
+    <OrderId>0</OrderId>
+    <Orf>-</Orf>
+    <Other>0</Other>
+    <PANNo>AAWFS7900H</PANNo>
+    <PaymentTerm>-- Select --</PaymentTerm>
+    <PCSTotalWeightKg>0</PCSTotalWeightKg>
+    <PCSWeightGrm>0</PCSWeightGrm>
+    <Phone>0512-2406947</Phone>
+    <PoAgainstOrder>0</PoAgainstOrder>
+    <POChildID>8776</POChildID>
+    <Podate>2021-08-26T00:00:00+05:30</Podate>
+    <Poid>2339</Poid>
+    <Pono>SBI/PO/512/21-22</Pono>
+    <POSerial>512</POSerial>
+    <Qty>1000</Qty>
+    <Rate>9</Rate>
+    <RDesc>-</RDesc>
+    <ReasonForChange>-</ReasonForChange>
+    <ReasonForModify>-</ReasonForModify>
+    <Remark>-</Remark>
+    <RItem_Id>3170</RItem_Id>
+    <RMTotal>95010</RMTotal>
+    <RoundOff>0.2</RoundOff>
+    <SessionYear>21-22</SessionYear>
+    <SGSTAmt>810</SGSTAmt>
+    <SGSTPer>9</SGSTPer>
+    <SH>0</SH>
+    <Sid>53</Sid>
+    <SNo>4</SNo>
+    <Sref>-</Sref>
+    <SubCategoryID>210</SubCategoryID>
+    <SubCategoryName>SS Buckles</SubCategoryName>
+    <SupplierAddress>Civil Lines, kanpur Pin-208001</SupplierAddress>
+    <SupplierCode>53</SupplierCode>
+    <SupplierEmail>sbit@sbleathers.com</SupplierEmail>
+    <SupplierGSTN>09AFFPS2936H1Z5</SupplierGSTN>
+    <SupplierMobileNo>9</SupplierMobileNo>
+    <SupplierName>SB Metals</SupplierName>
+    <SupplierPANNo>AFFPS2936H</SupplierPANNo>
+    <SupplierPhoneNo>- -</SupplierPhoneNo>
+    <SupplierRMCode>-</SupplierRMCode>
+    <SupplierStateId>1</SupplierStateId>
+    <TaxAmount>17101.8</TaxAmount>
+    <TaxFullName>GST 18%</TaxFullName>
+    <TaxPer>18</TaxPer>
+    <Terms>-</Terms>
+    <TIN>09345201673</TIN>
+    <Title>uploads/rmphotos\3170.jpg</Title>
+    <TotalAmtAfterTax>112111.8</TotalAmtAfterTax>
+    <TotalCGST>8550.9</TotalCGST>
+    <TotalIGST>0</TotalIGST>
+    <TotalSGST>8550.9</TotalSGST>
+    <Transport>-- Select --</Transport>
+    <Unit>Pcs</Unit>
+    <UPTT>-</UPTT>
+    <UserId>2</UserId>
+    <Web>www.sbleathers.com</Web>
+    <isphotoprint>2</isphotoprint>
+  </ViewPOPrint>
+  <ViewPOPrint>
+    <AddressOffice>#620 A, Safipur 1st, Harjinder Nagar, Kanpur-208007</AddressOffice>
+    <AddressWork>#620 A, Safipur 1st, Harjinder Nagar, Kanpur-208007</AddressWork>
+    <Amount>57000</Amount>
+    <AmtAfterTax>67260</AmtAfterTax>
+    <Amtwords>Rs ONE LAKHES TWELVE THOUSAND ONE HUNDRED TWELVE ONLY</Amtwords>
+    <BranchAddress>#620 A, Safipur 1st, Harjinder Nagar, Kanpur-208007</BranchAddress>
+    <BranchID>1</BranchID>
+    <BranchName>SB International	</BranchName>
+    <BranchStateId>1</BranchStateId>
+    <BuyerId>17</BuyerId>
+    <BuyerName>CY</BuyerName>
+    <CancelStatus>0</CancelStatus>
+    <CategoryID>11</CategoryID>
+    <CGSTAmt>5130</CGSTAmt>
+    <CGSTPer>9</CGSTPer>
+    <ChangeDilervery>0</ChangeDilervery>
+    <CID>4</CID>
+    <CName>SB International</CName>
+    <Code>FTG-00173</Code>
+    <CompanyGSTN>09AAWFS7900H1ZL</CompanyGSTN>
+    <Complete>0</Complete>
+    <ContactPerson>Rinku</ContactPerson>
+    <ConversionFactor>1</ConversionFactor>
+    <CSName>Rs</CSName>
+    <CSTT>KR-5753371/AC-15</CSTT>
+    <Declaration>-</Declaration>
+    <DeliveryTerm>-- Select --</DeliveryTerm>
+    <Destination>-</Destination>
+    <Dispatch>-</Dispatch>
+    <Dldate>2021-09-24T00:00:00+05:30</Dldate>
+    <Email>sales@sbleathers.com</Email>
+    <EmailDate>2021-08-28T00:00:00+05:30</EmailDate>
+    <EmailStatus>0</EmailStatus>
+    <EntryDate>2021-08-28T00:00:00+05:30</EntryDate>
+    <FactoryQty>3000</FactoryQty>
+    <FactoryUnit>Pcs</FactoryUnit>
+    <Fax>0512-2405420</Fax>
+    <ForAnyQuery>-</ForAnyQuery>
+    <Freight>0</Freight>
+    <Full_Name>Chain Single Iron Nickel 3.5"</Full_Name>
+    <HSNCode>8308</HSNCode>
+    <IGSTAmt>0</IGSTAmt>
+    <IGSTPer>0</IGSTPer>
+    <IssuedBy>0</IssuedBy>
+    <ItemCode>-</ItemCode>
+    <ItemId>0</ItemId>
+    <Mode>-</Mode>
+    <MultipleOrders>0030894-00, 0030895-00</MultipleOrders>
+    <NetAmount>112112</NetAmount>
+    <NewDate>2021-08-28T00:00:00+05:30</NewDate>
+    <OrderId>0</OrderId>
+    <Orf>-</Orf>
+    <Other>0</Other>
+    <PANNo>AAWFS7900H</PANNo>
+    <PaymentTerm>-- Select --</PaymentTerm>
+    <PCSTotalWeightKg>0</PCSTotalWeightKg>
+    <PCSWeightGrm>0</PCSWeightGrm>
+    <Phone>0512-2406947</Phone>
+    <PoAgainstOrder>0</PoAgainstOrder>
+    <POChildID>8656</POChildID>
+    <Podate>2021-08-26T00:00:00+05:30</Podate>
+    <Poid>2339</Poid>
+    <Pono>SBI/PO/512/21-22</Pono>
+    <POSerial>512</POSerial>
+    <Qty>3000</Qty>
+    <Rate>19</Rate>
+    <RDesc>-</RDesc>
+    <ReasonForChange>-</ReasonForChange>
+    <ReasonForModify>-</ReasonForModify>
+    <Remark>-</Remark>
+    <RItem_Id>3243</RItem_Id>
+    <RMTotal>95010</RMTotal>
+    <RoundOff>0.2</RoundOff>
+    <SessionYear>21-22</SessionYear>
+    <SGSTAmt>5130</SGSTAmt>
+    <SGSTPer>9</SGSTPer>
+    <SH>0</SH>
+    <Sid>53</Sid>
+    <SNo>1</SNo>
+    <Sref>-</Sref>
+    <SubCategoryID>208</SubCategoryID>
+    <SubCategoryName>Iron Fittings</SubCategoryName>
+    <SupplierAddress>Civil Lines, kanpur Pin-208001</SupplierAddress>
+    <SupplierCode>53</SupplierCode>
+    <SupplierEmail>sbit@sbleathers.com</SupplierEmail>
+    <SupplierGSTN>09AFFPS2936H1Z5</SupplierGSTN>
+    <SupplierMobileNo>9</SupplierMobileNo>
+    <SupplierName>SB Metals</SupplierName>
+    <SupplierPANNo>AFFPS2936H</SupplierPANNo>
+    <SupplierPhoneNo>- -</SupplierPhoneNo>
+    <SupplierRMCode>-</SupplierRMCode>
+    <SupplierStateId>1</SupplierStateId>
+    <TaxAmount>17101.8</TaxAmount>
+    <TaxFullName>GST 18%</TaxFullName>
+    <TaxPer>18</TaxPer>
+    <Terms>-</Terms>
+    <TIN>09345201673</TIN>
+    <Title>uploads/rmphotos/3243.jpg</Title>
+    <TotalAmtAfterTax>112111.8</TotalAmtAfterTax>
+    <TotalCGST>8550.9</TotalCGST>
+    <TotalIGST>0</TotalIGST>
+    <TotalSGST>8550.9</TotalSGST>
+    <Transport>-- Select --</Transport>
+    <Unit>Pcs</Unit>
+    <UPTT>-</UPTT>
+    <UserId>2</UserId>
+    <Web>www.sbleathers.com</Web>
+    <isphotoprint>2</isphotoprint>
+  </ViewPOPrint>
+</NewDataSet>

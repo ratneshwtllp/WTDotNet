@@ -1,0 +1,12 @@
+﻿@model ERP.Web.Areas.UserRight.Models.UserModel
+<div class="form">
+    @for (int i = 0; i < Model.UserRightModel.Count; i++)
+    {
+        <div class="chkboxmenu">
+            @Html.CheckBoxFor(m => m.UserRightModel[i].Selected, new { @class = "suppliercheckbox", id = "chk_menu" })
+            @Html.HiddenFor(m => m.UserRightModel[i].MenuId, new { @class = "menu" })
+            @Html.LabelFor(m => m.UserRightModel[i].MenuName, Model.UserRightModel[i].MenuName)
+            <br />
+        </div>
+    }
+</div>

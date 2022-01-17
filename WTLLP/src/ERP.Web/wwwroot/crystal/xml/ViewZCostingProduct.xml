@@ -1,0 +1,960 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:MainDataTable="ViewZCostingProduct" msdata:UseCurrentLocale="true">
+      <xs:complexType>
+        <xs:choice minOccurs="0" maxOccurs="unbounded">
+          <xs:element name="ViewZCostingProduct">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="Amount" type="xs:double" />
+                <xs:element name="CategoryName" type="xs:string" minOccurs="0" />
+                <xs:element name="Code" type="xs:string" minOccurs="0" />
+                <xs:element name="CompGroupId" type="xs:int" />
+                <xs:element name="CompGroupName" type="xs:string" minOccurs="0" />
+                <xs:element name="CostPerLM" type="xs:double" />
+                <xs:element name="CostUnitSName" type="xs:string" minOccurs="0" />
+                <xs:element name="EntryDate" type="xs:dateTime" />
+                <xs:element name="FabricCostperLM" type="xs:double" />
+                <xs:element name="FabricCostperLM2" type="xs:double" />
+                <xs:element name="FinishingCostperLM" type="xs:double" />
+                <xs:element name="FitemID" type="xs:long" />
+                <xs:element name="Full_Name" type="xs:string" minOccurs="0" />
+                <xs:element name="GrainCostperLM" type="xs:double" />
+                <xs:element name="GrainCostperLM2" type="xs:double" />
+                <xs:element name="GSM" type="xs:double" />
+                <xs:element name="LiningCostperLM" type="xs:double" />
+                <xs:element name="Name" type="xs:string" minOccurs="0" />
+                <xs:element name="PasteCostperLM" type="xs:double" />
+                <xs:element name="PerKGCost" type="xs:double" />
+                <xs:element name="PRDWidth" type="xs:string" minOccurs="0" />
+                <xs:element name="ProductionCostLM" type="xs:double" />
+                <xs:element name="Qty" type="xs:double" />
+                <xs:element name="Rate" type="xs:double" />
+                <xs:element name="Rejection" type="xs:double" />
+                <xs:element name="RejectionPer" type="xs:double" />
+                <xs:element name="Remark" type="xs:string" minOccurs="0" />
+                <xs:element name="RItem_Id" type="xs:long" />
+                <xs:element name="RM" type="xs:string" minOccurs="0" />
+                <xs:element name="RMCode" type="xs:string" minOccurs="0" />
+                <xs:element name="RMCostperLM" type="xs:double" />
+                <xs:element name="SCQty" type="xs:double" />
+                <xs:element name="SerialNo" type="xs:int" />
+                <xs:element name="SessionYear" type="xs:string" minOccurs="0" />
+                <xs:element name="SubCategoryName" type="xs:string" minOccurs="0" />
+                <xs:element name="SupplierId" type="xs:long" />
+                <xs:element name="TotalAmount" type="xs:double" />
+                <xs:element name="TotalQty" type="xs:double" />
+                <xs:element name="TotalSCQty" type="xs:double" />
+                <xs:element name="UserId" type="xs:int" />
+                <xs:element name="ZCostingChildId" type="xs:long" />
+                <xs:element name="ZCostingID" type="xs:long" />
+                <xs:element name="ZCostingProductId" type="xs:long" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+        </xs:choice>
+      </xs:complexType>
+    </xs:element>
+  </xs:schema>
+  <ViewZCostingProduct>
+    <Amount>10100</Amount>
+    <CategoryName>ZRM</CategoryName>
+    <Code>Folding Upper/001296/001296/African Gray/editprint1/QR/NA</Code>
+    <CompGroupId>2</CompGroupId>
+    <CompGroupName>SKIN</CompGroupName>
+    <CostPerLM>19.46</CostPerLM>
+    <CostUnitSName>Kgs</CostUnitSName>
+    <EntryDate>2019-02-16T00:00:00+05:30</EntryDate>
+    <FabricCostperLM>0</FabricCostperLM>
+    <FabricCostperLM2>0</FabricCostperLM2>
+    <FinishingCostperLM>0</FinishingCostperLM>
+    <FitemID>39110</FitemID>
+    <Full_Name>G-124</Full_Name>
+    <GrainCostperLM>0</GrainCostperLM>
+    <GrainCostperLM2>0</GrainCostperLM2>
+    <GSM>150</GSM>
+    <LiningCostperLM>10</LiningCostperLM>
+    <Name>zpro1</Name>
+    <PasteCostperLM>147.1</PasteCostperLM>
+    <PerKGCost>89.45</PerKGCost>
+    <PRDWidth>140</PRDWidth>
+    <ProductionCostLM>157.1</ProductionCostLM>
+    <Qty>100</Qty>
+    <Rate>101</Rate>
+    <Rejection>0</Rejection>
+    <RejectionPer>0</RejectionPer>
+    <Remark />
+    <RItem_Id>3965</RItem_Id>
+    <RM>G-124</RM>
+    <RMCode>G-124</RMCode>
+    <RMCostperLM>157.1</RMCostperLM>
+    <SCQty>100</SCQty>
+    <SerialNo>1</SerialNo>
+    <SessionYear>2018-19</SessionYear>
+    <SubCategoryName>ZRM SUBCAT</SubCategoryName>
+    <SupplierId>0</SupplierId>
+    <TotalAmount>18248</TotalAmount>
+    <TotalQty>209</TotalQty>
+    <TotalSCQty>204</TotalSCQty>
+    <UserId>1</UserId>
+    <ZCostingChildId>41</ZCostingChildId>
+    <ZCostingID>1</ZCostingID>
+    <ZCostingProductId>1</ZCostingProductId>
+  </ViewZCostingProduct>
+  <ViewZCostingProduct>
+    <Amount>160</Amount>
+    <CategoryName>ZRM</CategoryName>
+    <Code>Folding Upper/001296/001296/African Gray/editprint1/QR/NA</Code>
+    <CompGroupId>2</CompGroupId>
+    <CompGroupName>SKIN</CompGroupName>
+    <CostPerLM>19.46</CostPerLM>
+    <CostUnitSName>Kgs</CostUnitSName>
+    <EntryDate>2019-02-16T00:00:00+05:30</EntryDate>
+    <FabricCostperLM>0</FabricCostperLM>
+    <FabricCostperLM2>0</FabricCostperLM2>
+    <FinishingCostperLM>0</FinishingCostperLM>
+    <FitemID>39110</FitemID>
+    <Full_Name>DL-400</Full_Name>
+    <GrainCostperLM>0</GrainCostperLM>
+    <GrainCostperLM2>0</GrainCostperLM2>
+    <GSM>150</GSM>
+    <LiningCostperLM>10</LiningCostperLM>
+    <Name>zpro1</Name>
+    <PasteCostperLM>147.1</PasteCostperLM>
+    <PerKGCost>89.45</PerKGCost>
+    <PRDWidth>140</PRDWidth>
+    <ProductionCostLM>157.1</ProductionCostLM>
+    <Qty>50</Qty>
+    <Rate>3.2</Rate>
+    <Rejection>0</Rejection>
+    <RejectionPer>0</RejectionPer>
+    <Remark />
+    <RItem_Id>3966</RItem_Id>
+    <RM>DL-400</RM>
+    <RMCode>DL-400</RMCode>
+    <RMCostperLM>157.1</RMCostperLM>
+    <SCQty>50</SCQty>
+    <SerialNo>2</SerialNo>
+    <SessionYear>2018-19</SessionYear>
+    <SubCategoryName>ZRM SUBCAT</SubCategoryName>
+    <SupplierId>0</SupplierId>
+    <TotalAmount>18248</TotalAmount>
+    <TotalQty>209</TotalQty>
+    <TotalSCQty>204</TotalSCQty>
+    <UserId>1</UserId>
+    <ZCostingChildId>42</ZCostingChildId>
+    <ZCostingID>1</ZCostingID>
+    <ZCostingProductId>1</ZCostingProductId>
+  </ViewZCostingProduct>
+  <ViewZCostingProduct>
+    <Amount>4280</Amount>
+    <CategoryName>ZRM</CategoryName>
+    <Code>Folding Upper/001296/001296/African Gray/editprint1/QR/NA</Code>
+    <CompGroupId>2</CompGroupId>
+    <CompGroupName>SKIN</CompGroupName>
+    <CostPerLM>19.46</CostPerLM>
+    <CostUnitSName>Kgs</CostUnitSName>
+    <EntryDate>2019-02-16T00:00:00+05:30</EntryDate>
+    <FabricCostperLM>0</FabricCostperLM>
+    <FabricCostperLM2>0</FabricCostperLM2>
+    <FinishingCostperLM>0</FinishingCostperLM>
+    <FitemID>39110</FitemID>
+    <Full_Name>DOP</Full_Name>
+    <GrainCostperLM>0</GrainCostperLM>
+    <GrainCostperLM2>0</GrainCostperLM2>
+    <GSM>150</GSM>
+    <LiningCostperLM>10</LiningCostperLM>
+    <Name>zpro1</Name>
+    <PasteCostperLM>147.1</PasteCostperLM>
+    <PerKGCost>89.45</PerKGCost>
+    <PRDWidth>140</PRDWidth>
+    <ProductionCostLM>157.1</ProductionCostLM>
+    <Qty>40</Qty>
+    <Rate>107</Rate>
+    <Rejection>0</Rejection>
+    <RejectionPer>0</RejectionPer>
+    <Remark />
+    <RItem_Id>3967</RItem_Id>
+    <RM>DOP</RM>
+    <RMCode>DOP</RMCode>
+    <RMCostperLM>157.1</RMCostperLM>
+    <SCQty>40</SCQty>
+    <SerialNo>3</SerialNo>
+    <SessionYear>2018-19</SessionYear>
+    <SubCategoryName>ZRM SUBCAT</SubCategoryName>
+    <SupplierId>0</SupplierId>
+    <TotalAmount>18248</TotalAmount>
+    <TotalQty>209</TotalQty>
+    <TotalSCQty>204</TotalSCQty>
+    <UserId>1</UserId>
+    <ZCostingChildId>43</ZCostingChildId>
+    <ZCostingID>1</ZCostingID>
+    <ZCostingProductId>1</ZCostingProductId>
+  </ViewZCostingProduct>
+  <ViewZCostingProduct>
+    <Amount>308</Amount>
+    <CategoryName>ZRM</CategoryName>
+    <Code>Folding Upper/001296/001296/African Gray/editprint1/QR/NA</Code>
+    <CompGroupId>2</CompGroupId>
+    <CompGroupName>SKIN</CompGroupName>
+    <CostPerLM>19.46</CostPerLM>
+    <CostUnitSName>Kgs</CostUnitSName>
+    <EntryDate>2019-02-16T00:00:00+05:30</EntryDate>
+    <FabricCostperLM>0</FabricCostperLM>
+    <FabricCostperLM2>0</FabricCostperLM2>
+    <FinishingCostperLM>0</FinishingCostperLM>
+    <FitemID>39110</FitemID>
+    <Full_Name>SUN6777</Full_Name>
+    <GrainCostperLM>0</GrainCostperLM>
+    <GrainCostperLM2>0</GrainCostperLM2>
+    <GSM>150</GSM>
+    <LiningCostperLM>10</LiningCostperLM>
+    <Name>zpro1</Name>
+    <PasteCostperLM>147.1</PasteCostperLM>
+    <PerKGCost>89.45</PerKGCost>
+    <PRDWidth>140</PRDWidth>
+    <ProductionCostLM>157.1</ProductionCostLM>
+    <Qty>2</Qty>
+    <Rate>154</Rate>
+    <Rejection>0</Rejection>
+    <RejectionPer>0</RejectionPer>
+    <Remark />
+    <RItem_Id>3968</RItem_Id>
+    <RM>SUN6777</RM>
+    <RMCode>SUN6777</RMCode>
+    <RMCostperLM>157.1</RMCostperLM>
+    <SCQty>2</SCQty>
+    <SerialNo>4</SerialNo>
+    <SessionYear>2018-19</SessionYear>
+    <SubCategoryName>ZRM SUBCAT</SubCategoryName>
+    <SupplierId>0</SupplierId>
+    <TotalAmount>18248</TotalAmount>
+    <TotalQty>209</TotalQty>
+    <TotalSCQty>204</TotalSCQty>
+    <UserId>1</UserId>
+    <ZCostingChildId>44</ZCostingChildId>
+    <ZCostingID>1</ZCostingID>
+    <ZCostingProductId>1</ZCostingProductId>
+  </ViewZCostingProduct>
+  <ViewZCostingProduct>
+    <Amount>3000</Amount>
+    <CategoryName>ZRM</CategoryName>
+    <Code>Folding Upper/001296/001296/African Gray/editprint1/QR/NA</Code>
+    <CompGroupId>2</CompGroupId>
+    <CompGroupName>SKIN</CompGroupName>
+    <CostPerLM>19.46</CostPerLM>
+    <CostUnitSName>Kgs</CostUnitSName>
+    <EntryDate>2019-02-16T00:00:00+05:30</EntryDate>
+    <FabricCostperLM>0</FabricCostperLM>
+    <FabricCostperLM2>0</FabricCostperLM2>
+    <FinishingCostperLM>0</FinishingCostperLM>
+    <FitemID>39110</FitemID>
+    <Full_Name>PICMENT MB</Full_Name>
+    <GrainCostperLM>0</GrainCostperLM>
+    <GrainCostperLM2>0</GrainCostperLM2>
+    <GSM>150</GSM>
+    <LiningCostperLM>10</LiningCostperLM>
+    <Name>zpro1</Name>
+    <PasteCostperLM>147.1</PasteCostperLM>
+    <PerKGCost>89.45</PerKGCost>
+    <PRDWidth>140</PRDWidth>
+    <ProductionCostLM>157.1</ProductionCostLM>
+    <Qty>12</Qty>
+    <Rate>250</Rate>
+    <Rejection>0</Rejection>
+    <RejectionPer>0</RejectionPer>
+    <Remark />
+    <RItem_Id>3970</RItem_Id>
+    <RM>PICMENT MB</RM>
+    <RMCode>PICMENT MB</RMCode>
+    <RMCostperLM>157.1</RMCostperLM>
+    <SCQty>12</SCQty>
+    <SerialNo>5</SerialNo>
+    <SessionYear>2018-19</SessionYear>
+    <SubCategoryName>ZRM SUBCAT</SubCategoryName>
+    <SupplierId>0</SupplierId>
+    <TotalAmount>18248</TotalAmount>
+    <TotalQty>209</TotalQty>
+    <TotalSCQty>204</TotalSCQty>
+    <UserId>1</UserId>
+    <ZCostingChildId>45</ZCostingChildId>
+    <ZCostingID>1</ZCostingID>
+    <ZCostingProductId>1</ZCostingProductId>
+  </ViewZCostingProduct>
+  <ViewZCostingProduct>
+    <Amount>400</Amount>
+    <CategoryName>ZRM</CategoryName>
+    <Code>Folding Upper/001296/001296/African Gray/editprint1/QR/NA</Code>
+    <CompGroupId>2</CompGroupId>
+    <CompGroupName>SKIN</CompGroupName>
+    <CostPerLM>19.46</CostPerLM>
+    <CostUnitSName>Kgs</CostUnitSName>
+    <EntryDate>2019-02-16T00:00:00+05:30</EntryDate>
+    <FabricCostperLM>0</FabricCostperLM>
+    <FabricCostperLM2>0</FabricCostperLM2>
+    <FinishingCostperLM>0</FinishingCostperLM>
+    <FitemID>39110</FitemID>
+    <Full_Name>D-80</Full_Name>
+    <GrainCostperLM>0</GrainCostperLM>
+    <GrainCostperLM2>0</GrainCostperLM2>
+    <GSM>150</GSM>
+    <LiningCostperLM>10</LiningCostperLM>
+    <Name>zpro1</Name>
+    <PasteCostperLM>147.1</PasteCostperLM>
+    <PerKGCost>89.45</PerKGCost>
+    <PRDWidth>140</PRDWidth>
+    <ProductionCostLM>157.1</ProductionCostLM>
+    <Qty>5</Qty>
+    <Rate>80</Rate>
+    <Rejection>0</Rejection>
+    <RejectionPer>0</RejectionPer>
+    <Remark />
+    <RItem_Id>3971</RItem_Id>
+    <RM>D-80</RM>
+    <RMCode>D-80</RMCode>
+    <RMCostperLM>157.1</RMCostperLM>
+    <SCQty>0</SCQty>
+    <SerialNo>6</SerialNo>
+    <SessionYear>2018-19</SessionYear>
+    <SubCategoryName>ZRM SUBCAT</SubCategoryName>
+    <SupplierId>0</SupplierId>
+    <TotalAmount>18248</TotalAmount>
+    <TotalQty>209</TotalQty>
+    <TotalSCQty>204</TotalSCQty>
+    <UserId>1</UserId>
+    <ZCostingChildId>46</ZCostingChildId>
+    <ZCostingID>1</ZCostingID>
+    <ZCostingProductId>1</ZCostingProductId>
+  </ViewZCostingProduct>
+  <ViewZCostingProduct>
+    <Amount>960</Amount>
+    <CategoryName>ZRM</CategoryName>
+    <Code>Folding Upper/001296/001296/African Gray/editprint1/QR/NA</Code>
+    <CompGroupId>3</CompGroupId>
+    <CompGroupName>FOAM</CompGroupName>
+    <CostPerLM>111.86</CostPerLM>
+    <CostUnitSName>Kgs</CostUnitSName>
+    <EntryDate>2019-02-16T00:00:00+05:30</EntryDate>
+    <FabricCostperLM>0</FabricCostperLM>
+    <FabricCostperLM2>0</FabricCostperLM2>
+    <FinishingCostperLM>0</FinishingCostperLM>
+    <FitemID>39110</FitemID>
+    <Full_Name>DL-400</Full_Name>
+    <GrainCostperLM>0</GrainCostperLM>
+    <GrainCostperLM2>0</GrainCostperLM2>
+    <GSM>1800</GSM>
+    <LiningCostperLM>10</LiningCostperLM>
+    <Name>zpro1</Name>
+    <PasteCostperLM>147.1</PasteCostperLM>
+    <PerKGCost>42.86</PerKGCost>
+    <PRDWidth>140</PRDWidth>
+    <ProductionCostLM>157.1</ProductionCostLM>
+    <Qty>300</Qty>
+    <Rate>3.2</Rate>
+    <Rejection>0</Rejection>
+    <RejectionPer>0</RejectionPer>
+    <Remark />
+    <RItem_Id>3966</RItem_Id>
+    <RM>DL-400</RM>
+    <RMCode>DL-400</RMCode>
+    <RMCostperLM>157.1</RMCostperLM>
+    <SCQty>300</SCQty>
+    <SerialNo>7</SerialNo>
+    <SessionYear>2018-19</SessionYear>
+    <SubCategoryName>ZRM SUBCAT</SubCategoryName>
+    <SupplierId>0</SupplierId>
+    <TotalAmount>19800</TotalAmount>
+    <TotalQty>485</TotalQty>
+    <TotalSCQty>462</TotalSCQty>
+    <UserId>1</UserId>
+    <ZCostingChildId>47</ZCostingChildId>
+    <ZCostingID>1</ZCostingID>
+    <ZCostingProductId>1</ZCostingProductId>
+  </ViewZCostingProduct>
+  <ViewZCostingProduct>
+    <Amount>4280</Amount>
+    <CategoryName>ZRM</CategoryName>
+    <Code>Folding Upper/001296/001296/African Gray/editprint1/QR/NA</Code>
+    <CompGroupId>3</CompGroupId>
+    <CompGroupName>FOAM</CompGroupName>
+    <CostPerLM>111.86</CostPerLM>
+    <CostUnitSName>Kgs</CostUnitSName>
+    <EntryDate>2019-02-16T00:00:00+05:30</EntryDate>
+    <FabricCostperLM>0</FabricCostperLM>
+    <FabricCostperLM2>0</FabricCostperLM2>
+    <FinishingCostperLM>0</FinishingCostperLM>
+    <FitemID>39110</FitemID>
+    <Full_Name>DOP</Full_Name>
+    <GrainCostperLM>0</GrainCostperLM>
+    <GrainCostperLM2>0</GrainCostperLM2>
+    <GSM>1800</GSM>
+    <LiningCostperLM>10</LiningCostperLM>
+    <Name>zpro1</Name>
+    <PasteCostperLM>147.1</PasteCostperLM>
+    <PerKGCost>42.86</PerKGCost>
+    <PRDWidth>140</PRDWidth>
+    <ProductionCostLM>157.1</ProductionCostLM>
+    <Qty>40</Qty>
+    <Rate>107</Rate>
+    <Rejection>0</Rejection>
+    <RejectionPer>0</RejectionPer>
+    <Remark />
+    <RItem_Id>3967</RItem_Id>
+    <RM>DOP</RM>
+    <RMCode>DOP</RMCode>
+    <RMCostperLM>157.1</RMCostperLM>
+    <SCQty>40</SCQty>
+    <SerialNo>8</SerialNo>
+    <SessionYear>2018-19</SessionYear>
+    <SubCategoryName>ZRM SUBCAT</SubCategoryName>
+    <SupplierId>0</SupplierId>
+    <TotalAmount>19800</TotalAmount>
+    <TotalQty>485</TotalQty>
+    <TotalSCQty>462</TotalSCQty>
+    <UserId>1</UserId>
+    <ZCostingChildId>48</ZCostingChildId>
+    <ZCostingID>1</ZCostingID>
+    <ZCostingProductId>1</ZCostingProductId>
+  </ViewZCostingProduct>
+  <ViewZCostingProduct>
+    <Amount>1500</Amount>
+    <CategoryName>ZRM</CategoryName>
+    <Code>Folding Upper/001296/001296/African Gray/editprint1/QR/NA</Code>
+    <CompGroupId>3</CompGroupId>
+    <CompGroupName>FOAM</CompGroupName>
+    <CostPerLM>111.86</CostPerLM>
+    <CostUnitSName>Kgs</CostUnitSName>
+    <EntryDate>2019-02-16T00:00:00+05:30</EntryDate>
+    <FabricCostperLM>0</FabricCostperLM>
+    <FabricCostperLM2>0</FabricCostperLM2>
+    <FinishingCostperLM>0</FinishingCostperLM>
+    <FitemID>39110</FitemID>
+    <Full_Name>ADCLMB</Full_Name>
+    <GrainCostperLM>0</GrainCostperLM>
+    <GrainCostperLM2>0</GrainCostperLM2>
+    <GSM>1800</GSM>
+    <LiningCostperLM>10</LiningCostperLM>
+    <Name>zpro1</Name>
+    <PasteCostperLM>147.1</PasteCostperLM>
+    <PerKGCost>42.86</PerKGCost>
+    <PRDWidth>140</PRDWidth>
+    <ProductionCostLM>157.1</ProductionCostLM>
+    <Qty>6</Qty>
+    <Rate>250</Rate>
+    <Rejection>0</Rejection>
+    <RejectionPer>0</RejectionPer>
+    <Remark />
+    <RItem_Id>3974</RItem_Id>
+    <RM>ADCLMB</RM>
+    <RMCode>ADCLMB</RMCode>
+    <RMCostperLM>157.1</RMCostperLM>
+    <SCQty>3</SCQty>
+    <SerialNo>9</SerialNo>
+    <SessionYear>2018-19</SessionYear>
+    <SubCategoryName>ZRM SUBCAT</SubCategoryName>
+    <SupplierId>0</SupplierId>
+    <TotalAmount>19800</TotalAmount>
+    <TotalQty>485</TotalQty>
+    <TotalSCQty>462</TotalSCQty>
+    <UserId>1</UserId>
+    <ZCostingChildId>49</ZCostingChildId>
+    <ZCostingID>1</ZCostingID>
+    <ZCostingProductId>1</ZCostingProductId>
+  </ViewZCostingProduct>
+  <ViewZCostingProduct>
+    <Amount>1160</Amount>
+    <CategoryName>ZRM</CategoryName>
+    <Code>Folding Upper/001296/001296/African Gray/editprint1/QR/NA</Code>
+    <CompGroupId>3</CompGroupId>
+    <CompGroupName>FOAM</CompGroupName>
+    <CostPerLM>111.86</CostPerLM>
+    <CostUnitSName>Kgs</CostUnitSName>
+    <EntryDate>2019-02-16T00:00:00+05:30</EntryDate>
+    <FabricCostperLM>0</FabricCostperLM>
+    <FabricCostperLM2>0</FabricCostperLM2>
+    <FinishingCostperLM>0</FinishingCostperLM>
+    <FitemID>39110</FitemID>
+    <Full_Name>CPW</Full_Name>
+    <GrainCostperLM>0</GrainCostperLM>
+    <GrainCostperLM2>0</GrainCostperLM2>
+    <GSM>1800</GSM>
+    <LiningCostperLM>10</LiningCostperLM>
+    <Name>zpro1</Name>
+    <PasteCostperLM>147.1</PasteCostperLM>
+    <PerKGCost>42.86</PerKGCost>
+    <PRDWidth>140</PRDWidth>
+    <ProductionCostLM>157.1</ProductionCostLM>
+    <Qty>20</Qty>
+    <Rate>58</Rate>
+    <Rejection>0</Rejection>
+    <RejectionPer>0</RejectionPer>
+    <Remark />
+    <RItem_Id>3975</RItem_Id>
+    <RM>CPW</RM>
+    <RMCode>CPW</RMCode>
+    <RMCostperLM>157.1</RMCostperLM>
+    <SCQty>15</SCQty>
+    <SerialNo>10</SerialNo>
+    <SessionYear>2018-19</SessionYear>
+    <SubCategoryName>ZRM SUBCAT</SubCategoryName>
+    <SupplierId>0</SupplierId>
+    <TotalAmount>19800</TotalAmount>
+    <TotalQty>485</TotalQty>
+    <TotalSCQty>462</TotalSCQty>
+    <UserId>1</UserId>
+    <ZCostingChildId>50</ZCostingChildId>
+    <ZCostingID>1</ZCostingID>
+    <ZCostingProductId>1</ZCostingProductId>
+  </ViewZCostingProduct>
+  <ViewZCostingProduct>
+    <Amount>1000</Amount>
+    <CategoryName>ZRM</CategoryName>
+    <Code>Folding Upper/001296/001296/African Gray/editprint1/QR/NA</Code>
+    <CompGroupId>3</CompGroupId>
+    <CompGroupName>FOAM</CompGroupName>
+    <CostPerLM>111.86</CostPerLM>
+    <CostUnitSName>Kgs</CostUnitSName>
+    <EntryDate>2019-02-16T00:00:00+05:30</EntryDate>
+    <FabricCostperLM>0</FabricCostperLM>
+    <FabricCostperLM2>0</FabricCostperLM2>
+    <FinishingCostperLM>0</FinishingCostperLM>
+    <FitemID>39110</FitemID>
+    <Full_Name>PICMENT MB</Full_Name>
+    <GrainCostperLM>0</GrainCostperLM>
+    <GrainCostperLM2>0</GrainCostperLM2>
+    <GSM>1800</GSM>
+    <LiningCostperLM>10</LiningCostperLM>
+    <Name>zpro1</Name>
+    <PasteCostperLM>147.1</PasteCostperLM>
+    <PerKGCost>42.86</PerKGCost>
+    <PRDWidth>140</PRDWidth>
+    <ProductionCostLM>157.1</ProductionCostLM>
+    <Qty>4</Qty>
+    <Rate>250</Rate>
+    <Rejection>0</Rejection>
+    <RejectionPer>0</RejectionPer>
+    <Remark />
+    <RItem_Id>3970</RItem_Id>
+    <RM>PICMENT MB</RM>
+    <RMCode>PICMENT MB</RMCode>
+    <RMCostperLM>157.1</RMCostperLM>
+    <SCQty>4</SCQty>
+    <SerialNo>11</SerialNo>
+    <SessionYear>2018-19</SessionYear>
+    <SubCategoryName>ZRM SUBCAT</SubCategoryName>
+    <SupplierId>0</SupplierId>
+    <TotalAmount>19800</TotalAmount>
+    <TotalQty>485</TotalQty>
+    <TotalSCQty>462</TotalSCQty>
+    <UserId>1</UserId>
+    <ZCostingChildId>51</ZCostingChildId>
+    <ZCostingID>1</ZCostingID>
+    <ZCostingProductId>1</ZCostingProductId>
+  </ViewZCostingProduct>
+  <ViewZCostingProduct>
+    <Amount>1200</Amount>
+    <CategoryName>ZRM</CategoryName>
+    <Code>Folding Upper/001296/001296/African Gray/editprint1/QR/NA</Code>
+    <CompGroupId>3</CompGroupId>
+    <CompGroupName>FOAM</CompGroupName>
+    <CostPerLM>111.86</CostPerLM>
+    <CostUnitSName>Kgs</CostUnitSName>
+    <EntryDate>2019-02-16T00:00:00+05:30</EntryDate>
+    <FabricCostperLM>0</FabricCostperLM>
+    <FabricCostperLM2>0</FabricCostperLM2>
+    <FinishingCostperLM>0</FinishingCostperLM>
+    <FitemID>39110</FitemID>
+    <Full_Name>D-80</Full_Name>
+    <GrainCostperLM>0</GrainCostperLM>
+    <GrainCostperLM2>0</GrainCostperLM2>
+    <GSM>1800</GSM>
+    <LiningCostperLM>10</LiningCostperLM>
+    <Name>zpro1</Name>
+    <PasteCostperLM>147.1</PasteCostperLM>
+    <PerKGCost>42.86</PerKGCost>
+    <PRDWidth>140</PRDWidth>
+    <ProductionCostLM>157.1</ProductionCostLM>
+    <Qty>15</Qty>
+    <Rate>80</Rate>
+    <Rejection>0</Rejection>
+    <RejectionPer>0</RejectionPer>
+    <Remark />
+    <RItem_Id>3971</RItem_Id>
+    <RM>D-80</RM>
+    <RMCode>D-80</RMCode>
+    <RMCostperLM>157.1</RMCostperLM>
+    <SCQty>0</SCQty>
+    <SerialNo>12</SerialNo>
+    <SessionYear>2018-19</SessionYear>
+    <SubCategoryName>ZRM SUBCAT</SubCategoryName>
+    <SupplierId>0</SupplierId>
+    <TotalAmount>19800</TotalAmount>
+    <TotalQty>485</TotalQty>
+    <TotalSCQty>462</TotalSCQty>
+    <UserId>1</UserId>
+    <ZCostingChildId>52</ZCostingChildId>
+    <ZCostingID>1</ZCostingID>
+    <ZCostingProductId>1</ZCostingProductId>
+  </ViewZCostingProduct>
+  <ViewZCostingProduct>
+    <Amount>2020</Amount>
+    <CategoryName>ZRM</CategoryName>
+    <Code>Folding Upper/001296/001296/African Gray/editprint1/QR/NA</Code>
+    <CompGroupId>3</CompGroupId>
+    <CompGroupName>FOAM</CompGroupName>
+    <CostPerLM>111.86</CostPerLM>
+    <CostUnitSName>Kgs</CostUnitSName>
+    <EntryDate>2019-02-16T00:00:00+05:30</EntryDate>
+    <FabricCostperLM>0</FabricCostperLM>
+    <FabricCostperLM2>0</FabricCostperLM2>
+    <FinishingCostperLM>0</FinishingCostperLM>
+    <FitemID>39110</FitemID>
+    <Full_Name>G-124</Full_Name>
+    <GrainCostperLM>0</GrainCostperLM>
+    <GrainCostperLM2>0</GrainCostperLM2>
+    <GSM>1800</GSM>
+    <LiningCostperLM>10</LiningCostperLM>
+    <Name>zpro1</Name>
+    <PasteCostperLM>147.1</PasteCostperLM>
+    <PerKGCost>42.86</PerKGCost>
+    <PRDWidth>140</PRDWidth>
+    <ProductionCostLM>157.1</ProductionCostLM>
+    <Qty>20</Qty>
+    <Rate>101</Rate>
+    <Rejection>0</Rejection>
+    <RejectionPer>0</RejectionPer>
+    <Remark />
+    <RItem_Id>3965</RItem_Id>
+    <RM>G-124</RM>
+    <RMCode>G-124</RMCode>
+    <RMCostperLM>157.1</RMCostperLM>
+    <SCQty>20</SCQty>
+    <SerialNo>13</SerialNo>
+    <SessionYear>2018-19</SessionYear>
+    <SubCategoryName>ZRM SUBCAT</SubCategoryName>
+    <SupplierId>0</SupplierId>
+    <TotalAmount>19800</TotalAmount>
+    <TotalQty>485</TotalQty>
+    <TotalSCQty>462</TotalSCQty>
+    <UserId>1</UserId>
+    <ZCostingChildId>53</ZCostingChildId>
+    <ZCostingID>1</ZCostingID>
+    <ZCostingProductId>1</ZCostingProductId>
+  </ViewZCostingProduct>
+  <ViewZCostingProduct>
+    <Amount>7680</Amount>
+    <CategoryName>ZRM</CategoryName>
+    <Code>Folding Upper/001296/001296/African Gray/editprint1/QR/NA</Code>
+    <CompGroupId>3</CompGroupId>
+    <CompGroupName>FOAM</CompGroupName>
+    <CostPerLM>111.86</CostPerLM>
+    <CostUnitSName>Kgs</CostUnitSName>
+    <EntryDate>2019-02-16T00:00:00+05:30</EntryDate>
+    <FabricCostperLM>0</FabricCostperLM>
+    <FabricCostperLM2>0</FabricCostperLM2>
+    <FinishingCostperLM>0</FinishingCostperLM>
+    <FitemID>39110</FitemID>
+    <Full_Name>GL-1202</Full_Name>
+    <GrainCostperLM>0</GrainCostperLM>
+    <GrainCostperLM2>0</GrainCostperLM2>
+    <GSM>1800</GSM>
+    <LiningCostperLM>10</LiningCostperLM>
+    <Name>zpro1</Name>
+    <PasteCostperLM>147.1</PasteCostperLM>
+    <PerKGCost>42.86</PerKGCost>
+    <PRDWidth>140</PRDWidth>
+    <ProductionCostLM>157.1</ProductionCostLM>
+    <Qty>80</Qty>
+    <Rate>96</Rate>
+    <Rejection>0</Rejection>
+    <RejectionPer>0</RejectionPer>
+    <Remark />
+    <RItem_Id>3973</RItem_Id>
+    <RM>GL-1202</RM>
+    <RMCode>GL-1202</RMCode>
+    <RMCostperLM>157.1</RMCostperLM>
+    <SCQty>80</SCQty>
+    <SerialNo>14</SerialNo>
+    <SessionYear>2018-19</SessionYear>
+    <SubCategoryName>ZRM SUBCAT</SubCategoryName>
+    <SupplierId>0</SupplierId>
+    <TotalAmount>19800</TotalAmount>
+    <TotalQty>485</TotalQty>
+    <TotalSCQty>462</TotalSCQty>
+    <UserId>1</UserId>
+    <ZCostingChildId>54</ZCostingChildId>
+    <ZCostingID>1</ZCostingID>
+    <ZCostingProductId>1</ZCostingProductId>
+  </ViewZCostingProduct>
+  <ViewZCostingProduct>
+    <Amount>10100</Amount>
+    <CategoryName>ZRM</CategoryName>
+    <Code>Folding Upper/001296/001296/African Gray/editprint1/QR/NA</Code>
+    <CompGroupId>4</CompGroupId>
+    <CompGroupName>ADHESIVE</CompGroupName>
+    <CostPerLM>19.03</CostPerLM>
+    <CostUnitSName>Kgs</CostUnitSName>
+    <EntryDate>2019-02-16T00:00:00+05:30</EntryDate>
+    <FabricCostperLM>0</FabricCostperLM>
+    <FabricCostperLM2>0</FabricCostperLM2>
+    <FinishingCostperLM>0</FinishingCostperLM>
+    <FitemID>39110</FitemID>
+    <Full_Name>G-124</Full_Name>
+    <GrainCostperLM>0</GrainCostperLM>
+    <GrainCostperLM2>0</GrainCostperLM2>
+    <GSM>200</GSM>
+    <LiningCostperLM>10</LiningCostperLM>
+    <Name>zpro1</Name>
+    <PasteCostperLM>147.1</PasteCostperLM>
+    <PerKGCost>65.61</PerKGCost>
+    <PRDWidth>140</PRDWidth>
+    <ProductionCostLM>157.1</ProductionCostLM>
+    <Qty>100</Qty>
+    <Rate>101</Rate>
+    <Rejection>0</Rejection>
+    <RejectionPer>0</RejectionPer>
+    <Remark />
+    <RItem_Id>3965</RItem_Id>
+    <RM>G-124</RM>
+    <RMCode>G-124</RMCode>
+    <RMCostperLM>157.1</RMCostperLM>
+    <SCQty>100</SCQty>
+    <SerialNo>15</SerialNo>
+    <SessionYear>2018-19</SessionYear>
+    <SubCategoryName>ZRM SUBCAT</SubCategoryName>
+    <SupplierId>0</SupplierId>
+    <TotalAmount>16139</TotalAmount>
+    <TotalQty>257</TotalQty>
+    <TotalSCQty>246</TotalSCQty>
+    <UserId>1</UserId>
+    <ZCostingChildId>55</ZCostingChildId>
+    <ZCostingID>1</ZCostingID>
+    <ZCostingProductId>1</ZCostingProductId>
+  </ViewZCostingProduct>
+  <ViewZCostingProduct>
+    <Amount>320</Amount>
+    <CategoryName>ZRM</CategoryName>
+    <Code>Folding Upper/001296/001296/African Gray/editprint1/QR/NA</Code>
+    <CompGroupId>4</CompGroupId>
+    <CompGroupName>ADHESIVE</CompGroupName>
+    <CostPerLM>19.03</CostPerLM>
+    <CostUnitSName>Kgs</CostUnitSName>
+    <EntryDate>2019-02-16T00:00:00+05:30</EntryDate>
+    <FabricCostperLM>0</FabricCostperLM>
+    <FabricCostperLM2>0</FabricCostperLM2>
+    <FinishingCostperLM>0</FinishingCostperLM>
+    <FitemID>39110</FitemID>
+    <Full_Name>DL-400</Full_Name>
+    <GrainCostperLM>0</GrainCostperLM>
+    <GrainCostperLM2>0</GrainCostperLM2>
+    <GSM>200</GSM>
+    <LiningCostperLM>10</LiningCostperLM>
+    <Name>zpro1</Name>
+    <PasteCostperLM>147.1</PasteCostperLM>
+    <PerKGCost>65.61</PerKGCost>
+    <PRDWidth>140</PRDWidth>
+    <ProductionCostLM>157.1</ProductionCostLM>
+    <Qty>100</Qty>
+    <Rate>3.2</Rate>
+    <Rejection>0</Rejection>
+    <RejectionPer>0</RejectionPer>
+    <Remark />
+    <RItem_Id>3966</RItem_Id>
+    <RM>DL-400</RM>
+    <RMCode>DL-400</RMCode>
+    <RMCostperLM>157.1</RMCostperLM>
+    <SCQty>100</SCQty>
+    <SerialNo>16</SerialNo>
+    <SessionYear>2018-19</SessionYear>
+    <SubCategoryName>ZRM SUBCAT</SubCategoryName>
+    <SupplierId>0</SupplierId>
+    <TotalAmount>16139</TotalAmount>
+    <TotalQty>257</TotalQty>
+    <TotalSCQty>246</TotalSCQty>
+    <UserId>1</UserId>
+    <ZCostingChildId>56</ZCostingChildId>
+    <ZCostingID>1</ZCostingID>
+    <ZCostingProductId>1</ZCostingProductId>
+  </ViewZCostingProduct>
+  <ViewZCostingProduct>
+    <Amount>4815</Amount>
+    <CategoryName>ZRM</CategoryName>
+    <Code>Folding Upper/001296/001296/African Gray/editprint1/QR/NA</Code>
+    <CompGroupId>4</CompGroupId>
+    <CompGroupName>ADHESIVE</CompGroupName>
+    <CostPerLM>19.03</CostPerLM>
+    <CostUnitSName>Kgs</CostUnitSName>
+    <EntryDate>2019-02-16T00:00:00+05:30</EntryDate>
+    <FabricCostperLM>0</FabricCostperLM>
+    <FabricCostperLM2>0</FabricCostperLM2>
+    <FinishingCostperLM>0</FinishingCostperLM>
+    <FitemID>39110</FitemID>
+    <Full_Name>DOP</Full_Name>
+    <GrainCostperLM>0</GrainCostperLM>
+    <GrainCostperLM2>0</GrainCostperLM2>
+    <GSM>200</GSM>
+    <LiningCostperLM>10</LiningCostperLM>
+    <Name>zpro1</Name>
+    <PasteCostperLM>147.1</PasteCostperLM>
+    <PerKGCost>65.61</PerKGCost>
+    <PRDWidth>140</PRDWidth>
+    <ProductionCostLM>157.1</ProductionCostLM>
+    <Qty>45</Qty>
+    <Rate>107</Rate>
+    <Rejection>0</Rejection>
+    <RejectionPer>0</RejectionPer>
+    <Remark />
+    <RItem_Id>3967</RItem_Id>
+    <RM>DOP</RM>
+    <RMCode>DOP</RMCode>
+    <RMCostperLM>157.1</RMCostperLM>
+    <SCQty>45</SCQty>
+    <SerialNo>17</SerialNo>
+    <SessionYear>2018-19</SessionYear>
+    <SubCategoryName>ZRM SUBCAT</SubCategoryName>
+    <SupplierId>0</SupplierId>
+    <TotalAmount>16139</TotalAmount>
+    <TotalQty>257</TotalQty>
+    <TotalSCQty>246</TotalSCQty>
+    <UserId>1</UserId>
+    <ZCostingChildId>57</ZCostingChildId>
+    <ZCostingID>1</ZCostingID>
+    <ZCostingProductId>1</ZCostingProductId>
+  </ViewZCostingProduct>
+  <ViewZCostingProduct>
+    <Amount>250</Amount>
+    <CategoryName>ZRM</CategoryName>
+    <Code>Folding Upper/001296/001296/African Gray/editprint1/QR/NA</Code>
+    <CompGroupId>4</CompGroupId>
+    <CompGroupName>ADHESIVE</CompGroupName>
+    <CostPerLM>19.03</CostPerLM>
+    <CostUnitSName>Kgs</CostUnitSName>
+    <EntryDate>2019-02-16T00:00:00+05:30</EntryDate>
+    <FabricCostperLM>0</FabricCostperLM>
+    <FabricCostperLM2>0</FabricCostperLM2>
+    <FinishingCostperLM>0</FinishingCostperLM>
+    <FitemID>39110</FitemID>
+    <Full_Name>PICMENT MB</Full_Name>
+    <GrainCostperLM>0</GrainCostperLM>
+    <GrainCostperLM2>0</GrainCostperLM2>
+    <GSM>200</GSM>
+    <LiningCostperLM>10</LiningCostperLM>
+    <Name>zpro1</Name>
+    <PasteCostperLM>147.1</PasteCostperLM>
+    <PerKGCost>65.61</PerKGCost>
+    <PRDWidth>140</PRDWidth>
+    <ProductionCostLM>157.1</ProductionCostLM>
+    <Qty>1</Qty>
+    <Rate>250</Rate>
+    <Rejection>0</Rejection>
+    <RejectionPer>0</RejectionPer>
+    <Remark />
+    <RItem_Id>3970</RItem_Id>
+    <RM>PICMENT MB</RM>
+    <RMCode>PICMENT MB</RMCode>
+    <RMCostperLM>157.1</RMCostperLM>
+    <SCQty>1</SCQty>
+    <SerialNo>18</SerialNo>
+    <SessionYear>2018-19</SessionYear>
+    <SubCategoryName>ZRM SUBCAT</SubCategoryName>
+    <SupplierId>0</SupplierId>
+    <TotalAmount>16139</TotalAmount>
+    <TotalQty>257</TotalQty>
+    <TotalSCQty>246</TotalSCQty>
+    <UserId>1</UserId>
+    <ZCostingChildId>58</ZCostingChildId>
+    <ZCostingID>1</ZCostingID>
+    <ZCostingProductId>1</ZCostingProductId>
+  </ViewZCostingProduct>
+  <ViewZCostingProduct>
+    <Amount>500</Amount>
+    <CategoryName>ZRM</CategoryName>
+    <Code>Folding Upper/001296/001296/African Gray/editprint1/QR/NA</Code>
+    <CompGroupId>4</CompGroupId>
+    <CompGroupName>ADHESIVE</CompGroupName>
+    <CostPerLM>19.03</CostPerLM>
+    <CostUnitSName>Kgs</CostUnitSName>
+    <EntryDate>2019-02-16T00:00:00+05:30</EntryDate>
+    <FabricCostperLM>0</FabricCostperLM>
+    <FabricCostperLM2>0</FabricCostperLM2>
+    <FinishingCostperLM>0</FinishingCostperLM>
+    <FitemID>39110</FitemID>
+    <Full_Name>M.T.O.</Full_Name>
+    <GrainCostperLM>0</GrainCostperLM>
+    <GrainCostperLM2>0</GrainCostperLM2>
+    <GSM>200</GSM>
+    <LiningCostperLM>10</LiningCostperLM>
+    <Name>zpro1</Name>
+    <PasteCostperLM>147.1</PasteCostperLM>
+    <PerKGCost>65.61</PerKGCost>
+    <PRDWidth>140</PRDWidth>
+    <ProductionCostLM>157.1</ProductionCostLM>
+    <Qty>10</Qty>
+    <Rate>50</Rate>
+    <Rejection>0</Rejection>
+    <RejectionPer>0</RejectionPer>
+    <Remark />
+    <RItem_Id>3972</RItem_Id>
+    <RM>M.T.O.</RM>
+    <RMCode>M.T.O.</RMCode>
+    <RMCostperLM>157.1</RMCostperLM>
+    <SCQty>0</SCQty>
+    <SerialNo>19</SerialNo>
+    <SessionYear>2018-19</SessionYear>
+    <SubCategoryName>ZRM SUBCAT</SubCategoryName>
+    <SupplierId>0</SupplierId>
+    <TotalAmount>16139</TotalAmount>
+    <TotalQty>257</TotalQty>
+    <TotalSCQty>246</TotalSCQty>
+    <UserId>1</UserId>
+    <ZCostingChildId>59</ZCostingChildId>
+    <ZCostingID>1</ZCostingID>
+    <ZCostingProductId>1</ZCostingProductId>
+  </ViewZCostingProduct>
+  <ViewZCostingProduct>
+    <Amount>154</Amount>
+    <CategoryName>ZRM</CategoryName>
+    <Code>Folding Upper/001296/001296/African Gray/editprint1/QR/NA</Code>
+    <CompGroupId>4</CompGroupId>
+    <CompGroupName>ADHESIVE</CompGroupName>
+    <CostPerLM>19.03</CostPerLM>
+    <CostUnitSName>Kgs</CostUnitSName>
+    <EntryDate>2019-02-16T00:00:00+05:30</EntryDate>
+    <FabricCostperLM>0</FabricCostperLM>
+    <FabricCostperLM2>0</FabricCostperLM2>
+    <FinishingCostperLM>0</FinishingCostperLM>
+    <FitemID>39110</FitemID>
+    <Full_Name>SUN6777</Full_Name>
+    <GrainCostperLM>0</GrainCostperLM>
+    <GrainCostperLM2>0</GrainCostperLM2>
+    <GSM>200</GSM>
+    <LiningCostperLM>10</LiningCostperLM>
+    <Name>zpro1</Name>
+    <PasteCostperLM>147.1</PasteCostperLM>
+    <PerKGCost>65.61</PerKGCost>
+    <PRDWidth>140</PRDWidth>
+    <ProductionCostLM>157.1</ProductionCostLM>
+    <Qty>1</Qty>
+    <Rate>154</Rate>
+    <Rejection>0</Rejection>
+    <RejectionPer>0</RejectionPer>
+    <Remark />
+    <RItem_Id>3968</RItem_Id>
+    <RM>SUN6777</RM>
+    <RMCode>SUN6777</RMCode>
+    <RMCostperLM>157.1</RMCostperLM>
+    <SCQty>0</SCQty>
+    <SerialNo>20</SerialNo>
+    <SessionYear>2018-19</SessionYear>
+    <SubCategoryName>ZRM SUBCAT</SubCategoryName>
+    <SupplierId>0</SupplierId>
+    <TotalAmount>16139</TotalAmount>
+    <TotalQty>257</TotalQty>
+    <TotalSCQty>246</TotalSCQty>
+    <UserId>1</UserId>
+    <ZCostingChildId>60</ZCostingChildId>
+    <ZCostingID>1</ZCostingID>
+    <ZCostingProductId>1</ZCostingProductId>
+  </ViewZCostingProduct>
+</NewDataSet>

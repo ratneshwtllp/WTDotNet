@@ -1,0 +1,104 @@
+﻿@using ERP.Domain.Entities;
+@using NonFactors.Mvc.Grid;
+@model IEnumerable<ViewStateDetails>
+@(Html
+        .Grid(Model)
+        .Build(columns =>
+        {
+            //columns.Add(model => Html.ActionLink("Edit", "EditRMSubCategory", new { id = model.SubCategoryID }));
+            //columns.Add(model => $"<button data-id=\"{model.SubCategoryID}\" onclick=showJqueryDialog(\"{model.SubCategoryID}\");> Delete</button>").Encoded(false);
+            columns.Add(model => $"<a href='../State/EditState/{model.StateId}'> <img src=\"../../images/edit.png\"></a>").Encoded(false);
+            columns.Add(model => $"<a href='#' > <img src=\"../../images/delete.png\"   onclick=showJqueryDialog(\"{model.StateId}\"); > </a>").Encoded(false);
+            columns.Add(model => model.StateId).Css("hidden");
+            columns.Add(model => model.CountryName).Titled("Country");
+            columns.Add(model => model.StateName).Titled("State");
+            columns.Add(model => model.StateCode).Titled("State Code");
+
+        })
+        .Filterable()
+        .Sortable()
+        .Pageable(pager =>
+        {
+            pager.PagesToDisplay = 10;
+            pager.CurrentPage = 1;
+            pager.RowsPerPage = 10;
+        })
+        .Empty("No data found")
+         .Css("table-hover")
+)
+
+<!-- The loading-area will be where we display a message during the AJAX call.
+    This way, the user knows something is happening in the background.-->
+<div id="loading-area" class="load" style="display:none;">
+    <div class='alert alert-info'><strong>Sending...</strong></div>
+</div>
+
+<!-- The message-area will be where we display a message after the AJAX call
+    about whether or not the contact form was successfully sent-->
+<div id="message-area"></div>
+
+<!--jQuery Modal Div-->
+<div id="dialog-confirm" title="Delete Confirmation" style="display:none;" >
+    <p><span class="ui-icon ui-icon-alert" style="float:left; margin:12px 12px 20px 0;"></span>This items will be permanently deleted and cannot be recovered. Are you sure?</p>
+</div>
+
+
+<div id="dataConfirmModal" class="modal" role="dialog" aria-labelledby="dataConfirmLabel" aria-hidden="true">
+    <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+        <h3 id="dataConfirmLabel">Please Confirm</h3>
+    </div><div class="modal-body"></div><div class="modal-footer"><button class="btn" data-dismiss="modal" aria-hidden="true">Cancel</button><a class="btn btn-primary" id="dataConfirmOK">OK</a></div>
+</div>
+
+<!-- These methods are invoked at different stages of the AJAX call-->
+<script type="text/javascript">
+    function showJqueryDialog(sizeid) {
+        $("#dialog-confirm").dialog({
+            resizable: false,
+            height: "auto",
+            width: 400,
+            modal: true,
+            buttons: {
+                "Yes": function () {
+
+                    $.ajax({
+                        cache: false,
+                        url: '@Url.Action("DeleteState")',
+                        type: "GET",
+                        data: { id: sizeid },
+                        dataType: 'JSON',
+                        success: function (data) {
+                        },
+                    });
+
+                    $(this).dialog("close");
+                    //ShowSuccess("Delete Sucessfully.");
+                    window.location.href = "../../State/State/StateList";
+                },
+                Cancel: function () {
+                    $(this).dialog("close");
+                }
+            }
+        });
+    }
+
+    function showJavascriptDelete() {
+        var deleteUser = window.confirm('Are you sure you want to delete?');
+        if (deleteUser) {
+            //Logic to delete the item
+            alert('deleted');
+        }
+        else {
+            return false;
+        }
+    }
+
+    function ShowSuccess(data) {
+        alert(data);
+    }
+
+    function HideForm() {
+        //When the form is submitted, we hide the form
+        $("#form-area").hide();
+    }
+</script>

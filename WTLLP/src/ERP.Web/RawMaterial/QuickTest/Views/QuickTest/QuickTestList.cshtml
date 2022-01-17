@@ -1,0 +1,27 @@
+﻿@model ERP.Domain.Entities.QuickTestDetails
+@using NonFactors.Mvc.Grid;
+
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewData["Title"] = "List Quick Test";
+}
+<p>
+    @Html.ActionLink("Create New Quick Test", "CreateQuickTest", "QuickTest", "", new { @class = "btn btn-info" }) &nbsp;&nbsp;&nbsp; Search  &nbsp;&nbsp;<input class="grid-search" />
+</p>
+@*<div> 
+</div>*@
+ 
+@Html.AjaxGrid(Url.Action("Quicktest_Partial"))
+
+@section Scripts {
+    <script type="text/javascript">
+
+        $(document).on('keyup', '.grid-search', function () {
+            //alert("query");
+            $('.mvc-grid').mvcgrid({
+                query: 'search=' + this.value,
+                reload: true
+            });
+        });
+    </script>
+}

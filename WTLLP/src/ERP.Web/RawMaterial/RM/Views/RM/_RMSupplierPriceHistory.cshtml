@@ -1,0 +1,30 @@
+﻿@using ERP.Domain.Entities;
+@using NonFactors.Mvc.Grid;
+@model IEnumerable<ViewRMSupplierPriceHistory>
+@{
+    int rowNumber = 1;
+}
+@(Html
+                .Grid(Model)
+                .Build(columns =>
+                {
+                    columns.Add(model => 0).Titled("").Encoded(false).RenderedAs(model => rowNumber++).Encoded(false);
+                    columns.Add(model => model.EntryDate).Titled("Date").Formatted("{0:dd/MMM/yyyy}").Encoded(false).Css("td-nowrap");
+                    columns.Add(model => model.SupplierName).Titled("Supplier");
+                    columns.Add(model => model.Name).Titled("RM");
+                    columns.Add(model => model.OldPrice).Titled("Old Price").Formatted("{0:0.000}").Encoded(false).Css("td-nowrap rightalign");
+                    columns.Add(model => model.NewPrice).Titled("New Price").Formatted("{0:0.000}").Encoded(false).Css("td-nowrap rightalign");
+
+
+                })
+//.Sortable()
+//.Filterable()
+//.Pageable()
+//.Pageable(pager =>
+//{
+//    pager.PagesToDisplay = 10;
+//    pager.CurrentPage = 1;
+//    pager.RowsPerPage = 10;
+//})
+//.Css("table-hover")
+)

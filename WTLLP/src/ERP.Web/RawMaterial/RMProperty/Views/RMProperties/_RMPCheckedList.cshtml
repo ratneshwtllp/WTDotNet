@@ -1,0 +1,29 @@
+﻿@model ERP.Web.Areas.RMProperty.Models.MappingModel
+<div class="form">
+    <table class="table table-responsive" >
+        <tr class="mycontainer">
+            <td class="selectwidth">RM Properties</td>
+            <td class="ratewidth">IS Required</td>
+        </tr>
+    </table>
+    @for (int i = 0; i < Model.RMPropertiesModel .Count; i++)
+    {
+        <div class="chkboxproduct">
+            <table class="table table-responsive">
+                <tbody>
+                    <tr class="mycontainer">
+                        <td class="selectwidth">
+                            @Html.CheckBoxFor(m => m.RMPropertiesModel[i].Selected, new { @class = "suppliercheckbox" })
+                            @Html.HiddenFor(m => m.RMPropertiesModel[i].RMPropertiesID, new { @class = "propertiesid" })
+                            @Html.LabelFor(m => m.RMPropertiesModel[i].RMPropertiesName, Model.RMPropertiesModel[i].RMPropertiesName)
+                        </td>
+                        <td class="ratewidth">
+                           @Html.DropDownListFor(m=> m.RMPropertiesModel[i].IsRequired , new SelectList(Model.RMPropertiesModel[i].IsRequiredList , "Value", "Text", Model.RMPropertiesModel[i].IsRequired))
+                            @*@Html.DropDownListFor(m => m.IsRequired, new SelectList(Model.IsRequiredList, "Value", "Text", Model.IsRequired))*@
+                        </td>
+                    </tr>
+                </tbody>
+</table>
+</div>
+    }
+</div>

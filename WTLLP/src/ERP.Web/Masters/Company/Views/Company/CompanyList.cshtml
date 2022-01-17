@@ -1,0 +1,10 @@
+﻿@using NonFactors.Mvc.Grid;
+
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewData["Title"] = "Company List";
+}
+<p>
+    <strong>Company List  &nbsp;&nbsp;&nbsp;&nbsp;  </strong>
+</p> 
+@Html.AjaxGrid(Url.Action("CompanyList_Partial"))

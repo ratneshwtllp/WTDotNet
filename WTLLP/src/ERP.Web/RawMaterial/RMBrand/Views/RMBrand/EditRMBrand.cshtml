@@ -1,0 +1,86 @@
+﻿@model ERP.Web.Areas.RMBrand.Models.RMBrandModel
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewData["Title"] = "Edit RMBrand";
+}
+<br />
+
+<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="" />
+<meta name="keywords" content="" />
+
+<div id="message-area"></div>
+
+<script type="text/javascript">
+    
+
+    function ShowSuccess(data) {
+        window.location.href = "../../RMBrand/RMBrandList";
+        alert(data);
+    }
+
+    function HideForm() {
+        //When the form is submitted, we hide the form
+        $("#form-area").hide();
+    }
+
+    function ShowFailure(data) {
+        alert(data);
+        //In the case that the AJAX call fails to communicate with the server
+        //(e.g. the user's internet connection cuts out), we should display a message to that effect
+        $('#message-area').html("<div class='alert alert-danger'><strong>Error!</strong>The server could not be contacted and your message has not been sent. Please check your internet connection and try again later.</div>");
+    }
+</script>
+
+@section Scripts {
+   <script type="text/javascript">
+        prevententertosubmit();
+        
+    </script>
+}
+
+
+<form asp-controller="RMBrand" asp-action="EditRMBrand" data-ajax="true" data-ajax-success="ShowSuccess" data-ajax-failure="ShowFailure" data-ajax-method="POST">
+    @Html.ValidationSummary(true)
+    <div class="clear"></div>
+    <div class="container containerheight">
+        <p>
+            @Html.ActionLink("RMBrand List", "RMBrandList", "RMBrand", "", new { @class = "btn btn-info" })
+        </p>
+        <div class="row clearleft-custom flow-offset-1">
+            <div class="col-xs-12 col-sm-6 col-lg-4">
+                <div class="thumbnail thumbnail-mod-1">
+                    <div class="form">
+                        <div>
+                            <h2>Edit RMBrand</h2>
+                            @Html.HiddenFor(a => a.RMBrandId)
+                        </div>
+
+                        <p class="contact">
+                            @Html.LabelFor(a => a.RMBrandName)
+                        </p>
+                        @Html.TextBoxFor(a => a.RMBrandName, new { @required = "true", autocomplete = "off", maxlength = "50" })
+
+                        <p class="contact">
+                            @Html.LabelFor(a => a.RMBrandCode)
+                        </p>
+                        @Html.TextBoxFor(a => a.RMBrandCode, new { @required = "true", autocomplete = "off" })
+
+                        <p class="contact">
+                            @Html.LabelFor(a => a.RMBrandDesc)
+                        </p>
+                        @Html.TextAreaFor(a => a.RMBrandDesc, new { autocomplete = "off", rows = "4" })
+
+                        <p class="contact">
+                            <label>&nbsp;</label>
+                        </p>
+                        <input id="Submit1" type="submit" value="Edit RMBrand" />
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>

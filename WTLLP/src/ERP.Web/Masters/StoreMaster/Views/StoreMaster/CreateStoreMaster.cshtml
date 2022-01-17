@@ -1,0 +1,69 @@
+﻿@model ERP.Web.Areas.StoreMaster.Models.StoreMasterModel
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewData["Title"] = "Store Master";
+}
+
+<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="" />
+<meta name="keywords" content="" />
+
+<div id="message-area"></div>
+
+<script type="text/javascript">
+    function ShowSuccess(data) {
+        alert(data);
+        window.location.href = '@Url.Action("CreateStoreMaster", "StoreMaster")';
+    }
+
+    function HideForm() {
+        $("#form-area").hide();
+    }
+
+    function ShowFailure(data) {
+        alert("Already Exist")
+    }
+</script>
+
+@section Scripts {
+    <script type="text/javascript">
+        prevententertosubmit();
+    </script>
+
+}
+
+<form asp-controller="StoreMaster" asp-action="CreateStoreMaster" data-ajax="true" data-ajax-success="ShowSuccess" data-ajax-failure="ShowFailure" data-ajax-method="POST">
+    @Html.ValidationSummary(true)
+
+    <div class="clear"></div>
+    <div class="container containerheight">
+        <p>
+            @Html.ActionLink("Store List", "StoreMasterList", "StoreMaster", "", new { @class = "btn btn-info" })
+        </p>
+        <div class="row clearleft-custom flow-offset-1">
+            <div class="col-xs-12 col-sm-6 col-lg-4">
+                <div class="thumbnail thumbnail-mod-1">
+                    <div class="form">
+                        <div>
+                            <h2>Store Details</h2>
+                            @Html.HiddenFor(a => a.StoreId)
+                        </div>
+
+                        <p class="contact">
+                            @Html.LabelFor(a => a.StoreName)
+                        </p>
+                        @Html.TextBoxFor(a => a.StoreName, new { @required = "true", autocomplete = "off" })
+
+                        <p class="contact">
+                            <label>&nbsp;</label>
+                        </p>
+                        <input id="Submit1" type="submit" value="Save Store" />
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>

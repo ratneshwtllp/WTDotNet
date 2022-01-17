@@ -1,0 +1,13 @@
+﻿@using ERP.Domain.Entities;
+@using NonFactors.Mvc.Grid;
+
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewData["Title"] = "Menu List";
+}
+
+<p>
+    <strong>Menu List&nbsp;&nbsp;&nbsp;&nbsp;</strong>@Html.ActionLink("Create New Menu ", "Create", "Menu")
+</p>
+
+@Html.AjaxGrid(Url.Action("List_Partial"))

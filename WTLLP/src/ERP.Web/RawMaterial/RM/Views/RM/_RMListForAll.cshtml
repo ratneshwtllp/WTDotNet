@@ -1,0 +1,23 @@
+﻿@using NonFactors.Mvc.Grid;
+@model IEnumerable<ERP.Domain.Entities.ViewRItemShow>
+@{
+    int rowNumber = 1;
+}
+@(Html
+        .Grid(Model)
+        .Build(columns =>
+        {
+            columns.Add(model => 0).Titled("").Encoded(false).RenderedAs(model => rowNumber++).Encoded(false).Css("noExl");
+            columns.Add(model => model.CategoryName).Titled("Category");
+            columns.Add(model => model.SubCategoryName).Titled("SubCategory");
+            columns.Add(model => $"<a href='" + @Url.Content("~/" + model.Title) + "' target='_blank' ><img src=" + @Url.Content("~/" + model.Title) + " width='20' height='20' ></a>").Encoded(false).Titled("").Css("noExl");
+            columns.Add(model => model.Code).Titled("Code");
+            columns.Add(model => model.Full_Name).Titled("Name");
+            //columns.Add(model => model.SizeName).Titled("Size").Css("td-nowrap");
+            columns.Add(model => model.RitemId).Css("hidden ritemid noExl");
+        })
+        .Sortable()
+        .Filterable(false)
+        .Css("table-hover")
+//.RowCss(model => rowNumber % 2 == 1 ? "greenrow" : "even")
+)

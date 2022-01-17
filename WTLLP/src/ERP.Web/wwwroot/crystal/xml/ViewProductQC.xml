@@ -1,0 +1,67 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:MainDataTable="ViewProductQC" msdata:UseCurrentLocale="true">
+      <xs:complexType>
+        <xs:choice minOccurs="0" maxOccurs="unbounded">
+          <xs:element name="ViewProductQC">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="Code" type="xs:string" minOccurs="0" />
+                <xs:element name="FitemId" type="xs:long" />
+                <xs:element name="Name" type="xs:string" minOccurs="0" />
+                <xs:element name="ProductCategoryID" type="xs:long" />
+                <xs:element name="ProductCategoryName" type="xs:string" minOccurs="0" />
+                <xs:element name="ProductSubCategoryID" type="xs:long" />
+                <xs:element name="ProductSubCategoryName" type="xs:string" minOccurs="0" />
+                <xs:element name="QCID" type="xs:long" />
+                <xs:element name="QCPoint" type="xs:string" minOccurs="0" />
+                <xs:element name="QCPointID" type="xs:long" />
+                <xs:element name="StandardValue" type="xs:string" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+        </xs:choice>
+      </xs:complexType>
+    </xs:element>
+  </xs:schema>
+  <ViewProductQC>
+    <Code>BG 102 Blk</Code>
+    <FitemId>33748</FitemId>
+    <Name>Bit Guard</Name>
+    <ProductCategoryID>86</ProductCategoryID>
+    <ProductCategoryName>Western Tack</ProductCategoryName>
+    <ProductSubCategoryID>805</ProductSubCategoryID>
+    <ProductSubCategoryName>Bit Guard</ProductSubCategoryName>
+    <QCID>2</QCID>
+    <QCPoint>QC NA</QCPoint>
+    <QCPointID>1</QCPointID>
+    <StandardValue>100</StandardValue>
+  </ViewProductQC>
+  <ViewProductQC>
+    <Code>BG 102 Blk</Code>
+    <FitemId>33748</FitemId>
+    <Name>Bit Guard</Name>
+    <ProductCategoryID>86</ProductCategoryID>
+    <ProductCategoryName>Western Tack</ProductCategoryName>
+    <ProductSubCategoryID>805</ProductSubCategoryID>
+    <ProductSubCategoryName>Bit Guard</ProductSubCategoryName>
+    <QCID>3</QCID>
+    <QCPoint>QC1</QCPoint>
+    <QCPointID>2</QCPointID>
+    <StandardValue>02</StandardValue>
+  </ViewProductQC>
+  <ViewProductQC>
+    <Code>BG 102 Blk</Code>
+    <FitemId>33748</FitemId>
+    <Name>Bit Guard</Name>
+    <ProductCategoryID>86</ProductCategoryID>
+    <ProductCategoryName>Western Tack</ProductCategoryName>
+    <ProductSubCategoryID>805</ProductSubCategoryID>
+    <ProductSubCategoryName>Bit Guard</ProductSubCategoryName>
+    <QCID>4</QCID>
+    <QCPoint>QC2</QCPoint>
+    <QCPointID>3</QCPointID>
+    <StandardValue>02</StandardValue>
+  </ViewProductQC>
+</NewDataSet>

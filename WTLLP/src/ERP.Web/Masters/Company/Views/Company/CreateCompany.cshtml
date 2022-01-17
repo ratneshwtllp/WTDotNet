@@ -1,0 +1,156 @@
+﻿@model ERP.Domain.Entities.CompanyDetails
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewData["Title"] = "Company";
+}
+<br />
+
+<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="" />
+<meta name="keywords" content="" />
+
+<div id="message-area"></div>
+
+@section Scripts {
+    <script type="text/javascript">
+        prevententertosubmit();
+    </script>
+}
+
+<script type="text/javascript">
+    function ShowSuccess(data) {
+        //window.location.href = "../../Company/CreateCompany";
+
+        alert(data);
+        //var re = JSON.stringify(data);
+        //alert(re);
+        window.location.href = '@Url.Action("CreateCompany","Company")';
+    }
+
+    function HideForm() {
+        //When the form is submitted, we hide the form
+        $("#form-area").hide();
+    }
+
+    function ShowFailure(data) {
+        //var re = JSON.stringify(data);
+        //alert(re);
+        if (data.responseText ==  "1") {
+
+            alert("Already Exist");
+        }
+        else {
+            alert(data);
+        } 
+
+        //In the case that the AJAX call fails to communicate with the server
+        //(e.g. the user's internet connection cuts out), we should display a message to that effect
+       // $('#message-area').html("<div class='alert alert-danger'><strong>Error!</strong>The server could not be contacted and your message has not been sent. Please check your internet connection and try again later.</div>");
+    }
+</script>
+
+<form asp-controller="Company" asp-action="CreateCompany" data-ajax="true" data-ajax-success="ShowSuccess" data-ajax-failure="ShowFailure" data-ajax-method="POST">
+    @Html.ValidationSummary(true)
+    <div class="clear"></div>
+    <div class="container">
+        <div class="row clearleft-custom flow-offset-1">
+            <div class="col-xs-12 col-sm-6 col-lg-4">
+                <div class="thumbnail thumbnail-mod-1">
+                    <div class="form">
+                        <div>
+                            <h3>@Html.ActionLink("Company List", "CompanyList", "Company")</h3>
+                        </div>
+                        <div>
+                            <h2>Company Details</h2>
+                        </div>
+
+                        @Html.HiddenFor(a => a.Id)
+                        <p class="contact">
+                            <label>Company Name</label>
+                        </p>
+                        @Html.TextBoxFor(a => a.CName, new { @required = "true", autocomplete = "off" })  @*, @readonly = "true"*@
+
+                        <p class="contact">
+                            <label>Office Address</label>
+                        </p>
+                        @Html.TextAreaFor(a => a.AddressOffice, new { @required = "true", autocomplete = "off", rows = "8" })
+
+                        <p class="contact">
+                            <label>Work Address </label>
+                        </p>
+                        @Html.TextAreaFor(a => a.AddressWork, new { @required = "true", autocomplete = "off", rows = "8" })
+
+                        <p class="contact">
+                            @Html.LabelFor(a => a.Phone)
+                        </p>
+                        @Html.TextBoxFor(a => a.Phone, new { rows = "4", autocomplete = "off", maxlength = "15" })
+                        
+                        <p class="contact">
+                            <label>Fax</label>
+                            @Html.LabelFor(a => a.Fax)
+                        </p>
+                        @Html.TextBoxFor(a => a.Fax, new { rows = "4", autocomplete = "off" })
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-lg-4">
+                <div class="thumbnail thumbnail-mod-1">
+                    <div class="form">
+                        <p class="contact">
+                            @Html.LabelFor(a => a.Email)
+                        </p>
+                        @Html.TextBoxFor(a => a.Email, new { rows = "4", autocomplete = "off", maxlength = "50" })                    <p class="contact">
+                            @Html.LabelFor(a => a.Web)
+                        </p>
+                        @Html.TextBoxFor(a => a.Web, new { autocomplete = "off", maxlength = "100" })
+
+                        <p class="contact">
+                            @Html.LabelFor(a => a.CSTT)
+                        </p>
+                        @Html.TextBoxFor(a => a.CSTT, new { autocomplete = "off", maxlength = "20" })
+
+                        <p class="contact">
+                            @Html.LabelFor(a => a.UPTT)
+                        </p>
+                        @Html.TextBoxFor(a => a.UPTT, new { autocomplete = "off", maxlength = "20" })
+
+                        <p class="contact">
+                            @Html.LabelFor(a => a.TIN)
+                        </p>
+                        @Html.TextBoxFor(a => a.TIN, new { autocomplete = "off", maxlength = "20" })
+
+                        <p class="contact">
+                            <label>PAN No.</label>
+                        </p>
+                        @Html.TextBoxFor(a => a.PANNo, new { autocomplete = "off", maxlength = "20" })
+
+                        <p class="contact">
+                            <label>GST No.</label>
+                        </p>
+                        @Html.TextBoxFor(a => a.GSTN, new { autocomplete = "off", maxlength = "50" })
+
+                        <p class="contact">
+                            <label>PO Footer Line 1</label>
+                        </p>
+                        @Html.TextAreaFor(a => a.POFooter1, new { @required = "true", autocomplete = "off", rows = "6" })
+                        
+                        <p class="contact">
+                            <label>PO Footer Line 2</label>
+                        </p>
+                        @Html.TextAreaFor(a => a.POFooter2, new { @required = "true", autocomplete = "off", rows = "6" })
+                        
+                        <p class="contact">
+                            <label>&nbsp;</label>
+                        </p>
+                        <input id="Submit1" type="submit" value="Save Company Details" />
+                    </div>
+                </div>
+            </div>
+        </div>
+       
+    </div>
+
+</form>

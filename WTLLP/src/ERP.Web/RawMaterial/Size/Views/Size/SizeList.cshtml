@@ -1,0 +1,27 @@
+﻿@model ERP.Domain.Entities.SizeDetails
+@using NonFactors.Mvc.Grid;
+
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewData["Title"] = "List Size";
+}
+<p>
+    @Html.ActionLink("Create New Size", "CreateSize", "Size", "", new { @class = "btn btn-info" }) &nbsp;&nbsp;&nbsp; Search   &nbsp;&nbsp;<input class="grid-search" />
+</p>
+@*<div> 
+</div>*@
+ 
+@Html.AjaxGrid(Url.Action("SizeList_Partial"))
+
+@section Scripts {
+    <script type="text/javascript">
+
+        $(document).on('keyup', '.grid-search', function () {
+            //alert("query");
+            $('.mvc-grid').mvcgrid({
+                query: 'search=' + this.value,
+                reload: true
+            });
+        });
+    </script>
+}

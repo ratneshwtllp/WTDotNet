@@ -1,0 +1,108 @@
+﻿@model ERP.Web.Areas.Menu.Models.MenuModel
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewData["Title"] = "Menu";
+}
+
+<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="" />
+<meta name="keywords" content="" />
+
+<div id="message-area"></div>
+
+<script type="text/javascript">
+    function ShowSuccess(data) {
+        $(".container").find("input:text").val('');
+        $(".container").find("textarea").val('');
+        alert(data);
+    }
+
+    function HideForm() {
+        //When the form is submitted, we hide the form
+        $("#form-area").hide();
+    }
+
+    function ShowFailure(data) {
+       // alert(data);
+        alert("Allready Exist");
+        //In the case that the AJAX call fails to communicate with the server
+        //(e.g. the user's internet connection cuts out), we should display a message to that effect
+       // $('#message-area').html("<div class='alert alert-danger'><strong>Error!</strong>The server could not be contacted and your message has not been sent. Please check your internet connection and try again later.</div>");
+    }
+</script>
+
+@section Scripts {
+    <script type="text/javascript">
+        prevententertosubmit();
+
+        $(function () {
+            $("#cbo_menucategory").change(function () {
+                var value = $("#cbo_menucategory :selected").val();
+                $("#MenuCategoryID").val(value);
+                //alert(value);
+            });
+        });
+    </script>
+}
+
+<form asp-controller="Menu" asp-action="Create" data-ajax="true" data-ajax-success="ShowSuccess" data-ajax-failure="ShowFailure" data-ajax-method="POST">
+    @Html.ValidationSummary(true)
+
+    <div class="clear"></div>
+    <div class="container">
+        <div class="row clearleft-custom flow-offset-1">
+            <div class="col-xs-12">
+                <div class="thumbnail thumbnail-mod-1">
+                    <div class="form">
+                        <div>
+                            <h3>@Html.ActionLink("Menu List", "List", "Menu")</h3>
+                        </div>
+
+                        <div>
+                            <h2>Menu</h2>
+                        </div>
+                        <p class="contact">
+                            <label>Menu Category</label>
+                            @Html.HiddenFor(a => a.MenuCategoryID)
+                            @Html.HiddenFor(a => a.MenuID)
+                        </p>
+                        @Html.DropDownListFor(a => a.MenuCategoryName, new SelectList(Model.MenuCategoryNameList   , "Value", "Text", Model.MenuCategoryName), "-- Select --", new { id = "cbo_menucategory", @required = "true", })
+
+                        <p class="contact">
+                            <label>Menu Name </label>
+                        </p>
+                        @Html.TextBoxFor(a => a.MenuName   , new { @required = "true", autocomplete = "off", maxlength = "50" })
+
+                        @*<p class="contact">
+                            <label>Menu URL</label>
+                        </p>
+                        @Html.TextAreaFor(a => a.MenuURL , new { @required = "true", autocomplete = "off", rows = "4", maxlength = "150" })*@
+
+                        <p class="contact">
+                            <label>Menu Area</label>
+                        </p>
+                        @Html.TextBoxFor(a => a.MenuArea, new { @required = "true", autocomplete = "off"})
+
+                        <p class="contact">
+                            <label>Menu Controller</label>
+                        </p>
+                        @Html.TextBoxFor(a => a.MenuController, new { @required = "true", autocomplete = "off"})
+
+                        <p class="contact">
+                            <label>Menu Action</label>
+                        </p>
+                        @Html.TextBoxFor(a => a.MenuAction, new { @required = "true", autocomplete = "off"})
+
+                        <p class="contact">
+                            <label>&nbsp;</label>
+                        </p>
+                        <input id="Submit1" type="submit" value="Save" />
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>

@@ -1,0 +1,163 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:MainDataTable="ViewProcessExecution" msdata:UseCurrentLocale="true">
+      <xs:complexType>
+        <xs:choice minOccurs="0" maxOccurs="unbounded">
+          <xs:element name="ViewProcessExecution">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="AddressOffice" type="xs:string" minOccurs="0" />
+                <xs:element name="AddressWork" type="xs:string" minOccurs="0" />
+                <xs:element name="Amount" type="xs:double" />
+                <xs:element name="BuyerCode" type="xs:string" minOccurs="0" />
+                <xs:element name="BuyerId" type="xs:long" />
+                <xs:element name="BuyerName" type="xs:string" minOccurs="0" />
+                <xs:element name="Charges" type="xs:double" />
+                <xs:element name="CLName" type="xs:string" minOccurs="0" />
+                <xs:element name="CName" type="xs:string" minOccurs="0" />
+                <xs:element name="Code" type="xs:string" minOccurs="0" />
+                <xs:element name="Comp_Descr" type="xs:string" minOccurs="0" />
+                <xs:element name="Comp_Id" type="xs:int" />
+                <xs:element name="Comp_Name" type="xs:string" minOccurs="0" />
+                <xs:element name="Comp_Qty" type="xs:int" />
+                <xs:element name="ContractorID" type="xs:long" />
+                <xs:element name="ContractorName" type="xs:string" minOccurs="0" />
+                <xs:element name="EstimatedRecieveDate" type="xs:dateTime" />
+                <xs:element name="FitemId" type="xs:long" />
+                <xs:element name="IsComponent" type="xs:int" />
+                <xs:element name="IsRead" type="xs:int" />
+                <xs:element name="IsRMIssue" type="xs:int" />
+                <xs:element name="IsRMRequired" type="xs:int" />
+                <xs:element name="Name" type="xs:string" minOccurs="0" />
+                <xs:element name="OrderNo" type="xs:string" minOccurs="0" />
+                <xs:element name="PhotoPath" type="xs:string" minOccurs="0" />
+                <xs:element name="PlanChildId" type="xs:long" />
+                <xs:element name="PlanId" type="xs:long" />
+                <xs:element name="PlanNo" type="xs:string" minOccurs="0" />
+                <xs:element name="PRChildId" type="xs:long" />
+                <xs:element name="PRDate" type="xs:dateTime" />
+                <xs:element name="PRMasterId" type="xs:long" />
+                <xs:element name="PRNo" type="xs:string" minOccurs="0" />
+                <xs:element name="ProcessAmount" type="xs:double" />
+                <xs:element name="ProcessCharge" type="xs:double" />
+                <xs:element name="ProcessID" type="xs:int" />
+                <xs:element name="ProcessName" type="xs:string" minOccurs="0" />
+                <xs:element name="ProcessRemark" type="xs:string" minOccurs="0" />
+                <xs:element name="ProcessToQty" type="xs:int" />
+                <xs:element name="ProductSizeName" type="xs:string" minOccurs="0" />
+                <xs:element name="PRRecvQty" type="xs:int" />
+                <xs:element name="PRSerialNo" type="xs:long" />
+                <xs:element name="Remark" type="xs:string" minOccurs="0" />
+                <xs:element name="SessionYear" type="xs:string" minOccurs="0" />
+                <xs:element name="SizeId" type="xs:int" />
+                <xs:element name="SNo" type="xs:int" />
+                <xs:element name="Through" type="xs:string" minOccurs="0" />
+                <xs:element name="TotalCompRecvQty" type="xs:int" />
+                <xs:element name="UserId" type="xs:int" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+        </xs:choice>
+      </xs:complexType>
+    </xs:element>
+  </xs:schema>
+  <ViewProcessExecution>
+    <AddressOffice>#620 A, Safipur 1st, Harjinder Nagar, Kanpur-208007</AddressOffice>
+    <AddressWork>#620 A, Safipur 1st, Harjinder Nagar, Kanpur-208007</AddressWork>
+    <Amount>0</Amount>
+    <BuyerCode>RTR</BuyerCode>
+    <BuyerId>35</BuyerId>
+    <BuyerName>RAFTER T RANCH COMPANY</BuyerName>
+    <Charges>0</Charges>
+    <CLName>LIGHT OIL TT</CLName>
+    <CName>SB International</CName>
+    <Code>WLB 137A NAT</Code>
+    <Comp_Id>94</Comp_Id>
+    <Comp_Name>COMPLETE</Comp_Name>
+    <Comp_Qty>50</Comp_Qty>
+    <ContractorID>5</ContractorID>
+    <ContractorName>RAJKUMAR KNOTTING</ContractorName>
+    <EstimatedRecieveDate>2020-02-29T00:00:00+05:30</EstimatedRecieveDate>
+    <FitemId>39464</FitemId>
+    <IsComponent>1</IsComponent>
+    <IsRead>1</IsRead>
+    <IsRMIssue>0</IsRMIssue>
+    <IsRMRequired>0</IsRMRequired>
+    <Name>PURSE</Name>
+    <OrderNo>11520NEW1</OrderNo>
+    <PhotoPath>uploads/productphotos/39464.jpg</PhotoPath>
+    <PlanChildId>1846</PlanChildId>
+    <PlanId>277</PlanId>
+    <PlanNo>SB/WP/19-20/00275</PlanNo>
+    <PRChildId>11153</PRChildId>
+    <PRDate>2020-02-29T00:00:00+05:30</PRDate>
+    <PRMasterId>10990</PRMasterId>
+    <PRNo>SBI/PR/19-20/10990</PRNo>
+    <ProcessAmount>2500</ProcessAmount>
+    <ProcessCharge>50</ProcessCharge>
+    <ProcessID>20</ProcessID>
+    <ProcessName>Knotting</ProcessName>
+    <ProcessRemark />
+    <ProcessToQty>50</ProcessToQty>
+    <ProductSizeName>17"x14"</ProductSizeName>
+    <PRRecvQty>50</PRRecvQty>
+    <PRSerialNo>10990</PRSerialNo>
+    <Remark>-</Remark>
+    <SessionYear>2019-20</SessionYear>
+    <SizeId>375</SizeId>
+    <SNo>1</SNo>
+    <Through />
+    <TotalCompRecvQty>50</TotalCompRecvQty>
+    <UserId>15</UserId>
+  </ViewProcessExecution>
+  <ViewProcessExecution>
+    <AddressOffice>#620 A, Safipur 1st, Harjinder Nagar, Kanpur-208007</AddressOffice>
+    <AddressWork>#620 A, Safipur 1st, Harjinder Nagar, Kanpur-208007</AddressWork>
+    <Amount>0</Amount>
+    <BuyerCode>BMW</BuyerCode>
+    <BuyerId>29</BuyerId>
+    <BuyerName>WEAVER LEATHER LLC</BuyerName>
+    <Charges>0</Charges>
+    <CLName>Natural</CLName>
+    <CName>SB International</CName>
+    <Code>BO 48 NAT</Code>
+    <Comp_Id>94</Comp_Id>
+    <Comp_Name>COMPLETE</Comp_Name>
+    <Comp_Qty>100</Comp_Qty>
+    <ContractorID>10</ContractorID>
+    <ContractorName>SB Knotting</ContractorName>
+    <EstimatedRecieveDate>2020-03-06T00:00:00+05:30</EstimatedRecieveDate>
+    <FitemId>39693</FitemId>
+    <IsComponent>1</IsComponent>
+    <IsRead>0</IsRead>
+    <IsRMIssue>0</IsRMIssue>
+    <IsRMRequired>0</IsRMRequired>
+    <Name>Bosal</Name>
+    <OrderNo>276618</OrderNo>
+    <PhotoPath>uploads/productphotos/39693.jpg</PhotoPath>
+    <PlanChildId>2337</PlanChildId>
+    <PlanId>330</PlanId>
+    <PlanNo>SB/WP/19-20/00328</PlanNo>
+    <PRChildId>11747</PRChildId>
+    <PRDate>2020-03-06T00:00:00+05:30</PRDate>
+    <PRMasterId>11584</PRMasterId>
+    <PRNo>SBI/PR/19-20/11584</PRNo>
+    <ProcessAmount>0</ProcessAmount>
+    <ProcessCharge>0</ProcessCharge>
+    <ProcessID>20</ProcessID>
+    <ProcessName>Knotting</ProcessName>
+    <ProcessRemark />
+    <ProcessToQty>100</ProcessToQty>
+    <ProductSizeName>1/4"</ProductSizeName>
+    <PRRecvQty>50</PRRecvQty>
+    <PRSerialNo>11584</PRSerialNo>
+    <Remark>-</Remark>
+    <SessionYear>2019-20</SessionYear>
+    <SizeId>20</SizeId>
+    <SNo>1</SNo>
+    <Through />
+    <TotalCompRecvQty>100</TotalCompRecvQty>
+    <UserId>15</UserId>
+  </ViewProcessExecution>
+</NewDataSet>

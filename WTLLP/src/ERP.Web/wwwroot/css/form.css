@@ -1,0 +1,535 @@
+/*
+http://www.freshdesignweb.com/beautiful-registration-form-with-html5-and-css3.html
+*/
+
+#dvPreview {
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod=image);
+    display: none;
+}
+
+    #dvPreview img {
+        width: 250px;
+        height: auto;
+    }
+
+/*#contactform {min-height:850px;}*/
+
+.form {
+    background: #fff;
+    width: 100%;
+    margin: 0 auto;
+    padding-left: 5px;
+    padding-top: 20px;
+}
+
+    .form fieldset {
+        border: 0px;
+        padding: 0px;
+        margin: 0px;
+        float: left;
+        width: 50%;
+        margin-bottom: 0px;
+    }
+
+    .form p.contact {
+        margin: 6px 10px 3px 0;
+        line-height: 14px;
+        float: left;
+        width: 35%;
+    }
+
+    .form p.contact1 {
+        width: 60%;
+    }
+
+    .form fieldset label {
+        color: #000;
+        font-weight: normal;
+        font-size: 11px;
+        font-family: 'Verdana', Arial, Helvetica;
+        display: block;
+    }
+    /*.form input[type="text"] { width: 60%; }*/
+    .form input[type="email"] {
+        width: 60%;
+    }
+
+    .form input[type="password"] {
+        width: 60%;
+    }
+
+    .form input[type="date"] {
+        width: 60%;
+    }
+
+    .form textarea {
+        width: 60%;
+    }
+
+    .form input.birthday {
+        width: 60px;
+    }
+
+    .form input.birthyear {
+        width: 120px;
+    }
+
+    .form label {
+        color: #000;
+        font-weight: normal;
+        font-size: 12px;
+        font-family: Verdana, Arial, Helvetica;
+    }
+
+        .form label.month {
+            width: 135px;
+        }
+
+    .form input, textarea, select { /*background-color: rgba(255, 255, 255, 0.4);*/
+        border: 1px solid rgba(215, 215, 215, 1);
+        padding: 4px;
+        font-family: Verdana,Arial;
+        color: #4b4b4b;
+        font-size: 12px;
+        -webkit-border-radius: 5px;
+        margin-bottom: 5px;
+        width: 60%;
+    }
+
+        .form input[type="submit"] {
+            background-color: #3C8DBC;
+            border: 1px solid rgba(215, 215, 215, 1);
+            padding: 8px;
+            font-family: Verdana,Arial;
+            color: #ffffff;
+            font-size: 14px;
+            font-weight: bold;
+            -webkit-border-radius: 5px;
+            margin-bottom: 5px;
+            width: 60%;
+        }
+
+.suppliercheckbox {
+    width: 6% !important;
+}
+
+#wp {
+}
+
+wp.form {
+    background: #fff;
+    width: 100%;
+    margin: 0 auto;
+    padding-left: 5px;
+    padding-top: 20px;
+}
+
+    wp.form fieldset {
+        border: 0px;
+        padding: 0px;
+        margin: 0px;
+        float: left;
+        width: 50%;
+        margin-bottom: 0px;
+    }
+
+    wp.form p.contact {
+        margin: 6px 10px 3px 0;
+        line-height: 14px;
+        float: left;
+        width: 35%;
+    }
+
+    wp.form p.contact1 {
+        width: 60%;
+    }
+
+    wp.form fieldset label {
+        color: #000;
+        font-weight: normal;
+        font-size: 11px;
+        font-family: 'Verdana', Arial, Helvetica;
+        display: block;
+    }
+    /*wp.form input[type="text"] { width: 40%; }*/
+    /*wp.form input[type="email"] { width: 60%; }
+wp.form input[type="password"] { width: 60%; }*/
+    /*wp.form input[type="date"] { width: 60%; }*/
+    /*wp.form textarea {width:60%;}*/
+    wp.form label {
+        color: #000;
+        font-weight: normal;
+        font-size: 12px;
+        font-family: Verdana, Arial, Helvetica;
+    }
+
+        wp.form label.month {
+            width: 135px;
+        }
+/*wp.form input, textarea, select {border: 1px solid rgba(215, 215, 215, 1); padding: 4px; font-family:Verdana,Arial; color: #4b4b4b; font-size: 12px; -webkit-border-radius: 5px; margin-bottom: 5px; width:60%;}*/
+
+.input-validation-error {
+    color: #990099;
+    background-color: #facfcf;
+    border-top: 2px solid #990099;
+    border-left: 2px solid #990099;
+}
+
+.form input:focus, textarea:focus {
+    border: 1px solid #3C8DBC;
+    /*background-color: rgba(255, 255, 255, 1);*/
+}
+
+.form .select-style {
+    width: 100%;
+    font-size: 10px;
+    font-family: 'Verdana', Arial, Helvetica;
+}
+
+.form .dd {
+    width: 60%;
+    font-size: 10px;
+    font-family: 'Verdana', Arial, Helvetica;
+    float: left;
+}
+
+.form .radiodiv {
+    width: 200px;
+    margin: 10px 0px;
+    background: #3498db;
+    background-image: -webkit-linear-gradient(top, #3498db, #2980b9);
+    background-image: -moz-linear-gradient(top, #3498db, #2980b9);
+    background-image: -ms-linear-gradient(top, #3498db, #2980b9);
+    background-image: -o-linear-gradient(top, #3498db, #2980b9);
+    background-image: linear-gradient(to bottom, #3498db, #2980b9);
+    -webkit-border-radius: 4;
+    -moz-border-radius: 4;
+    border-radius: 4px;
+    font-family: 'Verdana', Arial;
+    color: #ffffff;
+    font-size: 14px;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+}
+
+.form input[type="radio"],
+input[type="checkbox"] {
+    margin: 0 4px 8px 0;
+    color: #fff;
+}
+
+.form label.light {
+    font-weight: 300;
+    display: inline;
+    font-size: 1em;
+    color: #fff;
+}
+
+.form a {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    color: #006699;
+    text-decoration: none;
+    display: block;
+    clear: both;
+}
+
+.form input.buttom {
+    -webkit-border-radius: 4;
+    -moz-border-radius: 4;
+    border-radius: 4px;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+    min-width: 200px;
+    color: #fbf7f7;
+    text-decoration: none;
+    font-weight: bold;
+    line-height: 1;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    -moz-box-shadow: 0 1px 3px #999;
+    -webkit-box-shadow: 0 1px 3px #999;
+    box-shadow: 0 1px 3px #999;
+    text-shadow: 0 -1px 1px #222;
+    border: none;
+    position: relative;
+    cursor: pointer;
+    font-size: 14px;
+    font-family: Verdana, Geneva, sans-serif;
+}
+
+    .form input.buttom.save {
+        background: #4ad934;
+        background-image: -webkit-linear-gradient(top, #4ad934, #45b82b);
+        background-image: -moz-linear-gradient(top, #4ad934, #45b82b);
+        background-image: -ms-linear-gradient(top, #4ad934, #45b82b);
+        background-image: -o-linear-gradient(top, #4ad934, #45b82b);
+        background-image: linear-gradient(to bottom, #4ad934, #45b82b);
+    }
+
+    .form input.buttom.print {
+        background: #e87523;
+        background-image: -webkit-linear-gradient(top, #e87523, #b8622c);
+        background-image: -moz-linear-gradient(top, #e87523, #b8622c);
+        background-image: -ms-linear-gradient(top, #e87523, #b8622c);
+        background-image: -o-linear-gradient(top, #e87523, #b8622c);
+        background-image: linear-gradient(to bottom, #e87523, #b8622c);
+    }
+
+    .form input.buttom.preview {
+        background: #e6e325;
+        background-image: -webkit-linear-gradient(top, #e6e325, #dbd707);
+        background-image: -moz-linear-gradient(top, #e6e325, #dbd707);
+        background-image: -ms-linear-gradient(top, #e6e325, #dbd707);
+        background-image: -o-linear-gradient(top, #e6e325, #dbd707);
+        background-image: linear-gradient(to bottom, #e6e325, #dbd707);
+    }
+
+    .form input.buttom.refresh {
+        background: #27b3e6;
+        background-image: -webkit-linear-gradient(top, #27b3e6, #0978d9);
+        background-image: -moz-linear-gradient(top, #27b3e6, #0978d9);
+        background-image: -ms-linear-gradient(top, #27b3e6, #0978d9);
+        background-image: -o-linear-gradient(top, #27b3e6, #0978d9);
+        background-image: linear-gradient(to bottom, #27b3e6, #0978d9);
+    }
+
+        .form input.buttom.save:hover,
+        .form input.buttom.print:hover,
+        .form input.buttom.preview:hover,
+        .form input.buttom.refresh:hover {
+            background-color: #2a78f6;
+            color: #333;
+            text-shadow: 0 0px 0px #222;
+        }
+
+
+.qtywidth {
+    width: 30%;
+}
+
+
+.snowidth {
+    width: 5%;
+}
+
+.ratewidth {
+    width: 90px !important;
+    border-right: 0px solid;
+    padding-left: 8px !important;
+}
+
+.amountwidth {
+    width: 60%;
+}
+
+.unitwidth {
+    width: 10%;
+}
+
+.selectwidth {
+    width: 150px !important;
+    border-right: 0px solid;
+}
+
+.largedisplaywidth {
+    width: 200px !important;
+    border-right: 0px solid;
+}
+
+.rmwidthforanysis {
+    width: 200px !important;
+    border-right: 0px solid;
+}
+
+.inputwidth {
+    width: 100% !important;
+}
+
+.largeinputwidth {
+    width: 100% !important;
+    max-width: inherit !important;
+}
+
+.containerheight {
+    min-height: initial;
+}
+
+.productdetails {
+    font-weight: bold;
+    color: #ac2925;
+}
+
+.tddatewidth {
+    width: 110px;
+}
+
+.tdponowidth {
+    width: 175px !important;
+}
+
+.tableheading {
+    font-weight: bold;
+    font-size: 12px;
+    font-family: 'Verdana', Arial, Helvetica;
+}
+
+.button {
+    background-color: #3C8DBC;
+    border: 1px solid rgba(215, 215, 215, 1);
+    padding: 8px;
+    font-family: Verdana,Arial;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: bold;
+    -webkit-border-radius: 5px;
+    margin-bottom: 5px;
+    width: 150px !important;
+}
+
+.td-nowrap {
+    white-space: nowrap;
+}
+
+.logincantainer {
+    padding-top: 10%;
+    font-family: Verdana,Arial;
+}
+
+.loginheading {
+    text-align: center;
+}
+
+.loginform {
+    width: 100%;
+    min-height: 144px;
+}
+
+.loginfail {
+    color: red;
+    width: 65% !important;
+}
+
+.bordernone {
+    border: none !important;
+}
+
+.selectmaxwidth {
+    max-width: 100% !important;
+}
+
+.even {
+    background-color: lightyellow;
+}
+
+.odd {
+    background-color: lightcyan;
+}
+ 
+.greenrow {
+    background-color: #e2f1e2;
+}
+
+.yellorow {
+    background-color: #e6e325;
+}
+
+.lightblue {
+    background-color: lightblue;
+}
+
+.hotpink-header {
+    background-color: hotpink;
+}
+
+.cancelred {
+    background-color: #f5baba;
+}
+
+
+.pobalancered {
+    background-color: lightcoral;
+}
+
+.chksearch {
+    width: 5%!important;
+}
+.datesearch {
+    width: 50%!important;
+}
+
+.rightalign {
+   text-align :right;
+}
+
+.cnteralign {
+   text-align :center;
+}
+
+.shoesorderqtywidth {
+   width: 100% !important;
+}
+
+.shoetotalbgcolor {
+   background-color: #ddf3eb;
+}
+
+.shoeqtybgcolor {
+   background-color: #bff1f1;
+}
+
+.scollingdiv {
+   position:fixed;top:220px;
+}
+
+
+.purpletext {
+   color: purple;
+}
+
+.greentext {
+   color: green;
+}
+
+.yellowtext {
+   color: yellowgreen;
+}
+
+
+.redtext {
+   color: darkcyan;
+}
+
+.redborder {
+   border: 1px solid red;
+}
+
+.normalborder {
+   border: 1px solid rgba(215, 215, 215, 1);
+}
+
+
+.thleftalign {
+     padding-left: 0 !important; 
+}
+
+.theadscroll {
+    display: table;
+    width: calc( 100% - 1em );
+    table-layout: fixed; 
+}
+
+.tbodyscroll {
+    display: block;
+    height: 280px;
+    overflow: auto;
+}
+
+.tablescroll {
+    border: none;
+}
+
+.font20 {
+    font-size:20px !important;
+}

@@ -1,0 +1,49 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:MainDataTable="ViewProcessBOM" msdata:UseCurrentLocale="true">
+      <xs:complexType>
+        <xs:choice minOccurs="0" maxOccurs="unbounded">
+          <xs:element name="ViewProcessBOM">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="AddressOffice" type="xs:string" minOccurs="0" />
+                <xs:element name="AddressWork" type="xs:string" minOccurs="0" />
+                <xs:element name="CName" type="xs:string" minOccurs="0" />
+                <xs:element name="Code" type="xs:string" minOccurs="0" />
+                <xs:element name="ContractorName" type="xs:string" minOccurs="0" />
+                <xs:element name="CostUnit" type="xs:int" />
+                <xs:element name="CostUnitName" type="xs:string" minOccurs="0" />
+                <xs:element name="CostUnitSName" type="xs:string" minOccurs="0" />
+                <xs:element name="EstimatedRecieveDate" type="xs:dateTime" />
+                <xs:element name="FitemId" type="xs:long" />
+                <xs:element name="Full_Name" type="xs:string" minOccurs="0" />
+                <xs:element name="IssueQty" type="xs:double" />
+                <xs:element name="LogoPath" type="xs:string" minOccurs="0" />
+                <xs:element name="Name" type="xs:string" minOccurs="0" />
+                <xs:element name="PlanChildId" type="xs:long" />
+                <xs:element name="PlanDate" type="xs:dateTime" />
+                <xs:element name="PlanId" type="xs:long" />
+                <xs:element name="PlanNo" type="xs:string" minOccurs="0" />
+                <xs:element name="PRDate" type="xs:dateTime" />
+                <xs:element name="PRMasterId" type="xs:long" />
+                <xs:element name="PRNo" type="xs:string" minOccurs="0" />
+                <xs:element name="ProcessID" type="xs:int" />
+                <xs:element name="ProcessName" type="xs:string" minOccurs="0" />
+                <xs:element name="ProcessToQty" type="xs:int" />
+                <xs:element name="ProductCode" type="xs:string" minOccurs="0" />
+                <xs:element name="ProductSizeName" type="xs:string" minOccurs="0" />
+                <xs:element name="Remark" type="xs:string" minOccurs="0" />
+                <xs:element name="Required" type="xs:double" />
+                <xs:element name="RItem_id" type="xs:long" />
+                <xs:element name="RMStock" type="xs:double" />
+                <xs:element name="Through" type="xs:string" minOccurs="0" />
+                <xs:element name="Title" type="xs:string" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+        </xs:choice>
+      </xs:complexType>
+    </xs:element>
+  </xs:schema>
+</NewDataSet>

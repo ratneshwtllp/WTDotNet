@@ -1,0 +1,30 @@
+﻿@model ERP.Domain.Entities.ViewCurrencyHistory 
+@using NonFactors.Mvc.Grid;
+
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewData["Title"] = "Currency List";
+}
+
+<p>
+    <strong>Currency History List  &nbsp;&nbsp;&nbsp;&nbsp;  </strong> @Html.ActionLink("Create New Currency", "CreateCurrency", "Currency") &nbsp;&nbsp;&nbsp; Search Currency  &nbsp;&nbsp;<input class="grid-search" />
+</p>  
+
+@*<div> 
+</div>*@ 
+
+@Html.AjaxGrid(Url.Action("CurrencyHistoryList_Partial"))
+
+@section Scripts {
+    <script type="text/javascript">
+
+        $(document).on('keyup', '.grid-search', function () {
+            //alert("query");
+            $('.mvc-grid').mvcgrid({
+                query: 'search=' + this.value,
+                reload: true
+            });
+
+        });
+    </script>
+}

@@ -1,0 +1,124 @@
+﻿@model ERP.Web.Areas.UserAsSupervisor.Models.UserAsSupervisorModel
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewData["Title"] = "User As Contractor ";
+}
+<script src="~/js/1.7.1/jquery.min.js"></script>
+<script src="~/js/1.9.1/jquery-ui.min.js"></script>
+
+@section Scripts {
+    <script type="text/javascript">
+
+        $(function () {
+            $("#cbo_user").change(function () {
+                var userid = $("#cbo_user :selected").val();
+                //alert(userid);
+
+                var url = '@Url.Action("AssigneContractorList", "UserAsSupervisor")';
+                $('#UserContactorList').load(url, { userid: userid }, function () { });
+
+            });
+        });
+       
+        $(function () {
+            $('#Submit2').click(function () {
+            
+                var isAllValid = true;
+
+                var userid = $('#cbo_user').val();
+               // alert(userid);
+
+                var menuid = {};
+                var t = 0;
+                var status = 0;
+                var list = [];
+
+                $('#UserContactorList .chkboxmenu').each(function () {
+                    var row = $(this);
+                    if ($(".suppliercheckbox", this).prop('checked')) {
+                        var id = $('.contractorid', row).val();
+                        status = 1;
+                        var child = {
+                            ContractorId: id,
+                            UserId: userid,
+                        }
+                        list.push(child);
+                        //var re = JSON.stringify(child);
+                        //alert(re);
+                    }
+                });
+             
+                if (status != 1) {
+                    alert("Please Check Contractor.");
+                    return;
+                }
+
+                if (isAllValid) {
+                    var masterdata = {
+                        ContractorModel: list,
+                    }
+                    //alert(masterdata);
+                    //var re = JSON.stringify(masterdata);
+                    //alert(re);
+                   
+                    $(this).val('Please wait...');
+                    $.ajax({
+                        type: 'POST',
+                        url: '@Url.Action("AssigneUserContractor")',
+                        data: JSON.stringify(masterdata),
+                        contentType: 'application/json',
+                        success: function (data) {
+                             if (data == "Record Save") {
+                                 alert('Successfully saved');
+                                 $("#cbo_user").change();
+                           // window.location.href = '@Url.Action("CreateSale", "SaleOrder")';
+                        }
+                            else {
+                                alert('Error');
+                                $('#Submit2').val('Assign Menu');
+                            }
+
+                            $('#Submit2').val('Assign Menu');
+                        },
+                        error: function (error) {
+                            //console.log(error);
+                            alert('Error');
+                            $('#Submit2').val('Assign Menu');
+                        }
+
+                    });
+                }
+            });
+        });
+
+       
+    </script>
+
+
+}
+
+
+<div class="clear"></div>
+<div class="container">
+    <div class="row clearleft-custom flow-offset-1">
+        <div class="col-xs-12 col-sm-6 col-lg-4">
+            <div class="thumbnail thumbnail-mod-1">
+                <h3>User As Contactor</h3>
+                <div class="form">
+                    @Html.HiddenFor(a => a.UserId)
+                    <p class="contact">
+                        <label>User</label>
+                    </p>
+                    @Html.DropDownListFor(a => a.UserId, new SelectList(Model.UserList, "Value", "Text", Model.UserId), "-- Select --", new { id = "cbo_user", @required = "true", })
+                    <div id="UserContactorList" style="height:350px; overflow:auto"></div>
+
+                </div>
+                <br />
+                <input id="Submit2" type="button" value="Save" class="button" />
+            </div>
+        </div>
+
+      
+
+    </div>
+</div>

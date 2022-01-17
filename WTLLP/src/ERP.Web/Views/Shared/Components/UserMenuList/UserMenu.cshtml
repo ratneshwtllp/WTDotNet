@@ -1,0 +1,21 @@
+﻿@model ERP.Web.Areas.Menu.Models.MenuModel
+@if (Model != null)
+{
+    <ul class="gn-menu accordion" id="accordion">
+        <li>
+            &nbsp;
+        </li>
+        @for (int i = 0; i < Model.UserMenuCat.Count; i++)
+        {
+            <li class="open">
+                <a id=@Model.UserMenuCat[i].MenuCategoryID class="gn-icon gn-icon-main link">@Model.UserMenuCat[i].MenuCategoryName <i class="down"></i></a>
+                <ul class="submenu">
+                    @for (int j = 0; j < Model.UserMenuCat[i].UserMenu.Count; j++)
+                    {
+                        <li><a id=@Model.UserMenuCat[i].UserMenu[j].MenuID asp-area=@Model.UserMenuCat[i].UserMenu[j].MenuArea asp-controller=@Model.UserMenuCat[i].UserMenu[j].MenuController asp-action=@Model.UserMenuCat[i].UserMenu[j].MenuAction class="gn-icon gn-icon-dropdown">@Model.UserMenuCat[i].UserMenu[j].MenuName</a></li>
+                    }
+                </ul>
+            </li>
+        }
+    </ul>
+}

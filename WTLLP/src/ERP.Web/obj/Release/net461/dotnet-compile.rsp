@@ -1,0 +1,454 @@
+--temp-output:D:\WT\SB\SB\src\ERP.Web\obj\Release\net461\
+--out:D:\WT\SB\SB\src\ERP.Web\bin\Release\net461\ERP.Web.exe
+--define:RELEASE
+--define:TRACE
+--define:NET461
+--suppress-warning:CS1701
+--suppress-warning:CS1702
+--suppress-warning:CS1705
+--platform:x64
+--optimize:True
+--emit-entry-point:True
+--output-name:ERP.Web
+--file-version:1.0.0.0
+--version:1.0.0.0
+--informational-version:1.0.0
+--target-framework:.NETFramework,Version=v4.6.1
+--reference:C:\Users\ratne\.nuget\packages\BarcodeLib\1.0.0.23\lib\net20\BarcodeLib.dll
+--reference:C:\Users\ratne\.nuget\packages\BundlerMinifier.Core\2.2.306\lib\net452\dotnet-bundle.exe
+--reference:C:\Users\ratne\.nuget\packages\CrystalDecisions.CrystalReports.Engine\1.0.0\lib\CrystalDecisions.CrystalReports.Engine.dll
+--reference:C:\Users\ratne\.nuget\packages\CrystalDecisions.ReportSource\1.0.0\lib\CrystalDecisions.ReportSource.dll
+--reference:C:\Users\ratne\.nuget\packages\CrystalDecisions.Shared\1.0.0\lib\CrystalDecisions.Shared.dll
+--reference:C:\Users\ratne\.nuget\packages\FastMember\1.1.0\lib\net40\FastMember.dll
+--reference:C:\Users\ratne\.nuget\packages\Google.Protobuf\3.5.1\lib\net45\Google.Protobuf.dll
+--reference:C:\Users\ratne\.nuget\packages\Microsoft.AspNet.Http.Abstractions\1.0.0-rc1-final\lib\net451\Microsoft.AspNet.Http.Abstractions.dll
+--reference:C:\Users\ratne\.nuget\packages\Microsoft.AspNet.Http.Extensions\1.0.0-rc1-final\lib\net451\Microsoft.AspNet.Http.Extensions.dll
+--reference:C:\Users\ratne\.nuget\packages\Microsoft.AspNet.Http.Features\1.0.0-rc1-final\lib\net451\Microsoft.AspNet.Http.Features.dll
+--reference:C:\Users\ratne\.nuget\packages\Microsoft.AspNetCore.Antiforgery\1.1.0\lib\net451\Microsoft.AspNetCore.Antiforgery.dll
+--reference:C:\Users\ratne\.nuget\packages\Microsoft.AspNetCore.Authorization\1.1.0\lib\net451\Microsoft.AspNetCore.Authorization.dll
+--reference:C:\Users\ratne\.nuget\packages\Microsoft.AspNetCore.Cors\1.1.0\lib\net451\Microsoft.AspNetCore.Cors.dll
+--reference:C:\Users\ratne\.nuget\packages\Microsoft.AspNetCore.Cryptography.Internal\1.1.0\lib\net451\Microsoft.AspNetCore.Cryptography.Internal.dll
+--reference:C:\Users\ratne\.nuget\packages\Microsoft.AspNetCore.DataProtection\1.1.0\lib\net451\Microsoft.AspNetCore.DataProtection.dll
+--reference:C:\Users\ratne\.nuget\packages\Microsoft.AspNetCore.DataProtection.Abstractions\1.1.0\lib\net451\Microsoft.AspNetCore.DataProtection.Abstractions.dll
+--reference:C:\Users\ratne\.nuget\packages\Microsoft.AspNetCore.Diagnostics\1.1.0\lib\net451\Microsoft.AspNetCore.Diagnostics.dll
+--reference:C:\Users\ratne\.nuget\packages\Microsoft.AspNetCore.Diagnostics.Abstractions\1.1.0\lib\netstandard1.0\Microsoft.AspNetCore.Diagnostics.Abstractions.dll
+--reference:C:\Users\ratne\.nuget\packages\Microsoft.AspNetCore.Hosting\1.1.0\lib\net451\Microsoft.AspNetCore.Hosting.dll
+--reference:C:\Users\ratne\.nuget\packages\Microsoft.AspNetCore.Hosting.Abstractions\1.1.0\lib\net451\Microsoft.AspNetCore.Hosting.Abstractions.dll
+--reference:C:\Users\ratne\.nuget\packages\Microsoft.AspNetCore.Hosting.Server.Abstractions\1.1.0\lib\net451\Microsoft.AspNetCore.Hosting.Server.Abstractions.dll
+--reference:C:\Users\ratne\.nuget\packages\Microsoft.AspNetCore.Html.Abstractions\1.1.0\lib\netstandard1.0\Microsoft.AspNetCore.Html.Abstractions.dll
+--reference:C:\Users\ratne\.nuget\packages\Microsoft.AspNetCore.Http\1.1.0\lib\net451\Microsoft.AspNetCore.Http.dll
+--reference:C:\Users\ratne\.nuget\packages\Microsoft.AspNetCore.Http.Abstractions\1.1.0\lib\net451\Microsoft.AspNetCore.Http.Abstractions.dll
+--reference:C:\Users\ratne\.nuget\packages\Microsoft.AspNetCore.Http.Extensions\1.1.0\lib\net451\Microsoft.AspNetCore.Http.Extensions.dll
+--reference:C:\Users\ratne\.nuget\packages\Microsoft.AspNetCore.Http.Features\1.1.0\lib\net451\Microsoft.AspNetCore.Http.Features.dll
+--reference:C:\Users\ratne\.nuget\packages\Microsoft.AspNetCore.HttpOverrides\1.1.0\lib\net451\Microsoft.AspNetCore.HttpOverrides.dll
+--reference:C:\Users\ratne\.nuget\packages\Microsoft.AspNetCore.JsonPatch\1.1.0\lib\net451\Microsoft.AspNetCore.JsonPatch.dll
+--reference:C:\Users\ratne\.nuget\packages\Microsoft.AspNetCore.Localization\1.1.0\lib\net451\Microsoft.AspNetCore.Localization.dll
+--reference:C:\Users\ratne\.nuget\packages\Microsoft.AspNetCore.Mvc\1.1.0\lib\net451\Microsoft.AspNetCore.Mvc.dll
+--reference:C:\Users\ratne\.nuget\packages\Microsoft.AspNetCore.Mvc.Abstractions\1.1.0\lib\net451\Microsoft.AspNetCore.Mvc.Abstractions.dll
+--reference:C:\Users\ratne\.nuget\packages\Microsoft.AspNetCore.Mvc.ApiExplorer\1.1.0\lib\net451\Microsoft.AspNetCore.Mvc.ApiExplorer.dll
+--reference:C:\Users\ratne\.nuget\packages\Microsoft.AspNetCore.Mvc.Core\1.1.0\lib\net451\Microsoft.AspNetCore.Mvc.Core.dll
+--reference:C:\Users\ratne\.nuget\packages\Microsoft.AspNetCore.Mvc.Cors\1.1.0\lib\net451\Microsoft.AspNetCore.Mvc.Cors.dll
+--reference:C:\Users\ratne\.nuget\packages\Microsoft.AspNetCore.Mvc.DataAnnotations\1.1.0\lib\net451\Microsoft.AspNetCore.Mvc.DataAnnotations.dll
+--reference:C:\Users\ratne\.nuget\packages\Microsoft.AspNetCore.Mvc.Formatters.Json\1.1.0\lib\net451\Microsoft.AspNetCore.Mvc.Formatters.Json.dll
+--reference:C:\Users\ratne\.nuget\packages\Microsoft.AspNetCore.Mvc.Localization\1.1.0\lib\net451\Microsoft.AspNetCore.Mvc.Localization.dll
+--reference:C:\Users\ratne\.nuget\packages\Microsoft.AspNetCore.Mvc.Razor\1.1.0\lib\net451\Microsoft.AspNetCore.Mvc.Razor.dll
+--reference:C:\Users\ratne\.nuget\packages\Microsoft.AspNetCore.Mvc.Razor.Host\1.1.0\lib\net451\Microsoft.AspNetCore.Mvc.Razor.Host.dll
+--reference:C:\Users\ratne\.nuget\packages\Microsoft.AspNetCore.Mvc.TagHelpers\1.1.0\lib\net451\Microsoft.AspNetCore.Mvc.TagHelpers.dll
+--reference:C:\Users\ratne\.nuget\packages\Microsoft.AspNetCore.Mvc.ViewFeatures\1.1.0\lib\net451\Microsoft.AspNetCore.Mvc.ViewFeatures.dll
+--reference:C:\Users\ratne\.nuget\packages\Microsoft.AspNetCore.Razor\1.1.0\lib\net451\Microsoft.AspNetCore.Razor.dll
+--reference:C:\Users\ratne\.nuget\packages\Microsoft.AspNetCore.Razor.Design\1.1.0-preview4-final\lib\net451\Microsoft.AspNetCore.Razor.Design.exe
+--reference:C:\Users\ratne\.nuget\packages\Microsoft.AspNetCore.Razor.Runtime\1.1.0\lib\net451\Microsoft.AspNetCore.Razor.Runtime.dll
+--reference:C:\Users\ratne\.nuget\packages\Microsoft.AspNetCore.Razor.Tools\1.1.0-preview4-final\lib\net451\dotnet-razor-tooling.exe
+--reference:C:\Users\ratne\.nuget\packages\Microsoft.AspNetCore.ResponseCaching.Abstractions\1.1.0\lib\net451\Microsoft.AspNetCore.ResponseCaching.Abstractions.dll
+--reference:C:\Users\ratne\.nuget\packages\Microsoft.AspNetCore.Routing\1.1.0\lib\net451\Microsoft.AspNetCore.Routing.dll
+--reference:C:\Users\ratne\.nuget\packages\Microsoft.AspNetCore.Routing.Abstractions\1.1.0\lib\net451\Microsoft.AspNetCore.Routing.Abstractions.dll
+--reference:C:\Users\ratne\.nuget\packages\Microsoft.AspNetCore.Server.IISIntegration\1.1.0\lib\net451\Microsoft.AspNetCore.Server.IISIntegration.dll
+--reference:C:\Users\ratne\.nuget\packages\Microsoft.AspNetCore.Server.Kestrel\1.1.0\lib\net451\Microsoft.AspNetCore.Server.Kestrel.dll
+--reference:C:\Users\ratne\.nuget\packages\Microsoft.AspNetCore.Session\1.0.0\lib\net451\Microsoft.AspNetCore.Session.dll
+--reference:C:\Users\ratne\.nuget\packages\Microsoft.AspNetCore.StaticFiles\1.1.0\lib\net451\Microsoft.AspNetCore.StaticFiles.dll
+--reference:C:\Users\ratne\.nuget\packages\Microsoft.AspNetCore.WebUtilities\1.1.0\lib\net451\Microsoft.AspNetCore.WebUtilities.dll
+--reference:C:\Users\ratne\.nuget\packages\Microsoft.CodeAnalysis.Common\1.3.0\lib\net45\Microsoft.CodeAnalysis.dll
+--reference:C:\Users\ratne\.nuget\packages\Microsoft.CodeAnalysis.CSharp\1.3.0\lib\net45\Microsoft.CodeAnalysis.CSharp.dll
+--reference:C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6.1\Microsoft.CSharp.dll
+--reference:C:\Users\ratne\.nuget\packages\Microsoft.DotNet.Cli.Utils\1.0.0-preview2-003121\lib\net451\Microsoft.DotNet.Cli.Utils.dll
+--reference:C:\Users\ratne\.nuget\packages\Microsoft.DotNet.PlatformAbstractions\1.1.0\lib\net451\Microsoft.DotNet.PlatformAbstractions.dll
+--reference:C:\Users\ratne\.nuget\packages\Microsoft.DotNet.ProjectModel\1.0.0-rc3-003121\lib\net451\Microsoft.DotNet.ProjectModel.dll
+--reference:C:\Users\ratne\.nuget\packages\Microsoft.Extensions.Caching.Abstractions\1.1.0\lib\netstandard1.0\Microsoft.Extensions.Caching.Abstractions.dll
+--reference:C:\Users\ratne\.nuget\packages\Microsoft.Extensions.Caching.Memory\1.1.0\lib\net451\Microsoft.Extensions.Caching.Memory.dll
+--reference:C:\Users\ratne\.nuget\packages\Microsoft.Extensions.CommandLineUtils\1.0.0\lib\net451\Microsoft.Extensions.CommandLineUtils.dll
+--reference:C:\Users\ratne\.nuget\packages\Microsoft.Extensions.Configuration\1.1.0\lib\netstandard1.1\Microsoft.Extensions.Configuration.dll
+--reference:C:\Users\ratne\.nuget\packages\Microsoft.Extensions.Configuration.Abstractions\1.1.0\lib\netstandard1.0\Microsoft.Extensions.Configuration.Abstractions.dll
+--reference:C:\Users\ratne\.nuget\packages\Microsoft.Extensions.Configuration.Binder\1.1.0\lib\netstandard1.1\Microsoft.Extensions.Configuration.Binder.dll
+--reference:C:\Users\ratne\.nuget\packages\Microsoft.Extensions.Configuration.EnvironmentVariables\1.1.0\lib\net451\Microsoft.Extensions.Configuration.EnvironmentVariables.dll
+--reference:C:\Users\ratne\.nuget\packages\Microsoft.Extensions.Configuration.FileExtensions\1.1.0\lib\net451\Microsoft.Extensions.Configuration.FileExtensions.dll
+--reference:C:\Users\ratne\.nuget\packages\Microsoft.Extensions.Configuration.Json\1.1.0\lib\net451\Microsoft.Extensions.Configuration.Json.dll
+--reference:C:\Users\ratne\.nuget\packages\Microsoft.Extensions.DependencyInjection\1.1.0\lib\netstandard1.1\Microsoft.Extensions.DependencyInjection.dll
+--reference:C:\Users\ratne\.nuget\packages\Microsoft.Extensions.DependencyInjection.Abstractions\1.1.0\lib\netstandard1.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+--reference:C:\Users\ratne\.nuget\packages\Microsoft.Extensions.DependencyModel\1.1.0\lib\net451\Microsoft.Extensions.DependencyModel.dll
+--reference:C:\Users\ratne\.nuget\packages\Microsoft.Extensions.FileProviders.Abstractions\1.1.0\lib\netstandard1.0\Microsoft.Extensions.FileProviders.Abstractions.dll
+--reference:C:\Users\ratne\.nuget\packages\Microsoft.Extensions.FileProviders.Composite\1.1.0\lib\netstandard1.0\Microsoft.Extensions.FileProviders.Composite.dll
+--reference:C:\Users\ratne\.nuget\packages\Microsoft.Extensions.FileProviders.Physical\1.1.0\lib\net451\Microsoft.Extensions.FileProviders.Physical.dll
+--reference:C:\Users\ratne\.nuget\packages\Microsoft.Extensions.FileSystemGlobbing\1.1.0\lib\net45\Microsoft.Extensions.FileSystemGlobbing.dll
+--reference:C:\Users\ratne\.nuget\packages\Microsoft.Extensions.Globalization.CultureInfoCache\1.1.0\lib\netstandard1.1\Microsoft.Extensions.Globalization.CultureInfoCache.dll
+--reference:C:\Users\ratne\.nuget\packages\Microsoft.Extensions.Localization\1.1.0\lib\net451\Microsoft.Extensions.Localization.dll
+--reference:C:\Users\ratne\.nuget\packages\Microsoft.Extensions.Localization.Abstractions\1.1.0\lib\netstandard1.0\Microsoft.Extensions.Localization.Abstractions.dll
+--reference:C:\Users\ratne\.nuget\packages\Microsoft.Extensions.Logging\1.1.0\lib\netstandard1.1\Microsoft.Extensions.Logging.dll
+--reference:C:\Users\ratne\.nuget\packages\Microsoft.Extensions.Logging.Abstractions\1.1.0\lib\netstandard1.1\Microsoft.Extensions.Logging.Abstractions.dll
+--reference:C:\Users\ratne\.nuget\packages\Microsoft.Extensions.Logging.Console\1.1.0\lib\net451\Microsoft.Extensions.Logging.Console.dll
+--reference:C:\Users\ratne\.nuget\packages\Microsoft.Extensions.Logging.Debug\1.1.0\lib\net451\Microsoft.Extensions.Logging.Debug.dll
+--reference:C:\Users\ratne\.nuget\packages\Microsoft.Extensions.ObjectPool\1.1.0\lib\net451\Microsoft.Extensions.ObjectPool.dll
+--reference:C:\Users\ratne\.nuget\packages\Microsoft.Extensions.Options\1.1.0\lib\netstandard1.0\Microsoft.Extensions.Options.dll
+--reference:C:\Users\ratne\.nuget\packages\Microsoft.Extensions.Options.ConfigurationExtensions\1.1.0\lib\netstandard1.1\Microsoft.Extensions.Options.ConfigurationExtensions.dll
+--reference:C:\Users\ratne\.nuget\packages\Microsoft.Extensions.PlatformAbstractions\1.1.0\lib\net451\Microsoft.Extensions.PlatformAbstractions.dll
+--reference:C:\Users\ratne\.nuget\packages\Microsoft.Extensions.Primitives\1.1.0\lib\netstandard1.0\Microsoft.Extensions.Primitives.dll
+--reference:C:\Users\ratne\.nuget\packages\Microsoft.Extensions.WebEncoders\1.1.0\lib\netstandard1.0\Microsoft.Extensions.WebEncoders.dll
+--reference:C:\Users\ratne\.nuget\packages\Microsoft.Extensions.WebEncoders.Core\1.0.0-rc1-final\lib\net451\Microsoft.Extensions.WebEncoders.Core.dll
+--reference:C:\Users\ratne\.nuget\packages\Microsoft.Net.Http.Headers\1.1.0\lib\netstandard1.1\Microsoft.Net.Http.Headers.dll
+--reference:C:\Users\ratne\.nuget\packages\Microsoft.VisualStudio.Web.BrowserLink.Loader\14.1.0\lib\net451\Microsoft.VisualStudio.Web.BrowserLink.Loader.dll
+--reference:C:\Users\ratne\.nuget\packages\Microsoft.Win32.Primitives\4.3.0\ref\net46\Microsoft.Win32.Primitives.dll
+--reference:C:\Users\ratne\.nuget\packages\MySql.Data\8.0.12\lib\net452\MySql.Data.dll
+--reference:C:\Users\ratne\.nuget\packages\Newtonsoft.Json\9.0.1\lib\net45\Newtonsoft.Json.dll
+--reference:C:\Users\ratne\.nuget\packages\NonFactors.Grid.Core.Mvc6\1.3.0\lib\net451\Mvc.Grid.Core.dll
+--reference:C:\Users\ratne\.nuget\packages\NuGet.Common\3.5.0-beta2-1484\lib\net45\NuGet.Common.dll
+--reference:C:\Users\ratne\.nuget\packages\NuGet.Configuration\3.5.0-beta2-1484\lib\net45\NuGet.Configuration.dll
+--reference:C:\Users\ratne\.nuget\packages\NuGet.DependencyResolver.Core\3.5.0-beta2-1484\lib\net45\NuGet.DependencyResolver.Core.dll
+--reference:C:\Users\ratne\.nuget\packages\NuGet.Frameworks\3.5.0-beta2-1484\lib\net45\NuGet.Frameworks.dll
+--reference:C:\Users\ratne\.nuget\packages\NuGet.LibraryModel\3.5.0-beta2-1484\lib\net45\NuGet.LibraryModel.dll
+--reference:C:\Users\ratne\.nuget\packages\NuGet.Packaging\3.5.0-beta2-1484\lib\net45\NuGet.Packaging.dll
+--reference:C:\Users\ratne\.nuget\packages\NuGet.Packaging.Core\3.5.0-beta2-1484\lib\net45\NuGet.Packaging.Core.dll
+--reference:C:\Users\ratne\.nuget\packages\NuGet.Packaging.Core.Types\3.5.0-beta2-1484\lib\net45\NuGet.Packaging.Core.Types.dll
+--reference:C:\Users\ratne\.nuget\packages\NuGet.ProjectModel\3.5.0-beta2-1484\lib\net45\NuGet.ProjectModel.dll
+--reference:C:\Users\ratne\.nuget\packages\NuGet.Protocol.Core.Types\3.5.0-beta2-1484\lib\net45\NuGet.Protocol.Core.Types.dll
+--reference:C:\Users\ratne\.nuget\packages\NuGet.Protocol.Core.v3\3.5.0-beta2-1484\lib\net45\NuGet.Protocol.Core.v3.dll
+--reference:C:\Users\ratne\.nuget\packages\NuGet.Repositories\3.5.0-beta2-1484\lib\net45\NuGet.Repositories.dll
+--reference:C:\Users\ratne\.nuget\packages\NuGet.RuntimeModel\3.5.0-beta2-1484\lib\net45\NuGet.RuntimeModel.dll
+--reference:C:\Users\ratne\.nuget\packages\NuGet.Versioning\3.5.0-beta2-1484\lib\net45\NuGet.Versioning.dll
+--reference:C:\Users\ratne\.nuget\packages\NUglify\1.5.1\lib\net40\NUglify.dll
+--reference:C:\Users\ratne\.nuget\packages\System.AppContext\4.3.0\ref\net46\System.AppContext.dll
+--reference:C:\Users\ratne\.nuget\packages\System.Buffers\4.3.0\lib\netstandard1.1\System.Buffers.dll
+--reference:C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6.1\Facades\System.Collections.dll
+--reference:C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6.1\Facades\System.Collections.Concurrent.dll
+--reference:C:\Users\ratne\.nuget\packages\System.Collections.Immutable\1.3.0\lib\portable-net45+win8+wp8+wpa81\System.Collections.Immutable.dll
+--reference:C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6.1\Facades\System.ComponentModel.dll
+--reference:C:\Users\ratne\.nuget\packages\System.ComponentModel.Primitives\4.3.0\ref\net45\System.ComponentModel.Primitives.dll
+--reference:C:\Users\ratne\.nuget\packages\System.ComponentModel.TypeConverter\4.3.0\ref\net45\System.ComponentModel.TypeConverter.dll
+--reference:C:\Users\ratne\.nuget\packages\System.Console\4.3.0\ref\net46\System.Console.dll
+--reference:C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6.1\Facades\System.Diagnostics.Contracts.dll
+--reference:C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6.1\Facades\System.Diagnostics.Debug.dll
+--reference:C:\Users\ratne\.nuget\packages\System.Diagnostics.DiagnosticSource\4.3.0\lib\net46\System.Diagnostics.DiagnosticSource.dll
+--reference:C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6.1\Facades\System.Diagnostics.Tools.dll
+--reference:C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6.1\Facades\System.Diagnostics.Tracing.dll
+--reference:C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6.1\Facades\System.Dynamic.Runtime.dll
+--reference:C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6.1\Facades\System.Globalization.dll
+--reference:C:\Users\ratne\.nuget\packages\System.Globalization.Calendars\4.3.0\ref\net46\System.Globalization.Calendars.dll
+--reference:C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6.1\Facades\System.IO.dll
+--reference:C:\Users\ratne\.nuget\packages\System.IO.Compression.ZipFile\4.3.0\ref\net46\System.IO.Compression.ZipFile.dll
+--reference:C:\Users\ratne\.nuget\packages\System.IO.FileSystem\4.3.0\ref\net46\System.IO.FileSystem.dll
+--reference:C:\Users\ratne\.nuget\packages\System.IO.FileSystem.Primitives\4.3.0\ref\net46\System.IO.FileSystem.Primitives.dll
+--reference:C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6.1\Facades\System.Linq.dll
+--reference:C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6.1\Facades\System.Linq.Expressions.dll
+--reference:C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6.1\Facades\System.Net.Primitives.dll
+--reference:C:\Users\ratne\.nuget\packages\System.Net.Sockets\4.3.0\ref\net46\System.Net.Sockets.dll
+--reference:C:\Users\ratne\.nuget\packages\System.Numerics.Vectors\4.3.0\ref\net46\System.Numerics.Vectors.dll
+--reference:C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6.1\Facades\System.ObjectModel.dll
+--reference:C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6.1\Facades\System.Reflection.dll
+--reference:C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6.1\Facades\System.Reflection.Extensions.dll
+--reference:C:\Users\ratne\.nuget\packages\System.Reflection.Metadata\1.4.1\lib\portable-net45+win8\System.Reflection.Metadata.dll
+--reference:C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6.1\Facades\System.Reflection.Primitives.dll
+--reference:C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6.1\Facades\System.Resources.ResourceManager.dll
+--reference:C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6.1\Facades\System.Runtime.dll
+--reference:C:\Users\ratne\.nuget\packages\System.Runtime.CompilerServices.Unsafe\4.3.0\lib\netstandard1.0\System.Runtime.CompilerServices.Unsafe.dll
+--reference:C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6.1\Facades\System.Runtime.Extensions.dll
+--reference:C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6.1\Facades\System.Runtime.Handles.dll
+--reference:C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6.1\Facades\System.Runtime.InteropServices.dll
+--reference:C:\Users\ratne\.nuget\packages\System.Runtime.InteropServices.RuntimeInformation\4.3.0\ref\netstandard1.1\System.Runtime.InteropServices.RuntimeInformation.dll
+--reference:C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6.1\Facades\System.Runtime.Numerics.dll
+--reference:C:\Users\ratne\.nuget\packages\System.Security.Cryptography.Algorithms\4.3.0\ref\net461\System.Security.Cryptography.Algorithms.dll
+--reference:C:\Users\ratne\.nuget\packages\System.Security.Cryptography.Encoding\4.3.0\ref\net46\System.Security.Cryptography.Encoding.dll
+--reference:C:\Users\ratne\.nuget\packages\System.Security.Cryptography.Primitives\4.3.0\ref\net46\System.Security.Cryptography.Primitives.dll
+--reference:C:\Users\ratne\.nuget\packages\System.Security.Cryptography.X509Certificates\4.3.0\ref\net461\System.Security.Cryptography.X509Certificates.dll
+--reference:C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6.1\Facades\System.Text.Encoding.dll
+--reference:C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6.1\Facades\System.Text.Encoding.Extensions.dll
+--reference:C:\Users\ratne\.nuget\packages\System.Text.Encodings.Web\4.3.0\lib\netstandard1.0\System.Text.Encodings.Web.dll
+--reference:C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6.1\Facades\System.Text.RegularExpressions.dll
+--reference:C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6.1\Facades\System.Threading.dll
+--reference:C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6.1\Facades\System.Threading.Tasks.dll
+--reference:C:\Users\ratne\.nuget\packages\System.Threading.Tasks.Extensions\4.3.0\lib\portable-net45+win8+wp8+wpa81\System.Threading.Tasks.Extensions.dll
+--reference:C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6.1\Facades\System.Threading.Tasks.Parallel.dll
+--reference:C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6.1\Facades\System.Threading.Timer.dll
+--reference:C:\Users\ratne\.nuget\packages\System.Xml.ReaderWriter\4.3.0\ref\net46\System.Xml.ReaderWriter.dll
+--reference:C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6.1\Facades\System.Xml.XDocument.dll
+--reference:D:\WT\SB\SB\src\ERP.Business\bin\Release\netstandard1.4\ERP.Business.dll
+--reference:D:\WT\SB\SB\src\ERP.Business.Contracts\bin\Release\netstandard1.4\ERP.Business.Contracts.dll
+--reference:D:\WT\SB\SB\src\ERP.Domain.Entities\bin\Release\netstandard1.4\ERP.Domain.Entities.dll
+--reference:D:\WT\SB\SB\src\ERP.Helper\bin\Release\netstandard1.4\ERP.Helper.dll
+--reference:C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6.1\System.Data.dll
+--reference:C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6.1\System.Drawing.dll
+--reference:C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6.1\System.Net.Http.dll
+--reference:C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6.1\mscorlib.dll
+--reference:C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6.1\System.dll
+--reference:C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6.1\System.Core.dll
+--reference:C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6.1\System.Security.dll
+--reference:C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6.1\System.Xml.dll
+--reference:C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6.1\System.Xml.Linq.dll
+--reference:C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6.1\System.ComponentModel.DataAnnotations.dll
+--reference:C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6.1\System.Configuration.dll
+--reference:C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6.1\System.Configuration.Install.dll
+--reference:C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6.1\System.Drawing.Design.dll
+--reference:C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6.1\System.Management.dll
+--reference:C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6.1\System.Transactions.dll
+--reference:C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6.1\System.IO.Compression.dll
+--reference:C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6.1\System.IdentityModel.dll
+--reference:C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6.1\System.Net.Http.WebRequest.dll
+--reference:C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6.1\System.ServiceModel.dll
+--reference:C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6.1\System.IO.Compression.FileSystem.dll
+--reference:C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6.1\System.Numerics.dll
+--resource:"D:\WT\SB\SB\src\ERP.Web\obj\Release\net461\ERP.Webdotnet-compile.deps.json",ERP.Web.deps.json
+D:\WT\SB\SB\src\ERP.Web\Program.cs
+D:\WT\SB\SB\src\ERP.Web\Startup.cs
+D:\WT\SB\SB\src\ERP.Web\WebApplicationSettings.cs
+D:\WT\SB\SB\src\ERP.Web\Areas\Home\Controllers\HomeController.cs
+D:\WT\SB\SB\src\ERP.Web\Areas\Home\Models\HomeModel.cs
+D:\WT\SB\SB\src\ERP.Web\Auth\AuthLogin.cs
+D:\WT\SB\SB\src\ERP.Web\Costing\Costing\Controllers\CostingController.cs
+D:\WT\SB\SB\src\ERP.Web\Costing\Costing\Models\CostingCurrencyModel.cs
+D:\WT\SB\SB\src\ERP.Web\Costing\Costing\Models\CostingElModel.cs
+D:\WT\SB\SB\src\ERP.Web\Costing\Costing\Models\CostingModel.cs
+D:\WT\SB\SB\src\ERP.Web\Costing\Costing\Models\CostingRMComponentModel.cs
+D:\WT\SB\SB\src\ERP.Web\Costing\Costing\Models\CostingRMModel.cs
+D:\WT\SB\SB\src\ERP.Web\Costing\Costing\Models\OrderBOMSUM.cs
+D:\WT\SB\SB\src\ERP.Web\Costing\CostingElement\Controllers\CostingElementController.cs
+D:\WT\SB\SB\src\ERP.Web\Helper\Helper.cs
+D:\WT\SB\SB\src\ERP.Web\HistoryRoom\PatternIssue\Controllers\PatternIssueController.cs
+D:\WT\SB\SB\src\ERP.Web\HistoryRoom\PatternIssue\Models\PatternIssueModel.cs
+D:\WT\SB\SB\src\ERP.Web\HistoryRoom\PatternRoom\Controllers\PatternRoomController.cs
+D:\WT\SB\SB\src\ERP.Web\HistoryRoom\PatternRoom\Models\PatternRoomModel.cs
+D:\WT\SB\SB\src\ERP.Web\HistoryRoom\SampleIssue\Controllers\SampleIssueController.cs
+D:\WT\SB\SB\src\ERP.Web\HistoryRoom\SampleIssue\Models\SampleIssueModel.cs
+D:\WT\SB\SB\src\ERP.Web\HistoryRoom\SampleRoom\Controllers\SampleRoomController.cs
+D:\WT\SB\SB\src\ERP.Web\HistoryRoom\SampleRoom\Models\SampleRoomModel.cs
+D:\WT\SB\SB\src\ERP.Web\HR\Advance\Controllers\AdvanceController.cs
+D:\WT\SB\SB\src\ERP.Web\HR\Advance\Models\AdvanceModel.cs
+D:\WT\SB\SB\src\ERP.Web\HR\Allowance\Controllers\AllowanceController.cs
+D:\WT\SB\SB\src\ERP.Web\HR\Allowance\Models\AllowanceModel.cs
+D:\WT\SB\SB\src\ERP.Web\HR\Attandance\Controllers\AttandanceController.cs
+D:\WT\SB\SB\src\ERP.Web\HR\Attandance\Models\AttandanceModel.cs
+D:\WT\SB\SB\src\ERP.Web\HR\Designation\Controllers\DesignationController.cs
+D:\WT\SB\SB\src\ERP.Web\HR\Designation\Models\DesignationModel.cs
+D:\WT\SB\SB\src\ERP.Web\HR\Employee\Controllers\EmployeeController.cs
+D:\WT\SB\SB\src\ERP.Web\HR\Employee\Models\EmployeeModel.cs
+D:\WT\SB\SB\src\ERP.Web\HR\ESI\Controllers\ESIController.cs
+D:\WT\SB\SB\src\ERP.Web\HR\ESI\Models\ESIModel.cs
+D:\WT\SB\SB\src\ERP.Web\HR\Holiday\Controllers\HolidayController.cs
+D:\WT\SB\SB\src\ERP.Web\HR\Holiday\Models\HolidayModel.cs
+D:\WT\SB\SB\src\ERP.Web\HR\HRBank\Controllers\HRBankController.cs
+D:\WT\SB\SB\src\ERP.Web\HR\HRBank\Models\HRBankModel.cs
+D:\WT\SB\SB\src\ERP.Web\HR\HRDepartment\Controllers\HRDepartmentController.cs
+D:\WT\SB\SB\src\ERP.Web\HR\HRGrade\Controllers\HRGradeController.cs
+D:\WT\SB\SB\src\ERP.Web\HR\HRGrade\Models\HRGradeModel.cs
+D:\WT\SB\SB\src\ERP.Web\HR\PF\Controllers\PFController.cs
+D:\WT\SB\SB\src\ERP.Web\HR\PF\Models\PFModel.cs
+D:\WT\SB\SB\src\ERP.Web\HR\Salary\Controllers\SalaryController.cs
+D:\WT\SB\SB\src\ERP.Web\HR\Salary\Models\SalaryModel.cs
+D:\WT\SB\SB\src\ERP.Web\HR\SalaryStructure\Controllers\SalaryStructureController.cs
+D:\WT\SB\SB\src\ERP.Web\HR\SalaryStructure\Models\SalaryStructureChildModel.cs
+D:\WT\SB\SB\src\ERP.Web\HR\SalaryStructure\Models\SalaryStructureModel.cs
+D:\WT\SB\SB\src\ERP.Web\HR\Title\Controllers\TitleController.cs
+D:\WT\SB\SB\src\ERP.Web\HR\Title\Models\TitleModel.cs
+D:\WT\SB\SB\src\ERP.Web\IN\GRN\Controllers\GRNController.cs
+D:\WT\SB\SB\src\ERP.Web\IN\GRN\Models\GRNFileModel.cs
+D:\WT\SB\SB\src\ERP.Web\IN\GRN\Models\GRNModel.cs
+D:\WT\SB\SB\src\ERP.Web\IN\VisitorRegistor\Controllers\VisitorRegistorController.cs
+D:\WT\SB\SB\src\ERP.Web\IN\VisitorRegistor\Models\VisitorRegistorModel.cs
+D:\WT\SB\SB\src\ERP.Web\Integration\Controllers\Integration.cs
+D:\WT\SB\SB\src\ERP.Web\Login\Controllers\LoginController.cs
+D:\WT\SB\SB\src\ERP.Web\Masters\Bank\Controllers\BankController.cs
+D:\WT\SB\SB\src\ERP.Web\Masters\Bank\Models\BankModel.cs
+D:\WT\SB\SB\src\ERP.Web\Masters\Branch\Controllers\BranchController.cs
+D:\WT\SB\SB\src\ERP.Web\Masters\Branch\Models\BranchModel.cs
+D:\WT\SB\SB\src\ERP.Web\Masters\Buyer\Controllers\BuyerController.cs
+D:\WT\SB\SB\src\ERP.Web\Masters\Buyer\Models\BuyerBankModel.cs
+D:\WT\SB\SB\src\ERP.Web\Masters\Buyer\Models\BuyerConsigneeModel.cs
+D:\WT\SB\SB\src\ERP.Web\Masters\Buyer\Models\BuyerModel.cs
+D:\WT\SB\SB\src\ERP.Web\Masters\Carton\Controllers\CartonController.cs
+D:\WT\SB\SB\src\ERP.Web\Masters\City\Controllers\CityController.cs
+D:\WT\SB\SB\src\ERP.Web\Masters\City\Models\CityModel.cs
+D:\WT\SB\SB\src\ERP.Web\Masters\Color\Controllers\ColorController.cs
+D:\WT\SB\SB\src\ERP.Web\Masters\Company\Controllers\CompanyController.cs
+D:\WT\SB\SB\src\ERP.Web\Masters\Consignee\Controllers\ConsigneeController.cs
+D:\WT\SB\SB\src\ERP.Web\Masters\Consignee\Models\ConsigneeModel.cs
+D:\WT\SB\SB\src\ERP.Web\Masters\Contractor\Controllers\ContractorController.cs
+D:\WT\SB\SB\src\ERP.Web\Masters\Contractor\Models\ContractorModel.cs
+D:\WT\SB\SB\src\ERP.Web\Masters\Country\Controllers\CountryController.cs
+D:\WT\SB\SB\src\ERP.Web\Masters\Currency\Controllers\CurrencyController.cs
+D:\WT\SB\SB\src\ERP.Web\Masters\Department\Controllers\DepartmentController.cs
+D:\WT\SB\SB\src\ERP.Web\Masters\DocumentType\Controllers\DocumentTypeController.cs
+D:\WT\SB\SB\src\ERP.Web\Masters\HSN\Controllers\HSNController.cs
+D:\WT\SB\SB\src\ERP.Web\Masters\HSN\Models\HSNModel.cs
+D:\WT\SB\SB\src\ERP.Web\Masters\Sole\Controllers\SoleController.cs
+D:\WT\SB\SB\src\ERP.Web\Masters\Sole\Models\SoleModel.cs
+D:\WT\SB\SB\src\ERP.Web\Masters\State\Controllers\StateController.cs
+D:\WT\SB\SB\src\ERP.Web\Masters\State\Models\StateModel.cs
+D:\WT\SB\SB\src\ERP.Web\Masters\StoreMaster\Controllers\StoreMasterController.cs
+D:\WT\SB\SB\src\ERP.Web\Masters\StoreMaster\Models\StoreMasterModel.cs
+D:\WT\SB\SB\src\ERP.Web\Masters\Supplier\Controllers\SupplierController.cs
+D:\WT\SB\SB\src\ERP.Web\Masters\Supplier\Models\SupplierBankModel.cs
+D:\WT\SB\SB\src\ERP.Web\Masters\Supplier\Models\SupplierModel.cs
+D:\WT\SB\SB\src\ERP.Web\Masters\Tax\Controllers\TaxController.cs
+D:\WT\SB\SB\src\ERP.Web\Masters\Unit\Controllers\UnitController.cs
+D:\WT\SB\SB\src\ERP.Web\Masters\Zipper\Controllers\ZipperController.cs
+D:\WT\SB\SB\src\ERP.Web\Masters\Zipper\Models\ZipperModel.cs
+D:\WT\SB\SB\src\ERP.Web\Order\SaleOrder\Controllers\SaleOrderController.cs
+D:\WT\SB\SB\src\ERP.Web\Order\SaleOrder\Models\OrderShippingModel.cs
+D:\WT\SB\SB\src\ERP.Web\Order\SaleOrder\Models\SaleOrderChildModel.cs
+D:\WT\SB\SB\src\ERP.Web\Order\SaleOrder\Models\SaleOrderModel.cs
+D:\WT\SB\SB\src\ERP.Web\PackingInvoice\CompanyBeneficiary\Controllers\CompanyBeneficiaryController.cs
+D:\WT\SB\SB\src\ERP.Web\PackingInvoice\CompanyBeneficiary\Models\CompanyBeneficiaryModel.cs
+D:\WT\SB\SB\src\ERP.Web\PackingInvoice\CompanyIntermediary\Controllers\CompanyIntermediaryController.cs
+D:\WT\SB\SB\src\ERP.Web\PackingInvoice\CompanyIntermediary\Models\CompanyIntermediaryModel.cs
+D:\WT\SB\SB\src\ERP.Web\PackingInvoice\Invoice\Controllers\InvoiceController.cs
+D:\WT\SB\SB\src\ERP.Web\PackingInvoice\Invoice\Models\InvoiceChildModel.cs
+D:\WT\SB\SB\src\ERP.Web\PackingInvoice\Invoice\Models\InvoiceModel.cs
+D:\WT\SB\SB\src\ERP.Web\PackingInvoice\InvoiceSetting\Controllers\InvoiceSettingController.cs
+D:\WT\SB\SB\src\ERP.Web\PackingInvoice\Packing\Controllers\PackingController.cs
+D:\WT\SB\SB\src\ERP.Web\PackingInvoice\Packing\Models\OrderItemsForPackingModel.cs
+D:\WT\SB\SB\src\ERP.Web\PackingInvoice\Packing\Models\PackingChildModel.cs
+D:\WT\SB\SB\src\ERP.Web\PackingInvoice\Packing\Models\PackingModel.cs
+D:\WT\SB\SB\src\ERP.Web\PackingInvoice\PackingWeight\Controllers\PackingWeightController.cs
+D:\WT\SB\SB\src\ERP.Web\PackingInvoice\PackingWeight\Models\PackingWeightModel.cs
+D:\WT\SB\SB\src\ERP.Web\PackingInvoice\PI\Controllers\PIController.cs
+D:\WT\SB\SB\src\ERP.Web\PackingInvoice\PI\Models\PIChildModel.cs
+D:\WT\SB\SB\src\ERP.Web\PackingInvoice\PI\Models\PIModel.cs
+D:\WT\SB\SB\src\ERP.Web\Production\Component\Controllers\ComponentController.cs
+D:\WT\SB\SB\src\ERP.Web\Production\Component\Models\ComponentModel.cs
+D:\WT\SB\SB\src\ERP.Web\Production\ComponentGroup\Controllers\ComponentGroupController.cs
+D:\WT\SB\SB\src\ERP.Web\Production\Die\Controllers\DieController.cs
+D:\WT\SB\SB\src\ERP.Web\Production\Die\Models\DieFitemModel.cs
+D:\WT\SB\SB\src\ERP.Web\Production\Die\Models\DieModel.cs
+D:\WT\SB\SB\src\ERP.Web\Production\ProductionProcess\Controllers\ProductionProcessController.cs
+D:\WT\SB\SB\src\ERP.Web\Production\ProductionProcess\Models\ProductionProcessModel.cs
+D:\WT\SB\SB\src\ERP.Web\Production\ReceiveWP\Controllers\ReceiveWPController.cs
+D:\WT\SB\SB\src\ERP.Web\Production\ReceiveWP\Models\ReceiveWPModel.cs
+D:\WT\SB\SB\src\ERP.Web\Production\WorkPlan\Controllers\WorkPlanController.cs
+D:\WT\SB\SB\src\ERP.Web\Production\WorkPlan\Model\OrderStatusModel.cs
+D:\WT\SB\SB\src\ERP.Web\Production\WorkPlan\Model\WorkPlanModel.cs
+D:\WT\SB\SB\src\ERP.Web\Products\Backing\Controllers\BackingController.cs
+D:\WT\SB\SB\src\ERP.Web\Products\Brand\Controllers\BrandController.cs
+D:\WT\SB\SB\src\ERP.Web\Products\Brand\Models\BrandModel.cs
+D:\WT\SB\SB\src\ERP.Web\Products\CareLabel\Controllers\CareLabelController.cs
+D:\WT\SB\SB\src\ERP.Web\Products\CareLabel\Models\CareLabelModel.cs
+D:\WT\SB\SB\src\ERP.Web\Products\Cloth\Controllers\ClothController.cs
+D:\WT\SB\SB\src\ERP.Web\Products\Construction\Controllers\ConstructionController.cs
+D:\WT\SB\SB\src\ERP.Web\Products\Construction\Models\ConstructionModel.cs
+D:\WT\SB\SB\src\ERP.Web\Products\Designer\Controllers\DesignerController.cs
+D:\WT\SB\SB\src\ERP.Web\Products\Embossment\Controllers\EmbossmentController.cs
+D:\WT\SB\SB\src\ERP.Web\Products\FinishMetal\Controllers\FinishMetalController.cs
+D:\WT\SB\SB\src\ERP.Web\Products\Gender\Controllers\GenderController.cs
+D:\WT\SB\SB\src\ERP.Web\Products\Gender\Models\GenderModel.cs
+D:\WT\SB\SB\src\ERP.Web\Products\Group\Controllers\GroupController.cs
+D:\WT\SB\SB\src\ERP.Web\Products\HandTag\Controllers\HandTagController.cs
+D:\WT\SB\SB\src\ERP.Web\Products\HandTag\Models\HandTagModel.cs
+D:\WT\SB\SB\src\ERP.Web\Products\Heel\Controllers\HeelController.cs
+D:\WT\SB\SB\src\ERP.Web\Products\Heel\Models\HeelModel.cs
+D:\WT\SB\SB\src\ERP.Web\Products\IssuedBy\Controllers\IssuedByController.cs
+D:\WT\SB\SB\src\ERP.Web\Products\IssuedBy\Models\IssuedByModel.cs
+D:\WT\SB\SB\src\ERP.Web\Products\Label\Controllers\LabelController.cs
+D:\WT\SB\SB\src\ERP.Web\Products\Label\Models\LabelModel.cs
+D:\WT\SB\SB\src\ERP.Web\Products\Lining\Controllers\LiningController.cs
+D:\WT\SB\SB\src\ERP.Web\Products\MetalPart\Controllers\MetalPartController.cs
+D:\WT\SB\SB\src\ERP.Web\Products\Panning\Controllers\PanningController.cs
+D:\WT\SB\SB\src\ERP.Web\Products\Print\Controllers\PrintController.cs
+D:\WT\SB\SB\src\ERP.Web\Products\Product\Controllers\ProductController.cs
+D:\WT\SB\SB\src\ERP.Web\Products\Product\Model\ProductFileModel.cs
+D:\WT\SB\SB\src\ERP.Web\Products\Product\Model\ProductModel.cs
+D:\WT\SB\SB\src\ERP.Web\Products\Product\Model\ProductMultipleColorModel.cs
+D:\WT\SB\SB\src\ERP.Web\Products\Product\Model\ProductMultipleSizeModel.cs
+D:\WT\SB\SB\src\ERP.Web\Products\Product\Model\ProductProcessModel.cs
+D:\WT\SB\SB\src\ERP.Web\Products\Product\Model\ProductProcessPicturesModel.cs
+D:\WT\SB\SB\src\ERP.Web\Products\Product\Model\ProductQCModel.cs
+D:\WT\SB\SB\src\ERP.Web\Products\Product\Model\SampleRMModel.cs
+D:\WT\SB\SB\src\ERP.Web\Products\ProductCategory\Controllers\ProductCategoryController.cs
+D:\WT\SB\SB\src\ERP.Web\Products\ProductCategory\Models\ProductCategoryModel.cs
+D:\WT\SB\SB\src\ERP.Web\Products\ProductSize\Controllers\ProductSizeController.cs
+D:\WT\SB\SB\src\ERP.Web\Products\ProductSubCategory\Controllers\ProductSubCategoryController.cs
+D:\WT\SB\SB\src\ERP.Web\Products\ProductSubCategory\Models\ProductSubCategoryModel.cs
+D:\WT\SB\SB\src\ERP.Web\Products\SampleChangeRequest\Controllers\SampleChangeRequestController.cs
+D:\WT\SB\SB\src\ERP.Web\Products\SampleChangeRequest\Models\SampleChangeRequestModel.cs
+D:\WT\SB\SB\src\ERP.Web\Products\Sticker\Controllers\StickerController.cs
+D:\WT\SB\SB\src\ERP.Web\Products\Sticker\Models\StickerModel.cs
+D:\WT\SB\SB\src\ERP.Web\Products\Stitching\Controllers\StitchingController.cs
+D:\WT\SB\SB\src\ERP.Web\Products\Style\Controllers\StyleController.cs
+D:\WT\SB\SB\src\ERP.Web\Products\Treatment\Controllers\TreatmentController.cs
+D:\WT\SB\SB\src\ERP.Web\Products\Trimming\Controllers\TrimmingController.cs
+D:\WT\SB\SB\src\ERP.Web\Products\Wash\Controllers\WashController.cs
+D:\WT\SB\SB\src\ERP.Web\Products\Wax\Controllers\WaxController.cs
+D:\WT\SB\SB\src\ERP.Web\Purchase\DeliveryTerms\Controllers\PODTController.cs
+D:\WT\SB\SB\src\ERP.Web\Purchase\PaymentTerms\Controllers\POPTController.cs
+D:\WT\SB\SB\src\ERP.Web\Purchase\PO\Controllers\POController.cs
+D:\WT\SB\SB\src\ERP.Web\Purchase\PO\Models\POChildModel.cs
+D:\WT\SB\SB\src\ERP.Web\Purchase\PO\Models\POModel.cs
+D:\WT\SB\SB\src\ERP.Web\Purchase\Transport\Controllers\POTController.cs
+D:\WT\SB\SB\src\ERP.Web\RawMaterial\Adhesive\Controllers\AdhesiveController.cs
+D:\WT\SB\SB\src\ERP.Web\RawMaterial\GSM\Controllers\GSMController.cs
+D:\WT\SB\SB\src\ERP.Web\RawMaterial\Quality\Controllers\QualityController.cs
+D:\WT\SB\SB\src\ERP.Web\RawMaterial\QuickTest\Controllers\QuickTestController.cs
+D:\WT\SB\SB\src\ERP.Web\RawMaterial\QuickTest\Models\QuickTestModel.cs
+D:\WT\SB\SB\src\ERP.Web\RawMaterial\RM\Controllers\RMController.cs
+D:\WT\SB\SB\src\ERP.Web\RawMaterial\RM\Models\RawMaterialModel.cs
+D:\WT\SB\SB\src\ERP.Web\RawMaterial\RM\Models\RItemSuppModel.cs
+D:\WT\SB\SB\src\ERP.Web\RawMaterial\RM\Models\RMFileModel.cs
+D:\WT\SB\SB\src\ERP.Web\RawMaterial\RMBrand\Controllers\RMBrandController.cs
+D:\WT\SB\SB\src\ERP.Web\RawMaterial\RMBrand\Models\RMBrandModel.cs
+D:\WT\SB\SB\src\ERP.Web\RawMaterial\RMCat\Controllers\RMCatController.cs
+D:\WT\SB\SB\src\ERP.Web\RawMaterial\RMProperty\Controllrs\RMPropertiesController.cs
+D:\WT\SB\SB\src\ERP.Web\RawMaterial\RMProperty\Models\MappingModel.cs
+D:\WT\SB\SB\src\ERP.Web\RawMaterial\RMProperty\Models\RMPropertiesModel.cs
+D:\WT\SB\SB\src\ERP.Web\RawMaterial\RMProperty\Models\RMPValueModel.cs
+D:\WT\SB\SB\src\ERP.Web\RawMaterial\RMSubCat\Controllers\RMSubCatController.cs
+D:\WT\SB\SB\src\ERP.Web\RawMaterial\RMSubCat\Models\RMSubCategoryModel.cs
+D:\WT\SB\SB\src\ERP.Web\RawMaterial\Selection\Controllers\SelectionController.cs
+D:\WT\SB\SB\src\ERP.Web\RawMaterial\Shape\Controllers\ShapeController.cs
+D:\WT\SB\SB\src\ERP.Web\RawMaterial\Size\Controllers\SizeController.cs
+D:\WT\SB\SB\src\ERP.Web\RawMaterial\Size\Models\SizeModel.cs
+D:\WT\SB\SB\src\ERP.Web\RawMaterial\Structure\Controllers\StructureController.cs
+D:\WT\SB\SB\src\ERP.Web\RawMaterial\Thickness\Controllers\ThicknessController.cs
+D:\WT\SB\SB\src\ERP.Web\RawMaterial\Width\Controllers\WidthController.cs
+D:\WT\SB\SB\src\ERP.Web\RawMaterial\Width\Models\WidthModel.cs
+D:\WT\SB\SB\src\ERP.Web\Store\AdjustmentRM\Controllers\AdjustmentRMController.cs
+D:\WT\SB\SB\src\ERP.Web\Store\AdjustmentRM\Models\AdjustmentRMModel.cs
+D:\WT\SB\SB\src\ERP.Web\Store\Issue\Controllers\IssueController.cs
+D:\WT\SB\SB\src\ERP.Web\Store\Issue\Models\IssueModel.cs
+D:\WT\SB\SB\src\ERP.Web\Store\IssueRMForChange\Controllers\IssueRMForChangeController.cs
+D:\WT\SB\SB\src\ERP.Web\Store\IssueRMForChange\Model\IssueRMForChangeModel.cs
+D:\WT\SB\SB\src\ERP.Web\Store\MoveRMStock\Controllers\MoveRMStockController.cs
+D:\WT\SB\SB\src\ERP.Web\Store\MoveRMStock\Models\MoveRMStockModel.cs
+D:\WT\SB\SB\src\ERP.Web\Store\OpeningStock\Controllers\OpeningStockController.cs
+D:\WT\SB\SB\src\ERP.Web\Store\OpeningStock\Models\OpeningStockModel.cs
+D:\WT\SB\SB\src\ERP.Web\Store\Rack\Controllers\RackController.cs
+D:\WT\SB\SB\src\ERP.Web\Store\Rack\Models\RackModel.cs
+D:\WT\SB\SB\src\ERP.Web\Store\RMStock\Controllers\RMStockController.cs
+D:\WT\SB\SB\src\ERP.Web\Store\RMStock\Models\RMStockModel.cs
+D:\WT\SB\SB\src\ERP.Web\Store\StoreKeeping\Controllers\StoreKeepingController.cs
+D:\WT\SB\SB\src\ERP.Web\Store\StoreKeeping\Models\RTSFromGRNModel.cs
+D:\WT\SB\SB\src\ERP.Web\Store\StoreKeeping\Models\StoreKeepingChildModel.cs
+D:\WT\SB\SB\src\ERP.Web\Store\StoreKeeping\Models\StoreKeepingModel.cs
+D:\WT\SB\SB\src\ERP.Web\Tools\Card\Controllers\CardController.cs
+D:\WT\SB\SB\src\ERP.Web\Tools\Card\Models\CardModel.cs
+D:\WT\SB\SB\src\ERP.Web\Tools\DashBoard\Controllers\DashBoardController.cs
+D:\WT\SB\SB\src\ERP.Web\Tools\DBBackup\Controllers\DBBackupController.cs
+D:\WT\SB\SB\src\ERP.Web\Tools\Emails\Controllers\EmailsController.cs
+D:\WT\SB\SB\src\ERP.Web\Tools\Emails\Models\EmailsModel.cs
+D:\WT\SB\SB\src\ERP.Web\Tools\FormSetting\Controllers\FormSettingControllers.cs
+D:\WT\SB\SB\src\ERP.Web\Tools\FormSetting\Models\FormSettingModel.cs
+D:\WT\SB\SB\src\ERP.Web\Tools\Menu\Controllers\MenuController.cs
+D:\WT\SB\SB\src\ERP.Web\Tools\Menu\Models\MenuModel.cs
+D:\WT\SB\SB\src\ERP.Web\Tools\User\Controllers\UserController.cs
+D:\WT\SB\SB\src\ERP.Web\Tools\User\Models\UserModel.cs
+D:\WT\SB\SB\src\ERP.Web\Tools\UserAsSupervisor\Controllers\UserAsSupervisorController.cs
+D:\WT\SB\SB\src\ERP.Web\Tools\UserAsSupervisor\Models\UserAsSupervisorModel.cs
+D:\WT\SB\SB\src\ERP.Web\Tools\UserRight\Controllers\UserRightController.cs
+D:\WT\SB\SB\src\ERP.Web\Tools\UserRight\Models\UserModel.cs
+D:\WT\SB\SB\src\ERP.Web\Tools\UserRight\Models\UserRightModel.cs
+D:\WT\SB\SB\src\ERP.Web\ViewComponents\UserMenuList.cs
+D:\WT\SB\SB\src\ERP.Web\Views\ViewModels\UserModel.cs
+D:\WT\SB\SB\src\ERP.Web\ZohoBooks\Zoho\Controllers\ZohoController.cs

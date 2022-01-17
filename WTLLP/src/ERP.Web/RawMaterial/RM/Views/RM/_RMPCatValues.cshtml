@@ -1,0 +1,52 @@
+﻿@model ERP.Web.Areas.RM.Models.RawMaterialModel
+
+
+<link rel="stylesheet" type="text/css" href="~/lib/bootstrap/dist/css/bootstrap-select.css" />
+<script src="~/lib/bootstrap/dist/js/bootstrap-select.js"></script>
+
+@section Scripts {
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('.selectpicker').selectpicker({
+                liveSearch: true,
+                showSubtext: true
+            });
+        });
+        </script>
+    }
+
+@for (int i = 0; i < Model.RMPropertiesModel.Count; i++)
+      {
+    <p class="contact">
+        @Html.HiddenFor(m => m.RMPropertiesModel[i].RMPropertiesID, new { @class = "propertiesid" })
+        @Html.HiddenFor(m => m.RMPropertiesModel[i].IsRequired, new { @class = "isrequired" })
+        @Html.LabelFor(m => m.RMPropertiesModel[i].RMPropertiesName, Model.RMPropertiesModel[i].RMPropertiesName)
+    </p>
+    if (Model.RMPropertiesModel[i].RMPropertiesIsMaster == 1)
+    {
+        if (Model.RMPropertiesModel[i].IsRequired == 1)
+        {
+            @Html.DropDownListFor(m => m.RMPropertiesModel[i].RMPropertiesValueID, new SelectList(Model.RMPropertiesModel[i].RMPValueList, "Value", "Text", Model.RMPropertiesModel[i].RMPropertiesValueID), "-- Select --", new { id = "cbo_rmpvalue", @required = "true" })
+        }
+        else
+        {
+              @Html.DropDownListFor(m => m.RMPropertiesModel[i].RMPropertiesValueID, new SelectList(Model.RMPropertiesModel[i].RMPValueList, "Value", "Text", Model.RMPropertiesModel[i].RMPropertiesValueID), "-- Select --", new { id = "cbo_rmpvalue" })
+        }
+
+    }
+    else
+    {
+        if (Model.RMPropertiesModel[i].IsRequired == 1)
+        {
+        @Html.TextBoxFor(m => m.RMPropertiesModel[i].RMPValue, new { autocomplete = "off", @required = "true" })
+        }
+        else
+        {
+            @Html.TextBoxFor(m => m.RMPropertiesModel[i].RMPValue, new { autocomplete = "off"})
+
+        }
+    }
+
+}
+
+

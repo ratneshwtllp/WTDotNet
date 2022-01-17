@@ -1,0 +1,28 @@
+﻿@using ERP.Domain.Entities;
+@using NonFactors.Mvc.Grid;
+
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewData["Title"] = "Sole List";
+}
+<p>
+    <strong> Sole List  &nbsp;&nbsp;&nbsp;&nbsp;  </strong> @Html.ActionLink("Create New Sole", "CreateSole", "Sole") &nbsp;&nbsp;&nbsp; Search &nbsp;&nbsp;<input class="grid-search" />
+</p> 
+
+@*<div> 
+</div>*@
+
+@Html.AjaxGrid(Url.Action("SoleList_Partial"))
+
+@section Scripts {
+    <script type="text/javascript">
+
+        $(document).on('keyup', '.grid-search', function () {
+            //alert("query");
+            $('.mvc-grid').mvcgrid({
+                query: 'search=' + this.value,
+                reload: true
+            });
+        });
+    </script>
+}

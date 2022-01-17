@@ -1,0 +1,255 @@
+﻿@model ERP.Web.Areas.RM.Models.RawMaterialModel
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewData["Title"] = "RM Supplier Price";
+}
+
+<div id="loading" style="margin: 0px; padding: 0px; position: fixed; right: 0px;
+    top: 0px; width: 100%; height: 100%; background-color: #666666; z-index: 30001;
+    opacity: .8; filter: alpha(opacity=70);display:none">
+    <p style="position: absolute; top: 30%; left: 45%; color: White;">
+        Loading, please wait...<img src="../../images/ajax-loading.gif" />
+    </p>
+</div>
+
+<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="" />
+<meta name="keywords" content="" />
+
+<link rel="stylesheet" type="text/css" href="~/lib/bootstrap/dist/css/bootstrap-select.css" />
+<script src="~/lib/bootstrap/dist/js/bootstrap-select.js"></script>
+
+@section Scripts {
+    <script type="text/javascript">
+        //prevententertosubmit();
+        $(function () {
+            $("#cbo_rmcat").change(function () {
+                var catid = $("#cbo_rmcat :selected").val();
+                //alert(catid);
+
+                $.ajax({
+                    cache: false,
+                    url: '@Url.Action("GetSubCategory")',
+                    type: "GET",
+                    data: { id: catid },
+                    dataType: 'JSON',
+                    success: function (data) {
+                        var data = JSON.parse(data);
+                        var items = [];
+                        items.push("<option value=''>" + "-- Select --" + "</option>");
+                        for (var i = 0; i < data.length; i++) {
+                            items.push("<option value=" + data[i].id + ">" + data[i].value + "</option>");
+                        }
+                        $("#cbo_rmsubcat").html(items.join(' '));
+                        $("#cbo_rmsubcat").selectpicker('refresh');
+                    },
+                });
+
+                $("#ddlproducts").html('');
+            });
+        });
+
+        $(function () {
+            $("#cbo_rmsubcat").change(function () {
+                var subcatid = $("#cbo_rmsubcat :selected").val();
+                //alert(subcatid);
+
+                $.ajax({
+                    cache: false,
+                    url: '@Url.Action("GetRMList")',
+                    type: "GET",
+                    data: { subcatId: subcatid },
+                    dataType: 'JSON',
+                    success: function (data) {
+                        var data = JSON.parse(data);
+                        var items = [];
+                        items.push("<option value=''>" + "-- Select --" + "</option>");
+                        for (var i = 0; i < data.length; i++) {
+                            items.push("<option value=" + data[i].id + ">" + data[i].value + "</option>");
+                        }
+                        $("#cbo_rm").html(items.join(' '));
+                        $("#cbo_rm").selectpicker('refresh');
+                    },
+                });
+
+                $("#ddlproducts").html('');
+            });
+        });
+
+        $(function () {
+            $("#cbo_rm").change(function () {
+                var ritemid = $("#cbo_rm :selected").val();
+                //alert(ritemid);
+
+                $("#ddlproducts").html('');
+            });
+        });
+
+        $(function () {
+            $('#refresh').click(function () {
+                window.location.href = '@Url.Action("RMSupplierPrice", "RM")';
+            });
+        });
+
+        $(function () {
+            $('#search').click(function () {
+
+                var catid = $("#cbo_rmcat :selected").val();
+                var SupplierId = $("#cbo_supplier :selected").val();
+                if (catid == "" && SupplierId == "") {
+                    alert("Please select Any of the Options");
+                    return;
+                }
+                $("#loading").show();
+                var scatid = $("#cbo_rmsubcat :selected").val();
+                var rmid = $("#cbo_rm :selected").val();
+
+                var url = '@Url.Action("RMSupplierPrice_Partial", "RM")';
+                $('#ddlproducts').load(url, { rmcatid: catid, rmscatid: scatid, ritemid: rmid, supplierid: SupplierId }, function () {
+                    $("#loading").hide();
+                });
+            });
+        });
+
+        $("#cbo_supplier").change(function () {
+            var supplierid = $("#cbo_supplier :selected").val();
+
+        });
+
+        $(function () {
+            $('#Submit1').click(function () {
+                var isAllValid = true;
+                var list = [];
+                var rmfound = 0;
+                $('#elementorderdetailsItems tbody tr').each(function (index, ele) {
+                    rmfound = 1;
+                    var orderItem = {
+                        RItem_ID: $('.rmid', this).val(),
+                        SupplierId: $('.supplierid', this).val(),
+                        RItemSuppID: $('.ritemsuppid', this).val(),
+                        OldPrice: $('.oldprice', this).val(),
+                        Price: $('.price', this).val(),  // SupplierPrice
+                        Min_Days: $('.mindays', this).val(),
+                        SuppUnit: $('#cbo_suppunit :selected', this).val(),
+                        SupplierRMCode: $('.supplierrmcode', this).val(),
+
+                        PUnit: $('#cbo_punit :selected', this).val(),
+                        CostUnit: $('#cbo_cunit :selected', this).val(),
+                        ConversionFactor: $('.con_factor', this).val(),
+                        PCSWeight: $('.pcsweight', this).val(),
+                    }
+                    list.push(orderItem);
+                    //alert(list);
+                })
+                //var value = $("#cbo_cate :selected").val();
+                //alert("cateid : "+value);
+                //alert("1");
+                if (rmfound == 0) {
+                    alert("please select RM list");
+                    return;
+                }
+                if (isAllValid) {
+                    var masterdata = {
+                        MasterBelongtTo: $("#cbo_cate :selected").val(),
+
+                        RItemSuppModel: list,
+                    }
+
+                    // alert(masterdata);
+
+                    $(this).val('Please wait...');
+
+                    $.ajax({
+                        type: 'POST',
+                        url: '@Url.Action("SaveRMSupplierPrice")',
+                        data: JSON.stringify(masterdata),
+                        contentType: 'application/json',
+                        success: function (data) {
+                            if (data.status) {
+                                alert('Successfully saved');
+                                window.location.href = '@Url.Action("RMSupplierPrice", "RM")';
+                            }
+                            else {
+                                alert('Error');
+                                $('#submit').val('Save');
+                            }
+
+                            $('#submit').val('Save');
+                        },
+                        error: function (error) {
+                            //console.log(error);
+                            alert('Error');
+                            $('#submit').val('Save');
+                        }
+                    });
+                }
+            });
+        });
+    </script>
+}
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('.selectpicker').selectpicker({
+            liveSearch: true,
+            showSubtext: true
+        });
+    });
+    $(document).on('click', '.history', function () {
+
+        var rmid = parseInt($(this).parents('tr').find('.rmid').val());
+        var ritemsuppid = parseInt($(this).parents('tr').find('.supplierid').val());
+        $(this).parents('tbody').find('tr').each(function (index, element) {
+            $(element).css('background-color', 'white');
+        });
+        $(this).parents('tr').css('background-color', '#b3daf1');
+        var url = '@Url.Action("RMSupplierPriceHistory_Partial", "RM")';
+        $('#list').load(url, { rmid: rmid, ritemsuppid: ritemsuppid }, function () { });
+
+    });
+
+</script>
+
+<div class="clear"></div>
+<div class="row clearleft-custom flow-offset-1">
+    <div class="col-xs-12 col-sm-6 col-lg-4">
+        <div class="thumbnail thumbnail-mod-1 bordernone">
+            <div class="form">
+
+                <p class="contact">
+                    @Html.LabelFor(a => a.SupplierId)
+                </p>
+                @Html.DropDownListFor(a => a.SupplierId, new SelectList(Model.SupplierList, "Value", "Text", Model.SupplierId), "-- Select --", new { id = "cbo_supplier", @required = "true", @class = "selectpicker show-tick" })
+
+                <p class="contact">
+                    @Html.LabelFor(a => a.Cat_Id)
+                </p>
+                @Html.DropDownListFor(a => a.Cat_Id, new SelectList(Model.RMCategoryList, "Value", "Text", Model.Cat_Id), "-- Select --", new { id = "cbo_rmcat", @required = "true", @class = "selectpicker show-tick" })
+
+                <p class="contact">
+                    @Html.LabelFor(a => a.Subcat_Id)
+                </p>
+                @Html.DropDownListFor(a => a.Subcat_Id, new SelectList(Model.RMSubCategoryList, "Value", "Text", Model.Subcat_Id), "-- Select --", new { id = "cbo_rmsubcat", @required = "true", @class = "selectpicker show-tick" })
+
+                <p class="contact">
+                    @Html.LabelFor(a => a.RItem_ID)
+                </p>
+                @Html.DropDownListFor(a => a.RItem_ID, new SelectList(Model.RawMaterialList, "Value", "Text", Model.RItem_ID), "-- Select --", new { id = "cbo_rm", @required = "true", @class = "selectpicker show-tick" })
+            </div>
+        </div>
+    </div>
+
+    <div class="col-xs-12 col-sm-6 col-lg-4">
+        <div class="thumbnail thumbnail-mod-1 bordernone">
+            <div class="form">
+                <input id="search" type="submit" value="Show RM" class="" />
+                <input id="Submit1" type="submit" value="Save" />
+            </div>
+        </div>
+    </div>
+
+    <div id="list" style="height:200px; overflow:scroll; border:groove;"></div>
+
+</div>
+<div id="ddlproducts" style="min-height:400px; overflow:auto; border:groove;"></div>

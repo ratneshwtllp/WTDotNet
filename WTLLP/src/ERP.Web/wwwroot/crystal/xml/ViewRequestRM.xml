@@ -1,0 +1,330 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:MainDataTable="ViewRequestRM" msdata:UseCurrentLocale="true">
+      <xs:complexType>
+        <xs:choice minOccurs="0" maxOccurs="unbounded">
+          <xs:element name="ViewRequestRM">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="AddressOffice" type="xs:string" minOccurs="0" />
+                <xs:element name="AddressWork" type="xs:string" minOccurs="0" />
+                <xs:element name="CategoryID" type="xs:long" />
+                <xs:element name="CategoryName" type="xs:string" minOccurs="0" />
+                <xs:element name="CName" type="xs:string" minOccurs="0" />
+                <xs:element name="Code" type="xs:string" minOccurs="0" />
+                <xs:element name="DepartmentCode" type="xs:string" minOccurs="0" />
+                <xs:element name="DepartmentId" type="xs:long" />
+                <xs:element name="DepartmentName" type="xs:string" minOccurs="0" />
+                <xs:element name="Full_Name" type="xs:string" minOccurs="0" />
+                <xs:element name="IssueQty" type="xs:double" />
+                <xs:element name="Name" type="xs:string" minOccurs="0" />
+                <xs:element name="ReqQty" type="xs:double" />
+                <xs:element name="ReqRMChildID" type="xs:long" />
+                <xs:element name="ReqRMDate" type="xs:dateTime" />
+                <xs:element name="ReqRMFor" type="xs:int" />
+                <xs:element name="ReqRMID" type="xs:long" />
+                <xs:element name="ReqRMIssueID" type="xs:long" />
+                <xs:element name="ReqRMNo" type="xs:string" minOccurs="0" />
+                <xs:element name="ReqRMRemark" type="xs:string" minOccurs="0" />
+                <xs:element name="ReqRMSNo" type="xs:long" />
+                <xs:element name="ReqRMStatus" type="xs:int" />
+                <xs:element name="ReqSide" type="xs:double" />
+                <xs:element name="RequestStatus" type="xs:string" minOccurs="0" />
+                <xs:element name="RitemId" type="xs:long" />
+                <xs:element name="RMFor" type="xs:string" minOccurs="0" />
+                <xs:element name="RMRemark" type="xs:string" minOccurs="0" />
+                <xs:element name="SessionYear" type="xs:string" minOccurs="0" />
+                <xs:element name="SNo" type="xs:int" />
+                <xs:element name="SubCategoryID" type="xs:long" />
+                <xs:element name="SubCategoryName" type="xs:string" minOccurs="0" />
+                <xs:element name="Unit" type="xs:string" minOccurs="0" />
+                <xs:element name="UserID" type="xs:int" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+        </xs:choice>
+      </xs:complexType>
+    </xs:element>
+  </xs:schema>
+  <ViewRequestRM>
+    <AddressOffice>AddressOffice</AddressOffice>
+    <AddressWork>AddressWork</AddressWork>
+    <CategoryID>11</CategoryID>
+    <CategoryName>Fittings</CategoryName>
+    <CName>WTLLP</CName>
+    <Code>BUC-00055-BR-NI-68</Code>
+    <DepartmentCode>D001</DepartmentCode>
+    <DepartmentId>1</DepartmentId>
+    <DepartmentName>Production - Tack Items</DepartmentName>
+    <Full_Name>Anda Buckle Flat Brass Nickle 6/8"</Full_Name>
+    <IssueQty>405</IssueQty>
+    <Name>Anda Buckle Flat Brass Nickle 6/8"</Name>
+    <ReqQty>405</ReqQty>
+    <ReqRMChildID>1052</ReqRMChildID>
+    <ReqRMDate>2019-04-01T00:00:00+05:30</ReqRMDate>
+    <ReqRMFor>2</ReqRMFor>
+    <ReqRMID>429</ReqRMID>
+    <ReqRMIssueID>429</ReqRMIssueID>
+    <ReqRMNo>SBI/REQ/19-20/0001</ReqRMNo>
+    <ReqRMRemark>CY po16064/'16444/</ReqRMRemark>
+    <ReqRMSNo>1</ReqRMSNo>
+    <ReqRMStatus>1</ReqRMStatus>
+    <ReqSide>0</ReqSide>
+    <RequestStatus>Complete</RequestStatus>
+    <RitemId>1235</RitemId>
+    <RMFor>Production</RMFor>
+    <RMRemark />
+    <SessionYear>19-20</SessionYear>
+    <SNo>1</SNo>
+    <SubCategoryID>203</SubCategoryID>
+    <SubCategoryName>Brass Buckles</SubCategoryName>
+    <Unit>Pcs</Unit>
+    <UserID>17</UserID>
+  </ViewRequestRM>
+  <ViewRequestRM>
+    <AddressOffice>AddressOffice</AddressOffice>
+    <AddressWork>AddressWork</AddressWork>
+    <CategoryID>11</CategoryID>
+    <CategoryName>Fittings</CategoryName>
+    <CName>WTLLP</CName>
+    <Code>BUC-00269-SS-CF-48</Code>
+    <DepartmentCode>D001</DepartmentCode>
+    <DepartmentId>1</DepartmentId>
+    <DepartmentName>Production - Tack Items</DepartmentName>
+    <Full_Name>Fancy Buckle New Stainless Steel 4/8"</Full_Name>
+    <IssueQty>80</IssueQty>
+    <Name>Fancy Buckle New Stainless Steel 4/8"</Name>
+    <ReqQty>80</ReqQty>
+    <ReqRMChildID>1053</ReqRMChildID>
+    <ReqRMDate>2019-04-01T00:00:00+05:30</ReqRMDate>
+    <ReqRMFor>2</ReqRMFor>
+    <ReqRMID>429</ReqRMID>
+    <ReqRMIssueID>429</ReqRMIssueID>
+    <ReqRMNo>SBI/REQ/19-20/0001</ReqRMNo>
+    <ReqRMRemark>CY po16064/'16444/</ReqRMRemark>
+    <ReqRMSNo>1</ReqRMSNo>
+    <ReqRMStatus>1</ReqRMStatus>
+    <ReqSide>0</ReqSide>
+    <RequestStatus>Complete</RequestStatus>
+    <RitemId>580</RitemId>
+    <RMFor>Production</RMFor>
+    <RMRemark />
+    <SessionYear>19-20</SessionYear>
+    <SNo>2</SNo>
+    <SubCategoryID>210</SubCategoryID>
+    <SubCategoryName>SS Buckles</SubCategoryName>
+    <Unit>Pcs</Unit>
+    <UserID>17</UserID>
+  </ViewRequestRM>
+  <ViewRequestRM>
+    <AddressOffice>AddressOffice</AddressOffice>
+    <AddressWork>AddressWork</AddressWork>
+    <CategoryID>11</CategoryID>
+    <CategoryName>Fittings</CategoryName>
+    <CName>WTLLP</CName>
+    <Code>BUC-00270-SS-CF-58</Code>
+    <DepartmentCode>D001</DepartmentCode>
+    <DepartmentId>1</DepartmentId>
+    <DepartmentName>Production - Tack Items</DepartmentName>
+    <Full_Name>Fancy Buckle New Stainless Steel 5/8"</Full_Name>
+    <IssueQty>160</IssueQty>
+    <Name>Fancy Buckle New Stainless Steel 5/8"</Name>
+    <ReqQty>160</ReqQty>
+    <ReqRMChildID>1054</ReqRMChildID>
+    <ReqRMDate>2019-04-01T00:00:00+05:30</ReqRMDate>
+    <ReqRMFor>2</ReqRMFor>
+    <ReqRMID>429</ReqRMID>
+    <ReqRMIssueID>429</ReqRMIssueID>
+    <ReqRMNo>SBI/REQ/19-20/0001</ReqRMNo>
+    <ReqRMRemark>CY po16064/'16444/</ReqRMRemark>
+    <ReqRMSNo>1</ReqRMSNo>
+    <ReqRMStatus>1</ReqRMStatus>
+    <ReqSide>0</ReqSide>
+    <RequestStatus>Complete</RequestStatus>
+    <RitemId>581</RitemId>
+    <RMFor>Production</RMFor>
+    <RMRemark />
+    <SessionYear>19-20</SessionYear>
+    <SNo>3</SNo>
+    <SubCategoryID>210</SubCategoryID>
+    <SubCategoryName>SS Buckles</SubCategoryName>
+    <Unit>Pcs</Unit>
+    <UserID>17</UserID>
+  </ViewRequestRM>
+  <ViewRequestRM>
+    <AddressOffice>AddressOffice</AddressOffice>
+    <AddressWork>AddressWork</AddressWork>
+    <CategoryID>11</CategoryID>
+    <CategoryName>Fittings</CategoryName>
+    <CName>WTLLP</CName>
+    <Code>CON-00018-NB-128</Code>
+    <DepartmentCode>D001</DepartmentCode>
+    <DepartmentId>1</DepartmentId>
+    <DepartmentName>Production - Tack Items</DepartmentName>
+    <Full_Name>Berry Conchos Nickel Brown 1.5" </Full_Name>
+    <IssueQty>160</IssueQty>
+    <Name>Berry Conchos Nickel Brown 1.5" </Name>
+    <ReqQty>160</ReqQty>
+    <ReqRMChildID>1055</ReqRMChildID>
+    <ReqRMDate>2019-04-01T00:00:00+05:30</ReqRMDate>
+    <ReqRMFor>2</ReqRMFor>
+    <ReqRMID>429</ReqRMID>
+    <ReqRMIssueID>429</ReqRMIssueID>
+    <ReqRMNo>SBI/REQ/19-20/0001</ReqRMNo>
+    <ReqRMRemark>CY po16064/'16444/</ReqRMRemark>
+    <ReqRMSNo>1</ReqRMSNo>
+    <ReqRMStatus>1</ReqRMStatus>
+    <ReqSide>0</ReqSide>
+    <RequestStatus>Complete</RequestStatus>
+    <RitemId>3430</RitemId>
+    <RMFor>Production</RMFor>
+    <RMRemark />
+    <SessionYear>19-20</SessionYear>
+    <SNo>4</SNo>
+    <SubCategoryID>206</SubCategoryID>
+    <SubCategoryName>Conchos</SubCategoryName>
+    <Unit>Pcs</Unit>
+    <UserID>17</UserID>
+  </ViewRequestRM>
+  <ViewRequestRM>
+    <AddressOffice>AddressOffice</AddressOffice>
+    <AddressWork>AddressWork</AddressWork>
+    <CategoryID>11</CategoryID>
+    <CategoryName>Fittings</CategoryName>
+    <CName>WTLLP</CName>
+    <Code>CON-00045</Code>
+    <DepartmentCode>D001</DepartmentCode>
+    <DepartmentId>1</DepartmentId>
+    <DepartmentName>Production - Tack Items</DepartmentName>
+    <Full_Name>Berry Conchos Slotted Nickel Brown 1.5"</Full_Name>
+    <IssueQty>160</IssueQty>
+    <Name>Berry Conchos Slotted Nickel Brown 1.5"</Name>
+    <ReqQty>160</ReqQty>
+    <ReqRMChildID>1056</ReqRMChildID>
+    <ReqRMDate>2019-04-01T00:00:00+05:30</ReqRMDate>
+    <ReqRMFor>2</ReqRMFor>
+    <ReqRMID>429</ReqRMID>
+    <ReqRMIssueID>429</ReqRMIssueID>
+    <ReqRMNo>SBI/REQ/19-20/0001</ReqRMNo>
+    <ReqRMRemark>CY po16064/'16444/</ReqRMRemark>
+    <ReqRMSNo>1</ReqRMSNo>
+    <ReqRMStatus>1</ReqRMStatus>
+    <ReqSide>0</ReqSide>
+    <RequestStatus>Complete</RequestStatus>
+    <RitemId>3431</RitemId>
+    <RMFor>Production</RMFor>
+    <RMRemark />
+    <SessionYear>19-20</SessionYear>
+    <SNo>5</SNo>
+    <SubCategoryID>206</SubCategoryID>
+    <SubCategoryName>Conchos</SubCategoryName>
+    <Unit>Pcs</Unit>
+    <UserID>17</UserID>
+  </ViewRequestRM>
+  <ViewRequestRM>
+    <AddressOffice>AddressOffice</AddressOffice>
+    <AddressWork>AddressWork</AddressWork>
+    <CategoryID>11</CategoryID>
+    <CategoryName>Fittings</CategoryName>
+    <CName>WTLLP</CName>
+    <Code>FTG-00271-SS-CF-68</Code>
+    <DepartmentCode>D001</DepartmentCode>
+    <DepartmentId>1</DepartmentId>
+    <DepartmentName>Production - Tack Items</DepartmentName>
+    <Full_Name>Alpak Thick Stainless Steel 6/8"</Full_Name>
+    <IssueQty>405</IssueQty>
+    <Name>Alpak Thick Stainless Steel 6/8"</Name>
+    <ReqQty>405</ReqQty>
+    <ReqRMChildID>1057</ReqRMChildID>
+    <ReqRMDate>2019-04-01T00:00:00+05:30</ReqRMDate>
+    <ReqRMFor>2</ReqRMFor>
+    <ReqRMID>429</ReqRMID>
+    <ReqRMIssueID>429</ReqRMIssueID>
+    <ReqRMNo>SBI/REQ/19-20/0001</ReqRMNo>
+    <ReqRMRemark>CY po16064/'16444/</ReqRMRemark>
+    <ReqRMSNo>1</ReqRMSNo>
+    <ReqRMStatus>1</ReqRMStatus>
+    <ReqSide>0</ReqSide>
+    <RequestStatus>Complete</RequestStatus>
+    <RitemId>595</RitemId>
+    <RMFor>Production</RMFor>
+    <RMRemark />
+    <SessionYear>19-20</SessionYear>
+    <SNo>6</SNo>
+    <SubCategoryID>211</SubCategoryID>
+    <SubCategoryName>SS Fittings</SubCategoryName>
+    <Unit>Pcs</Unit>
+    <UserID>17</UserID>
+  </ViewRequestRM>
+  <ViewRequestRM>
+    <AddressOffice>AddressOffice</AddressOffice>
+    <AddressWork>AddressWork</AddressWork>
+    <CategoryID>11</CategoryID>
+    <CategoryName>Fittings</CategoryName>
+    <CName>WTLLP</CName>
+    <Code>FTG-00094-BR-NI-68</Code>
+    <DepartmentCode>D001</DepartmentCode>
+    <DepartmentId>1</DepartmentId>
+    <DepartmentName>Production - Tack Items</DepartmentName>
+    <Full_Name>Kajlak Stud Brass Nickel 6/8"</Full_Name>
+    <IssueQty>135</IssueQty>
+    <Name>Kajlak Stud Brass Nickel 6/8"</Name>
+    <ReqQty>135</ReqQty>
+    <ReqRMChildID>1058</ReqRMChildID>
+    <ReqRMDate>2019-04-01T00:00:00+05:30</ReqRMDate>
+    <ReqRMFor>2</ReqRMFor>
+    <ReqRMID>429</ReqRMID>
+    <ReqRMIssueID>429</ReqRMIssueID>
+    <ReqRMNo>SBI/REQ/19-20/0001</ReqRMNo>
+    <ReqRMRemark>CY po16064/'16444/</ReqRMRemark>
+    <ReqRMSNo>1</ReqRMSNo>
+    <ReqRMStatus>1</ReqRMStatus>
+    <ReqSide>0</ReqSide>
+    <RequestStatus>Complete</RequestStatus>
+    <RitemId>1001</RitemId>
+    <RMFor>Production</RMFor>
+    <RMRemark />
+    <SessionYear>19-20</SessionYear>
+    <SNo>7</SNo>
+    <SubCategoryID>204</SubCategoryID>
+    <SubCategoryName>Brass Fittngs</SubCategoryName>
+    <Unit>Pcs</Unit>
+    <UserID>17</UserID>
+  </ViewRequestRM>
+  <ViewRequestRM>
+    <AddressOffice>AddressOffice</AddressOffice>
+    <AddressWork>AddressWork</AddressWork>
+    <CategoryID>11</CategoryID>
+    <CategoryName>Fittings</CategoryName>
+    <CName>WTLLP</CName>
+    <Code>BSR-00045-IR-NI-10m</Code>
+    <DepartmentCode>D001</DepartmentCode>
+    <DepartmentId>1</DepartmentId>
+    <DepartmentName>Production - Tack Items</DepartmentName>
+    <Full_Name>Rivet Iron Nickel 10mm</Full_Name>
+    <IssueQty>930</IssueQty>
+    <Name>Rivet Iron Nickel 10mm</Name>
+    <ReqQty>930</ReqQty>
+    <ReqRMChildID>1059</ReqRMChildID>
+    <ReqRMDate>2019-04-01T00:00:00+05:30</ReqRMDate>
+    <ReqRMFor>2</ReqRMFor>
+    <ReqRMID>429</ReqRMID>
+    <ReqRMIssueID>429</ReqRMIssueID>
+    <ReqRMNo>SBI/REQ/19-20/0001</ReqRMNo>
+    <ReqRMRemark>CY po16064/'16444/</ReqRMRemark>
+    <ReqRMSNo>1</ReqRMSNo>
+    <ReqRMStatus>1</ReqRMStatus>
+    <ReqSide>0</ReqSide>
+    <RequestStatus>Complete</RequestStatus>
+    <RitemId>1543</RitemId>
+    <RMFor>Production</RMFor>
+    <RMRemark />
+    <SessionYear>19-20</SessionYear>
+    <SNo>8</SNo>
+    <SubCategoryID>205</SubCategoryID>
+    <SubCategoryName>Buttons Screws and Rivets</SubCategoryName>
+    <Unit>Pcs</Unit>
+    <UserID>17</UserID>
+  </ViewRequestRM>
+</NewDataSet>

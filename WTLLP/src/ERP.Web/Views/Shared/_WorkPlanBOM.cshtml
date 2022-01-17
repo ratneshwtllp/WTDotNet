@@ -1,0 +1,19 @@
+﻿@using NonFactors.Mvc.Grid;
+@model ERP.Web.Areas.Costing.Models.CostingModel
+
+@(Html
+        .Grid(Model.OrderBOMSUM)
+        .Build(columns =>
+        {
+            columns.Add(model => $"<a href='../../{model.Title}' target='_blank' ><img src=" + @Url.Content("~/" + model.Title) + " width='20' height='20' ></a>").Encoded(false);
+            columns.Add(model => model.RMCode).Titled("RM Code");
+            columns.Add(model => model.Full_Name).Titled("Raw Material").Css("rm");
+            columns.Add(model => model.RequiredQty).Titled("Required Qty").Css("rqty").Formatted("{0:0.000}");
+            columns.Add(model => model.CostUnitSName).Titled("Unit").Css("cunit");
+            columns.Add(model => model.RItemID).Titled("RitemID").Css("ritemid hidden");
+            //columns.Add(model => $"<a href='#' > Issue </a>").Css("issue").Encoded(false);
+        })
+        .Sortable()
+        .Filterable()
+        .Css("table-hover")
+)

@@ -1,0 +1,113 @@
+﻿@using NonFactors.Mvc.Grid;
+@model IEnumerable<ERP.Domain.Entities.ViewRItemShow>
+@{
+    int rowNumber = 1;
+}
+
+@(Html
+        .Grid(Model)
+        .Build(columns =>
+        {
+            columns.Add(model => 0).Titled("").Encoded(false).RenderedAs(model => rowNumber++).Encoded(false).Css("noExl"); ;
+            columns.Add(model => Html.CheckBox("chkbx", new { @class = "chk" })).Encoded(false).Css("noExl"); ;
+            columns.Add(model => $"<a href=" + @Url.Action("EditRM", "RM", new { id = model.RitemId }) + $" target='_blank'> <img src=" + @Url.Content("~/images/edit.png") + "> </a>").Encoded(false).Titled("").Css("noExl"); ;
+            columns.Add(model => $"<a href='" + @Url.Content("~/" + model.Title) + "' target='_blank' ><img src=" + @Url.Content("~/" + model.Title) + " width='20' height='20' ></a>").Encoded(false).Titled("").Css("noExl"); ;
+            columns.Add(model => $"<a href=" + @Url.Action("Upload", "RM", new { id = model.RitemId }) + $"  target='_blank'><span class='glyphicon glyphicon-paperclip'></span></a>").Encoded(false).Filterable(false).Css("noExl"); ;
+            columns.Add(model => 0).RenderedAs(model => model.RMReviewStatus != 1 ? $"<a href='#' onclick=FuncForRMReview(\"{model.RitemId}\"); >Review</a>" : "").Encoded(false).Css("noExl"); ;
+            columns.Add(model => model.CategoryName).Titled("Category");
+            columns.Add(model => model.SubCategoryName).Titled("SubCategory");
+            columns.Add(model => model.Code).Titled("Code");
+            columns.Add(model => model.Full_Name).Titled("Name");
+            //columns.Add(model => model.ColorFast).Titled("Nick Name");
+            //columns.Add(model => model.Finish).Titled("Finish").Css("td-nowrap");
+            //columns.Add(model => model.SizeName).Titled("Size").Css("td-nowrap");
+            columns.Add(model => model.RitemId).Css("hidden ritemid noExl");
+            columns.Add(model => model.RMUpdateOn).Titled("Update").Formatted("{0:dd/MMM/yyyy}").Css("td-nowrap");
+            //columns.Add(model => 0).RenderedAs(model => model.UserTypeId == 1 ? $"<a href='#' > <img src=\"../../images/delete.png\"   onclick=showJqueryDialog(\"{model.RitemId}\"); > </a>" : "").Encoded(false);
+            columns.Add(model => $"<a href='#' > <img src=\"../../images/delete.png\"   onclick=showJqueryDialog(\"{model.RitemId}\"); > </a>").Encoded(false).Css("noExl"); ;
+        })
+        .Sortable()
+        .Filterable(false)
+        .Css("table-hover")
+        .RowCss(model => model.RMReviewStatus == 1 ? "greenrow" : "even")
+)
+
+
+<!-- The loading-area will be where we display a message during the AJAX call.
+    This way, the user knows something is happening in the background.-->
+<div id="loading-area" class="load" style="display:none;">
+    <div class='alert alert-info'><strong>Sending...</strong></div>
+</div>
+
+<!-- The message-area will be where we display a message after the AJAX call
+    about whether or not the contact form was successfully sent-->
+<div id="message-area"></div>
+
+<!--jQuery Modal Div-->
+<div id="dialog-confirm" title="Delete Confirmation" style="display:none;">
+    <p><span class="ui-icon ui-icon-alert" style="float:left; margin:12px 12px 20px 0;"></span>This items will be permanently deleted and cannot be recovered. Are you sure?</p>
+</div>
+
+
+<div id="dataConfirmModal" class="modal" role="dialog" aria-labelledby="dataConfirmLabel" aria-hidden="true">
+    <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+        <h3 id="dataConfirmLabel">Please Confirm</h3>
+    </div><div class="modal-body"></div><div class="modal-footer"><button class="btn" data-dismiss="modal" aria-hidden="true">Cancel</button><a class="btn btn-primary" id="dataConfirmOK">OK</a></div>
+</div>
+
+<!-- These methods are invoked at different stages of the AJAX call-->
+<script type="text/javascript">
+    function ShowSuccess(data) {
+        alert(data);
+    }
+
+    function showJqueryDialog(rmid) {
+        $("#dialog-confirm").dialog({
+            resizable: false,
+            height: "auto",
+            width: 400,
+            modal: true,
+            buttons: {
+                "Yes": function () {
+
+                    $.ajax({
+                        cache: false,
+                        url: '@Url.Action("DeleteRM")',
+                        type: "GET",
+                        data: { id: rmid },
+                        dataType: 'JSON',
+                        async: false,
+                        success: function (data) {
+                            alert(data);
+                            $('#search').trigger('click');
+                        },
+                    });
+
+                    $(this).dialog("close");
+                    //ShowSuccess("Delete Sucessfully.");
+                    window.location.href = "../../RM/RM/RMList";
+                },
+                Cancel: function () {
+                    $(this).dialog("close");
+                }
+            }
+        });
+    }
+
+    function FuncForRMReview(id) {
+
+        $.ajax({
+            cache: false,
+            url: '@Url.Action("PutRMReviewStatus")',
+            type: "GET",
+            data: { ritemid: id },
+            dataType: 'JSON',
+            success: function (data) {
+                alert(data);
+                $('#search').trigger('click');
+            },
+        });
+
+    }
+</script>

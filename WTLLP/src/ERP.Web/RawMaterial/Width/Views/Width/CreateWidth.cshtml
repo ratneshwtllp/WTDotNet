@@ -1,0 +1,75 @@
+﻿@model ERP.Domain.Entities.WidthDetails
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewData["Title"] = "Width";
+}
+
+
+<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="" />
+<meta name="keywords" content="" />
+
+@section Scripts {
+    <script type="text/javascript">
+        prevententertosubmit();
+    </script>
+}
+
+<script type="text/javascript">
+    function ShowSuccess(data) {
+        $(".container").find("input:text").val('');
+        $(".container").find("textarea").val('');
+        alert(data);
+    }
+
+    function HideForm() {
+        //When the form is submitted, we hide the form
+        $("#form-area").hide();
+    }
+
+    function ShowFailure(data) {
+        alert("Already Exist");
+        //In the case that the AJAX call fails to communicate with the server
+        //(e.g. the user's internet connection cuts out), we should display a message to that effect
+        //$('#message-area').html("<div class='alert alert-danger'><strong>Error!</strong>The server could not be contacted and your message has not been sent. Please check your internet connection and try again later.</div>");
+    }
+</script>
+<form asp-controller="Width" asp-action="CreateWidth" data-ajax="true" data-ajax-success="ShowSuccess" data-ajax-failure="ShowFailure" data-ajax-method="POST">
+    @Html.ValidationSummary(true)
+    <div class="clear"></div>
+    <div class="container containerheight">
+        <p>
+            @Html.ActionLink("Width List", "WidthList", "Width", "", new { @class = "btn btn-info" })
+        </p>
+        <div class="row clearleft-custom flow-offset-1">
+            <div class="col-xs-12 col-sm-6 col-lg-4">
+                <div class="thumbnail thumbnail-mod-1">
+                    <div class="form">
+                        <div>
+                            <h2>Width Details</h2>
+                        </div>
+                        @Html.HiddenFor(a => a.WidthId)
+
+                        <p class="contact">
+                            <label>Width Name </label>
+                        </p>
+                        @Html.TextBoxFor(a => a.WidthName, new { @required = "true", autocomplete = "off", maxlength = "50" })
+
+                        <p class="contact">
+                            <label>Remark</label>
+                        </p>
+                        @Html.TextAreaFor(a => a.WidthDesc, new { autocomplete = "off", rows = "4", maxlength = "100" })
+
+                        <p class="contact">
+                            <label>&nbsp;</label>
+                        </p>
+                        <input id="Submit1" type="submit" value="Save Width" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
+

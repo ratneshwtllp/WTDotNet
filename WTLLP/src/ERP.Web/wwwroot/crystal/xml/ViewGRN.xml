@@ -1,0 +1,240 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:MainDataTable="ViewGRN" msdata:UseCurrentLocale="true">
+      <xs:complexType>
+        <xs:choice minOccurs="0" maxOccurs="unbounded">
+          <xs:element name="ViewGRN">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="AddressOffice" type="xs:string" minOccurs="0" />
+                <xs:element name="Amount" type="xs:double" />
+                <xs:element name="AmtAfterTax" type="xs:double" />
+                <xs:element name="BillDate" type="xs:dateTime" />
+                <xs:element name="BillNo" type="xs:string" minOccurs="0" />
+                <xs:element name="CancelStatus" type="xs:int" />
+                <xs:element name="CategoryName" type="xs:string" minOccurs="0" />
+                <xs:element name="CGSTAmt" type="xs:double" />
+                <xs:element name="CGSTPer" type="xs:double" />
+                <xs:element name="ChallanDate" type="xs:dateTime" />
+                <xs:element name="ChallanNo" type="xs:string" minOccurs="0" />
+                <xs:element name="CName" type="xs:string" minOccurs="0" />
+                <xs:element name="Code" type="xs:string" minOccurs="0" />
+                <xs:element name="ContactPerson" type="xs:string" minOccurs="0" />
+                <xs:element name="ConversionFactor" type="xs:double" />
+                <xs:element name="CostUnit" type="xs:string" minOccurs="0" />
+                <xs:element name="DriverName" type="xs:string" minOccurs="0" />
+                <xs:element name="FreightAmount" type="xs:double" />
+                <xs:element name="Full_Name" type="xs:string" minOccurs="0" />
+                <xs:element name="FUnitRate" type="xs:double" />
+                <xs:element name="GrandTotal" type="xs:double" />
+                <xs:element name="GRNChildID" type="xs:long" />
+                <xs:element name="GRNDate" type="xs:dateTime" />
+                <xs:element name="GRNID" type="xs:long" />
+                <xs:element name="GRNNO" type="xs:string" minOccurs="0" />
+                <xs:element name="GRNQty" type="xs:double" />
+                <xs:element name="GRNQtySide" type="xs:int" />
+                <xs:element name="GRNQtySuppUnit" type="xs:double" />
+                <xs:element name="GRNSerial" type="xs:long" />
+                <xs:element name="HSNCode" type="xs:string" minOccurs="0" />
+                <xs:element name="IGSTAmt" type="xs:double" />
+                <xs:element name="IGSTPer" type="xs:double" />
+                <xs:element name="LotNo" type="xs:string" minOccurs="0" />
+                <xs:element name="Name" type="xs:string" minOccurs="0" />
+                <xs:element name="OtherAmoumt" type="xs:double" />
+                <xs:element name="PO_JobWork" type="xs:int" />
+                <xs:element name="PO_JW_Number" type="xs:string" minOccurs="0" />
+                <xs:element name="POChildID" type="xs:long" />
+                <xs:element name="POID" type="xs:long" />
+                <xs:element name="POManual" type="xs:int" />
+                <xs:element name="PONO" type="xs:string" minOccurs="0" />
+                <xs:element name="POQty" type="xs:double" />
+                <xs:element name="Rate" type="xs:double" />
+                <xs:element name="ReceivedGRNQty" type="xs:double" />
+                <xs:element name="ReferenceNumber" type="xs:string" minOccurs="0" />
+                <xs:element name="Remark" type="xs:string" minOccurs="0" />
+                <xs:element name="RItem_Id" type="xs:long" />
+                <xs:element name="SessionYear" type="xs:string" minOccurs="0" />
+                <xs:element name="SGSTAmt" type="xs:double" />
+                <xs:element name="SGSTPer" type="xs:double" />
+                <xs:element name="ShopDetails" type="xs:string" minOccurs="0" />
+                <xs:element name="SNo" type="xs:int" />
+                <xs:element name="SubCategoryName" type="xs:string" minOccurs="0" />
+                <xs:element name="SupplierAddress" type="xs:string" minOccurs="0" />
+                <xs:element name="SupplierCode" type="xs:string" minOccurs="0" />
+                <xs:element name="SupplierID" type="xs:long" />
+                <xs:element name="SupplierName" type="xs:string" minOccurs="0" />
+                <xs:element name="TaxFullName" type="xs:string" minOccurs="0" />
+                <xs:element name="TaxId" type="xs:int" />
+                <xs:element name="TaxPer" type="xs:double" />
+                <xs:element name="TotalAmount" type="xs:double" />
+                <xs:element name="TotalAmtAfterTax" type="xs:double" />
+                <xs:element name="TotalCGSTAmt" type="xs:double" />
+                <xs:element name="TotalIGSTAmt" type="xs:double" />
+                <xs:element name="TotalQty" type="xs:double" />
+                <xs:element name="TotalQtySide" type="xs:int" />
+                <xs:element name="TotalQtySUnit" type="xs:double" />
+                <xs:element name="TotalSGSTAmt" type="xs:double" />
+                <xs:element name="TotalTaxAmt" type="xs:double" />
+                <xs:element name="Unit" type="xs:string" minOccurs="0" />
+                <xs:element name="UserName" type="xs:string" minOccurs="0" />
+                <xs:element name="VehicleNo" type="xs:string" minOccurs="0" />
+                <xs:element name="Verify" type="xs:int" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+        </xs:choice>
+      </xs:complexType>
+    </xs:element>
+  </xs:schema>
+  <ViewGRN>
+    <AddressOffice>#620 A, Safipur 1st, Harjinder Nagar, Kanpur-208007</AddressOffice>
+    <Amount>60000</Amount>
+    <AmtAfterTax>70800</AmtAfterTax>
+    <BillDate>2021-05-27T00:00:00+05:30</BillDate>
+    <BillNo>-</BillNo>
+    <CancelStatus>0</CancelStatus>
+    <CategoryName>Fittings</CategoryName>
+    <CGSTAmt>5400</CGSTAmt>
+    <CGSTPer>9</CGSTPer>
+    <ChallanDate>2021-05-24T00:00:00+05:30</ChallanDate>
+    <ChallanNo>24</ChallanNo>
+    <CName>SB International</CName>
+    <Code>FTG-00495-BR-PO-88</Code>
+    <ContactPerson>MR.SAZLI</ContactPerson>
+    <ConversionFactor>1</ConversionFactor>
+    <CostUnit>Pcs</CostUnit>
+    <DriverName />
+    <FreightAmount>0</FreightAmount>
+    <Full_Name>Stud Snap Hook Heavy for Lead with Shiny Brass Plating 1"(100gm)</Full_Name>
+    <FUnitRate>100</FUnitRate>
+    <GrandTotal>101509.5</GrandTotal>
+    <GRNChildID>2964</GRNChildID>
+    <GRNDate>2021-05-27T00:00:00+05:30</GRNDate>
+    <GRNID>1614</GRNID>
+    <GRNNO>SB/GRN/2021-22/0150</GRNNO>
+    <GRNQty>600</GRNQty>
+    <GRNQtySide>0</GRNQtySide>
+    <GRNQtySuppUnit>600</GRNQtySuppUnit>
+    <GRNSerial>150</GRNSerial>
+    <HSNCode>8308</HSNCode>
+    <IGSTAmt>0</IGSTAmt>
+    <IGSTPer>0</IGSTPer>
+    <LotNo>NA</LotNo>
+    <Name>Stud Snap Hook Heavy for Lead with Shiny Brass Plating 1"(100gm)</Name>
+    <OtherAmoumt>0</OtherAmoumt>
+    <PO_JobWork>1</PO_JobWork>
+    <PO_JW_Number>SBI/PO/1598/20-21</PO_JW_Number>
+    <POChildID>6220</POChildID>
+    <POID>1598</POID>
+    <POManual>1</POManual>
+    <PONO>SBI/PO/1598/20-21</PONO>
+    <POQty>5100</POQty>
+    <Rate>100</Rate>
+    <ReceivedGRNQty>4631</ReceivedGRNQty>
+    <ReferenceNumber>Gt.ent.no.123 dt.24/5/2021</ReferenceNumber>
+    <Remark />
+    <RItem_Id>5096</RItem_Id>
+    <SessionYear>2021-22</SessionYear>
+    <SGSTAmt>5400</SGSTAmt>
+    <SGSTPer>9</SGSTPer>
+    <ShopDetails>-</ShopDetails>
+    <SNo>1</SNo>
+    <SubCategoryName>Brass Fittngs</SubCategoryName>
+    <SupplierAddress>89/313, DIPTI KA PADAW, KANPUR NAGAR, Kanpur Nagar, Uttar Pradesh, 208001</SupplierAddress>
+    <SupplierCode>308</SupplierCode>
+    <SupplierID>308</SupplierID>
+    <SupplierName>AL-BARI INTERNATIONAL</SupplierName>
+    <TaxFullName>GST 18%</TaxFullName>
+    <TaxId>1</TaxId>
+    <TaxPer>18</TaxPer>
+    <TotalAmount>86025</TotalAmount>
+    <TotalAmtAfterTax>101509.5</TotalAmtAfterTax>
+    <TotalCGSTAmt>7742.25</TotalCGSTAmt>
+    <TotalIGSTAmt>0</TotalIGSTAmt>
+    <TotalQty>947</TotalQty>
+    <TotalQtySide>0</TotalQtySide>
+    <TotalQtySUnit>947</TotalQtySUnit>
+    <TotalSGSTAmt>7742.25</TotalSGSTAmt>
+    <TotalTaxAmt>15484.5</TotalTaxAmt>
+    <Unit>Pcs</Unit>
+    <UserName>Bawa (Thomas)</UserName>
+    <VehicleNo />
+    <Verify>1</Verify>
+  </ViewGRN>
+  <ViewGRN>
+    <AddressOffice>#620 A, Safipur 1st, Harjinder Nagar, Kanpur-208007</AddressOffice>
+    <Amount>26025</Amount>
+    <AmtAfterTax>30709.5</AmtAfterTax>
+    <BillDate>2021-05-27T00:00:00+05:30</BillDate>
+    <BillNo>-</BillNo>
+    <CancelStatus>0</CancelStatus>
+    <CategoryName>Fittings</CategoryName>
+    <CGSTAmt>2342.25</CGSTAmt>
+    <CGSTPer>9</CGSTPer>
+    <ChallanDate>2021-05-24T00:00:00+05:30</ChallanDate>
+    <ChallanNo>24</ChallanNo>
+    <CName>SB International</CName>
+    <Code>FTG-00500-BR-BP-43</Code>
+    <ContactPerson>MR.SAZLI</ContactPerson>
+    <ConversionFactor>1</ConversionFactor>
+    <CostUnit>Pcs</CostUnit>
+    <DriverName />
+    <FreightAmount>0</FreightAmount>
+    <Full_Name>Lead Clamp Brass Plating 43x36mm</Full_Name>
+    <FUnitRate>75</FUnitRate>
+    <GrandTotal>101509.5</GrandTotal>
+    <GRNChildID>2965</GRNChildID>
+    <GRNDate>2021-05-27T00:00:00+05:30</GRNDate>
+    <GRNID>1614</GRNID>
+    <GRNNO>SB/GRN/2021-22/0150</GRNNO>
+    <GRNQty>347</GRNQty>
+    <GRNQtySide>0</GRNQtySide>
+    <GRNQtySuppUnit>347</GRNQtySuppUnit>
+    <GRNSerial>150</GRNSerial>
+    <HSNCode>8308</HSNCode>
+    <IGSTAmt>0</IGSTAmt>
+    <IGSTPer>0</IGSTPer>
+    <LotNo>NA</LotNo>
+    <Name>Lead Clamp Brass Plating 43x36mm</Name>
+    <OtherAmoumt>0</OtherAmoumt>
+    <PO_JobWork>1</PO_JobWork>
+    <PO_JW_Number>SBI/PO/1598/20-21</PO_JW_Number>
+    <POChildID>6419</POChildID>
+    <POID>1598</POID>
+    <POManual>1</POManual>
+    <PONO>SBI/PO/1598/20-21</PONO>
+    <POQty>5100</POQty>
+    <Rate>75</Rate>
+    <ReceivedGRNQty>4448</ReceivedGRNQty>
+    <ReferenceNumber>Gt.ent.no.123 dt.24/5/2021</ReferenceNumber>
+    <Remark />
+    <RItem_Id>5187</RItem_Id>
+    <SessionYear>2021-22</SessionYear>
+    <SGSTAmt>2342.25</SGSTAmt>
+    <SGSTPer>9</SGSTPer>
+    <ShopDetails>-</ShopDetails>
+    <SNo>2</SNo>
+    <SubCategoryName>Brass Fittngs</SubCategoryName>
+    <SupplierAddress>89/313, DIPTI KA PADAW, KANPUR NAGAR, Kanpur Nagar, Uttar Pradesh, 208001</SupplierAddress>
+    <SupplierCode>308</SupplierCode>
+    <SupplierID>308</SupplierID>
+    <SupplierName>AL-BARI INTERNATIONAL</SupplierName>
+    <TaxFullName>GST 18%</TaxFullName>
+    <TaxId>1</TaxId>
+    <TaxPer>18</TaxPer>
+    <TotalAmount>86025</TotalAmount>
+    <TotalAmtAfterTax>101509.5</TotalAmtAfterTax>
+    <TotalCGSTAmt>7742.25</TotalCGSTAmt>
+    <TotalIGSTAmt>0</TotalIGSTAmt>
+    <TotalQty>947</TotalQty>
+    <TotalQtySide>0</TotalQtySide>
+    <TotalQtySUnit>947</TotalQtySUnit>
+    <TotalSGSTAmt>7742.25</TotalSGSTAmt>
+    <TotalTaxAmt>15484.5</TotalTaxAmt>
+    <Unit>Pcs</Unit>
+    <UserName>Bawa (Thomas)</UserName>
+    <VehicleNo />
+    <Verify>1</Verify>
+  </ViewGRN>
+</NewDataSet>

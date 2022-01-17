@@ -1,0 +1,137 @@
+﻿@using ERP.Domain.Entities;
+@using NonFactors.Mvc.Grid;
+@model ERP.Web.Areas.Buyer.Models.BuyerModel
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewData["Title"] = "Buyer Bank";
+}
+<link rel="stylesheet" type="text/css" href="~/lib/bootstrap/dist/css/bootstrap-select.css" />
+<script src="~/lib/bootstrap/dist/js/bootstrap-select.js"></script>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('.selectpicker').selectpicker({
+            liveSearch: true,
+            showSubtext: true
+        });
+    });
+</script>
+
+<form asp-controller="Buyer" asp-action="BuyerBank" enctype="multipart/form-data" method="POST">
+    <div class="clear"></div>
+    <div class="container">
+        <div class="row clearleft-custom flow-offset-1">
+            <div class="col-xs-12 col-sm-6 col-lg-4">
+                <div class="thumbnail thumbnail-mod-1">
+                    <div class="form">
+                        @Html.HiddenFor(x => x.BuyerId)
+                        <p class="contact">@Html.LabelFor(a => a.Beneficiary)</p>
+                        @Html.TextBoxFor(a => a.Beneficiary, new { @required = "true", autocomplete = "off" })
+                        <p class="contact">@Html.LabelFor(a => a.BankId)</p>
+                        @Html.DropDownListFor(a => a.BankId, new SelectList(Model.BankList, "Value", "Text", Model.BankId), "-- Select --", new { id = "cbo_bank", @required = "true", @class = "selectpicker show-tick " })
+                        <p class="contact">@Html.LabelFor(a => a.BankAddress)</p>
+                        @Html.TextAreaFor(a => a.BankAddress, new { rows = "3", @required = "true", autocomplete = "off" })
+                        <p class="contact">@Html.LabelFor(a => a.BankSwiftCode)</p>
+                        @Html.TextBoxFor(a => a.BankSwiftCode, new { @required = "true", autocomplete = "off" })
+                        <p class="contact">@Html.LabelFor(a => a.BankIFSCCode)</p>
+                        @Html.TextBoxFor(a => a.BankIFSCCode, new { @required = "true", autocomplete = "off" })
+                        <p class="contact">@Html.LabelFor(a => a.AccountNo)</p>
+                        @Html.TextBoxFor(a => a.AccountNo, new { @required = "true", autocomplete = "off" })
+                        <p class="contact">@Html.LabelFor(a => a.VerifyAccountNo)</p>
+                        @Html.TextBoxFor(a => a.VerifyAccountNo, new { @required = "true", autocomplete = "off" })
+                        <p class="contact"></p>
+                        <input id="addbank" type="submit" value="Save" />
+                        <div id="msg"></div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="thumbnail thumbnail-mod-1">
+                <div class="form">
+                    @Html.HiddenFor(x => x.BuyerId)
+                    <p class="contact">@Html.LabelFor(a => a.BuyerCode) </p>
+                    @Html.TextBoxFor(a => a.BuyerCode, new { @disabled = "true" })
+                    <p class="contact">@Html.LabelFor(a => a.BuyerName) </p>
+                    @Html.TextBoxFor(a => a.BuyerName, new { @disabled = "true" })
+                    <p class="contact">@Html.LabelFor(a => a.BuyerAddress) </p>
+                    @Html.TextAreaFor(a => a.BuyerAddress, new { rows = "4", @required = "true", @disabled = "true" })
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
+
+<div>
+    @(Html
+        .Grid(Model.BuyerBankModel)
+        .Build(columns =>
+        {
+            columns.Add(model => model.Beneficiary).Titled("Beneficiary").Css("td-nowrap");
+            columns.Add(model => model.BankName).Titled("Bank Name ").Css("td-nowrap");
+            columns.Add(model => model.BankAddress).Titled("Address").Css("td-nowrap");
+            columns.Add(model => model.BankSwiftCode).Titled("Swift Code ").Css("td-nowrap");
+            columns.Add(model => model.BankIFSCCode).Titled("IFSC Code ").Css("td-nowrap");
+            columns.Add(model => model.AccountNo).Titled("Account No").Css("td-nowrap");
+            columns.Add(model => $"<a href='javascript:void(0);' > <img src= " + @Url.Content("~/images/delete.png") + "   onclick = showJqueryDialog(" + model.BuyerBankId + "," + model.BuyerId + "); > </a>").Encoded(false);
+        })
+        .Empty("No data found")
+        .Css("table-hover")
+    )
+</div>
+
+<div id="dialog-confirm" title="Delete Confirmation" style="display:none;">
+    <p><span class="ui-icon ui-icon-alert" style="float:left; margin:12px 12px 20px 0;"></span>This items will be permanently deleted and cannot be recovered. Are you sure?</p>
+</div>
+
+<script type="text/javascript">
+
+    $(document).ready(function () {
+        $("#addbank").hide();
+        prevententertosubmit();
+    });
+
+    $(document).on('keyup', '#VerifyAccountNo,#AccountNo', function () {
+        //alert("Hi");
+        var accountno = $('#AccountNo').val();
+        var verifyaccount = $('#VerifyAccountNo').val();
+        if (accountno != '') {
+            //alert("Please enter account no");
+            if (accountno != verifyaccount) {
+                //alert("Please verify account no");
+                $("#addbank").hide();
+                return;
+            }
+            else {
+                $("#addbank").show();
+            }
+            return;
+        }
+    });
+
+    function showJqueryDialog(id, buyer) {
+        $("#dialog-confirm").dialog({
+            resizable: false,
+            height: "auto",
+            width: 400,
+            modal: true,
+            buttons: {
+                "Yes": function () {
+                    $.ajax({
+                        cache: false,
+                        url: '@Url.Action("DeleteBuyerBank")',
+                        type: "GET",
+                        data: { buyerbankid: id, buyerid: buyer },
+                        dataType: 'JSON',
+                        success: function (data) {
+                        },
+                    });
+                    $(this).dialog("close");
+                    location.reload();
+                },
+                Cancel: function () {
+                    $(this).dialog("close");
+                }
+            }
+        });
+    }
+</script>

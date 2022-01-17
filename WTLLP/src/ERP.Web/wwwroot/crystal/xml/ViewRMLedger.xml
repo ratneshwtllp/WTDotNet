@@ -1,0 +1,37 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:MainDataTable="ViewRMLedger" msdata:UseCurrentLocale="true">
+      <xs:complexType>
+        <xs:choice minOccurs="0" maxOccurs="unbounded">
+          <xs:element name="ViewRMLedger">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="Amount" type="xs:double" />
+                <xs:element name="INQty" type="xs:double" />
+                <xs:element name="LotNo" type="xs:string" minOccurs="0" />
+                <xs:element name="OperationName" type="xs:string" minOccurs="0" />
+                <xs:element name="OperationType" type="xs:int" />
+                <xs:element name="OUTQty" type="xs:double" />
+                <xs:element name="RackId" type="xs:long" />
+                <xs:element name="Rate" type="xs:double" />
+                <xs:element name="RecordChildId" type="xs:long" />
+                <xs:element name="RecordDate" type="xs:dateTime" />
+                <xs:element name="RecordMasterId" type="xs:long" />
+                <xs:element name="RecordName" type="xs:string" minOccurs="0" />
+                <xs:element name="RecordNo" type="xs:string" minOccurs="0" />
+                <xs:element name="RecordType" type="xs:int" />
+                <xs:element name="RitemId" type="xs:long" />
+                <xs:element name="Stock" type="xs:double" />
+                <xs:element name="SupplierId" type="xs:long" />
+                <xs:element name="UID" type="xs:int" />
+                <xs:element name="UserID" type="xs:int" />
+                <xs:element name="USName" type="xs:string" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+        </xs:choice>
+      </xs:complexType>
+    </xs:element>
+  </xs:schema>
+</NewDataSet>

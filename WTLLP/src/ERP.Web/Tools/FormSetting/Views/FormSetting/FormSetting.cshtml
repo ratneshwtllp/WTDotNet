@@ -1,0 +1,128 @@
+﻿@model List<ERP.Web.Areas.FormSetting.Models.FormSettingModel>
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewData["Title"] = "Form Setting";
+}
+
+<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="" />
+<meta name="keywords" content="" />
+
+@section Scripts {
+    <script type="text/javascript">
+        prevententertosubmit();
+
+        $(function () {
+            $('.saverow').click(function () {
+                var isAllValid = true;
+
+                if (isAllValid) {
+                    var masterdata = {
+                        SNo: $(this).parents('tr').find('.sno').val(),
+                        Prefix: $(this).parents('tr').find('.prefix').val(),
+                        StartingNumber: $(this).parents('tr').find('.startingno').val(),
+                        NoOfDigits: $(this).parents('tr').find('.noofdigits').val(),
+                        DispalyNumber: $(this).parents('tr').find('.displayno').text(),
+                        IsBatchOfRM: $(this).parents('tr').find('.isbatchofrm').val(),
+                    }
+
+                    //alert(masterdata);
+                    //var re = JSON.stringify(masterdata)
+                    //alert(re);
+
+                    $(this).val('Wait...');
+
+                    $.ajax({
+                        type: 'POST',
+                        url: '@Url.Action("SaveFormSetting")',
+                        data: JSON.stringify(masterdata),
+                        contentType: 'application/json',
+                        success: function (data) {
+                            if (data == "Record Updated") {
+                                alert(data);
+                                window.location.href = '@Url.Action("FormSetting", "FormSetting")';
+                            }
+                            else {
+                                alert('Error');
+                            }
+                            $('#submit').val('Save Form Setting');
+                        },
+                        error: function (error) {
+                            console.log(error);
+                            $('#submit').val('Save Form Setting');
+                        }
+                    });
+                }
+            });
+        })
+
+        function pad(num, size) {
+            var s = "000000000" + num;
+            return s.substr(s.length - size);
+        }
+
+        $(".prefix,.startingno,.noofdigits").keyup(function () {
+            var prefix = $(this).parents('tr').find('.prefix').val();
+            var sessionyear = $(this).parents('tr').find('.sessionyear').text();
+            var stratingno = $(this).parents('tr').find('.startingno').val();
+            var NoOfDigits = $(this).parents('tr').find('.noofdigits').val();
+            var Number = pad(stratingno, NoOfDigits);
+            $(this).parents('tr').find('.displayno').text(prefix + "/" + sessionyear + "/" + Number);
+        });
+    </script>
+}
+
+<script type="text/javascript">
+</script>
+
+<p>
+    <strong>Form Setting</strong>
+</p>
+
+<div class="form">
+    <table class="table table-responsive" id="elementorderdetailsItems">
+        <thead>
+            <tr>
+                <td class="td-nowrap tableheading">SNo.</td>
+                <td class="td-nowrap tableheading">Form Name</td>
+                <td class="td-nowrap tableheading">Prefix</td>
+                <td class="td-nowrap tableheading">Session Year</td>
+                <td class="td-nowrap tableheading">Starting Number</td>
+                <td class="td-nowrap tableheading">No. Of Digits</td>
+                <td class="td-nowrap tableheading">Display</td>
+                <td class="td-nowrap tableheading">&nbsp;</td>
+            </tr>
+        </thead>
+        <tbody>
+            @if (Model != null)
+            {
+                @for (int i = 0; i < Model.Count(); i++)
+                {
+                    <tr class="mycontainer">
+                        <td class="td-nowrap">@Html.DisplayFor(m => m[i].SNo)</td>
+                        <td class="td-nowrap">@Html.DisplayFor(m => m[i].FormName)</td>
+                        <td class="td-nowrap">@Html.TextBoxFor(m => m[i].Prefix, new { @class = "prefix" })</td>
+                        <td class="td-nowrap sessionyear">@Html.DisplayFor(m => m[i].SessionYear)</td>
+                        <td class="td-nowrap">@Html.TextBoxFor(m => m[i].StartingNumber, new { @class = "startingno", maxlength = "5" })</td>
+                        <td class="td-nowrap">@Html.TextBoxFor(m => m[i].NoOfDigits, new { @class = "noofdigits" })</td>
+                        <td class="td-nowrap displayno">@Html.DisplayFor(m => m[i].DispalyNumber)</td>
+                        @if(i==5) {
+                            <td class="td-nowrap">Is-Batch ? @Html.TextBoxFor(m => m[i].IsBatchOfRM,new { @class = "isbatchofrm" })</td>
+                        }
+                        else
+                        {
+                            <td>&nbsp;</td>
+                        }
+                        <td class="td-nowrap">@Html.HiddenFor(m => m[i].SNo, new { @class = "sno" })<input type="submit" id="Submit1" value="Save" style="width:80px" class="saverow" /></td>
+                    </tr>
+                }
+            }
+        </tbody>
+    </table>
+</div>
+
+
+
+

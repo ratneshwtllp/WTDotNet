@@ -1,0 +1,148 @@
+﻿@model ERP.Web.Areas.Card.Models.CardModel
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewData["Title"] = "Card";
+}
+
+<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="" />
+<meta name="keywords" content="" />
+
+<div id="message-area"></div>
+
+@section Scripts {
+    <script type="text/javascript">
+        prevententertosubmit();
+    </script>
+
+}
+<script type="text/javascript">
+    function ShowSuccess(data) {
+        alert(data);
+        window.location.href = '@Url.Action("CreateCard", "Card")';
+    }
+
+    function HideForm() {
+        //When the form is submitted, we hide the form
+        $("#form-area").hide();
+    }
+
+    function ShowFailure(data) {
+        //alert(data);
+        alert("Already Exist")
+        //In the case that the AJAX call fails to communicate with the server
+        //(e.g. the user's internet connection cuts out), we should display a message to that effect
+        //$('#message-area').html("<div class='alert alert-danger'><strong>Error!</strong>The server could not be contacted and your message has not been sent. Please check your internet connection and try again later.</div>");
+    }
+</script>
+
+
+<form asp-controller="Card" asp-action="CreateCard" data-ajax="true" data-ajax-success="ShowSuccess" data-ajax-failure="ShowFailure" data-ajax-method="POST">
+    @Html.ValidationSummary(true)
+
+    <div class="clear"></div>
+    <div class="container">
+        <div class="row clearleft-custom flow-offset-1">
+            <div class="col-xs-12 col-sm-6 col-lg-4">
+                <div class="thumbnail thumbnail-mod-1">
+                    <div class="form">
+                        <div>
+                            <h3>@Html.ActionLink("Card List", "CardList", "Card")</h3>
+                        </div>
+                        <div>
+                            <h2>Card Details</h2>
+
+                        </div>
+                        <p class="contact">
+                            @Html.LabelFor(a => a.CardId)
+                        </p>
+                        @Html.TextBoxFor(a => a.CardId, new { @required = "true", @readonly = "true" })
+
+
+                        <p class="contact">
+                            @Html.LabelFor(a => a.RepresentetiveName)
+                        </p>
+                        @Html.TextBoxFor(a => a.RepresentetiveName, new { @required = "true", autocomplete = "off", maxlength = "50" })
+
+                        <p class="contact">
+                            @Html.LabelFor(a => a.FirmName)
+                        </p>
+                        @Html.TextBoxFor(a => a.FirmName, new { @required = "true", autocomplete = "off" })
+
+                        <p class="contact">
+                            @Html.LabelFor(a => a.CardAddress)
+                        </p>
+                        @Html.TextAreaFor(a => a.CardAddress, new { rows = "4", @required = "true", autocomplete = "off" })
+
+                        <p class="contact">
+                            @Html.LabelFor(a => a.Website)
+                        </p>
+                        @Html.TextBoxFor(a => a.Website, new { autocomplete = "off" })
+
+                        <p class="contact">
+                            @Html.LabelFor(a => a.CardEmail)
+                        </p>
+                        @Html.TextBoxFor(a => a.CardEmail, new { autocomplete = "off" })
+
+
+                        <p class="contact">
+                            @Html.LabelFor(a => a.CradDesignetion)
+                        </p>
+                        @Html.TextBoxFor(a => a.CradDesignetion, new { @required = "true", autocomplete = "off", maxlength = "20" })
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xs-12 col-sm-6 col-lg-4">
+                <div class="thumbnail thumbnail-mod-1">
+                    <div class="form">
+
+                        <p class="contact">
+                            @Html.LabelFor(a => a.CardPhoneNo1)
+                        </p>
+                        @Html.TextBoxFor(a => a.CardPhoneNo1, new { @required = "true", autocomplete = "off", maxlength = "20" })
+
+                        <p class="contact">
+                            @Html.LabelFor(a => a.CardPhoneNo2)
+                        </p>
+                        @Html.TextBoxFor(a => a.CardPhoneNo2, new { @required = "true", autocomplete = "off", maxlength = "20" })
+
+                        <p class="contact">
+                            @Html.LabelFor(a => a.CardPhoneNo3)
+                        </p>
+                        @Html.TextBoxFor(a => a.CardPhoneNo3, new { @required = "true", autocomplete = "off", maxlength = "20" })
+
+                        <p class="contact">
+                            @Html.LabelFor(a => a.CardMobileNo1)
+                        </p>
+                        @Html.TextBoxFor(a => a.CardMobileNo1, new { @required = "true", autocomplete = "off", maxlength = "20" })
+
+                        <p class="contact">
+                            @Html.LabelFor(a => a.CardMobileNo2)
+                        </p>
+                        @Html.TextBoxFor(a => a.CardMobileNo2, new { @required = "true", autocomplete = "off", maxlength = "20" })
+
+                        <p class="contact">
+                            @Html.LabelFor(a => a.CardMobileNo3)
+                        </p>
+                        @Html.TextBoxFor(a => a.CardMobileNo3, new { @required = "true", autocomplete = "off", maxlength = "20" })
+
+                        <p class="contact">
+                            @Html.LabelFor(a => a.CradDescription)
+                        </p>
+                        @Html.TextAreaFor(a => a.CradDescription, new { rows = "4", autocomplete = "off" })
+
+                        <p class="contact">
+                            <label>&nbsp;</label>
+                        </p>
+                        <input id="Submit1" type="submit" value="Save Crad" />
+
+                    </div>
+                </div>
+            </div>
+        </div>
+      </div>
+</form>

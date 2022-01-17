@@ -1,0 +1,171 @@
+﻿@model ERP.Web.Areas.City.Models.CityModel
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewData["Title"] = "City";
+}
+<link rel="stylesheet" type="text/css" href="~/lib/bootstrap/dist/css/bootstrap-select.css" />
+<script src="~/lib/bootstrap/dist/js/bootstrap-select.js"></script>
+<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="" />
+<meta name="keywords" content="" />
+
+<div id="message-area"></div>
+
+<script type="text/javascript">
+    function ShowSuccess(data) {
+        $(".container").find("input:text").val('');
+        $(".container").find("textarea").val('');
+        alert(data);
+    }
+
+    function HideForm() {
+        //When the form is submitted, we hide the form
+        $("#form-area").hide();
+    }
+
+    function ShowFailure(data) {
+        //alert(data);
+        alert("Already Exist")
+        //In the case that the AJAX call fails to communicate with the server
+        //(e.g. the user's internet connection cuts out), we should display a message to that effect
+        //$('#message-area').html("<div class='alert alert-danger'><strong>Error!</strong>The server could not be contacted and your message has not been sent. Please check your internet connection and try again later.</div>");
+    }
+</script>
+
+@section Scripts {
+    <script type="text/javascript">
+        prevententertosubmit();
+
+        $(function () {
+            $("#cbo_Country").change(function () {
+                var value = $("#cbo_Country :selected").val();
+
+                $.ajax({
+                    cache: false,
+                    url: '@Url.Action("GetStateList")',
+                    type: "GET",
+                    data: { id: value },
+                    dataType: 'JSON',
+                    success: function (data) {
+                        var data = JSON.parse(data);
+                        var items = [];
+                        items.push("<option value=" + 0 + ">" + "-- Select --" + "</option>");
+                        for (var i = 0; i < data.length; i++) {
+                            items.push("<option value=" + data[i].id + ">" + data[i].value + "</option>");
+                        }
+
+                        $("#cbo_State").html(items.join(' '));
+                        $("#cbo_State").selectpicker('refresh');
+                    },
+                });
+            });
+        });
+
+        $(function () {
+            $("#refreshcountry").click(function () {
+                //alert(value);
+                $.ajax({
+                    cache: false,
+                    url: '@Url.Action("RefreshCountry")',
+                    type: "GET",
+                    data: {},
+                    dataType: 'JSON',
+                    success: function (data) {
+                        var data = JSON.parse(data);
+                        var items = [];
+                        items.push("<option value=''>" + "-- Select --" + "</option>");
+                        for (var i = 0; i < data.length; i++) {
+                            items.push("<option value=" + data[i].id + ">" + data[i].value + "</option>");
+                        }
+                        $("#cbo_Country").html(items.join(' '));
+                        $("#cbo_Country").selectpicker('refresh');
+                    },
+                });
+            });
+        });
+
+
+        $(function () {
+            $("#refreshstate").click(function () {
+                var value = $("#cbo_Country :selected").val();
+                $.ajax({
+                    cache: false,
+                    url: '@Url.Action("GetStateList")',
+                    type: "GET",
+                    data: { id: value },
+                    dataType: 'JSON',
+                    success: function (data) {
+                        var data = JSON.parse(data);
+                        var items = [];
+                        items.push("<option value=" + 0 + ">" + "-- Select --" + "</option>");
+                        for (var i = 0; i < data.length; i++) {
+                            items.push("<option value=" + data[i].id + ">" + data[i].value + "</option>");
+                        }
+
+                        $("#cbo_State").html(items.join(' '));
+                        $("#cbo_State").selectpicker('refresh');
+                    },
+                });
+            });
+        });
+
+
+    </script>
+}
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('.selectpicker').selectpicker({
+            liveSearch: true,
+            showSubtext: true
+        });
+    });
+</script>
+<form asp-controller="City" asp-action="CreateCity" data-ajax="true" data-ajax-success="ShowSuccess" data-ajax-failure="ShowFailure" data-ajax-method="POST">
+    @Html.ValidationSummary(true)
+
+    <div class="clear"></div>
+    <div class="container containerheight">
+        <p>
+            @Html.ActionLink("City List", "CityList", "City", "", new { @class = "btn btn-info" })
+        </p>
+        <div class="row clearleft-custom flow-offset-1">
+            <div class="col-xs-12 col-sm-6 col-lg-4">
+                <div class="thumbnail thumbnail-mod-1">
+                    <div class="form">
+                        <div>
+                            <h2>City </h2>
+                            @Html.HiddenFor(a => a.CityId)
+                        </div>
+
+                        <p class="contact">
+                            <strong><a href="@Url.Action("CreateCountry", "Country" , new { @area = "Country" }) " target='_blank' style="display:inline;"> Country </a></strong>&nbsp;&nbsp;
+                            <a href="#" id="refreshcountry" style="display:inline;"><span class="glyphicon glyphicon-refresh "></span></a>
+                        </p>
+                        @Html.DropDownListFor(a => a.CountryId, new SelectList(Model.CountryList, "Value", "Text", Model.CountryId), "-- Select --", new { id = "cbo_Country", @required = "true", @class = "selectpicker show-tick " })
+
+                        <p class="contact">
+                            <strong><a href="@Url.Action("CreateState", "State" , new { @area = "State" }) " target='_blank' style="display:inline;"> State </a></strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <a href="#" id="refreshstate" style="display:inline;"><span class="glyphicon glyphicon-refresh "></span></a>
+                        </p>
+
+                        @Html.DropDownListFor(a => a.StateId, new SelectList(Model.StateList, "Value", "Text", Model.StateId), "-- Select --", new { id = "cbo_State", @required = "true", @class = "selectpicker show-tick " })
+
+
+                        <p class="contact">
+                            <label>City </label>
+                        </p>
+                        @Html.TextBoxFor(a => a.CityName, new { @required = "true", autocomplete = "off", maxlength = "50" })
+
+                        <p class="contact">
+                            <label>&nbsp;</label>
+                        </p>
+                        <input id="Submit1" type="submit" value="Save City" />
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>

@@ -1,0 +1,2528 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:MainDataTable="ViewSaleOrderDetails" msdata:UseCurrentLocale="true">
+      <xs:complexType>
+        <xs:choice minOccurs="0" maxOccurs="unbounded">
+          <xs:element name="ViewSaleOrderDetails">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="AddressWork" type="xs:string" minOccurs="0" />
+                <xs:element name="Amount" type="xs:double" />
+                <xs:element name="BalanceQtyForWorkPlan" type="xs:int" />
+                <xs:element name="Barcode" type="xs:string" minOccurs="0" />
+                <xs:element name="BuyerCode" type="xs:string" minOccurs="0" />
+                <xs:element name="BuyerId" type="xs:long" />
+                <xs:element name="BuyerName" type="xs:string" minOccurs="0" />
+                <xs:element name="CancelStatus" type="xs:int" />
+                <xs:element name="ChildDeliveryDate" type="xs:dateTime" />
+                <xs:element name="ChildMyDeliveryDate" type="xs:dateTime" />
+                <xs:element name="ChildTranportName" type="xs:string" minOccurs="0" />
+                <xs:element name="ChildTransportId" type="xs:int" />
+                <xs:element name="CLName" type="xs:string" minOccurs="0" />
+                <xs:element name="CName" type="xs:string" minOccurs="0" />
+                <xs:element name="Code" type="xs:string" minOccurs="0" />
+                <xs:element name="CompanyName" type="xs:string" minOccurs="0" />
+                <xs:element name="CSName" type="xs:string" minOccurs="0" />
+                <xs:element name="CurrencyID" type="xs:int" />
+                <xs:element name="DeliveryDate" type="xs:dateTime" />
+                <xs:element name="Description" type="xs:string" minOccurs="0" />
+                <xs:element name="Fabric1" type="xs:string" minOccurs="0" />
+                <xs:element name="Fabric2" type="xs:string" minOccurs="0" />
+                <xs:element name="FitemId" type="xs:long" />
+                <xs:element name="FOBCIF" type="xs:string" minOccurs="0" />
+                <xs:element name="GenderName" type="xs:string" minOccurs="0" />
+                <xs:element name="GSTN" type="xs:string" minOccurs="0" />
+                <xs:element name="IsShoesOrder" type="xs:int" />
+                <xs:element name="IssuedById" type="xs:int" />
+                <xs:element name="Logo" type="xs:string" minOccurs="0" />
+                <xs:element name="MultipleDeliveryDate" type="xs:int" />
+                <xs:element name="MultipleTransport" type="xs:int" />
+                <xs:element name="MyDeliveryDate" type="xs:dateTime" />
+                <xs:element name="Name" type="xs:string" minOccurs="0" />
+                <xs:element name="OrderChildID" type="xs:long" />
+                <xs:element name="OrderChildRemark" type="xs:string" minOccurs="0" />
+                <xs:element name="OrderDate" type="xs:dateTime" />
+                <xs:element name="OrderMasterID" type="xs:long" />
+                <xs:element name="OrderNo" type="xs:string" minOccurs="0" />
+                <xs:element name="Paper1" type="xs:string" minOccurs="0" />
+                <xs:element name="Paper2" type="xs:string" minOccurs="0" />
+                <xs:element name="PartyCode" type="xs:string" minOccurs="0" />
+                <xs:element name="Phone" type="xs:string" minOccurs="0" />
+                <xs:element name="PhotoPath" type="xs:string" minOccurs="0" />
+                <xs:element name="PRDWidth" type="xs:string" minOccurs="0" />
+                <xs:element name="Price" type="xs:double" />
+                <xs:element name="ProductCategoryID" type="xs:long" />
+                <xs:element name="ProductSizeName" type="xs:string" minOccurs="0" />
+                <xs:element name="ProductSubCategoryID" type="xs:long" />
+                <xs:element name="ProductSubCategoryName" type="xs:string" minOccurs="0" />
+                <xs:element name="Qty" type="xs:int" />
+                <xs:element name="RefrenceNo" type="xs:string" minOccurs="0" />
+                <xs:element name="Remark" type="xs:string" minOccurs="0" />
+                <xs:element name="RitemCode" type="xs:string" minOccurs="0" />
+                <xs:element name="RitemId" type="xs:long" />
+                <xs:element name="RitemName" type="xs:string" minOccurs="0" />
+                <xs:element name="Size" type="xs:int" />
+                <xs:element name="SNo" type="xs:int" />
+                <xs:element name="Thickness" type="xs:string" minOccurs="0" />
+                <xs:element name="TotalAmount" type="xs:double" />
+                <xs:element name="TotalQty" type="xs:int" />
+                <xs:element name="TranportName" type="xs:string" minOccurs="0" />
+                <xs:element name="TransportCommments" type="xs:string" minOccurs="0" />
+                <xs:element name="TransportId" type="xs:int" />
+                <xs:element name="Unit" type="xs:string" minOccurs="0" />
+                <xs:element name="WPQty" type="xs:int" />
+                <xs:element name="WPRemark" type="xs:string" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+        </xs:choice>
+      </xs:complexType>
+    </xs:element>
+  </xs:schema>
+  <ViewSaleOrderDetails>
+    <AddressWork>#620 A, Safipur 1st, Harjinder Nagar, Kanpur-208007</AddressWork>
+    <Amount>272</Amount>
+    <BalanceQtyForWorkPlan>0</BalanceQtyForWorkPlan>
+    <Barcode>8000000002617</Barcode>
+    <BuyerCode>UMB</BuyerCode>
+    <BuyerId>3</BuyerId>
+    <BuyerName>UMBRIA EQUITAZIONE S.R.L</BuyerName>
+    <CancelStatus>0</CancelStatus>
+    <ChildDeliveryDate>2020-09-30T00:00:00+05:30</ChildDeliveryDate>
+    <ChildMyDeliveryDate>2020-09-21T00:00:00+05:30</ChildMyDeliveryDate>
+    <ChildTranportName>FOB SEA</ChildTranportName>
+    <ChildTransportId>5</ChildTransportId>
+    <CLName>Black</CLName>
+    <CName>Dollar</CName>
+    <Code>SBI/2579BCK</Code>
+    <CompanyName>SB International</CompanyName>
+    <CSName>USD</CSName>
+    <CurrencyID>1</CurrencyID>
+    <DeliveryDate>2020-09-21T00:00:00+05:30</DeliveryDate>
+    <Description>Headstall with Reins with Matching Breast Collar #SBI/5269 with Silver Fitting</Description>
+    <Fabric1>-</Fabric1>
+    <Fabric2>-</Fabric2>
+    <FitemId>25958</FitemId>
+    <FOBCIF>FOB</FOBCIF>
+    <GenderName>NA</GenderName>
+    <GSTN>09AAWFS7900H1ZL</GSTN>
+    <IsShoesOrder>0</IsShoesOrder>
+    <IssuedById>8</IssuedById>
+    <Logo>LAKOTA</Logo>
+    <MultipleDeliveryDate>0</MultipleDeliveryDate>
+    <MultipleTransport>0</MultipleTransport>
+    <MyDeliveryDate>2020-09-21T00:00:00+05:30</MyDeliveryDate>
+    <Name>Headstall</Name>
+    <OrderChildID>9368</OrderChildID>
+    <OrderChildRemark>-</OrderChildRemark>
+    <OrderDate>2020-07-02T00:00:00+05:30</OrderDate>
+    <OrderMasterID>375</OrderMasterID>
+    <OrderNo>7220</OrderNo>
+    <Paper1>-</Paper1>
+    <Paper2>-</Paper2>
+    <PartyCode>BR00100</PartyCode>
+    <Phone>0512-2406947</Phone>
+    <PhotoPath>uploads/productphotos/productphoto.jpg</PhotoPath>
+    <PRDWidth>-</PRDWidth>
+    <Price>34</Price>
+    <ProductCategoryID>86</ProductCategoryID>
+    <ProductSizeName>N/A</ProductSizeName>
+    <ProductSubCategoryID>735</ProductSubCategoryID>
+    <ProductSubCategoryName>Headstall</ProductSubCategoryName>
+    <Qty>8</Qty>
+    <RefrenceNo>-</RefrenceNo>
+    <Remark>-</Remark>
+    <RitemId>0</RitemId>
+    <Size>87</Size>
+    <SNo>1</SNo>
+    <Thickness>-</Thickness>
+    <TotalAmount>48878</TotalAmount>
+    <TotalQty>3224</TotalQty>
+    <TranportName>FOB SEA</TranportName>
+    <TransportCommments>-</TransportCommments>
+    <TransportId>5</TransportId>
+    <Unit>Pcs</Unit>
+    <WPQty>8</WPQty>
+    <WPRemark>-</WPRemark>
+  </ViewSaleOrderDetails>
+  <ViewSaleOrderDetails>
+    <AddressWork>#620 A, Safipur 1st, Harjinder Nagar, Kanpur-208007</AddressWork>
+    <Amount>825</Amount>
+    <BalanceQtyForWorkPlan>15</BalanceQtyForWorkPlan>
+    <Barcode>80000000066084</Barcode>
+    <BuyerCode>UMB</BuyerCode>
+    <BuyerId>3</BuyerId>
+    <BuyerName>UMBRIA EQUITAZIONE S.R.L</BuyerName>
+    <CancelStatus>0</CancelStatus>
+    <ChildDeliveryDate>2020-09-30T00:00:00+05:30</ChildDeliveryDate>
+    <ChildMyDeliveryDate>2020-09-21T00:00:00+05:30</ChildMyDeliveryDate>
+    <ChildTranportName>FOB SEA</ChildTranportName>
+    <ChildTransportId>5</ChildTransportId>
+    <CLName>Harness</CLName>
+    <CName>Dollar</CName>
+    <Code>S bag-25HAR</Code>
+    <CompanyName>SB International</CompanyName>
+    <CSName>USD</CSName>
+    <CurrencyID>1</CurrencyID>
+    <DeliveryDate>2020-09-21T00:00:00+05:30</DeliveryDate>
+    <Description>saddle Bag With Basket &amp; jersy Hair On Only</Description>
+    <Fabric1>-</Fabric1>
+    <Fabric2>-</Fabric2>
+    <FitemId>26012</FitemId>
+    <FOBCIF>FOB</FOBCIF>
+    <GenderName>NA</GenderName>
+    <GSTN>09AAWFS7900H1ZL</GSTN>
+    <IsShoesOrder>0</IsShoesOrder>
+    <IssuedById>8</IssuedById>
+    <Logo>LAKOTA</Logo>
+    <MultipleDeliveryDate>0</MultipleDeliveryDate>
+    <MultipleTransport>0</MultipleTransport>
+    <MyDeliveryDate>2020-09-21T00:00:00+05:30</MyDeliveryDate>
+    <Name>Saddle Bag</Name>
+    <OrderChildID>9369</OrderChildID>
+    <OrderChildRemark>-</OrderChildRemark>
+    <OrderDate>2020-07-02T00:00:00+05:30</OrderDate>
+    <OrderMasterID>375</OrderMasterID>
+    <OrderNo>7220</OrderNo>
+    <Paper1>-</Paper1>
+    <Paper2>-</Paper2>
+    <PartyCode>AC00077</PartyCode>
+    <Phone>0512-2406947</Phone>
+    <PhotoPath>uploads/productphotos/productphoto.jpg</PhotoPath>
+    <PRDWidth>-</PRDWidth>
+    <Price>55</Price>
+    <ProductCategoryID>86</ProductCategoryID>
+    <ProductSizeName>N/A</ProductSizeName>
+    <ProductSubCategoryID>740</ProductSubCategoryID>
+    <ProductSubCategoryName>Saddle Bag</ProductSubCategoryName>
+    <Qty>15</Qty>
+    <RefrenceNo>-</RefrenceNo>
+    <Remark>-</Remark>
+    <RitemId>0</RitemId>
+    <Size>87</Size>
+    <SNo>2</SNo>
+    <Thickness>-</Thickness>
+    <TotalAmount>48878</TotalAmount>
+    <TotalQty>3224</TotalQty>
+    <TranportName>FOB SEA</TranportName>
+    <TransportCommments>-</TransportCommments>
+    <TransportId>5</TransportId>
+    <Unit>Pcs</Unit>
+    <WPQty>15</WPQty>
+    <WPRemark>-</WPRemark>
+  </ViewSaleOrderDetails>
+  <ViewSaleOrderDetails>
+    <AddressWork>#620 A, Safipur 1st, Harjinder Nagar, Kanpur-208007</AddressWork>
+    <Amount>1377</Amount>
+    <BalanceQtyForWorkPlan>0</BalanceQtyForWorkPlan>
+    <Barcode>8000000029218</Barcode>
+    <BuyerCode>UMB</BuyerCode>
+    <BuyerId>3</BuyerId>
+    <BuyerName>UMBRIA EQUITAZIONE S.R.L</BuyerName>
+    <CancelStatus>0</CancelStatus>
+    <ChildDeliveryDate>2020-09-30T00:00:00+05:30</ChildDeliveryDate>
+    <ChildMyDeliveryDate>2020-09-21T00:00:00+05:30</ChildMyDeliveryDate>
+    <ChildTranportName>FOB SEA</ChildTranportName>
+    <ChildTransportId>5</ChildTransportId>
+    <CLName>Harness</CLName>
+    <CName>Dollar</CName>
+    <Code>6466HAR</Code>
+    <CompanyName>SB International</CompanyName>
+    <CSName>USD</CSName>
+    <CurrencyID>1</CurrencyID>
+    <DeliveryDate>2020-09-21T00:00:00+05:30</DeliveryDate>
+    <Description>Back Cinches With Billet</Description>
+    <Fabric1>-</Fabric1>
+    <Fabric2>-</Fabric2>
+    <FitemId>26078</FitemId>
+    <FOBCIF>FOB</FOBCIF>
+    <GenderName>NA</GenderName>
+    <GSTN>09AAWFS7900H1ZL</GSTN>
+    <IsShoesOrder>0</IsShoesOrder>
+    <IssuedById>8</IssuedById>
+    <Logo>LAKOTA</Logo>
+    <MultipleDeliveryDate>0</MultipleDeliveryDate>
+    <MultipleTransport>0</MultipleTransport>
+    <MyDeliveryDate>2020-09-21T00:00:00+05:30</MyDeliveryDate>
+    <Name>Back Girth</Name>
+    <OrderChildID>9370</OrderChildID>
+    <OrderChildRemark>-</OrderChildRemark>
+    <OrderDate>2020-07-02T00:00:00+05:30</OrderDate>
+    <OrderMasterID>375</OrderMasterID>
+    <OrderNo>7220</OrderNo>
+    <Paper1>-</Paper1>
+    <Paper2>-</Paper2>
+    <PartyCode>LK7080</PartyCode>
+    <Phone>0512-2406947</Phone>
+    <PhotoPath>uploads/productphotos/26078.jpg</PhotoPath>
+    <PRDWidth>-</PRDWidth>
+    <Price>22.95</Price>
+    <ProductCategoryID>86</ProductCategoryID>
+    <ProductSizeName>N/A</ProductSizeName>
+    <ProductSubCategoryID>784</ProductSubCategoryID>
+    <ProductSubCategoryName>Girth</ProductSubCategoryName>
+    <Qty>60</Qty>
+    <RefrenceNo>-</RefrenceNo>
+    <Remark>-</Remark>
+    <RitemId>0</RitemId>
+    <Size>87</Size>
+    <SNo>3</SNo>
+    <Thickness>-</Thickness>
+    <TotalAmount>48878</TotalAmount>
+    <TotalQty>3224</TotalQty>
+    <TranportName>FOB SEA</TranportName>
+    <TransportCommments>-</TransportCommments>
+    <TransportId>5</TransportId>
+    <Unit>Pcs</Unit>
+    <WPQty>60</WPQty>
+    <WPRemark>-</WPRemark>
+  </ViewSaleOrderDetails>
+  <ViewSaleOrderDetails>
+    <AddressWork>#620 A, Safipur 1st, Harjinder Nagar, Kanpur-208007</AddressWork>
+    <Amount>10600</Amount>
+    <BalanceQtyForWorkPlan>400</BalanceQtyForWorkPlan>
+    <Barcode>0</Barcode>
+    <BuyerCode>UMB</BuyerCode>
+    <BuyerId>3</BuyerId>
+    <BuyerName>UMBRIA EQUITAZIONE S.R.L</BuyerName>
+    <CancelStatus>0</CancelStatus>
+    <ChildDeliveryDate>2020-09-30T00:00:00+05:30</ChildDeliveryDate>
+    <ChildMyDeliveryDate>2020-09-21T00:00:00+05:30</ChildMyDeliveryDate>
+    <ChildTranportName>FOB SEA</ChildTranportName>
+    <ChildTransportId>5</ChildTransportId>
+    <CLName>None</CLName>
+    <CName>Dollar</CName>
+    <Code>SB 291 B</Code>
+    <CompanyName>SB International</CompanyName>
+    <CSName>USD</CSName>
+    <CurrencyID>1</CurrencyID>
+    <DeliveryDate>2020-09-21T00:00:00+05:30</DeliveryDate>
+    <Description>1" Tod Slone Pad with Wear Leather
+</Description>
+    <Fabric1>-</Fabric1>
+    <Fabric2>-</Fabric2>
+    <FitemId>28713</FitemId>
+    <FOBCIF>FOB</FOBCIF>
+    <GenderName>NA</GenderName>
+    <GSTN>09AAWFS7900H1ZL</GSTN>
+    <IsShoesOrder>0</IsShoesOrder>
+    <IssuedById>8</IssuedById>
+    <Logo>POOLS</Logo>
+    <MultipleDeliveryDate>0</MultipleDeliveryDate>
+    <MultipleTransport>0</MultipleTransport>
+    <MyDeliveryDate>2020-09-21T00:00:00+05:30</MyDeliveryDate>
+    <Name>Saddle Pad</Name>
+    <OrderChildID>9371</OrderChildID>
+    <OrderChildRemark>-</OrderChildRemark>
+    <OrderDate>2020-07-02T00:00:00+05:30</OrderDate>
+    <OrderMasterID>375</OrderMasterID>
+    <OrderNo>7220</OrderNo>
+    <Paper1>-</Paper1>
+    <Paper2>-</Paper2>
+    <PartyCode>SS00068</PartyCode>
+    <Phone>0512-2406947</Phone>
+    <PhotoPath>uploads/productphotos/28713.jpg</PhotoPath>
+    <PRDWidth>-</PRDWidth>
+    <Price>26.5</Price>
+    <ProductCategoryID>86</ProductCategoryID>
+    <ProductSizeName>1"</ProductSizeName>
+    <ProductSubCategoryID>739</ProductSubCategoryID>
+    <ProductSubCategoryName>Saddle Pad &amp; Blanket</ProductSubCategoryName>
+    <Qty>400</Qty>
+    <RefrenceNo>-</RefrenceNo>
+    <Remark>-</Remark>
+    <RitemId>0</RitemId>
+    <Size>286</Size>
+    <SNo>4</SNo>
+    <Thickness>-</Thickness>
+    <TotalAmount>48878</TotalAmount>
+    <TotalQty>3224</TotalQty>
+    <TranportName>FOB SEA</TranportName>
+    <TransportCommments>-</TransportCommments>
+    <TransportId>5</TransportId>
+    <Unit>Pcs</Unit>
+    <WPQty>400</WPQty>
+    <WPRemark>-</WPRemark>
+  </ViewSaleOrderDetails>
+  <ViewSaleOrderDetails>
+    <AddressWork>#620 A, Safipur 1st, Harjinder Nagar, Kanpur-208007</AddressWork>
+    <Amount>3240</Amount>
+    <BalanceQtyForWorkPlan>120</BalanceQtyForWorkPlan>
+    <Barcode>0</Barcode>
+    <BuyerCode>UMB</BuyerCode>
+    <BuyerId>3</BuyerId>
+    <BuyerName>UMBRIA EQUITAZIONE S.R.L</BuyerName>
+    <CancelStatus>0</CancelStatus>
+    <ChildDeliveryDate>2020-09-30T00:00:00+05:30</ChildDeliveryDate>
+    <ChildMyDeliveryDate>2020-09-21T00:00:00+05:30</ChildMyDeliveryDate>
+    <ChildTranportName>FOB SEA</ChildTranportName>
+    <ChildTransportId>5</ChildTransportId>
+    <CLName>None</CLName>
+    <CName>Dollar</CName>
+    <Code>SB 454</Code>
+    <CompanyName>SB International</CompanyName>
+    <CSName>USD</CSName>
+    <CurrencyID>1</CurrencyID>
+    <DeliveryDate>2020-09-21T00:00:00+05:30</DeliveryDate>
+    <Description>1" Tod Slone Pad with Wear Leather
+</Description>
+    <Fabric1>-</Fabric1>
+    <Fabric2>-</Fabric2>
+    <FitemId>28714</FitemId>
+    <FOBCIF>FOB</FOBCIF>
+    <GenderName>NA</GenderName>
+    <GSTN>09AAWFS7900H1ZL</GSTN>
+    <IsShoesOrder>0</IsShoesOrder>
+    <IssuedById>8</IssuedById>
+    <Logo>POOLS</Logo>
+    <MultipleDeliveryDate>0</MultipleDeliveryDate>
+    <MultipleTransport>0</MultipleTransport>
+    <MyDeliveryDate>2020-09-21T00:00:00+05:30</MyDeliveryDate>
+    <Name>Saddle Pad</Name>
+    <OrderChildID>9372</OrderChildID>
+    <OrderChildRemark>-</OrderChildRemark>
+    <OrderDate>2020-07-02T00:00:00+05:30</OrderDate>
+    <OrderMasterID>375</OrderMasterID>
+    <OrderNo>7220</OrderNo>
+    <Paper1>-</Paper1>
+    <Paper2>-</Paper2>
+    <PartyCode>SS00068A</PartyCode>
+    <Phone>0512-2406947</Phone>
+    <PhotoPath>uploads/productphotos/28714.jpg</PhotoPath>
+    <PRDWidth>-</PRDWidth>
+    <Price>27</Price>
+    <ProductCategoryID>86</ProductCategoryID>
+    <ProductSizeName>1"</ProductSizeName>
+    <ProductSubCategoryID>739</ProductSubCategoryID>
+    <ProductSubCategoryName>Saddle Pad &amp; Blanket</ProductSubCategoryName>
+    <Qty>120</Qty>
+    <RefrenceNo>-</RefrenceNo>
+    <Remark>-</Remark>
+    <RitemId>0</RitemId>
+    <Size>286</Size>
+    <SNo>5</SNo>
+    <Thickness>-</Thickness>
+    <TotalAmount>48878</TotalAmount>
+    <TotalQty>3224</TotalQty>
+    <TranportName>FOB SEA</TranportName>
+    <TransportCommments>-</TransportCommments>
+    <TransportId>5</TransportId>
+    <Unit>Pcs</Unit>
+    <WPQty>120</WPQty>
+    <WPRemark>-</WPRemark>
+  </ViewSaleOrderDetails>
+  <ViewSaleOrderDetails>
+    <AddressWork>#620 A, Safipur 1st, Harjinder Nagar, Kanpur-208007</AddressWork>
+    <Amount>767.5</Amount>
+    <BalanceQtyForWorkPlan>50</BalanceQtyForWorkPlan>
+    <Barcode>0</Barcode>
+    <BuyerCode>UMB</BuyerCode>
+    <BuyerId>3</BuyerId>
+    <BuyerName>UMBRIA EQUITAZIONE S.R.L</BuyerName>
+    <CancelStatus>0</CancelStatus>
+    <ChildDeliveryDate>2020-09-30T00:00:00+05:30</ChildDeliveryDate>
+    <ChildMyDeliveryDate>2020-09-21T00:00:00+05:30</ChildMyDeliveryDate>
+    <ChildTranportName>FOB SEA</ChildTranportName>
+    <ChildTransportId>5</ChildTransportId>
+    <CLName>Dark Oil</CLName>
+    <CName>Dollar</CName>
+    <Code>5017A Har</Code>
+    <CompanyName>SB International</CompanyName>
+    <CSName>USD</CSName>
+    <CurrencyID>1</CurrencyID>
+    <DeliveryDate>2020-09-21T00:00:00+05:30</DeliveryDate>
+    <Description>5/8 D&amp;S Browband Headstall  W/ Reins-7
+</Description>
+    <Fabric1>-</Fabric1>
+    <Fabric2>-</Fabric2>
+    <FitemId>28741</FitemId>
+    <FOBCIF>FOB</FOBCIF>
+    <GenderName>NA</GenderName>
+    <GSTN>09AAWFS7900H1ZL</GSTN>
+    <IsShoesOrder>0</IsShoesOrder>
+    <IssuedById>8</IssuedById>
+    <Logo>Lakota</Logo>
+    <MultipleDeliveryDate>0</MultipleDeliveryDate>
+    <MultipleTransport>0</MultipleTransport>
+    <MyDeliveryDate>2020-09-21T00:00:00+05:30</MyDeliveryDate>
+    <Name>Browband Headstall</Name>
+    <OrderChildID>9373</OrderChildID>
+    <OrderChildRemark>-</OrderChildRemark>
+    <OrderDate>2020-07-02T00:00:00+05:30</OrderDate>
+    <OrderMasterID>375</OrderMasterID>
+    <OrderNo>7220</OrderNo>
+    <Paper1>-</Paper1>
+    <Paper2>-</Paper2>
+    <PartyCode>LK1018</PartyCode>
+    <Phone>0512-2406947</Phone>
+    <PhotoPath>uploads/productphotos/productphoto.jpg</PhotoPath>
+    <PRDWidth>-</PRDWidth>
+    <Price>15.35</Price>
+    <ProductCategoryID>86</ProductCategoryID>
+    <ProductSizeName>N/A</ProductSizeName>
+    <ProductSubCategoryID>843</ProductSubCategoryID>
+    <ProductSubCategoryName>Browband Headstall</ProductSubCategoryName>
+    <Qty>50</Qty>
+    <RefrenceNo>-</RefrenceNo>
+    <Remark>-</Remark>
+    <RitemId>0</RitemId>
+    <Size>87</Size>
+    <SNo>6</SNo>
+    <Thickness>-</Thickness>
+    <TotalAmount>48878</TotalAmount>
+    <TotalQty>3224</TotalQty>
+    <TranportName>FOB SEA</TranportName>
+    <TransportCommments>-</TransportCommments>
+    <TransportId>5</TransportId>
+    <Unit>Pcs</Unit>
+    <WPQty>50</WPQty>
+    <WPRemark>-</WPRemark>
+  </ViewSaleOrderDetails>
+  <ViewSaleOrderDetails>
+    <AddressWork>#620 A, Safipur 1st, Harjinder Nagar, Kanpur-208007</AddressWork>
+    <Amount>225</Amount>
+    <BalanceQtyForWorkPlan>0</BalanceQtyForWorkPlan>
+    <Barcode>0</Barcode>
+    <BuyerCode>UMB</BuyerCode>
+    <BuyerId>3</BuyerId>
+    <BuyerName>UMBRIA EQUITAZIONE S.R.L</BuyerName>
+    <CancelStatus>0</CancelStatus>
+    <ChildDeliveryDate>2020-09-30T00:00:00+05:30</ChildDeliveryDate>
+    <ChildMyDeliveryDate>2020-09-21T00:00:00+05:30</ChildMyDeliveryDate>
+    <ChildTranportName>FOB SEA</ChildTranportName>
+    <ChildTransportId>5</ChildTransportId>
+    <CLName>Natural</CLName>
+    <CName>Dollar</CName>
+    <Code>CRB 18 Nat</Code>
+    <CompanyName>SB International</CompanyName>
+    <CSName>USD</CSName>
+    <CurrencyID>1</CurrencyID>
+    <DeliveryDate>2020-09-21T00:00:00+05:30</DeliveryDate>
+    <Description>Curb Strap</Description>
+    <Fabric1>-</Fabric1>
+    <Fabric2>-</Fabric2>
+    <FitemId>28890</FitemId>
+    <FOBCIF>FOB</FOBCIF>
+    <GenderName>NA</GenderName>
+    <GSTN>09AAWFS7900H1ZL</GSTN>
+    <IsShoesOrder>0</IsShoesOrder>
+    <IssuedById>8</IssuedById>
+    <Logo>-</Logo>
+    <MultipleDeliveryDate>0</MultipleDeliveryDate>
+    <MultipleTransport>0</MultipleTransport>
+    <MyDeliveryDate>2020-09-21T00:00:00+05:30</MyDeliveryDate>
+    <Name>Curb Strap</Name>
+    <OrderChildID>9374</OrderChildID>
+    <OrderChildRemark>-</OrderChildRemark>
+    <OrderDate>2020-07-02T00:00:00+05:30</OrderDate>
+    <OrderMasterID>375</OrderMasterID>
+    <OrderNo>7220</OrderNo>
+    <Paper1>-</Paper1>
+    <Paper2>-</Paper2>
+    <PartyCode>MO00193</PartyCode>
+    <Phone>0512-2406947</Phone>
+    <PhotoPath>uploads/productphotos/28890.jpg</PhotoPath>
+    <PRDWidth>-</PRDWidth>
+    <Price>2.25</Price>
+    <ProductCategoryID>86</ProductCategoryID>
+    <ProductSizeName>N/A</ProductSizeName>
+    <ProductSubCategoryID>743</ProductSubCategoryID>
+    <ProductSubCategoryName>Curb Strap</ProductSubCategoryName>
+    <Qty>100</Qty>
+    <RefrenceNo>-</RefrenceNo>
+    <Remark>-</Remark>
+    <RitemId>0</RitemId>
+    <Size>87</Size>
+    <SNo>7</SNo>
+    <Thickness>-</Thickness>
+    <TotalAmount>48878</TotalAmount>
+    <TotalQty>3224</TotalQty>
+    <TranportName>FOB SEA</TranportName>
+    <TransportCommments>-</TransportCommments>
+    <TransportId>5</TransportId>
+    <Unit>Pcs</Unit>
+    <WPQty>100</WPQty>
+    <WPRemark>-</WPRemark>
+  </ViewSaleOrderDetails>
+  <ViewSaleOrderDetails>
+    <AddressWork>#620 A, Safipur 1st, Harjinder Nagar, Kanpur-208007</AddressWork>
+    <Amount>337.5</Amount>
+    <BalanceQtyForWorkPlan>0</BalanceQtyForWorkPlan>
+    <Barcode>0</Barcode>
+    <BuyerCode>UMB</BuyerCode>
+    <BuyerId>3</BuyerId>
+    <BuyerName>UMBRIA EQUITAZIONE S.R.L</BuyerName>
+    <CancelStatus>0</CancelStatus>
+    <ChildDeliveryDate>2020-09-30T00:00:00+05:30</ChildDeliveryDate>
+    <ChildMyDeliveryDate>2020-09-21T00:00:00+05:30</ChildMyDeliveryDate>
+    <ChildTranportName>FOB SEA</ChildTranportName>
+    <ChildTransportId>5</ChildTransportId>
+    <CLName>Dark Oil</CLName>
+    <CName>Dollar</CName>
+    <Code>CRB 18 Drk Oil</Code>
+    <CompanyName>SB International</CompanyName>
+    <CSName>USD</CSName>
+    <CurrencyID>1</CurrencyID>
+    <DeliveryDate>2020-09-21T00:00:00+05:30</DeliveryDate>
+    <Description>Curb Strap</Description>
+    <Fabric1>-</Fabric1>
+    <Fabric2>-</Fabric2>
+    <FitemId>28891</FitemId>
+    <FOBCIF>FOB</FOBCIF>
+    <GenderName>NA</GenderName>
+    <GSTN>09AAWFS7900H1ZL</GSTN>
+    <IsShoesOrder>0</IsShoesOrder>
+    <IssuedById>8</IssuedById>
+    <Logo>-</Logo>
+    <MultipleDeliveryDate>0</MultipleDeliveryDate>
+    <MultipleTransport>0</MultipleTransport>
+    <MyDeliveryDate>2020-09-21T00:00:00+05:30</MyDeliveryDate>
+    <Name>Curb Strap</Name>
+    <OrderChildID>9375</OrderChildID>
+    <OrderChildRemark>-</OrderChildRemark>
+    <OrderDate>2020-07-02T00:00:00+05:30</OrderDate>
+    <OrderMasterID>375</OrderMasterID>
+    <OrderNo>7220</OrderNo>
+    <Paper1>-</Paper1>
+    <Paper2>-</Paper2>
+    <PartyCode>MO00193</PartyCode>
+    <Phone>0512-2406947</Phone>
+    <PhotoPath>uploads/productphotos/productphoto.jpg</PhotoPath>
+    <PRDWidth>-</PRDWidth>
+    <Price>2.25</Price>
+    <ProductCategoryID>86</ProductCategoryID>
+    <ProductSizeName>N/A</ProductSizeName>
+    <ProductSubCategoryID>743</ProductSubCategoryID>
+    <ProductSubCategoryName>Curb Strap</ProductSubCategoryName>
+    <Qty>150</Qty>
+    <RefrenceNo>-</RefrenceNo>
+    <Remark>-</Remark>
+    <RitemId>0</RitemId>
+    <Size>87</Size>
+    <SNo>8</SNo>
+    <Thickness>-</Thickness>
+    <TotalAmount>48878</TotalAmount>
+    <TotalQty>3224</TotalQty>
+    <TranportName>FOB SEA</TranportName>
+    <TransportCommments>-</TransportCommments>
+    <TransportId>5</TransportId>
+    <Unit>Pcs</Unit>
+    <WPQty>150</WPQty>
+    <WPRemark>-</WPRemark>
+  </ViewSaleOrderDetails>
+  <ViewSaleOrderDetails>
+    <AddressWork>#620 A, Safipur 1st, Harjinder Nagar, Kanpur-208007</AddressWork>
+    <Amount>1360</Amount>
+    <BalanceQtyForWorkPlan>0</BalanceQtyForWorkPlan>
+    <Barcode>0</Barcode>
+    <BuyerCode>UMB</BuyerCode>
+    <BuyerId>3</BuyerId>
+    <BuyerName>UMBRIA EQUITAZIONE S.R.L</BuyerName>
+    <CancelStatus>0</CancelStatus>
+    <ChildDeliveryDate>2020-09-30T00:00:00+05:30</ChildDeliveryDate>
+    <ChildMyDeliveryDate>2020-09-21T00:00:00+05:30</ChildMyDeliveryDate>
+    <ChildTranportName>FOB SEA</ChildTranportName>
+    <ChildTransportId>5</ChildTransportId>
+    <CLName>Light Oil</CLName>
+    <CName>Dollar</CName>
+    <Code>HS 2579 Nat</Code>
+    <CompanyName>SB International</CompanyName>
+    <CSName>USD</CSName>
+    <CurrencyID>1</CurrencyID>
+    <DeliveryDate>2020-09-21T00:00:00+05:30</DeliveryDate>
+    <Description>Headstall with Reins with Matching (SBI/5269) Breast Collar with Silver Fitting</Description>
+    <Fabric1>-</Fabric1>
+    <Fabric2>-</Fabric2>
+    <FitemId>33571</FitemId>
+    <FOBCIF>FOB</FOBCIF>
+    <GenderName>NA</GenderName>
+    <GSTN>09AAWFS7900H1ZL</GSTN>
+    <IsShoesOrder>0</IsShoesOrder>
+    <IssuedById>8</IssuedById>
+    <Logo>Lakota</Logo>
+    <MultipleDeliveryDate>0</MultipleDeliveryDate>
+    <MultipleTransport>0</MultipleTransport>
+    <MyDeliveryDate>2020-09-21T00:00:00+05:30</MyDeliveryDate>
+    <Name>Headstall</Name>
+    <OrderChildID>9376</OrderChildID>
+    <OrderChildRemark>-</OrderChildRemark>
+    <OrderDate>2020-07-02T00:00:00+05:30</OrderDate>
+    <OrderMasterID>375</OrderMasterID>
+    <OrderNo>7220</OrderNo>
+    <Paper1>-</Paper1>
+    <Paper2>-</Paper2>
+    <PartyCode>BR00100</PartyCode>
+    <Phone>0512-2406947</Phone>
+    <PhotoPath>uploads/productphotos/productphoto.jpg</PhotoPath>
+    <PRDWidth>-</PRDWidth>
+    <Price>34</Price>
+    <ProductCategoryID>86</ProductCategoryID>
+    <ProductSizeName>N/A</ProductSizeName>
+    <ProductSubCategoryID>735</ProductSubCategoryID>
+    <ProductSubCategoryName>Headstall</ProductSubCategoryName>
+    <Qty>40</Qty>
+    <RefrenceNo>-</RefrenceNo>
+    <Remark>-</Remark>
+    <RitemId>0</RitemId>
+    <Size>87</Size>
+    <SNo>9</SNo>
+    <Thickness>-</Thickness>
+    <TotalAmount>48878</TotalAmount>
+    <TotalQty>3224</TotalQty>
+    <TranportName>FOB SEA</TranportName>
+    <TransportCommments>-</TransportCommments>
+    <TransportId>5</TransportId>
+    <Unit>Pcs</Unit>
+    <WPQty>40</WPQty>
+    <WPRemark>-</WPRemark>
+  </ViewSaleOrderDetails>
+  <ViewSaleOrderDetails>
+    <AddressWork>#620 A, Safipur 1st, Harjinder Nagar, Kanpur-208007</AddressWork>
+    <Amount>767.5</Amount>
+    <BalanceQtyForWorkPlan>50</BalanceQtyForWorkPlan>
+    <Barcode>0</Barcode>
+    <BuyerCode>UMB</BuyerCode>
+    <BuyerId>3</BuyerId>
+    <BuyerName>UMBRIA EQUITAZIONE S.R.L</BuyerName>
+    <CancelStatus>0</CancelStatus>
+    <ChildDeliveryDate>2020-09-30T00:00:00+05:30</ChildDeliveryDate>
+    <ChildMyDeliveryDate>2020-09-21T00:00:00+05:30</ChildMyDeliveryDate>
+    <ChildTranportName>FOB SEA</ChildTranportName>
+    <ChildTransportId>5</ChildTransportId>
+    <CLName>Light Oil</CLName>
+    <CName>Dollar</CName>
+    <Code>HS 5017 A Nat</Code>
+    <CompanyName>SB International</CompanyName>
+    <CSName>USD</CSName>
+    <CurrencyID>1</CurrencyID>
+    <DeliveryDate>2020-09-21T00:00:00+05:30</DeliveryDate>
+    <Description>5/8 D &amp; S Browband Headstall W/ Reins-7</Description>
+    <Fabric1>-</Fabric1>
+    <Fabric2>-</Fabric2>
+    <FitemId>33581</FitemId>
+    <FOBCIF>FOB</FOBCIF>
+    <GenderName>NA</GenderName>
+    <GSTN>09AAWFS7900H1ZL</GSTN>
+    <IsShoesOrder>0</IsShoesOrder>
+    <IssuedById>8</IssuedById>
+    <Logo>Lakota</Logo>
+    <MultipleDeliveryDate>0</MultipleDeliveryDate>
+    <MultipleTransport>0</MultipleTransport>
+    <MyDeliveryDate>2020-09-21T00:00:00+05:30</MyDeliveryDate>
+    <Name>Browband Headstall</Name>
+    <OrderChildID>9377</OrderChildID>
+    <OrderChildRemark>-</OrderChildRemark>
+    <OrderDate>2020-07-02T00:00:00+05:30</OrderDate>
+    <OrderMasterID>375</OrderMasterID>
+    <OrderNo>7220</OrderNo>
+    <Paper1>-</Paper1>
+    <Paper2>-</Paper2>
+    <PartyCode>LK1018</PartyCode>
+    <Phone>0512-2406947</Phone>
+    <PhotoPath>uploads/productphotos/productphoto.jpg</PhotoPath>
+    <PRDWidth>-</PRDWidth>
+    <Price>15.35</Price>
+    <ProductCategoryID>86</ProductCategoryID>
+    <ProductSizeName>N/A</ProductSizeName>
+    <ProductSubCategoryID>843</ProductSubCategoryID>
+    <ProductSubCategoryName>Browband Headstall</ProductSubCategoryName>
+    <Qty>50</Qty>
+    <RefrenceNo>-</RefrenceNo>
+    <Remark>-</Remark>
+    <RitemId>0</RitemId>
+    <Size>87</Size>
+    <SNo>10</SNo>
+    <Thickness>-</Thickness>
+    <TotalAmount>48878</TotalAmount>
+    <TotalQty>3224</TotalQty>
+    <TranportName>FOB SEA</TranportName>
+    <TransportCommments>-</TransportCommments>
+    <TransportId>5</TransportId>
+    <Unit>Pcs</Unit>
+    <WPQty>50</WPQty>
+    <WPRemark>-</WPRemark>
+  </ViewSaleOrderDetails>
+  <ViewSaleOrderDetails>
+    <AddressWork>#620 A, Safipur 1st, Harjinder Nagar, Kanpur-208007</AddressWork>
+    <Amount>153.5</Amount>
+    <BalanceQtyForWorkPlan>10</BalanceQtyForWorkPlan>
+    <Barcode>0</Barcode>
+    <BuyerCode>UMB</BuyerCode>
+    <BuyerId>3</BuyerId>
+    <BuyerName>UMBRIA EQUITAZIONE S.R.L</BuyerName>
+    <CancelStatus>0</CancelStatus>
+    <ChildDeliveryDate>2020-09-30T00:00:00+05:30</ChildDeliveryDate>
+    <ChildMyDeliveryDate>2020-09-21T00:00:00+05:30</ChildMyDeliveryDate>
+    <ChildTranportName>FOB SEA</ChildTranportName>
+    <ChildTransportId>5</ChildTransportId>
+    <CLName>Black</CLName>
+    <CName>Dollar</CName>
+    <Code>HS 5017 A Blk</Code>
+    <CompanyName>SB International</CompanyName>
+    <CSName>USD</CSName>
+    <CurrencyID>1</CurrencyID>
+    <DeliveryDate>2020-09-21T00:00:00+05:30</DeliveryDate>
+    <Description>5/8 D&amp;S Browband Headstall W/ Reins-7</Description>
+    <Fabric1>-</Fabric1>
+    <Fabric2>-</Fabric2>
+    <FitemId>33582</FitemId>
+    <FOBCIF>FOB</FOBCIF>
+    <GenderName>NA</GenderName>
+    <GSTN>09AAWFS7900H1ZL</GSTN>
+    <IsShoesOrder>0</IsShoesOrder>
+    <IssuedById>8</IssuedById>
+    <Logo>Lakota</Logo>
+    <MultipleDeliveryDate>0</MultipleDeliveryDate>
+    <MultipleTransport>0</MultipleTransport>
+    <MyDeliveryDate>2020-09-21T00:00:00+05:30</MyDeliveryDate>
+    <Name>Browband Headstall</Name>
+    <OrderChildID>9378</OrderChildID>
+    <OrderChildRemark>-</OrderChildRemark>
+    <OrderDate>2020-07-02T00:00:00+05:30</OrderDate>
+    <OrderMasterID>375</OrderMasterID>
+    <OrderNo>7220</OrderNo>
+    <Paper1>-</Paper1>
+    <Paper2>-</Paper2>
+    <PartyCode>LK1018</PartyCode>
+    <Phone>0512-2406947</Phone>
+    <PhotoPath>uploads/productphotos/productphoto.jpg</PhotoPath>
+    <PRDWidth>-</PRDWidth>
+    <Price>15.35</Price>
+    <ProductCategoryID>86</ProductCategoryID>
+    <ProductSizeName>N/A</ProductSizeName>
+    <ProductSubCategoryID>843</ProductSubCategoryID>
+    <ProductSubCategoryName>Browband Headstall</ProductSubCategoryName>
+    <Qty>10</Qty>
+    <RefrenceNo>-</RefrenceNo>
+    <Remark>-</Remark>
+    <RitemId>0</RitemId>
+    <Size>87</Size>
+    <SNo>11</SNo>
+    <Thickness>-</Thickness>
+    <TotalAmount>48878</TotalAmount>
+    <TotalQty>3224</TotalQty>
+    <TranportName>FOB SEA</TranportName>
+    <TransportCommments>-</TransportCommments>
+    <TransportId>5</TransportId>
+    <Unit>Pcs</Unit>
+    <WPQty>10</WPQty>
+    <WPRemark>-</WPRemark>
+  </ViewSaleOrderDetails>
+  <ViewSaleOrderDetails>
+    <AddressWork>#620 A, Safipur 1st, Harjinder Nagar, Kanpur-208007</AddressWork>
+    <Amount>525</Amount>
+    <BalanceQtyForWorkPlan>0</BalanceQtyForWorkPlan>
+    <Barcode>0</Barcode>
+    <BuyerCode>UMB</BuyerCode>
+    <BuyerId>3</BuyerId>
+    <BuyerName>UMBRIA EQUITAZIONE S.R.L</BuyerName>
+    <CancelStatus>0</CancelStatus>
+    <ChildDeliveryDate>2020-09-30T00:00:00+05:30</ChildDeliveryDate>
+    <ChildMyDeliveryDate>2020-09-21T00:00:00+05:30</ChildMyDeliveryDate>
+    <ChildTranportName>FOB SEA</ChildTranportName>
+    <ChildTransportId>5</ChildTransportId>
+    <CLName>Light Oil</CLName>
+    <CName>Dollar</CName>
+    <Code>CRB 21 Nat</Code>
+    <CompanyName>SB International</CompanyName>
+    <CSName>USD</CSName>
+    <CurrencyID>1</CurrencyID>
+    <DeliveryDate>2020-09-21T00:00:00+05:30</DeliveryDate>
+    <Description>Curb Strap with Chain</Description>
+    <Fabric1>-</Fabric1>
+    <Fabric2>-</Fabric2>
+    <FitemId>35184</FitemId>
+    <FOBCIF>FOB</FOBCIF>
+    <GenderName>NA</GenderName>
+    <GSTN>09AAWFS7900H1ZL</GSTN>
+    <IsShoesOrder>0</IsShoesOrder>
+    <IssuedById>8</IssuedById>
+    <Logo>Lakota</Logo>
+    <MultipleDeliveryDate>0</MultipleDeliveryDate>
+    <MultipleTransport>0</MultipleTransport>
+    <MyDeliveryDate>2020-09-21T00:00:00+05:30</MyDeliveryDate>
+    <Name>Curb Strap</Name>
+    <OrderChildID>9379</OrderChildID>
+    <OrderChildRemark>-</OrderChildRemark>
+    <OrderDate>2020-07-02T00:00:00+05:30</OrderDate>
+    <OrderMasterID>375</OrderMasterID>
+    <OrderNo>7220</OrderNo>
+    <Paper1>-</Paper1>
+    <Paper2>-</Paper2>
+    <PartyCode>MO00194</PartyCode>
+    <Phone>0512-2406947</Phone>
+    <PhotoPath>uploads/productphotos/35184.jpg</PhotoPath>
+    <PRDWidth>-</PRDWidth>
+    <Price>1.75</Price>
+    <ProductCategoryID>86</ProductCategoryID>
+    <ProductSizeName>N/A</ProductSizeName>
+    <ProductSubCategoryID>743</ProductSubCategoryID>
+    <ProductSubCategoryName>Curb Strap</ProductSubCategoryName>
+    <Qty>300</Qty>
+    <RefrenceNo>-</RefrenceNo>
+    <Remark>-</Remark>
+    <RitemId>0</RitemId>
+    <Size>87</Size>
+    <SNo>12</SNo>
+    <Thickness>-</Thickness>
+    <TotalAmount>48878</TotalAmount>
+    <TotalQty>3224</TotalQty>
+    <TranportName>FOB SEA</TranportName>
+    <TransportCommments>-</TransportCommments>
+    <TransportId>5</TransportId>
+    <Unit>Pcs</Unit>
+    <WPQty>300</WPQty>
+    <WPRemark>-</WPRemark>
+  </ViewSaleOrderDetails>
+  <ViewSaleOrderDetails>
+    <AddressWork>#620 A, Safipur 1st, Harjinder Nagar, Kanpur-208007</AddressWork>
+    <Amount>700</Amount>
+    <BalanceQtyForWorkPlan>0</BalanceQtyForWorkPlan>
+    <Barcode>0</Barcode>
+    <BuyerCode>UMB</BuyerCode>
+    <BuyerId>3</BuyerId>
+    <BuyerName>UMBRIA EQUITAZIONE S.R.L</BuyerName>
+    <CancelStatus>0</CancelStatus>
+    <ChildDeliveryDate>2020-09-30T00:00:00+05:30</ChildDeliveryDate>
+    <ChildMyDeliveryDate>2020-09-21T00:00:00+05:30</ChildMyDeliveryDate>
+    <ChildTranportName>FOB SEA</ChildTranportName>
+    <ChildTransportId>5</ChildTransportId>
+    <CLName>Dark Oil</CLName>
+    <CName>Dollar</CName>
+    <Code>CRB 21 Drk Oil</Code>
+    <CompanyName>SB International</CompanyName>
+    <CSName>USD</CSName>
+    <CurrencyID>1</CurrencyID>
+    <DeliveryDate>2020-09-21T00:00:00+05:30</DeliveryDate>
+    <Description>Curb Strap with Chain</Description>
+    <Fabric1>-</Fabric1>
+    <Fabric2>-</Fabric2>
+    <FitemId>35185</FitemId>
+    <FOBCIF>FOB</FOBCIF>
+    <GenderName>NA</GenderName>
+    <GSTN>09AAWFS7900H1ZL</GSTN>
+    <IsShoesOrder>0</IsShoesOrder>
+    <IssuedById>8</IssuedById>
+    <Logo>Lakota</Logo>
+    <MultipleDeliveryDate>0</MultipleDeliveryDate>
+    <MultipleTransport>0</MultipleTransport>
+    <MyDeliveryDate>2020-09-21T00:00:00+05:30</MyDeliveryDate>
+    <Name>Curb Strap</Name>
+    <OrderChildID>9380</OrderChildID>
+    <OrderChildRemark>-</OrderChildRemark>
+    <OrderDate>2020-07-02T00:00:00+05:30</OrderDate>
+    <OrderMasterID>375</OrderMasterID>
+    <OrderNo>7220</OrderNo>
+    <Paper1>-</Paper1>
+    <Paper2>-</Paper2>
+    <PartyCode>MO00194</PartyCode>
+    <Phone>0512-2406947</Phone>
+    <PhotoPath>uploads/productphotos/productphoto.jpg</PhotoPath>
+    <PRDWidth>-</PRDWidth>
+    <Price>1.75</Price>
+    <ProductCategoryID>86</ProductCategoryID>
+    <ProductSizeName>N/A</ProductSizeName>
+    <ProductSubCategoryID>743</ProductSubCategoryID>
+    <ProductSubCategoryName>Curb Strap</ProductSubCategoryName>
+    <Qty>400</Qty>
+    <RefrenceNo>-</RefrenceNo>
+    <Remark>-</Remark>
+    <RitemId>0</RitemId>
+    <Size>87</Size>
+    <SNo>13</SNo>
+    <Thickness>-</Thickness>
+    <TotalAmount>48878</TotalAmount>
+    <TotalQty>3224</TotalQty>
+    <TranportName>FOB SEA</TranportName>
+    <TransportCommments>-</TransportCommments>
+    <TransportId>5</TransportId>
+    <Unit>Pcs</Unit>
+    <WPQty>400</WPQty>
+    <WPRemark>-</WPRemark>
+  </ViewSaleOrderDetails>
+  <ViewSaleOrderDetails>
+    <AddressWork>#620 A, Safipur 1st, Harjinder Nagar, Kanpur-208007</AddressWork>
+    <Amount>401</Amount>
+    <BalanceQtyForWorkPlan>0</BalanceQtyForWorkPlan>
+    <Barcode>0</Barcode>
+    <BuyerCode>UMB</BuyerCode>
+    <BuyerId>3</BuyerId>
+    <BuyerName>UMBRIA EQUITAZIONE S.R.L</BuyerName>
+    <CancelStatus>0</CancelStatus>
+    <ChildDeliveryDate>2020-09-30T00:00:00+05:30</ChildDeliveryDate>
+    <ChildMyDeliveryDate>2020-09-21T00:00:00+05:30</ChildMyDeliveryDate>
+    <ChildTranportName>FOB SEA</ChildTranportName>
+    <ChildTransportId>5</ChildTransportId>
+    <CLName>Natural</CLName>
+    <CName>Dollar</CName>
+    <Code>C 6472 Nat</Code>
+    <CompanyName>SB International</CompanyName>
+    <CSName>USD</CSName>
+    <CurrencyID>1</CurrencyID>
+    <DeliveryDate>2020-09-21T00:00:00+05:30</DeliveryDate>
+    <Description>Back Cinches with Tooling with Billet Basket</Description>
+    <Fabric1>-</Fabric1>
+    <Fabric2>-</Fabric2>
+    <FitemId>35562</FitemId>
+    <FOBCIF>FOB</FOBCIF>
+    <GenderName>NA</GenderName>
+    <GSTN>09AAWFS7900H1ZL</GSTN>
+    <IsShoesOrder>0</IsShoesOrder>
+    <IssuedById>8</IssuedById>
+    <Logo>UMB</Logo>
+    <MultipleDeliveryDate>0</MultipleDeliveryDate>
+    <MultipleTransport>0</MultipleTransport>
+    <MyDeliveryDate>2020-09-21T00:00:00+05:30</MyDeliveryDate>
+    <Name>Cinches</Name>
+    <OrderChildID>9381</OrderChildID>
+    <OrderChildRemark>-</OrderChildRemark>
+    <OrderDate>2020-07-02T00:00:00+05:30</OrderDate>
+    <OrderMasterID>375</OrderMasterID>
+    <OrderNo>7220</OrderNo>
+    <Paper1>-</Paper1>
+    <Paper2>-</Paper2>
+    <PartyCode>SP00505</PartyCode>
+    <Phone>0512-2406947</Phone>
+    <PhotoPath>uploads/productphotos/35562.jpg</PhotoPath>
+    <PRDWidth>-</PRDWidth>
+    <Price>40.1</Price>
+    <ProductCategoryID>86</ProductCategoryID>
+    <ProductSizeName>N/A</ProductSizeName>
+    <ProductSubCategoryID>784</ProductSubCategoryID>
+    <ProductSubCategoryName>Girth</ProductSubCategoryName>
+    <Qty>10</Qty>
+    <RefrenceNo>-</RefrenceNo>
+    <Remark>-</Remark>
+    <RitemId>0</RitemId>
+    <Size>87</Size>
+    <SNo>14</SNo>
+    <Thickness>-</Thickness>
+    <TotalAmount>48878</TotalAmount>
+    <TotalQty>3224</TotalQty>
+    <TranportName>FOB SEA</TranportName>
+    <TransportCommments>-</TransportCommments>
+    <TransportId>5</TransportId>
+    <Unit>Pcs</Unit>
+    <WPQty>10</WPQty>
+    <WPRemark>-</WPRemark>
+  </ViewSaleOrderDetails>
+  <ViewSaleOrderDetails>
+    <AddressWork>#620 A, Safipur 1st, Harjinder Nagar, Kanpur-208007</AddressWork>
+    <Amount>890</Amount>
+    <BalanceQtyForWorkPlan>0</BalanceQtyForWorkPlan>
+    <Barcode>0</Barcode>
+    <BuyerCode>UMB</BuyerCode>
+    <BuyerId>3</BuyerId>
+    <BuyerName>UMBRIA EQUITAZIONE S.R.L</BuyerName>
+    <CancelStatus>0</CancelStatus>
+    <ChildDeliveryDate>2020-09-30T00:00:00+05:30</ChildDeliveryDate>
+    <ChildMyDeliveryDate>2020-09-21T00:00:00+05:30</ChildMyDeliveryDate>
+    <ChildTranportName>FOB SEA</ChildTranportName>
+    <ChildTransportId>5</ChildTransportId>
+    <CLName>Light Oil</CLName>
+    <CName>Dollar</CName>
+    <Code>HS 2522 NAT</Code>
+    <CompanyName>SB International</CompanyName>
+    <CSName>USD</CSName>
+    <CurrencyID>1</CurrencyID>
+    <DeliveryDate>2020-09-21T00:00:00+05:30</DeliveryDate>
+    <Description>"V" Browband Headstall with Reins-7 silver</Description>
+    <Fabric1>-</Fabric1>
+    <Fabric2>-</Fabric2>
+    <FitemId>35943</FitemId>
+    <FOBCIF>FOB</FOBCIF>
+    <GenderName>NA</GenderName>
+    <GSTN>09AAWFS7900H1ZL</GSTN>
+    <IsShoesOrder>0</IsShoesOrder>
+    <IssuedById>8</IssuedById>
+    <Logo>Lakota</Logo>
+    <MultipleDeliveryDate>0</MultipleDeliveryDate>
+    <MultipleTransport>0</MultipleTransport>
+    <MyDeliveryDate>2020-09-21T00:00:00+05:30</MyDeliveryDate>
+    <Name>BROWBAND HEADSTALL</Name>
+    <OrderChildID>9382</OrderChildID>
+    <OrderChildRemark>-</OrderChildRemark>
+    <OrderDate>2020-07-02T00:00:00+05:30</OrderDate>
+    <OrderMasterID>375</OrderMasterID>
+    <OrderNo>7220</OrderNo>
+    <Paper1>-</Paper1>
+    <Paper2>-</Paper2>
+    <PartyCode>BR00073</PartyCode>
+    <Phone>0512-2406947</Phone>
+    <PhotoPath>uploads/productphotos/productphoto.jpg</PhotoPath>
+    <PRDWidth>-</PRDWidth>
+    <Price>22.25</Price>
+    <ProductCategoryID>86</ProductCategoryID>
+    <ProductSizeName>N/A</ProductSizeName>
+    <ProductSubCategoryID>843</ProductSubCategoryID>
+    <ProductSubCategoryName>Browband Headstall</ProductSubCategoryName>
+    <Qty>40</Qty>
+    <RefrenceNo>-</RefrenceNo>
+    <Remark>-</Remark>
+    <RitemId>0</RitemId>
+    <Size>87</Size>
+    <SNo>15</SNo>
+    <Thickness>-</Thickness>
+    <TotalAmount>48878</TotalAmount>
+    <TotalQty>3224</TotalQty>
+    <TranportName>FOB SEA</TranportName>
+    <TransportCommments>-</TransportCommments>
+    <TransportId>5</TransportId>
+    <Unit>Pcs</Unit>
+    <WPQty>40</WPQty>
+    <WPRemark>-</WPRemark>
+  </ViewSaleOrderDetails>
+  <ViewSaleOrderDetails>
+    <AddressWork>#620 A, Safipur 1st, Harjinder Nagar, Kanpur-208007</AddressWork>
+    <Amount>178</Amount>
+    <BalanceQtyForWorkPlan>0</BalanceQtyForWorkPlan>
+    <Barcode>0</Barcode>
+    <BuyerCode>UMB</BuyerCode>
+    <BuyerId>3</BuyerId>
+    <BuyerName>UMBRIA EQUITAZIONE S.R.L</BuyerName>
+    <CancelStatus>0</CancelStatus>
+    <ChildDeliveryDate>2020-09-30T00:00:00+05:30</ChildDeliveryDate>
+    <ChildMyDeliveryDate>2020-09-21T00:00:00+05:30</ChildMyDeliveryDate>
+    <ChildTranportName>FOB SEA</ChildTranportName>
+    <ChildTransportId>5</ChildTransportId>
+    <CLName>Black</CLName>
+    <CName>Dollar</CName>
+    <Code>HS 2522 BLK</Code>
+    <CompanyName>SB International</CompanyName>
+    <CSName>USD</CSName>
+    <CurrencyID>1</CurrencyID>
+    <DeliveryDate>2020-09-21T00:00:00+05:30</DeliveryDate>
+    <Description>"V" Browband Headstall with Reins-7 silver</Description>
+    <Fabric1>-</Fabric1>
+    <Fabric2>-</Fabric2>
+    <FitemId>35944</FitemId>
+    <FOBCIF>FOB</FOBCIF>
+    <GenderName>NA</GenderName>
+    <GSTN>09AAWFS7900H1ZL</GSTN>
+    <IsShoesOrder>0</IsShoesOrder>
+    <IssuedById>8</IssuedById>
+    <Logo>Lakota</Logo>
+    <MultipleDeliveryDate>0</MultipleDeliveryDate>
+    <MultipleTransport>0</MultipleTransport>
+    <MyDeliveryDate>2020-09-21T00:00:00+05:30</MyDeliveryDate>
+    <Name>BROW BAND HEADSTALL</Name>
+    <OrderChildID>9383</OrderChildID>
+    <OrderChildRemark>-</OrderChildRemark>
+    <OrderDate>2020-07-02T00:00:00+05:30</OrderDate>
+    <OrderMasterID>375</OrderMasterID>
+    <OrderNo>7220</OrderNo>
+    <Paper1>-</Paper1>
+    <Paper2>-</Paper2>
+    <PartyCode>BR00073</PartyCode>
+    <Phone>0512-2406947</Phone>
+    <PhotoPath>uploads/productphotos/productphoto.jpg</PhotoPath>
+    <PRDWidth>-</PRDWidth>
+    <Price>22.25</Price>
+    <ProductCategoryID>86</ProductCategoryID>
+    <ProductSizeName>N/A</ProductSizeName>
+    <ProductSubCategoryID>843</ProductSubCategoryID>
+    <ProductSubCategoryName>Browband Headstall</ProductSubCategoryName>
+    <Qty>8</Qty>
+    <RefrenceNo>-</RefrenceNo>
+    <Remark>-</Remark>
+    <RitemId>0</RitemId>
+    <Size>87</Size>
+    <SNo>16</SNo>
+    <Thickness>-</Thickness>
+    <TotalAmount>48878</TotalAmount>
+    <TotalQty>3224</TotalQty>
+    <TranportName>FOB SEA</TranportName>
+    <TransportCommments>-</TransportCommments>
+    <TransportId>5</TransportId>
+    <Unit>Pcs</Unit>
+    <WPQty>8</WPQty>
+    <WPRemark>-</WPRemark>
+  </ViewSaleOrderDetails>
+  <ViewSaleOrderDetails>
+    <AddressWork>#620 A, Safipur 1st, Harjinder Nagar, Kanpur-208007</AddressWork>
+    <Amount>1606.5</Amount>
+    <BalanceQtyForWorkPlan>0</BalanceQtyForWorkPlan>
+    <Barcode>0</Barcode>
+    <BuyerCode>UMB</BuyerCode>
+    <BuyerId>3</BuyerId>
+    <BuyerName>UMBRIA EQUITAZIONE S.R.L</BuyerName>
+    <CancelStatus>0</CancelStatus>
+    <ChildDeliveryDate>2020-09-30T00:00:00+05:30</ChildDeliveryDate>
+    <ChildMyDeliveryDate>2020-09-21T00:00:00+05:30</ChildMyDeliveryDate>
+    <ChildTranportName>FOB SEA</ChildTranportName>
+    <ChildTransportId>5</ChildTransportId>
+    <CLName>Light Oil</CLName>
+    <CName>Dollar</CName>
+    <Code>C 6466 NAT</Code>
+    <CompanyName>SB International</CompanyName>
+    <CSName>USD</CSName>
+    <CurrencyID>1</CurrencyID>
+    <DeliveryDate>2020-09-21T00:00:00+05:30</DeliveryDate>
+    <Description>Western Back Girth with Set 2.5" x 32"</Description>
+    <Fabric1>-</Fabric1>
+    <Fabric2>-</Fabric2>
+    <FitemId>35958</FitemId>
+    <FOBCIF>FOB</FOBCIF>
+    <GenderName>NA</GenderName>
+    <GSTN>09AAWFS7900H1ZL</GSTN>
+    <IsShoesOrder>0</IsShoesOrder>
+    <IssuedById>8</IssuedById>
+    <Logo>Lakota</Logo>
+    <MultipleDeliveryDate>0</MultipleDeliveryDate>
+    <MultipleTransport>0</MultipleTransport>
+    <MyDeliveryDate>2020-09-21T00:00:00+05:30</MyDeliveryDate>
+    <Name>BACK GIRTH</Name>
+    <OrderChildID>9384</OrderChildID>
+    <OrderChildRemark>-</OrderChildRemark>
+    <OrderDate>2020-07-02T00:00:00+05:30</OrderDate>
+    <OrderMasterID>375</OrderMasterID>
+    <OrderNo>7220</OrderNo>
+    <Paper1>-</Paper1>
+    <Paper2>-</Paper2>
+    <PartyCode>LK7080</PartyCode>
+    <Phone>0512-2406947</Phone>
+    <PhotoPath>uploads/productphotos/35958.jpg</PhotoPath>
+    <PRDWidth>-</PRDWidth>
+    <Price>22.95</Price>
+    <ProductCategoryID>86</ProductCategoryID>
+    <ProductSizeName>N/A</ProductSizeName>
+    <ProductSubCategoryID>784</ProductSubCategoryID>
+    <ProductSubCategoryName>Girth</ProductSubCategoryName>
+    <Qty>70</Qty>
+    <RefrenceNo>-</RefrenceNo>
+    <Remark>-</Remark>
+    <RitemId>0</RitemId>
+    <Size>87</Size>
+    <SNo>17</SNo>
+    <Thickness>-</Thickness>
+    <TotalAmount>48878</TotalAmount>
+    <TotalQty>3224</TotalQty>
+    <TranportName>FOB SEA</TranportName>
+    <TransportCommments>-</TransportCommments>
+    <TransportId>5</TransportId>
+    <Unit>Pcs</Unit>
+    <WPQty>70</WPQty>
+    <WPRemark>-</WPRemark>
+  </ViewSaleOrderDetails>
+  <ViewSaleOrderDetails>
+    <AddressWork>#620 A, Safipur 1st, Harjinder Nagar, Kanpur-208007</AddressWork>
+    <Amount>1203</Amount>
+    <BalanceQtyForWorkPlan>0</BalanceQtyForWorkPlan>
+    <Barcode>0</Barcode>
+    <BuyerCode>UMB</BuyerCode>
+    <BuyerId>3</BuyerId>
+    <BuyerName>UMBRIA EQUITAZIONE S.R.L</BuyerName>
+    <CancelStatus>0</CancelStatus>
+    <ChildDeliveryDate>2020-09-30T00:00:00+05:30</ChildDeliveryDate>
+    <ChildMyDeliveryDate>2020-09-21T00:00:00+05:30</ChildMyDeliveryDate>
+    <ChildTranportName>FOB SEA</ChildTranportName>
+    <ChildTransportId>5</ChildTransportId>
+    <CLName>Dark Oil</CLName>
+    <CName>Dollar</CName>
+    <Code>C 6472 HAR</Code>
+    <CompanyName>SB International</CompanyName>
+    <CSName>USD</CSName>
+    <CurrencyID>1</CurrencyID>
+    <DeliveryDate>2020-09-21T00:00:00+05:30</DeliveryDate>
+    <Description>Back Cinches with Tooling with Billet Basket</Description>
+    <Fabric1>-</Fabric1>
+    <Fabric2>-</Fabric2>
+    <FitemId>36022</FitemId>
+    <FOBCIF>FOB</FOBCIF>
+    <GenderName>NA</GenderName>
+    <GSTN>09AAWFS7900H1ZL</GSTN>
+    <IsShoesOrder>0</IsShoesOrder>
+    <IssuedById>8</IssuedById>
+    <Logo>Pools</Logo>
+    <MultipleDeliveryDate>0</MultipleDeliveryDate>
+    <MultipleTransport>0</MultipleTransport>
+    <MyDeliveryDate>2020-09-21T00:00:00+05:30</MyDeliveryDate>
+    <Name>BACK CINCHES</Name>
+    <OrderChildID>9385</OrderChildID>
+    <OrderChildRemark>-</OrderChildRemark>
+    <OrderDate>2020-07-02T00:00:00+05:30</OrderDate>
+    <OrderMasterID>375</OrderMasterID>
+    <OrderNo>7220</OrderNo>
+    <Paper1>-</Paper1>
+    <Paper2>-</Paper2>
+    <PartyCode>SP00505</PartyCode>
+    <Phone>0512-2406947</Phone>
+    <PhotoPath>uploads/productphotos/36022.jpg</PhotoPath>
+    <PRDWidth>-</PRDWidth>
+    <Price>40.1</Price>
+    <ProductCategoryID>86</ProductCategoryID>
+    <ProductSizeName>N/A</ProductSizeName>
+    <ProductSubCategoryID>784</ProductSubCategoryID>
+    <ProductSubCategoryName>Girth</ProductSubCategoryName>
+    <Qty>30</Qty>
+    <RefrenceNo>-</RefrenceNo>
+    <Remark>-</Remark>
+    <RitemId>0</RitemId>
+    <Size>87</Size>
+    <SNo>18</SNo>
+    <Thickness>-</Thickness>
+    <TotalAmount>48878</TotalAmount>
+    <TotalQty>3224</TotalQty>
+    <TranportName>FOB SEA</TranportName>
+    <TransportCommments>-</TransportCommments>
+    <TransportId>5</TransportId>
+    <Unit>Pcs</Unit>
+    <WPQty>30</WPQty>
+    <WPRemark>-</WPRemark>
+  </ViewSaleOrderDetails>
+  <ViewSaleOrderDetails>
+    <AddressWork>#620 A, Safipur 1st, Harjinder Nagar, Kanpur-208007</AddressWork>
+    <Amount>606</Amount>
+    <BalanceQtyForWorkPlan>12</BalanceQtyForWorkPlan>
+    <Barcode>0</Barcode>
+    <BuyerCode>UMB</BuyerCode>
+    <BuyerId>3</BuyerId>
+    <BuyerName>UMBRIA EQUITAZIONE S.R.L</BuyerName>
+    <CancelStatus>0</CancelStatus>
+    <ChildDeliveryDate>2020-09-30T00:00:00+05:30</ChildDeliveryDate>
+    <ChildMyDeliveryDate>2020-09-21T00:00:00+05:30</ChildMyDeliveryDate>
+    <ChildTranportName>FOB SEA</ChildTranportName>
+    <ChildTransportId>5</ChildTransportId>
+    <CLName>Dk.Brown</CLName>
+    <CName>Dollar</CName>
+    <Code>S bag 28 Dk Brn</Code>
+    <CompanyName>SB International</CompanyName>
+    <CSName>USD</CSName>
+    <CurrencyID>1</CurrencyID>
+    <DeliveryDate>2020-09-21T00:00:00+05:30</DeliveryDate>
+    <Description>Saddle Bag with Tooling</Description>
+    <Fabric1>-</Fabric1>
+    <Fabric2>-</Fabric2>
+    <FitemId>37251</FitemId>
+    <FOBCIF>FOB</FOBCIF>
+    <GenderName>NA</GenderName>
+    <GSTN>09AAWFS7900H1ZL</GSTN>
+    <IsShoesOrder>0</IsShoesOrder>
+    <IssuedById>8</IssuedById>
+    <Logo>-</Logo>
+    <MultipleDeliveryDate>0</MultipleDeliveryDate>
+    <MultipleTransport>0</MultipleTransport>
+    <MyDeliveryDate>2020-09-21T00:00:00+05:30</MyDeliveryDate>
+    <Name>Saddle Bag</Name>
+    <OrderChildID>9386</OrderChildID>
+    <OrderChildRemark>-</OrderChildRemark>
+    <OrderDate>2020-07-02T00:00:00+05:30</OrderDate>
+    <OrderMasterID>375</OrderMasterID>
+    <OrderNo>7220</OrderNo>
+    <Paper1>-</Paper1>
+    <Paper2>-</Paper2>
+    <PartyCode>AC00075</PartyCode>
+    <Phone>0512-2406947</Phone>
+    <PhotoPath>uploads/productphotos/productphoto.jpg</PhotoPath>
+    <PRDWidth>-</PRDWidth>
+    <Price>50.5</Price>
+    <ProductCategoryID>86</ProductCategoryID>
+    <ProductSizeName>N/A</ProductSizeName>
+    <ProductSubCategoryID>740</ProductSubCategoryID>
+    <ProductSubCategoryName>Saddle Bag</ProductSubCategoryName>
+    <Qty>12</Qty>
+    <RefrenceNo>-</RefrenceNo>
+    <Remark>-</Remark>
+    <RitemId>0</RitemId>
+    <Size>87</Size>
+    <SNo>19</SNo>
+    <Thickness>-</Thickness>
+    <TotalAmount>48878</TotalAmount>
+    <TotalQty>3224</TotalQty>
+    <TranportName>FOB SEA</TranportName>
+    <TransportCommments>-</TransportCommments>
+    <TransportId>5</TransportId>
+    <Unit>Pcs</Unit>
+    <WPQty>12</WPQty>
+    <WPRemark>-</WPRemark>
+  </ViewSaleOrderDetails>
+  <ViewSaleOrderDetails>
+    <AddressWork>#620 A, Safipur 1st, Harjinder Nagar, Kanpur-208007</AddressWork>
+    <Amount>555</Amount>
+    <BalanceQtyForWorkPlan>0</BalanceQtyForWorkPlan>
+    <Barcode>0</Barcode>
+    <BuyerCode>UMB</BuyerCode>
+    <BuyerId>3</BuyerId>
+    <BuyerName>UMBRIA EQUITAZIONE S.R.L</BuyerName>
+    <CancelStatus>0</CancelStatus>
+    <ChildDeliveryDate>2020-09-30T00:00:00+05:30</ChildDeliveryDate>
+    <ChildMyDeliveryDate>2020-09-21T00:00:00+05:30</ChildMyDeliveryDate>
+    <ChildTranportName>FOB SEA</ChildTranportName>
+    <ChildTransportId>5</ChildTransportId>
+    <CLName>Natural Oil</CLName>
+    <CName>Dollar</CName>
+    <Code>CRB 05 NAT</Code>
+    <CompanyName>SB International</CompanyName>
+    <CSName>USD</CSName>
+    <CurrencyID>1</CurrencyID>
+    <DeliveryDate>2020-09-21T00:00:00+05:30</DeliveryDate>
+    <Description>5/8" Double Chain Curb Strap</Description>
+    <Fabric1>-</Fabric1>
+    <Fabric2>-</Fabric2>
+    <FitemId>37253</FitemId>
+    <FOBCIF>FOB</FOBCIF>
+    <GenderName>NA</GenderName>
+    <GSTN>09AAWFS7900H1ZL</GSTN>
+    <IsShoesOrder>0</IsShoesOrder>
+    <IssuedById>8</IssuedById>
+    <Logo>ERS</Logo>
+    <MultipleDeliveryDate>0</MultipleDeliveryDate>
+    <MultipleTransport>0</MultipleTransport>
+    <MyDeliveryDate>2020-09-21T00:00:00+05:30</MyDeliveryDate>
+    <Name>Curb Strap</Name>
+    <OrderChildID>9387</OrderChildID>
+    <OrderChildRemark>-</OrderChildRemark>
+    <OrderDate>2020-07-02T00:00:00+05:30</OrderDate>
+    <OrderMasterID>375</OrderMasterID>
+    <OrderNo>7220</OrderNo>
+    <Paper1>-</Paper1>
+    <Paper2>-</Paper2>
+    <PartyCode>MO00192A</PartyCode>
+    <Phone>0512-2406947</Phone>
+    <PhotoPath>uploads/productphotos/37253.jpg</PhotoPath>
+    <PRDWidth>-</PRDWidth>
+    <Price>1.85</Price>
+    <ProductCategoryID>86</ProductCategoryID>
+    <ProductSizeName>N/A</ProductSizeName>
+    <ProductSubCategoryID>743</ProductSubCategoryID>
+    <ProductSubCategoryName>Curb Strap</ProductSubCategoryName>
+    <Qty>300</Qty>
+    <RefrenceNo>-</RefrenceNo>
+    <Remark>-</Remark>
+    <RitemId>0</RitemId>
+    <Size>87</Size>
+    <SNo>20</SNo>
+    <Thickness>-</Thickness>
+    <TotalAmount>48878</TotalAmount>
+    <TotalQty>3224</TotalQty>
+    <TranportName>FOB SEA</TranportName>
+    <TransportCommments>-</TransportCommments>
+    <TransportId>5</TransportId>
+    <Unit>Pcs</Unit>
+    <WPQty>300</WPQty>
+    <WPRemark>-</WPRemark>
+  </ViewSaleOrderDetails>
+  <ViewSaleOrderDetails>
+    <AddressWork>#620 A, Safipur 1st, Harjinder Nagar, Kanpur-208007</AddressWork>
+    <Amount>555</Amount>
+    <BalanceQtyForWorkPlan>0</BalanceQtyForWorkPlan>
+    <Barcode>0</Barcode>
+    <BuyerCode>UMB</BuyerCode>
+    <BuyerId>3</BuyerId>
+    <BuyerName>UMBRIA EQUITAZIONE S.R.L</BuyerName>
+    <CancelStatus>0</CancelStatus>
+    <ChildDeliveryDate>2020-09-30T00:00:00+05:30</ChildDeliveryDate>
+    <ChildMyDeliveryDate>2020-09-21T00:00:00+05:30</ChildMyDeliveryDate>
+    <ChildTranportName>FOB SEA</ChildTranportName>
+    <ChildTransportId>5</ChildTransportId>
+    <CLName>Dark Oil</CLName>
+    <CName>Dollar</CName>
+    <Code>CRB 05 HAR</Code>
+    <CompanyName>SB International</CompanyName>
+    <CSName>USD</CSName>
+    <CurrencyID>1</CurrencyID>
+    <DeliveryDate>2020-09-21T00:00:00+05:30</DeliveryDate>
+    <Description>5/8" Double Chain Curb Strap</Description>
+    <Fabric1>-</Fabric1>
+    <Fabric2>-</Fabric2>
+    <FitemId>37254</FitemId>
+    <FOBCIF>FOB</FOBCIF>
+    <GenderName>NA</GenderName>
+    <GSTN>09AAWFS7900H1ZL</GSTN>
+    <IsShoesOrder>0</IsShoesOrder>
+    <IssuedById>8</IssuedById>
+    <Logo>ERS</Logo>
+    <MultipleDeliveryDate>0</MultipleDeliveryDate>
+    <MultipleTransport>0</MultipleTransport>
+    <MyDeliveryDate>2020-09-21T00:00:00+05:30</MyDeliveryDate>
+    <Name>Curb Strap</Name>
+    <OrderChildID>9388</OrderChildID>
+    <OrderChildRemark>-</OrderChildRemark>
+    <OrderDate>2020-07-02T00:00:00+05:30</OrderDate>
+    <OrderMasterID>375</OrderMasterID>
+    <OrderNo>7220</OrderNo>
+    <Paper1>-</Paper1>
+    <Paper2>-</Paper2>
+    <PartyCode>MO00192A</PartyCode>
+    <Phone>0512-2406947</Phone>
+    <PhotoPath>uploads/productphotos/37254.jpg</PhotoPath>
+    <PRDWidth>-</PRDWidth>
+    <Price>1.85</Price>
+    <ProductCategoryID>86</ProductCategoryID>
+    <ProductSizeName>N/A</ProductSizeName>
+    <ProductSubCategoryID>743</ProductSubCategoryID>
+    <ProductSubCategoryName>Curb Strap</ProductSubCategoryName>
+    <Qty>300</Qty>
+    <RefrenceNo>-</RefrenceNo>
+    <Remark>-</Remark>
+    <RitemId>0</RitemId>
+    <Size>87</Size>
+    <SNo>21</SNo>
+    <Thickness>-</Thickness>
+    <TotalAmount>48878</TotalAmount>
+    <TotalQty>3224</TotalQty>
+    <TranportName>FOB SEA</TranportName>
+    <TransportCommments>-</TransportCommments>
+    <TransportId>5</TransportId>
+    <Unit>Pcs</Unit>
+    <WPQty>300</WPQty>
+    <WPRemark>-</WPRemark>
+  </ViewSaleOrderDetails>
+  <ViewSaleOrderDetails>
+    <AddressWork>#620 A, Safipur 1st, Harjinder Nagar, Kanpur-208007</AddressWork>
+    <Amount>5900</Amount>
+    <BalanceQtyForWorkPlan>200</BalanceQtyForWorkPlan>
+    <Barcode>0</Barcode>
+    <BuyerCode>UMB</BuyerCode>
+    <BuyerId>3</BuyerId>
+    <BuyerName>UMBRIA EQUITAZIONE S.R.L</BuyerName>
+    <CancelStatus>0</CancelStatus>
+    <ChildDeliveryDate>2020-09-30T00:00:00+05:30</ChildDeliveryDate>
+    <ChildMyDeliveryDate>2020-09-21T00:00:00+05:30</ChildMyDeliveryDate>
+    <ChildTranportName>FOB SEA</ChildTranportName>
+    <ChildTransportId>5</ChildTransportId>
+    <CLName>None</CLName>
+    <CName>Dollar</CName>
+    <Code>SB 598 WL</Code>
+    <CompanyName>SB International</CompanyName>
+    <CSName>USD</CSName>
+    <CurrencyID>1</CurrencyID>
+    <DeliveryDate>2020-09-21T00:00:00+05:30</DeliveryDate>
+    <Description>6mm Woolen Felt on Top &amp; 8 mm Bottom w/middle13mm PVC Rubber Form &amp; Wear Leather</Description>
+    <Fabric1>-</Fabric1>
+    <Fabric2>-</Fabric2>
+    <FitemId>37307</FitemId>
+    <FOBCIF>FOB</FOBCIF>
+    <GenderName>NA</GenderName>
+    <GSTN>09AAWFS7900H1ZL</GSTN>
+    <IsShoesOrder>0</IsShoesOrder>
+    <IssuedById>8</IssuedById>
+    <Logo>Pools</Logo>
+    <MultipleDeliveryDate>0</MultipleDeliveryDate>
+    <MultipleTransport>0</MultipleTransport>
+    <MyDeliveryDate>2020-09-21T00:00:00+05:30</MyDeliveryDate>
+    <Name>SADDLE PAD</Name>
+    <OrderChildID>9389</OrderChildID>
+    <OrderChildRemark>-</OrderChildRemark>
+    <OrderDate>2020-07-02T00:00:00+05:30</OrderDate>
+    <OrderMasterID>375</OrderMasterID>
+    <OrderNo>7220</OrderNo>
+    <Paper1>-</Paper1>
+    <Paper2>-</Paper2>
+    <PartyCode>SS00069</PartyCode>
+    <Phone>0512-2406947</Phone>
+    <PhotoPath>uploads/productphotos/37307.jpg</PhotoPath>
+    <PRDWidth>-</PRDWidth>
+    <Price>29.5</Price>
+    <ProductCategoryID>86</ProductCategoryID>
+    <ProductSizeName>6 MM</ProductSizeName>
+    <ProductSubCategoryID>739</ProductSubCategoryID>
+    <ProductSubCategoryName>Saddle Pad &amp; Blanket</ProductSubCategoryName>
+    <Qty>200</Qty>
+    <RefrenceNo>-</RefrenceNo>
+    <Remark>-</Remark>
+    <RitemId>0</RitemId>
+    <Size>287</Size>
+    <SNo>22</SNo>
+    <Thickness>-</Thickness>
+    <TotalAmount>48878</TotalAmount>
+    <TotalQty>3224</TotalQty>
+    <TranportName>FOB SEA</TranportName>
+    <TransportCommments>-</TransportCommments>
+    <TransportId>5</TransportId>
+    <Unit>Pcs</Unit>
+    <WPQty>200</WPQty>
+    <WPRemark>-</WPRemark>
+  </ViewSaleOrderDetails>
+  <ViewSaleOrderDetails>
+    <AddressWork>#620 A, Safipur 1st, Harjinder Nagar, Kanpur-208007</AddressWork>
+    <Amount>1010</Amount>
+    <BalanceQtyForWorkPlan>0</BalanceQtyForWorkPlan>
+    <Barcode>0</Barcode>
+    <BuyerCode>UMB</BuyerCode>
+    <BuyerId>3</BuyerId>
+    <BuyerName>UMBRIA EQUITAZIONE S.R.L</BuyerName>
+    <CancelStatus>0</CancelStatus>
+    <ChildDeliveryDate>2020-09-30T00:00:00+05:30</ChildDeliveryDate>
+    <ChildMyDeliveryDate>2020-09-21T00:00:00+05:30</ChildMyDeliveryDate>
+    <ChildTranportName>FOB SEA</ChildTranportName>
+    <ChildTransportId>5</ChildTransportId>
+    <CLName>Dark Oil</CLName>
+    <CName>Dollar</CName>
+    <Code>S bag 28 HAR</Code>
+    <CompanyName>SB International</CompanyName>
+    <CSName>USD</CSName>
+    <CurrencyID>1</CurrencyID>
+    <DeliveryDate>2020-09-21T00:00:00+05:30</DeliveryDate>
+    <Description>Saddle Bag with Basket Tooling</Description>
+    <Fabric1>-</Fabric1>
+    <Fabric2>-</Fabric2>
+    <FitemId>37320</FitemId>
+    <FOBCIF>FOB</FOBCIF>
+    <GenderName>NA</GenderName>
+    <GSTN>09AAWFS7900H1ZL</GSTN>
+    <IsShoesOrder>0</IsShoesOrder>
+    <IssuedById>8</IssuedById>
+    <Logo>-</Logo>
+    <MultipleDeliveryDate>0</MultipleDeliveryDate>
+    <MultipleTransport>0</MultipleTransport>
+    <MyDeliveryDate>2020-09-21T00:00:00+05:30</MyDeliveryDate>
+    <Name>SADDLE BAG</Name>
+    <OrderChildID>9390</OrderChildID>
+    <OrderChildRemark>-</OrderChildRemark>
+    <OrderDate>2020-07-02T00:00:00+05:30</OrderDate>
+    <OrderMasterID>375</OrderMasterID>
+    <OrderNo>7220</OrderNo>
+    <Paper1>-</Paper1>
+    <Paper2>-</Paper2>
+    <PartyCode>AC00075</PartyCode>
+    <Phone>0512-2406947</Phone>
+    <PhotoPath>uploads/productphotos/productphoto.jpg</PhotoPath>
+    <PRDWidth>-</PRDWidth>
+    <Price>50.5</Price>
+    <ProductCategoryID>86</ProductCategoryID>
+    <ProductSizeName>N/A</ProductSizeName>
+    <ProductSubCategoryID>740</ProductSubCategoryID>
+    <ProductSubCategoryName>Saddle Bag</ProductSubCategoryName>
+    <Qty>20</Qty>
+    <RefrenceNo>-</RefrenceNo>
+    <Remark>-</Remark>
+    <RitemId>0</RitemId>
+    <Size>87</Size>
+    <SNo>23</SNo>
+    <Thickness>-</Thickness>
+    <TotalAmount>48878</TotalAmount>
+    <TotalQty>3224</TotalQty>
+    <TranportName>FOB SEA</TranportName>
+    <TransportCommments>-</TransportCommments>
+    <TransportId>5</TransportId>
+    <Unit>Pcs</Unit>
+    <WPQty>20</WPQty>
+    <WPRemark>-</WPRemark>
+  </ViewSaleOrderDetails>
+  <ViewSaleOrderDetails>
+    <AddressWork>#620 A, Safipur 1st, Harjinder Nagar, Kanpur-208007</AddressWork>
+    <Amount>860</Amount>
+    <BalanceQtyForWorkPlan>0</BalanceQtyForWorkPlan>
+    <Barcode>0</Barcode>
+    <BuyerCode>UMB</BuyerCode>
+    <BuyerId>3</BuyerId>
+    <BuyerName>UMBRIA EQUITAZIONE S.R.L</BuyerName>
+    <CancelStatus>0</CancelStatus>
+    <ChildDeliveryDate>2020-09-30T00:00:00+05:30</ChildDeliveryDate>
+    <ChildMyDeliveryDate>2020-09-21T00:00:00+05:30</ChildMyDeliveryDate>
+    <ChildTranportName>FOB SEA</ChildTranportName>
+    <ChildTransportId>5</ChildTransportId>
+    <CLName>Light Oil</CLName>
+    <CName>Dollar</CName>
+    <Code>S bag 27 NAT</Code>
+    <CompanyName>SB International</CompanyName>
+    <CSName>USD</CSName>
+    <CurrencyID>1</CurrencyID>
+    <DeliveryDate>2020-09-21T00:00:00+05:30</DeliveryDate>
+    <Description>Saddle Bag</Description>
+    <Fabric1>-</Fabric1>
+    <Fabric2>-</Fabric2>
+    <FitemId>38429</FitemId>
+    <FOBCIF>FOB</FOBCIF>
+    <GenderName>NA</GenderName>
+    <GSTN>09AAWFS7900H1ZL</GSTN>
+    <IsShoesOrder>0</IsShoesOrder>
+    <IssuedById>8</IssuedById>
+    <Logo>-</Logo>
+    <MultipleDeliveryDate>0</MultipleDeliveryDate>
+    <MultipleTransport>0</MultipleTransport>
+    <MyDeliveryDate>2020-09-21T00:00:00+05:30</MyDeliveryDate>
+    <Name>SADDLE BAG</Name>
+    <OrderChildID>9391</OrderChildID>
+    <OrderChildRemark>-</OrderChildRemark>
+    <OrderDate>2020-07-02T00:00:00+05:30</OrderDate>
+    <OrderMasterID>375</OrderMasterID>
+    <OrderNo>7220</OrderNo>
+    <Paper1>-</Paper1>
+    <Paper2>-</Paper2>
+    <PartyCode>AC00067</PartyCode>
+    <Phone>0512-2406947</Phone>
+    <PhotoPath>uploads/productphotos/productphoto.jpg</PhotoPath>
+    <PRDWidth>-</PRDWidth>
+    <Price>43</Price>
+    <ProductCategoryID>86</ProductCategoryID>
+    <ProductSizeName>N/A</ProductSizeName>
+    <ProductSubCategoryID>740</ProductSubCategoryID>
+    <ProductSubCategoryName>Saddle Bag</ProductSubCategoryName>
+    <Qty>20</Qty>
+    <RefrenceNo>-</RefrenceNo>
+    <Remark>-</Remark>
+    <RitemId>0</RitemId>
+    <Size>87</Size>
+    <SNo>24</SNo>
+    <Thickness>-</Thickness>
+    <TotalAmount>48878</TotalAmount>
+    <TotalQty>3224</TotalQty>
+    <TranportName>FOB SEA</TranportName>
+    <TransportCommments>-</TransportCommments>
+    <TransportId>5</TransportId>
+    <Unit>Pcs</Unit>
+    <WPQty>20</WPQty>
+    <WPRemark>-</WPRemark>
+  </ViewSaleOrderDetails>
+  <ViewSaleOrderDetails>
+    <AddressWork>#620 A, Safipur 1st, Harjinder Nagar, Kanpur-208007</AddressWork>
+    <Amount>810</Amount>
+    <BalanceQtyForWorkPlan>0</BalanceQtyForWorkPlan>
+    <Barcode>8000000066077</Barcode>
+    <BuyerCode>UMB</BuyerCode>
+    <BuyerId>3</BuyerId>
+    <BuyerName>UMBRIA EQUITAZIONE S.R.L</BuyerName>
+    <CancelStatus>0</CancelStatus>
+    <ChildDeliveryDate>2020-09-30T00:00:00+05:30</ChildDeliveryDate>
+    <ChildMyDeliveryDate>2020-09-21T00:00:00+05:30</ChildMyDeliveryDate>
+    <ChildTranportName>FOB SEA</ChildTranportName>
+    <ChildTransportId>5</ChildTransportId>
+    <CLName>Dark Oil</CLName>
+    <CName>Dollar</CName>
+    <Code>S bag 18 HAR</Code>
+    <CompanyName>SB International</CompanyName>
+    <CSName>USD</CSName>
+    <CurrencyID>1</CurrencyID>
+    <DeliveryDate>2020-09-21T00:00:00+05:30</DeliveryDate>
+    <Description>Saddle Bag with Floral Caving</Description>
+    <Fabric1>-</Fabric1>
+    <Fabric2>-</Fabric2>
+    <FitemId>38433</FitemId>
+    <FOBCIF>FOB</FOBCIF>
+    <GenderName>NA</GenderName>
+    <GSTN>09AAWFS7900H1ZL</GSTN>
+    <IsShoesOrder>0</IsShoesOrder>
+    <IssuedById>8</IssuedById>
+    <Logo>Pools</Logo>
+    <MultipleDeliveryDate>0</MultipleDeliveryDate>
+    <MultipleTransport>0</MultipleTransport>
+    <MyDeliveryDate>2020-09-21T00:00:00+05:30</MyDeliveryDate>
+    <Name>SADDLE BAG</Name>
+    <OrderChildID>9392</OrderChildID>
+    <OrderChildRemark>-</OrderChildRemark>
+    <OrderDate>2020-07-02T00:00:00+05:30</OrderDate>
+    <OrderMasterID>375</OrderMasterID>
+    <OrderNo>7220</OrderNo>
+    <Paper1>-</Paper1>
+    <Paper2>-</Paper2>
+    <PartyCode>AC00076</PartyCode>
+    <Phone>0512-2406947</Phone>
+    <PhotoPath>uploads/productphotos/productphoto.jpg</PhotoPath>
+    <PRDWidth>-</PRDWidth>
+    <Price>54</Price>
+    <ProductCategoryID>86</ProductCategoryID>
+    <ProductSizeName>N/A</ProductSizeName>
+    <ProductSubCategoryID>740</ProductSubCategoryID>
+    <ProductSubCategoryName>Saddle Bag</ProductSubCategoryName>
+    <Qty>15</Qty>
+    <RefrenceNo>-</RefrenceNo>
+    <Remark>-</Remark>
+    <RitemId>0</RitemId>
+    <Size>87</Size>
+    <SNo>25</SNo>
+    <Thickness>-</Thickness>
+    <TotalAmount>48878</TotalAmount>
+    <TotalQty>3224</TotalQty>
+    <TranportName>FOB SEA</TranportName>
+    <TransportCommments>-</TransportCommments>
+    <TransportId>5</TransportId>
+    <Unit>Pcs</Unit>
+    <WPQty>15</WPQty>
+    <WPRemark>-</WPRemark>
+  </ViewSaleOrderDetails>
+  <ViewSaleOrderDetails>
+    <AddressWork>#620 A, Safipur 1st, Harjinder Nagar, Kanpur-208007</AddressWork>
+    <Amount>2524.5</Amount>
+    <BalanceQtyForWorkPlan>0</BalanceQtyForWorkPlan>
+    <Barcode>0</Barcode>
+    <BuyerCode>UMB</BuyerCode>
+    <BuyerId>3</BuyerId>
+    <BuyerName>UMBRIA EQUITAZIONE S.R.L</BuyerName>
+    <CancelStatus>0</CancelStatus>
+    <ChildDeliveryDate>2020-09-30T00:00:00+05:30</ChildDeliveryDate>
+    <ChildMyDeliveryDate>2020-09-21T00:00:00+05:30</ChildMyDeliveryDate>
+    <ChildTranportName>FOB SEA</ChildTranportName>
+    <ChildTransportId>5</ChildTransportId>
+    <CLName>Dk.Brown</CLName>
+    <CName>Dollar</CName>
+    <Code>6466 DK BRN</Code>
+    <CompanyName>SB International</CompanyName>
+    <CSName>USD</CSName>
+    <CurrencyID>1</CurrencyID>
+    <DeliveryDate>2020-09-21T00:00:00+05:30</DeliveryDate>
+    <Description>Western Back Girth with Set 2.5" x 32"</Description>
+    <Fabric1>-</Fabric1>
+    <Fabric2>-</Fabric2>
+    <FitemId>39913</FitemId>
+    <FOBCIF>FOB</FOBCIF>
+    <GenderName>NA</GenderName>
+    <GSTN>09AAWFS7900H1ZL</GSTN>
+    <IsShoesOrder>0</IsShoesOrder>
+    <IssuedById>8</IssuedById>
+    <Logo>Lakota</Logo>
+    <MultipleDeliveryDate>0</MultipleDeliveryDate>
+    <MultipleTransport>0</MultipleTransport>
+    <MyDeliveryDate>2020-09-21T00:00:00+05:30</MyDeliveryDate>
+    <Name>Back Girth</Name>
+    <OrderChildID>9393</OrderChildID>
+    <OrderChildRemark>-</OrderChildRemark>
+    <OrderDate>2020-07-02T00:00:00+05:30</OrderDate>
+    <OrderMasterID>375</OrderMasterID>
+    <OrderNo>7220</OrderNo>
+    <Paper1>-</Paper1>
+    <Paper2>-</Paper2>
+    <PartyCode>LK7080</PartyCode>
+    <Phone>0512-2406947</Phone>
+    <PhotoPath>uploads/productphotos/productphoto.jpg</PhotoPath>
+    <PRDWidth>-</PRDWidth>
+    <Price>22.95</Price>
+    <ProductCategoryID>86</ProductCategoryID>
+    <ProductSizeName>N/A</ProductSizeName>
+    <ProductSubCategoryID>784</ProductSubCategoryID>
+    <ProductSubCategoryName>Girth</ProductSubCategoryName>
+    <Qty>110</Qty>
+    <RefrenceNo>-</RefrenceNo>
+    <Remark>-</Remark>
+    <RitemId>0</RitemId>
+    <Size>87</Size>
+    <SNo>26</SNo>
+    <Thickness>-</Thickness>
+    <TotalAmount>48878</TotalAmount>
+    <TotalQty>3224</TotalQty>
+    <TranportName>FOB SEA</TranportName>
+    <TransportCommments>-</TransportCommments>
+    <TransportId>5</TransportId>
+    <Unit>Pcs</Unit>
+    <WPQty>110</WPQty>
+    <WPRemark>-</WPRemark>
+  </ViewSaleOrderDetails>
+  <ViewSaleOrderDetails>
+    <AddressWork>#620 A, Safipur 1st, Harjinder Nagar, Kanpur-208007</AddressWork>
+    <Amount>1203</Amount>
+    <BalanceQtyForWorkPlan>0</BalanceQtyForWorkPlan>
+    <Barcode>0</Barcode>
+    <BuyerCode>UMB</BuyerCode>
+    <BuyerId>3</BuyerId>
+    <BuyerName>UMBRIA EQUITAZIONE S.R.L</BuyerName>
+    <CancelStatus>0</CancelStatus>
+    <ChildDeliveryDate>2020-09-30T00:00:00+05:30</ChildDeliveryDate>
+    <ChildMyDeliveryDate>2020-09-21T00:00:00+05:30</ChildMyDeliveryDate>
+    <ChildTranportName>FOB SEA</ChildTranportName>
+    <ChildTransportId>5</ChildTransportId>
+    <CLName>Dk.Brown</CLName>
+    <CName>Dollar</CName>
+    <Code>C 6472 DK BRN</Code>
+    <CompanyName>SB International</CompanyName>
+    <CSName>USD</CSName>
+    <CurrencyID>1</CurrencyID>
+    <DeliveryDate>2020-09-21T00:00:00+05:30</DeliveryDate>
+    <Description>Back Cinches with Tooling with Billet Basket</Description>
+    <Fabric1>-</Fabric1>
+    <Fabric2>-</Fabric2>
+    <FitemId>39914</FitemId>
+    <FOBCIF>FOB</FOBCIF>
+    <GenderName>NA</GenderName>
+    <GSTN>09AAWFS7900H1ZL</GSTN>
+    <IsShoesOrder>0</IsShoesOrder>
+    <IssuedById>8</IssuedById>
+    <Logo>Pools</Logo>
+    <MultipleDeliveryDate>0</MultipleDeliveryDate>
+    <MultipleTransport>0</MultipleTransport>
+    <MyDeliveryDate>2020-09-21T00:00:00+05:30</MyDeliveryDate>
+    <Name>BACK CINCHES</Name>
+    <OrderChildID>9394</OrderChildID>
+    <OrderChildRemark>-</OrderChildRemark>
+    <OrderDate>2020-07-02T00:00:00+05:30</OrderDate>
+    <OrderMasterID>375</OrderMasterID>
+    <OrderNo>7220</OrderNo>
+    <Paper1>-</Paper1>
+    <Paper2>-</Paper2>
+    <PartyCode>SP00505</PartyCode>
+    <Phone>0512-2406947</Phone>
+    <PhotoPath>uploads/productphotos/productphoto.jpg</PhotoPath>
+    <PRDWidth>-</PRDWidth>
+    <Price>40.1</Price>
+    <ProductCategoryID>86</ProductCategoryID>
+    <ProductSizeName>N/A</ProductSizeName>
+    <ProductSubCategoryID>784</ProductSubCategoryID>
+    <ProductSubCategoryName>Girth</ProductSubCategoryName>
+    <Qty>30</Qty>
+    <RefrenceNo>-</RefrenceNo>
+    <Remark>-</Remark>
+    <RitemId>0</RitemId>
+    <Size>87</Size>
+    <SNo>27</SNo>
+    <Thickness>-</Thickness>
+    <TotalAmount>48878</TotalAmount>
+    <TotalQty>3224</TotalQty>
+    <TranportName>FOB SEA</TranportName>
+    <TransportCommments>-</TransportCommments>
+    <TransportId>5</TransportId>
+    <Unit>Pcs</Unit>
+    <WPQty>30</WPQty>
+    <WPRemark>-</WPRemark>
+  </ViewSaleOrderDetails>
+  <ViewSaleOrderDetails>
+    <AddressWork>#620 A, Safipur 1st, Harjinder Nagar, Kanpur-208007</AddressWork>
+    <Amount>1308</Amount>
+    <BalanceQtyForWorkPlan>60</BalanceQtyForWorkPlan>
+    <Barcode>0</Barcode>
+    <BuyerCode>UMB</BuyerCode>
+    <BuyerId>3</BuyerId>
+    <BuyerName>UMBRIA EQUITAZIONE S.R.L</BuyerName>
+    <CancelStatus>0</CancelStatus>
+    <ChildDeliveryDate>2020-09-30T00:00:00+05:30</ChildDeliveryDate>
+    <ChildMyDeliveryDate>2020-09-21T00:00:00+05:30</ChildMyDeliveryDate>
+    <ChildTranportName>FOB SEA</ChildTranportName>
+    <ChildTransportId>5</ChildTransportId>
+    <CLName>Black</CLName>
+    <CName>Dollar</CName>
+    <Code>SB 686 BK</Code>
+    <CompanyName>SB International</CompanyName>
+    <CSName>USD</CSName>
+    <CurrencyID>1</CurrencyID>
+    <DeliveryDate>2020-09-21T00:00:00+05:30</DeliveryDate>
+    <Description>Contoured Pad With Design Acrylic Top &amp; 3/4" Blended Felt Bottom &amp; Microfiber Wear Leather</Description>
+    <Fabric1>-</Fabric1>
+    <Fabric2>-</Fabric2>
+    <FitemId>40227</FitemId>
+    <FOBCIF>FOB</FOBCIF>
+    <GenderName>NA</GenderName>
+    <GSTN>09AAWFS7900H1ZL</GSTN>
+    <IsShoesOrder>0</IsShoesOrder>
+    <IssuedById>8</IssuedById>
+    <Logo>Pools</Logo>
+    <MultipleDeliveryDate>0</MultipleDeliveryDate>
+    <MultipleTransport>0</MultipleTransport>
+    <MyDeliveryDate>2020-09-21T00:00:00+05:30</MyDeliveryDate>
+    <Name>SADDLE PAD</Name>
+    <OrderChildID>9395</OrderChildID>
+    <OrderChildRemark>-</OrderChildRemark>
+    <OrderDate>2020-07-02T00:00:00+05:30</OrderDate>
+    <OrderMasterID>375</OrderMasterID>
+    <OrderNo>7220</OrderNo>
+    <Paper1>-</Paper1>
+    <Paper2>-</Paper2>
+    <PartyCode>PL00800</PartyCode>
+    <Phone>0512-2406947</Phone>
+    <PhotoPath>uploads/productphotos/40227.jpg</PhotoPath>
+    <PRDWidth>-</PRDWidth>
+    <Price>21.8</Price>
+    <ProductCategoryID>86</ProductCategoryID>
+    <ProductSizeName>32" X 32"</ProductSizeName>
+    <ProductSubCategoryID>739</ProductSubCategoryID>
+    <ProductSubCategoryName>Saddle Pad &amp; Blanket</ProductSubCategoryName>
+    <Qty>60</Qty>
+    <RefrenceNo>-</RefrenceNo>
+    <Remark>-</Remark>
+    <RitemId>0</RitemId>
+    <Size>24</Size>
+    <SNo>28</SNo>
+    <Thickness>-</Thickness>
+    <TotalAmount>48878</TotalAmount>
+    <TotalQty>3224</TotalQty>
+    <TranportName>FOB SEA</TranportName>
+    <TransportCommments>-</TransportCommments>
+    <TransportId>5</TransportId>
+    <Unit>Pcs</Unit>
+    <WPQty>60</WPQty>
+    <WPRemark>-</WPRemark>
+  </ViewSaleOrderDetails>
+  <ViewSaleOrderDetails>
+    <AddressWork>#620 A, Safipur 1st, Harjinder Nagar, Kanpur-208007</AddressWork>
+    <Amount>654</Amount>
+    <BalanceQtyForWorkPlan>30</BalanceQtyForWorkPlan>
+    <Barcode>0</Barcode>
+    <BuyerCode>UMB</BuyerCode>
+    <BuyerId>3</BuyerId>
+    <BuyerName>UMBRIA EQUITAZIONE S.R.L</BuyerName>
+    <CancelStatus>0</CancelStatus>
+    <ChildDeliveryDate>2020-09-30T00:00:00+05:30</ChildDeliveryDate>
+    <ChildMyDeliveryDate>2020-09-21T00:00:00+05:30</ChildMyDeliveryDate>
+    <ChildTranportName>FOB SEA</ChildTranportName>
+    <ChildTransportId>5</ChildTransportId>
+    <CLName>GREY</CLName>
+    <CName>Dollar</CName>
+    <Code>SB 686 GY</Code>
+    <CompanyName>SB International</CompanyName>
+    <CSName>USD</CSName>
+    <CurrencyID>1</CurrencyID>
+    <DeliveryDate>2020-09-21T00:00:00+05:30</DeliveryDate>
+    <Description>Contoured Pad With Design Acrylic Top &amp; 3/4" Blended Felt Bottom &amp; Microfiber Wear Leather</Description>
+    <Fabric1>-</Fabric1>
+    <Fabric2>-</Fabric2>
+    <FitemId>40228</FitemId>
+    <FOBCIF>FOB</FOBCIF>
+    <GenderName>NA</GenderName>
+    <GSTN>09AAWFS7900H1ZL</GSTN>
+    <IsShoesOrder>0</IsShoesOrder>
+    <IssuedById>8</IssuedById>
+    <Logo>Pools</Logo>
+    <MultipleDeliveryDate>0</MultipleDeliveryDate>
+    <MultipleTransport>0</MultipleTransport>
+    <MyDeliveryDate>2020-09-21T00:00:00+05:30</MyDeliveryDate>
+    <Name>SADDLE PAD</Name>
+    <OrderChildID>9396</OrderChildID>
+    <OrderChildRemark>-</OrderChildRemark>
+    <OrderDate>2020-07-02T00:00:00+05:30</OrderDate>
+    <OrderMasterID>375</OrderMasterID>
+    <OrderNo>7220</OrderNo>
+    <Paper1>-</Paper1>
+    <Paper2>-</Paper2>
+    <PartyCode>PL00800</PartyCode>
+    <Phone>0512-2406947</Phone>
+    <PhotoPath>uploads/productphotos/40228.jpg</PhotoPath>
+    <PRDWidth>-</PRDWidth>
+    <Price>21.8</Price>
+    <ProductCategoryID>86</ProductCategoryID>
+    <ProductSizeName>32" X 32"</ProductSizeName>
+    <ProductSubCategoryID>739</ProductSubCategoryID>
+    <ProductSubCategoryName>Saddle Pad &amp; Blanket</ProductSubCategoryName>
+    <Qty>30</Qty>
+    <RefrenceNo>-</RefrenceNo>
+    <Remark>-</Remark>
+    <RitemId>0</RitemId>
+    <Size>24</Size>
+    <SNo>29</SNo>
+    <Thickness>-</Thickness>
+    <TotalAmount>48878</TotalAmount>
+    <TotalQty>3224</TotalQty>
+    <TranportName>FOB SEA</TranportName>
+    <TransportCommments>-</TransportCommments>
+    <TransportId>5</TransportId>
+    <Unit>Pcs</Unit>
+    <WPQty>30</WPQty>
+    <WPRemark>-</WPRemark>
+  </ViewSaleOrderDetails>
+  <ViewSaleOrderDetails>
+    <AddressWork>#620 A, Safipur 1st, Harjinder Nagar, Kanpur-208007</AddressWork>
+    <Amount>654</Amount>
+    <BalanceQtyForWorkPlan>30</BalanceQtyForWorkPlan>
+    <Barcode>0</Barcode>
+    <BuyerCode>UMB</BuyerCode>
+    <BuyerId>3</BuyerId>
+    <BuyerName>UMBRIA EQUITAZIONE S.R.L</BuyerName>
+    <CancelStatus>0</CancelStatus>
+    <ChildDeliveryDate>2020-09-30T00:00:00+05:30</ChildDeliveryDate>
+    <ChildMyDeliveryDate>2020-09-21T00:00:00+05:30</ChildMyDeliveryDate>
+    <ChildTranportName>FOB SEA</ChildTranportName>
+    <ChildTransportId>5</ChildTransportId>
+    <CLName>Rust</CLName>
+    <CName>Dollar</CName>
+    <Code>SB 686 RU</Code>
+    <CompanyName>SB International</CompanyName>
+    <CSName>USD</CSName>
+    <CurrencyID>1</CurrencyID>
+    <DeliveryDate>2020-09-21T00:00:00+05:30</DeliveryDate>
+    <Description>Contoured Pad With Design Acrylic Top &amp; 3/4" Blended Felt Bottom &amp; Microfiber Wear Leather</Description>
+    <Fabric1>-</Fabric1>
+    <Fabric2>-</Fabric2>
+    <FitemId>40229</FitemId>
+    <FOBCIF>FOB</FOBCIF>
+    <GenderName>NA</GenderName>
+    <GSTN>09AAWFS7900H1ZL</GSTN>
+    <IsShoesOrder>0</IsShoesOrder>
+    <IssuedById>8</IssuedById>
+    <Logo>Pools</Logo>
+    <MultipleDeliveryDate>0</MultipleDeliveryDate>
+    <MultipleTransport>0</MultipleTransport>
+    <MyDeliveryDate>2020-09-21T00:00:00+05:30</MyDeliveryDate>
+    <Name>SADDLE PAD</Name>
+    <OrderChildID>9397</OrderChildID>
+    <OrderChildRemark>-</OrderChildRemark>
+    <OrderDate>2020-07-02T00:00:00+05:30</OrderDate>
+    <OrderMasterID>375</OrderMasterID>
+    <OrderNo>7220</OrderNo>
+    <Paper1>-</Paper1>
+    <Paper2>-</Paper2>
+    <PartyCode>PL00800</PartyCode>
+    <Phone>0512-2406947</Phone>
+    <PhotoPath>uploads/productphotos/40229.jpg</PhotoPath>
+    <PRDWidth>-</PRDWidth>
+    <Price>21.8</Price>
+    <ProductCategoryID>86</ProductCategoryID>
+    <ProductSizeName>32" X 32"</ProductSizeName>
+    <ProductSubCategoryID>739</ProductSubCategoryID>
+    <ProductSubCategoryName>Saddle Pad &amp; Blanket</ProductSubCategoryName>
+    <Qty>30</Qty>
+    <RefrenceNo>-</RefrenceNo>
+    <Remark>-</Remark>
+    <RitemId>0</RitemId>
+    <Size>24</Size>
+    <SNo>30</SNo>
+    <Thickness>-</Thickness>
+    <TotalAmount>48878</TotalAmount>
+    <TotalQty>3224</TotalQty>
+    <TranportName>FOB SEA</TranportName>
+    <TransportCommments>-</TransportCommments>
+    <TransportId>5</TransportId>
+    <Unit>Pcs</Unit>
+    <WPQty>30</WPQty>
+    <WPRemark>-</WPRemark>
+  </ViewSaleOrderDetails>
+  <ViewSaleOrderDetails>
+    <AddressWork>#620 A, Safipur 1st, Harjinder Nagar, Kanpur-208007</AddressWork>
+    <Amount>1090</Amount>
+    <BalanceQtyForWorkPlan>50</BalanceQtyForWorkPlan>
+    <Barcode>0</Barcode>
+    <BuyerCode>UMB</BuyerCode>
+    <BuyerId>3</BuyerId>
+    <BuyerName>UMBRIA EQUITAZIONE S.R.L</BuyerName>
+    <CancelStatus>0</CancelStatus>
+    <ChildDeliveryDate>2020-09-30T00:00:00+05:30</ChildDeliveryDate>
+    <ChildMyDeliveryDate>2020-09-21T00:00:00+05:30</ChildMyDeliveryDate>
+    <ChildTranportName>FOB SEA</ChildTranportName>
+    <ChildTransportId>5</ChildTransportId>
+    <CLName>Turquoise</CLName>
+    <CName>Dollar</CName>
+    <Code>SB 686 TQ</Code>
+    <CompanyName>SB International</CompanyName>
+    <CSName>USD</CSName>
+    <CurrencyID>1</CurrencyID>
+    <DeliveryDate>2020-09-21T00:00:00+05:30</DeliveryDate>
+    <Description>Contoured Pad With Design Acrylic Top &amp; 3/4" Blended Felt Bottom &amp; Microfiber Wear Leather</Description>
+    <Fabric1>-</Fabric1>
+    <Fabric2>-</Fabric2>
+    <FitemId>40230</FitemId>
+    <FOBCIF>FOB</FOBCIF>
+    <GenderName>NA</GenderName>
+    <GSTN>09AAWFS7900H1ZL</GSTN>
+    <IsShoesOrder>0</IsShoesOrder>
+    <IssuedById>8</IssuedById>
+    <Logo>Pools</Logo>
+    <MultipleDeliveryDate>0</MultipleDeliveryDate>
+    <MultipleTransport>0</MultipleTransport>
+    <MyDeliveryDate>2020-09-21T00:00:00+05:30</MyDeliveryDate>
+    <Name>SADDLE PAD</Name>
+    <OrderChildID>9398</OrderChildID>
+    <OrderChildRemark>-</OrderChildRemark>
+    <OrderDate>2020-07-02T00:00:00+05:30</OrderDate>
+    <OrderMasterID>375</OrderMasterID>
+    <OrderNo>7220</OrderNo>
+    <Paper1>-</Paper1>
+    <Paper2>-</Paper2>
+    <PartyCode>PL00800</PartyCode>
+    <Phone>0512-2406947</Phone>
+    <PhotoPath>uploads/productphotos/40230.jpg</PhotoPath>
+    <PRDWidth>-</PRDWidth>
+    <Price>21.8</Price>
+    <ProductCategoryID>86</ProductCategoryID>
+    <ProductSizeName>32" X 32"</ProductSizeName>
+    <ProductSubCategoryID>739</ProductSubCategoryID>
+    <ProductSubCategoryName>Saddle Pad &amp; Blanket</ProductSubCategoryName>
+    <Qty>50</Qty>
+    <RefrenceNo>-</RefrenceNo>
+    <Remark>-</Remark>
+    <RitemId>0</RitemId>
+    <Size>24</Size>
+    <SNo>31</SNo>
+    <Thickness>-</Thickness>
+    <TotalAmount>48878</TotalAmount>
+    <TotalQty>3224</TotalQty>
+    <TranportName>FOB SEA</TranportName>
+    <TransportCommments>-</TransportCommments>
+    <TransportId>5</TransportId>
+    <Unit>Pcs</Unit>
+    <WPQty>50</WPQty>
+    <WPRemark>-</WPRemark>
+  </ViewSaleOrderDetails>
+  <ViewSaleOrderDetails>
+    <AddressWork>#620 A, Safipur 1st, Harjinder Nagar, Kanpur-208007</AddressWork>
+    <Amount>1308</Amount>
+    <BalanceQtyForWorkPlan>60</BalanceQtyForWorkPlan>
+    <Barcode>0</Barcode>
+    <BuyerCode>UMB</BuyerCode>
+    <BuyerId>3</BuyerId>
+    <BuyerName>UMBRIA EQUITAZIONE S.R.L</BuyerName>
+    <CancelStatus>0</CancelStatus>
+    <ChildDeliveryDate>2020-09-30T00:00:00+05:30</ChildDeliveryDate>
+    <ChildMyDeliveryDate>2020-09-21T00:00:00+05:30</ChildMyDeliveryDate>
+    <ChildTranportName>FOB SEA</ChildTranportName>
+    <ChildTransportId>5</ChildTransportId>
+    <CLName>Brown</CLName>
+    <CName>Dollar</CName>
+    <Code>SB 686 BN</Code>
+    <CompanyName>SB International</CompanyName>
+    <CSName>USD</CSName>
+    <CurrencyID>1</CurrencyID>
+    <DeliveryDate>2020-09-21T00:00:00+05:30</DeliveryDate>
+    <Description>Contoured Pad With Design Acrylic Top &amp; 3/4" Blended Felt Bottom &amp; Microfiber Wear Leather</Description>
+    <Fabric1>-</Fabric1>
+    <Fabric2>-</Fabric2>
+    <FitemId>40231</FitemId>
+    <FOBCIF>FOB</FOBCIF>
+    <GenderName>NA</GenderName>
+    <GSTN>09AAWFS7900H1ZL</GSTN>
+    <IsShoesOrder>0</IsShoesOrder>
+    <IssuedById>8</IssuedById>
+    <Logo>Pools</Logo>
+    <MultipleDeliveryDate>0</MultipleDeliveryDate>
+    <MultipleTransport>0</MultipleTransport>
+    <MyDeliveryDate>2020-09-21T00:00:00+05:30</MyDeliveryDate>
+    <Name>SADDLE PAD</Name>
+    <OrderChildID>9399</OrderChildID>
+    <OrderChildRemark>-</OrderChildRemark>
+    <OrderDate>2020-07-02T00:00:00+05:30</OrderDate>
+    <OrderMasterID>375</OrderMasterID>
+    <OrderNo>7220</OrderNo>
+    <Paper1>-</Paper1>
+    <Paper2>-</Paper2>
+    <PartyCode>PL00800</PartyCode>
+    <Phone>0512-2406947</Phone>
+    <PhotoPath>uploads/productphotos/40231.jpg</PhotoPath>
+    <PRDWidth>-</PRDWidth>
+    <Price>21.8</Price>
+    <ProductCategoryID>86</ProductCategoryID>
+    <ProductSizeName>32" X 32"</ProductSizeName>
+    <ProductSubCategoryID>739</ProductSubCategoryID>
+    <ProductSubCategoryName>Saddle Pad &amp; Blanket</ProductSubCategoryName>
+    <Qty>60</Qty>
+    <RefrenceNo>-</RefrenceNo>
+    <Remark>-</Remark>
+    <RitemId>0</RitemId>
+    <Size>24</Size>
+    <SNo>32</SNo>
+    <Thickness>-</Thickness>
+    <TotalAmount>48878</TotalAmount>
+    <TotalQty>3224</TotalQty>
+    <TranportName>FOB SEA</TranportName>
+    <TransportCommments>-</TransportCommments>
+    <TransportId>5</TransportId>
+    <Unit>Pcs</Unit>
+    <WPQty>60</WPQty>
+    <WPRemark>-</WPRemark>
+  </ViewSaleOrderDetails>
+  <ViewSaleOrderDetails>
+    <AddressWork>#620 A, Safipur 1st, Harjinder Nagar, Kanpur-208007</AddressWork>
+    <Amount>432</Amount>
+    <BalanceQtyForWorkPlan>8</BalanceQtyForWorkPlan>
+    <Barcode>0</Barcode>
+    <BuyerCode>UMB</BuyerCode>
+    <BuyerId>3</BuyerId>
+    <BuyerName>UMBRIA EQUITAZIONE S.R.L</BuyerName>
+    <CancelStatus>0</CancelStatus>
+    <ChildDeliveryDate>2020-09-30T00:00:00+05:30</ChildDeliveryDate>
+    <ChildMyDeliveryDate>2020-09-21T00:00:00+05:30</ChildMyDeliveryDate>
+    <ChildTranportName>FOB SEA</ChildTranportName>
+    <ChildTransportId>5</ChildTransportId>
+    <CLName>Dk.Brown</CLName>
+    <CName>Dollar</CName>
+    <Code>S Bag 18 DK BRN</Code>
+    <CompanyName>SB International</CompanyName>
+    <CSName>USD</CSName>
+    <CurrencyID>1</CurrencyID>
+    <DeliveryDate>2020-09-21T00:00:00+05:30</DeliveryDate>
+    <Description>Saddle Bag with Floral Caving</Description>
+    <Fabric1>-</Fabric1>
+    <Fabric2>-</Fabric2>
+    <FitemId>40232</FitemId>
+    <FOBCIF>FOB</FOBCIF>
+    <GenderName>NA</GenderName>
+    <GSTN>09AAWFS7900H1ZL</GSTN>
+    <IsShoesOrder>0</IsShoesOrder>
+    <IssuedById>8</IssuedById>
+    <Logo>Pools</Logo>
+    <MultipleDeliveryDate>0</MultipleDeliveryDate>
+    <MultipleTransport>0</MultipleTransport>
+    <MyDeliveryDate>2020-09-21T00:00:00+05:30</MyDeliveryDate>
+    <Name>SADDLE BAG</Name>
+    <OrderChildID>9400</OrderChildID>
+    <OrderChildRemark>-</OrderChildRemark>
+    <OrderDate>2020-07-02T00:00:00+05:30</OrderDate>
+    <OrderMasterID>375</OrderMasterID>
+    <OrderNo>7220</OrderNo>
+    <Paper1>-</Paper1>
+    <Paper2>-</Paper2>
+    <PartyCode>AC00076</PartyCode>
+    <Phone>0512-2406947</Phone>
+    <PhotoPath>uploads/productphotos/productphoto.jpg</PhotoPath>
+    <PRDWidth>-</PRDWidth>
+    <Price>54</Price>
+    <ProductCategoryID>86</ProductCategoryID>
+    <ProductSizeName>N/A</ProductSizeName>
+    <ProductSubCategoryID>740</ProductSubCategoryID>
+    <ProductSubCategoryName>Saddle Bag</ProductSubCategoryName>
+    <Qty>8</Qty>
+    <RefrenceNo>-</RefrenceNo>
+    <Remark>-</Remark>
+    <RitemId>0</RitemId>
+    <Size>87</Size>
+    <SNo>33</SNo>
+    <Thickness>-</Thickness>
+    <TotalAmount>48878</TotalAmount>
+    <TotalQty>3224</TotalQty>
+    <TranportName>FOB SEA</TranportName>
+    <TransportCommments>-</TransportCommments>
+    <TransportId>5</TransportId>
+    <Unit>Pcs</Unit>
+    <WPQty>8</WPQty>
+    <WPRemark>-</WPRemark>
+  </ViewSaleOrderDetails>
+  <ViewSaleOrderDetails>
+    <AddressWork>#620 A, Safipur 1st, Harjinder Nagar, Kanpur-208007</AddressWork>
+    <Amount>440</Amount>
+    <BalanceQtyForWorkPlan>8</BalanceQtyForWorkPlan>
+    <Barcode>0</Barcode>
+    <BuyerCode>UMB</BuyerCode>
+    <BuyerId>3</BuyerId>
+    <BuyerName>UMBRIA EQUITAZIONE S.R.L</BuyerName>
+    <CancelStatus>0</CancelStatus>
+    <ChildDeliveryDate>2020-09-30T00:00:00+05:30</ChildDeliveryDate>
+    <ChildMyDeliveryDate>2020-09-21T00:00:00+05:30</ChildMyDeliveryDate>
+    <ChildTranportName>FOB SEA</ChildTranportName>
+    <ChildTransportId>5</ChildTransportId>
+    <CLName>Dk.Brown</CLName>
+    <CName>Dollar</CName>
+    <Code>S BAG 25 DK BRN</Code>
+    <CompanyName>SB International</CompanyName>
+    <CSName>USD</CSName>
+    <CurrencyID>1</CurrencyID>
+    <DeliveryDate>2020-09-21T00:00:00+05:30</DeliveryDate>
+    <Description>Saddle Bag with Basket &amp; Jersy Hair on Only</Description>
+    <Fabric1>-</Fabric1>
+    <Fabric2>-</Fabric2>
+    <FitemId>40233</FitemId>
+    <FOBCIF>FOB</FOBCIF>
+    <GenderName>NA</GenderName>
+    <GSTN>09AAWFS7900H1ZL</GSTN>
+    <IsShoesOrder>0</IsShoesOrder>
+    <IssuedById>8</IssuedById>
+    <Logo>Lakota</Logo>
+    <MultipleDeliveryDate>0</MultipleDeliveryDate>
+    <MultipleTransport>0</MultipleTransport>
+    <MyDeliveryDate>2020-09-21T00:00:00+05:30</MyDeliveryDate>
+    <Name>SADDLE BAG</Name>
+    <OrderChildID>9401</OrderChildID>
+    <OrderChildRemark>-</OrderChildRemark>
+    <OrderDate>2020-07-02T00:00:00+05:30</OrderDate>
+    <OrderMasterID>375</OrderMasterID>
+    <OrderNo>7220</OrderNo>
+    <Paper1>-</Paper1>
+    <Paper2>-</Paper2>
+    <PartyCode>AC00077</PartyCode>
+    <Phone>0512-2406947</Phone>
+    <PhotoPath>uploads/productphotos/productphoto.jpg</PhotoPath>
+    <PRDWidth>-</PRDWidth>
+    <Price>55</Price>
+    <ProductCategoryID>86</ProductCategoryID>
+    <ProductSizeName>N/A</ProductSizeName>
+    <ProductSubCategoryID>740</ProductSubCategoryID>
+    <ProductSubCategoryName>Saddle Bag</ProductSubCategoryName>
+    <Qty>8</Qty>
+    <RefrenceNo>-</RefrenceNo>
+    <Remark>-</Remark>
+    <RitemId>0</RitemId>
+    <Size>87</Size>
+    <SNo>34</SNo>
+    <Thickness>-</Thickness>
+    <TotalAmount>48878</TotalAmount>
+    <TotalQty>3224</TotalQty>
+    <TranportName>FOB SEA</TranportName>
+    <TransportCommments>-</TransportCommments>
+    <TransportId>5</TransportId>
+    <Unit>Pcs</Unit>
+    <WPQty>8</WPQty>
+    <WPRemark>-</WPRemark>
+  </ViewSaleOrderDetails>
+  <ViewSaleOrderDetails>
+    <AddressWork>#620 A, Safipur 1st, Harjinder Nagar, Kanpur-208007</AddressWork>
+    <Amount>1360</Amount>
+    <BalanceQtyForWorkPlan>0</BalanceQtyForWorkPlan>
+    <Barcode>0</Barcode>
+    <BuyerCode>UMB</BuyerCode>
+    <BuyerId>3</BuyerId>
+    <BuyerName>UMBRIA EQUITAZIONE S.R.L</BuyerName>
+    <CancelStatus>0</CancelStatus>
+    <ChildDeliveryDate>2020-09-30T00:00:00+05:30</ChildDeliveryDate>
+    <ChildMyDeliveryDate>2020-09-21T00:00:00+05:30</ChildMyDeliveryDate>
+    <ChildTranportName>FOB SEA</ChildTranportName>
+    <ChildTransportId>5</ChildTransportId>
+    <CLName>Dk.Brown</CLName>
+    <CName>Dollar</CName>
+    <Code>HS 2579 DK BRN</Code>
+    <CompanyName>SB International</CompanyName>
+    <CSName>USD</CSName>
+    <CurrencyID>1</CurrencyID>
+    <DeliveryDate>2020-09-21T00:00:00+05:30</DeliveryDate>
+    <Description>Headstall with Reins with Matching (SBI/5269) Breast Collar with Silver Fitting</Description>
+    <Fabric1>-</Fabric1>
+    <Fabric2>-</Fabric2>
+    <FitemId>40280</FitemId>
+    <FOBCIF>FOB</FOBCIF>
+    <GenderName>NA</GenderName>
+    <GSTN>09AAWFS7900H1ZL</GSTN>
+    <IsShoesOrder>0</IsShoesOrder>
+    <IssuedById>8</IssuedById>
+    <Logo>Lakota</Logo>
+    <MultipleDeliveryDate>0</MultipleDeliveryDate>
+    <MultipleTransport>0</MultipleTransport>
+    <MyDeliveryDate>2020-09-21T00:00:00+05:30</MyDeliveryDate>
+    <Name>Headstall</Name>
+    <OrderChildID>9402</OrderChildID>
+    <OrderChildRemark>-</OrderChildRemark>
+    <OrderDate>2020-07-02T00:00:00+05:30</OrderDate>
+    <OrderMasterID>375</OrderMasterID>
+    <OrderNo>7220</OrderNo>
+    <Paper1>-</Paper1>
+    <Paper2>-</Paper2>
+    <PartyCode>BR00100</PartyCode>
+    <Phone>0512-2406947</Phone>
+    <PhotoPath>uploads/productphotos/productphoto.jpg</PhotoPath>
+    <PRDWidth>-</PRDWidth>
+    <Price>34</Price>
+    <ProductCategoryID>86</ProductCategoryID>
+    <ProductSizeName>N/A</ProductSizeName>
+    <ProductSubCategoryID>735</ProductSubCategoryID>
+    <ProductSubCategoryName>Headstall</ProductSubCategoryName>
+    <Qty>40</Qty>
+    <RefrenceNo>-</RefrenceNo>
+    <Remark>-</Remark>
+    <RitemId>0</RitemId>
+    <Size>87</Size>
+    <SNo>35</SNo>
+    <Thickness>-</Thickness>
+    <TotalAmount>48878</TotalAmount>
+    <TotalQty>3224</TotalQty>
+    <TranportName>FOB SEA</TranportName>
+    <TransportCommments>-</TransportCommments>
+    <TransportId>5</TransportId>
+    <Unit>Pcs</Unit>
+    <WPQty>40</WPQty>
+    <WPRemark>-</WPRemark>
+  </ViewSaleOrderDetails>
+  <ViewSaleOrderDetails>
+    <AddressWork>#620 A, Safipur 1st, Harjinder Nagar, Kanpur-208007</AddressWork>
+    <Amount>890</Amount>
+    <BalanceQtyForWorkPlan>0</BalanceQtyForWorkPlan>
+    <Barcode>0</Barcode>
+    <BuyerCode>UMB</BuyerCode>
+    <BuyerId>3</BuyerId>
+    <BuyerName>UMBRIA EQUITAZIONE S.R.L</BuyerName>
+    <CancelStatus>0</CancelStatus>
+    <ChildDeliveryDate>2020-09-30T00:00:00+05:30</ChildDeliveryDate>
+    <ChildMyDeliveryDate>2020-09-21T00:00:00+05:30</ChildMyDeliveryDate>
+    <ChildTranportName>FOB SEA</ChildTranportName>
+    <ChildTransportId>5</ChildTransportId>
+    <CLName>Dk.Brown</CLName>
+    <CName>Dollar</CName>
+    <Code>HS 2522 DK BRN</Code>
+    <CompanyName>SB International</CompanyName>
+    <CSName>USD</CSName>
+    <CurrencyID>1</CurrencyID>
+    <DeliveryDate>2020-09-21T00:00:00+05:30</DeliveryDate>
+    <Description>"V" Browband Headstall with Reins-7' silver </Description>
+    <Fabric1>-</Fabric1>
+    <Fabric2>-</Fabric2>
+    <FitemId>40281</FitemId>
+    <FOBCIF>FOB</FOBCIF>
+    <GenderName>NA</GenderName>
+    <GSTN>09AAWFS7900H1ZL</GSTN>
+    <IsShoesOrder>0</IsShoesOrder>
+    <IssuedById>8</IssuedById>
+    <Logo>Lakota</Logo>
+    <MultipleDeliveryDate>0</MultipleDeliveryDate>
+    <MultipleTransport>0</MultipleTransport>
+    <MyDeliveryDate>2020-09-21T00:00:00+05:30</MyDeliveryDate>
+    <Name>Headstall</Name>
+    <OrderChildID>9403</OrderChildID>
+    <OrderChildRemark>-</OrderChildRemark>
+    <OrderDate>2020-07-02T00:00:00+05:30</OrderDate>
+    <OrderMasterID>375</OrderMasterID>
+    <OrderNo>7220</OrderNo>
+    <Paper1>-</Paper1>
+    <Paper2>-</Paper2>
+    <PartyCode>BR00073</PartyCode>
+    <Phone>0512-2406947</Phone>
+    <PhotoPath>uploads/productphotos/productphoto.jpg</PhotoPath>
+    <PRDWidth>-</PRDWidth>
+    <Price>22.25</Price>
+    <ProductCategoryID>86</ProductCategoryID>
+    <ProductSizeName>N/A</ProductSizeName>
+    <ProductSubCategoryID>735</ProductSubCategoryID>
+    <ProductSubCategoryName>Headstall</ProductSubCategoryName>
+    <Qty>40</Qty>
+    <RefrenceNo>-</RefrenceNo>
+    <Remark>-</Remark>
+    <RitemId>0</RitemId>
+    <Size>87</Size>
+    <SNo>36</SNo>
+    <Thickness>-</Thickness>
+    <TotalAmount>48878</TotalAmount>
+    <TotalQty>3224</TotalQty>
+    <TranportName>FOB SEA</TranportName>
+    <TransportCommments>-</TransportCommments>
+    <TransportId>5</TransportId>
+    <Unit>Pcs</Unit>
+    <WPQty>40</WPQty>
+    <WPRemark>-</WPRemark>
+  </ViewSaleOrderDetails>
+  <ViewSaleOrderDetails>
+    <AddressWork>#620 A, Safipur 1st, Harjinder Nagar, Kanpur-208007</AddressWork>
+    <Amount>1290</Amount>
+    <BalanceQtyForWorkPlan>0</BalanceQtyForWorkPlan>
+    <Barcode>0</Barcode>
+    <BuyerCode>UMB</BuyerCode>
+    <BuyerId>3</BuyerId>
+    <BuyerName>UMBRIA EQUITAZIONE S.R.L</BuyerName>
+    <CancelStatus>0</CancelStatus>
+    <ChildDeliveryDate>2020-09-30T00:00:00+05:30</ChildDeliveryDate>
+    <ChildMyDeliveryDate>2020-09-21T00:00:00+05:30</ChildMyDeliveryDate>
+    <ChildTranportName>FOB SEA</ChildTranportName>
+    <ChildTransportId>5</ChildTransportId>
+    <CLName>Dark Oil</CLName>
+    <CName>Dollar</CName>
+    <Code>S Bag 27 HAR</Code>
+    <CompanyName>SB International</CompanyName>
+    <CSName>USD</CSName>
+    <CurrencyID>1</CurrencyID>
+    <DeliveryDate>2020-09-21T00:00:00+05:30</DeliveryDate>
+    <Description>-</Description>
+    <Fabric1>-</Fabric1>
+    <Fabric2>-</Fabric2>
+    <FitemId>40318</FitemId>
+    <FOBCIF>FOB</FOBCIF>
+    <GenderName>NA</GenderName>
+    <GSTN>09AAWFS7900H1ZL</GSTN>
+    <IsShoesOrder>0</IsShoesOrder>
+    <IssuedById>8</IssuedById>
+    <Logo>Pools</Logo>
+    <MultipleDeliveryDate>0</MultipleDeliveryDate>
+    <MultipleTransport>0</MultipleTransport>
+    <MyDeliveryDate>2020-09-21T00:00:00+05:30</MyDeliveryDate>
+    <Name>SADDLE BAG</Name>
+    <OrderChildID>9404</OrderChildID>
+    <OrderChildRemark>-</OrderChildRemark>
+    <OrderDate>2020-07-02T00:00:00+05:30</OrderDate>
+    <OrderMasterID>375</OrderMasterID>
+    <OrderNo>7220</OrderNo>
+    <Paper1>-</Paper1>
+    <Paper2>-</Paper2>
+    <PartyCode>AC00067</PartyCode>
+    <Phone>0512-2406947</Phone>
+    <PhotoPath>uploads/productphotos/productphoto.jpg</PhotoPath>
+    <PRDWidth>-</PRDWidth>
+    <Price>43</Price>
+    <ProductCategoryID>86</ProductCategoryID>
+    <ProductSizeName>N/A</ProductSizeName>
+    <ProductSubCategoryID>740</ProductSubCategoryID>
+    <ProductSubCategoryName>Saddle Bag</ProductSubCategoryName>
+    <Qty>30</Qty>
+    <RefrenceNo>-</RefrenceNo>
+    <Remark>-</Remark>
+    <RitemId>0</RitemId>
+    <Size>87</Size>
+    <SNo>37</SNo>
+    <Thickness>-</Thickness>
+    <TotalAmount>48878</TotalAmount>
+    <TotalQty>3224</TotalQty>
+    <TranportName>FOB SEA</TranportName>
+    <TransportCommments>-</TransportCommments>
+    <TransportId>5</TransportId>
+    <Unit>Pcs</Unit>
+    <WPQty>30</WPQty>
+    <WPRemark>-</WPRemark>
+  </ViewSaleOrderDetails>
+</NewDataSet>

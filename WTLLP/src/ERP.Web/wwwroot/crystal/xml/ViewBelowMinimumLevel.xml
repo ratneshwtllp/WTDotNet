@@ -1,0 +1,151 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:MainDataTable="ViewBelowMinimumLevel" msdata:UseCurrentLocale="true">
+      <xs:complexType>
+        <xs:choice minOccurs="0" maxOccurs="unbounded">
+          <xs:element name="ViewBelowMinimumLevel">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="BelongTo" type="xs:int" />
+                <xs:element name="CategoryID" type="xs:long" />
+                <xs:element name="CategoryName" type="xs:string" minOccurs="0" />
+                <xs:element name="Code" type="xs:string" minOccurs="0" />
+                <xs:element name="CostUnit" type="xs:int" />
+                <xs:element name="CostUnitName" type="xs:string" minOccurs="0" />
+                <xs:element name="CostUnitSName" type="xs:string" minOccurs="0" />
+                <xs:element name="CurrentStock" type="xs:double" />
+                <xs:element name="Full_Name" type="xs:string" minOccurs="0" />
+                <xs:element name="Max_Stock" type="xs:double" />
+                <xs:element name="Min_Stock" type="xs:double" />
+                <xs:element name="RItem_Id" type="xs:long" />
+                <xs:element name="SubCategoryID" type="xs:long" />
+                <xs:element name="SubCategoryName" type="xs:string" minOccurs="0" />
+                <xs:element name="Title" type="xs:string" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+        </xs:choice>
+      </xs:complexType>
+    </xs:element>
+  </xs:schema>
+  <ViewBelowMinimumLevel>
+    <BelongTo>216</BelongTo>
+    <CategoryID>11</CategoryID>
+    <CategoryName>Fittings</CategoryName>
+    <Code>CR34CRY</Code>
+    <CostUnit>3</CostUnit>
+    <CostUnitName>Meters</CostUnitName>
+    <CostUnitSName>Mtrs.</CostUnitSName>
+    <CurrentStock>0</CurrentStock>
+    <Full_Name>SS34 Foiled Crystal M.C. Chatonrose</Full_Name>
+    <Max_Stock>0</Max_Stock>
+    <Min_Stock>1440</Min_Stock>
+    <RItem_Id>2349</RItem_Id>
+    <SubCategoryID>216</SubCategoryID>
+    <SubCategoryName>Crystal</SubCategoryName>
+    <Title>uploads/rmphotos/rmphoto.jpg</Title>
+  </ViewBelowMinimumLevel>
+  <ViewBelowMinimumLevel>
+    <BelongTo>216</BelongTo>
+    <CategoryID>11</CategoryID>
+    <CategoryName>Fittings</CategoryName>
+    <Code>CR34AB</Code>
+    <CostUnit>3</CostUnit>
+    <CostUnitName>Meters</CostUnitName>
+    <CostUnitSName>Mtrs.</CostUnitSName>
+    <CurrentStock>0</CurrentStock>
+    <Full_Name>SS34 Foiled AuroreBoreale M.C Chatonrose</Full_Name>
+    <Max_Stock>0</Max_Stock>
+    <Min_Stock>1440</Min_Stock>
+    <RItem_Id>2350</RItem_Id>
+    <SubCategoryID>216</SubCategoryID>
+    <SubCategoryName>Crystal</SubCategoryName>
+    <Title>uploads/rmphotos/rmphoto.jpg</Title>
+  </ViewBelowMinimumLevel>
+  <ViewBelowMinimumLevel>
+    <BelongTo>216</BelongTo>
+    <CategoryID>11</CategoryID>
+    <CategoryName>Fittings</CategoryName>
+    <Code>CR34TEA</Code>
+    <CostUnit>3</CostUnit>
+    <CostUnitName>Meters</CostUnitName>
+    <CostUnitSName>Mtrs.</CostUnitSName>
+    <CurrentStock>0</CurrentStock>
+    <Full_Name>SS34 Foiled Tea M.C Chatonrose</Full_Name>
+    <Max_Stock>0</Max_Stock>
+    <Min_Stock>1440</Min_Stock>
+    <RItem_Id>2351</RItem_Id>
+    <SubCategoryID>216</SubCategoryID>
+    <SubCategoryName>Crystal</SubCategoryName>
+    <Title>uploads/rmphotos/rmphoto.jpg</Title>
+  </ViewBelowMinimumLevel>
+  <ViewBelowMinimumLevel>
+    <BelongTo>216</BelongTo>
+    <CategoryID>11</CategoryID>
+    <CategoryName>Fittings</CategoryName>
+    <Code>CR34FUC</Code>
+    <CostUnit>3</CostUnit>
+    <CostUnitName>Meters</CostUnitName>
+    <CostUnitSName>Mtrs.</CostUnitSName>
+    <CurrentStock>0</CurrentStock>
+    <Full_Name>SS34 Foiled Fuchsia M.C Chatonrose</Full_Name>
+    <Max_Stock>0</Max_Stock>
+    <Min_Stock>1440</Min_Stock>
+    <RItem_Id>2352</RItem_Id>
+    <SubCategoryID>216</SubCategoryID>
+    <SubCategoryName>Crystal</SubCategoryName>
+    <Title>uploads/rmphotos/rmphoto.jpg</Title>
+  </ViewBelowMinimumLevel>
+  <ViewBelowMinimumLevel>
+    <BelongTo>216</BelongTo>
+    <CategoryID>11</CategoryID>
+    <CategoryName>Fittings</CategoryName>
+    <Code>CR16JET</Code>
+    <CostUnit>3</CostUnit>
+    <CostUnitName>Meters</CostUnitName>
+    <CostUnitSName>Mtrs.</CostUnitSName>
+    <CurrentStock>0</CurrentStock>
+    <Full_Name>SS16 Foiled Jet M.C Chatonrose</Full_Name>
+    <Max_Stock>0</Max_Stock>
+    <Min_Stock>1440</Min_Stock>
+    <RItem_Id>2353</RItem_Id>
+    <SubCategoryID>216</SubCategoryID>
+    <SubCategoryName>Crystal</SubCategoryName>
+    <Title>uploads/rmphotos/rmphoto.jpg</Title>
+  </ViewBelowMinimumLevel>
+  <ViewBelowMinimumLevel>
+    <BelongTo>227</BelongTo>
+    <CategoryID>13</CategoryID>
+    <CategoryName>Mis Items</CategoryName>
+    <Code>30-01-2017</Code>
+    <CostUnit>9</CostUnit>
+    <CostUnitName>Kilograms</CostUnitName>
+    <CostUnitSName>kg</CostUnitSName>
+    <CurrentStock>0</CurrentStock>
+    <Full_Name>dsfdsfdsf</Full_Name>
+    <Max_Stock>1.3</Max_Stock>
+    <Min_Stock>1.2</Min_Stock>
+    <RItem_Id>3546</RItem_Id>
+    <SubCategoryID>227</SubCategoryID>
+    <SubCategoryName>Others</SubCategoryName>
+    <Title>uploads/rmphotos\3546.jpg</Title>
+  </ViewBelowMinimumLevel>
+  <ViewBelowMinimumLevel>
+    <BelongTo>301</BelongTo>
+    <CategoryID>19</CategoryID>
+    <CategoryName>Capital Goods</CategoryName>
+    <Code>W1</Code>
+    <CostUnit>7</CostUnit>
+    <CostUnitName>Pieces</CostUnitName>
+    <CostUnitSName>Pcs</CostUnitSName>
+    <CurrentStock>0</CurrentStock>
+    <Full_Name>W1</Full_Name>
+    <Max_Stock>0</Max_Stock>
+    <Min_Stock>50</Min_Stock>
+    <RItem_Id>3567</RItem_Id>
+    <SubCategoryID>301</SubCategoryID>
+    <SubCategoryName>Computers</SubCategoryName>
+    <Title>uploads/rmphotos\3567.jpg</Title>
+  </ViewBelowMinimumLevel>
+</NewDataSet>

@@ -1,0 +1,147 @@
+﻿@using Microsoft.AspNetCore.Http;
+<!DOCTYPE html>
+<html>
+<head>
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - WTLLP</title>
+
+    @*<script type="text/javascript">
+            alert("hello");
+            alert(@Context.Session.GetInt32("userid"));
+            if (@Context.Session.GetInt32("userid") <= 0) {
+                window.location.href = '@Url.Action("Login", "Login",new {@area="Login" })';
+            }
+        </script>*@
+
+    <environment names="Development,Staging,Production">
+        <link rel="stylesheet" type="text/css" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="~/lib/jquery-ui/themes/start/jquery-ui.css" />
+        <link rel="stylesheet" href="~/css/site.css" />
+        <link rel="stylesheet" type="text/css" href="~/css/normalize.css" />
+        <link rel="stylesheet" type="text/css" href="~/css/demo.css" />
+        <link rel="stylesheet" type="text/css" href="~/css/grid.css" />
+        <link rel="stylesheet" type="text/css" href="~/css/component.css" />
+        <link rel="stylesheet" type="text/css" href="~/css/form.css" />
+        <link rel="stylesheet" type="text/css" href="~/css/accordion.css" />
+        <link rel="stylesheet" type="text/css" href="~/css/MvcGrid/mvc-grid.css" />
+
+        <script src="~/lib/jquery/dist/jquery.min.js"></script>
+        <script src="~/lib/bootstrap/dist/js/bootstrap.min.js"></script>
+    </environment>
+
+    @*<environment names="Staging,Production">
+            <link rel="stylesheet" href="https://ajax.aspnetcdn.com/ajax/bootstrap/3.3.6/css/bootstrap.min.css"
+                  asp-fallback-href="~/lib/bootstrap/dist/css/bootstrap.min.css"
+                  asp-fallback-test-class="sr-only" asp-fallback-test-property="position" asp-fallback-test-value="absolute" />
+            <link rel="stylesheet" href="~/css/site.min.css" asp-append-version="true" />
+        </environment>*@
+</head>
+
+<body>
+    <ul id="gn-menu" class="gn-menu-main">
+        <li class="gn-trigger">
+            <a class="gn-icon gn-icon-menu"><span>Menu</span></a>
+            <nav class="gn-menu-wrapper">
+                <div class="gn-scroller" id="menu">
+                    @await Component.InvokeAsync("UserMenuList")
+                    @*@if (@Context.Session.GetInt32("userid") > 0) {
+                            @await Component.InvokeAsync("UserMenuList")
+                        }*@
+                </div>
+            </nav>
+        </li>
+        <li><a asp-area="Home" asp-controller="Home" asp-action="Index">WTLLP</a></li>
+        <li class="fright"><a asp-area="Login" asp-controller="Login" asp-action="LogOut"><span>Logout</span></a></li>
+        <li class="fright" style="padding:0 20px 0 15px; font-size:12px;"><span>Welcome @Context.Session.GetString("username")</span></li>
+        <li class="fright" style="padding:0 20px 0 15px; font-size:18px;"><strong>@ViewData["Title"]</strong></li>
+    </ul>
+
+    <div class="container body-content">
+        @RenderBody()
+        <hr />
+        <footer>
+            <p>Copyright © 2017 WTLLP All rights reserved. </p>
+        </footer>
+    </div>
+
+    <environment names="Development,Staging,Production">
+        <link href="~/datetimepicker/jquery-ui-1.10.1.min.css" rel="stylesheet" />
+        <script src="~/lib/jquery-ui/jquery-ui.js"></script>
+        <script src="~/lib/jquery-ajax-unobtrusive/jquery.unobtrusive-ajax.js"></script>
+        <script src="~/lib/jquery-validation/dist/jquery.validate.js"></script>
+        <script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js"></script>
+        <script src="~/js/site.js" asp-append-version="true"></script>
+        <script src="~/js/gnmenu.js" type="text/javascript"></script>
+        <script src="~/js/classie.js" type="text/javascript"></script>
+        <script src="~/datetimepicker/modernizr-2.6.2.min.js" type="text/javascript"></script>
+        <script src="~/js/MvcGrid/mvc-grid.js" type="text/javascript"></script>
+        <script src="~/js/myjs.js" type="text/javascript"></script>
+    </environment>
+
+    @*<environment names="Staging,Production">
+            <script src="https://ajax.aspnetcdn.com/ajax/jquery/jquery-2.2.0.min.js"
+                    asp-fallback-src="~/lib/jquery/dist/jquery.min.js"
+                    asp-fallback-test="window.jQuery">
+            </script>
+            <script src="https://ajax.aspnetcdn.com/ajax/bootstrap/3.3.6/bootstrap.min.js"
+                    asp-fallback-src="~/lib/bootstrap/dist/js/bootstrap.min.js"
+                    asp-fallback-test="window.jQuery && window.jQuery.fn && window.jQuery.fn.modal">
+            </script>
+            <script src="~/js/site.min.js" asp-append-version="true"></script>
+        </environment>*@
+
+    <!-- Be sure this is after jquery reference -->
+    <script src="~/MVCGridHandler.axd/script.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            @*alert(@Context.Session.GetInt32("userid"));*@
+            @*if (@Context.Session.GetInt32("userid") <= 0) {
+                window.location.href = '@Url.Action("Login", "Login",new {@area="Login" })';
+            }*@
+        });
+
+        new gnMenu(document.getElementById('gn-menu'));
+        $('.mvc-grid').mvcgrid();
+
+        $(function () {
+            var Accordion = function (el, multiple) {
+                this.el = el || {};
+                this.multiple = multiple || false;
+
+                // Variables privadas
+                var links = this.el.find('.link');
+                // Evento
+                links.on('click', { el: this.el, multiple: this.multiple }, this.dropdown)
+            }
+
+            Accordion.prototype.dropdown = function (e) {
+                var $el = e.data.el;
+                $this = $(this),
+                $next = $this.next();
+
+                $next.slideToggle();
+                $this.parent().toggleClass('open');
+
+                if (!e.data.multiple) {
+                    $el.find('.submenu').not($next).slideUp().parent().removeClass('open');
+                };
+            }
+            var accordion = new Accordion($('#accordion'), false);
+        });
+
+        $(function () {
+            if (!Modernizr.inputtypes['date']) {
+                $('input[type=date]').datepicker({
+                    dateFormat: 'yy-mm-dd'
+                });
+            }
+        });
+    </script>
+
+    @RenderSection("scripts", required: false)
+
+</body>
+</html>

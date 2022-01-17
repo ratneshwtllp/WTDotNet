@@ -1,0 +1,31 @@
+﻿@model ERP.Domain.Entities.DepartmentDetails
+@using NonFactors.Mvc.Grid;
+
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewData["Title"] = "Department List";
+}
+
+@*<p>
+    <strong>Department List  &nbsp;&nbsp;&nbsp;&nbsp;  </strong> @Html.ActionLink("Create New Department", "CreateDepartment", "Department") &nbsp;&nbsp;&nbsp; Search &nbsp;&nbsp;<input class="grid-search" />
+</p>*@ 
+<p>
+    @Html.ActionLink("Create New Department", "CreateDepartment", "Department", "", new { @class = "btn btn-info" }) &nbsp; &nbsp;&nbsp;<input class="grid-search"/>
+</p>
+@*<div> 
+</div>*@
+
+@Html.AjaxGrid(Url.Action("DepartmentList_Partial"))
+
+@section Scripts {
+    <script type="text/javascript">
+
+        $(document).on('keyup', '.grid-search', function () {
+            //alert("query");
+            $('.mvc-grid').mvcgrid({
+                query: 'search=' + this.value,
+                reload: true
+            });
+        });
+    </script>
+}

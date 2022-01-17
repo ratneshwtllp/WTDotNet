@@ -1,0 +1,39 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:MainDataTable="ViewContractorAdvanceDetails" msdata:UseCurrentLocale="true">
+      <xs:complexType>
+        <xs:choice minOccurs="0" maxOccurs="unbounded">
+          <xs:element name="ViewContractorAdvanceDetails">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="AmountInWords" type="xs:string" minOccurs="0" />
+                <xs:element name="ContractorAdvanceAmount" type="xs:double" />
+                <xs:element name="ContractorAdvanceDate" type="xs:dateTime" />
+                <xs:element name="ContractorAdvanceId" type="xs:long" />
+                <xs:element name="ContractorAdvanceRemark" type="xs:string" minOccurs="0" />
+                <xs:element name="ContractorId" type="xs:long" />
+                <xs:element name="ContractorName" type="xs:string" minOccurs="0" />
+                <xs:element name="EntryDate" type="xs:dateTime" />
+                <xs:element name="SessionYear" type="xs:string" minOccurs="0" />
+                <xs:element name="UserId" type="xs:int" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+        </xs:choice>
+      </xs:complexType>
+    </xs:element>
+  </xs:schema>
+  <ViewContractorAdvanceDetails>
+    <AmountInWords>RUPEES ONE THOUSAND FIVE HUNDRED  ONLY</AmountInWords>
+    <ContractorAdvanceAmount>1500</ContractorAdvanceAmount>
+    <ContractorAdvanceDate>2019-05-24T00:00:00+05:30</ContractorAdvanceDate>
+    <ContractorAdvanceId>2</ContractorAdvanceId>
+    <ContractorAdvanceRemark>-</ContractorAdvanceRemark>
+    <ContractorId>11</ContractorId>
+    <ContractorName>Amit Supervisor</ContractorName>
+    <EntryDate>2019-05-24T00:00:00+05:30</EntryDate>
+    <SessionYear>2019-20</SessionYear>
+    <UserId>1</UserId>
+  </ViewContractorAdvanceDetails>
+</NewDataSet>

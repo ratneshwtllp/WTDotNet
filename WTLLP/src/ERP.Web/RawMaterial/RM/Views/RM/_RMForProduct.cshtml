@@ -1,0 +1,30 @@
+﻿@using ERP.Domain.Entities;
+@using NonFactors.Mvc.Grid;
+@model ERP.Web.Areas.RM.Models.RawMaterialModel
+@{
+    int rowNumber = 1;
+}
+
+@(Html
+
+            .Grid(Model.RItemSuppModel)
+            .Build(columns =>
+            {
+                {
+                    columns.Add(model => 0).Titled("").Encoded(false).RenderedAs(model => rowNumber++).Encoded(false).Css("noExl").Titled("SNo");
+                    columns.Add(model => Html.CheckBox("chkbx", new { @class = "chk" })).Encoded(false).Css("noExl").Titled("<input type = 'checkbox' class='selectall'>");
+                    columns.Add(model => model.ProductCategory).Titled("Category").Css("td-nowrap");
+                    columns.Add(model => model.ProductSubCategory).Titled("SubCategory").Css("td-nowrap");
+                    columns.Add(model => model.ProductName).Titled("Product Name").Css("td-nowrap");
+                    columns.Add(model => model.ProductCode).Titled("Product Code").Css("td-nowrap");
+                    columns.Add(model => model.ProductSizeName).Titled("Product SIze").Css("td-nowrap");
+                    //columns.Add(model => $"<a href='" + @Url.Content("~/" + model.PhotoPath) + "' target='_blank' ><img src=\"../../{model.PhotoPath}\" width='20' height='20' ></a>").Encoded(false);
+                    columns.Add(model => $"<a href='" + @Url.Content("~/" + model.PhotoPath) + "' target='_blank' ><img src=" + @Url.Content("~/" + model.PhotoPath) + " width='20' height='20' ></a>").Encoded(false).Css("noExl");
+
+                    columns.Add(model => model.FItem_Id).Css("hidden fitemid noExl");
+                    columns.Add(model => model.CostingID).Css("hidden costingid noExl");
+                    columns.Add(model => $"<a href=" + @Url.Action("MatPrint", "Costing", new { id = model.CostingID , @area = "Costing" }) + $" target=_blank > <img src=" + @Url.Content("~/images/print.png") + " data-toggle='tooltip' data-placement='bottom' title='Specification Sheet Print'></a>").Encoded(false).Filterable(false).Css("noExl");
+
+                }
+            })
+)

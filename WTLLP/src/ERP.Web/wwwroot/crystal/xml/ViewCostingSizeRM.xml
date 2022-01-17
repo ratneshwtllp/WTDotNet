@@ -1,0 +1,49 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:MainDataTable="ViewCostingSizeRM" msdata:UseCurrentLocale="true">
+      <xs:complexType>
+        <xs:choice minOccurs="0" maxOccurs="unbounded">
+          <xs:element name="ViewCostingSizeRM">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="BOMAfterWas" type="xs:double" />
+                <xs:element name="BOMWAS" type="xs:double" />
+                <xs:element name="CAfterWAS" type="xs:double" />
+                <xs:element name="Code" type="xs:string" minOccurs="0" />
+                <xs:element name="Comp_Name" type="xs:string" minOccurs="0" />
+                <xs:element name="CompGroupId" type="xs:int" />
+                <xs:element name="CompGroupName" type="xs:string" minOccurs="0" />
+                <xs:element name="CompID" type="xs:long" />
+                <xs:element name="CompQty" type="xs:int" />
+                <xs:element name="CostingID" type="xs:long" />
+                <xs:element name="CostingSizeRMId" type="xs:long" />
+                <xs:element name="CurrentPrice" type="xs:double" />
+                <xs:element name="CWAS" type="xs:double" />
+                <xs:element name="FitemId" type="xs:long" />
+                <xs:element name="Full_Name" type="xs:string" minOccurs="0" />
+                <xs:element name="IsComponent" type="xs:int" />
+                <xs:element name="Name" type="xs:string" minOccurs="0" />
+                <xs:element name="ProcessID" type="xs:int" />
+                <xs:element name="ProductSizeName" type="xs:string" minOccurs="0" />
+                <xs:element name="Remark" type="xs:string" minOccurs="0" />
+                <xs:element name="RItemID" type="xs:long" />
+                <xs:element name="RMBAmount" type="xs:double" />
+                <xs:element name="RMCAmount" type="xs:double" />
+                <xs:element name="RMPrice" type="xs:double" />
+                <xs:element name="RMQty" type="xs:double" />
+                <xs:element name="SerialNo" type="xs:int" />
+                <xs:element name="SizeId" type="xs:int" />
+                <xs:element name="SubCategoryID" type="xs:long" />
+                <xs:element name="SubCategoryName" type="xs:string" minOccurs="0" />
+                <xs:element name="SupplierId" type="xs:long" />
+                <xs:element name="SupplierName" type="xs:string" minOccurs="0" />
+                <xs:element name="USName" type="xs:string" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+        </xs:choice>
+      </xs:complexType>
+    </xs:element>
+  </xs:schema>
+</NewDataSet>

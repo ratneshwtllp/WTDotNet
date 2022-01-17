@@ -1,0 +1,67 @@
+﻿@model ERP.Web.Areas.RM.Models.RawMaterialModel
+
+<div class="form">
+    <table class="table table-responsive" id="elementorderdetailsItems">
+        <thead>
+            <tr>
+                @*<td class="ratewidth tableheading">S No.</td>*@
+                <td class="ratewidth tableheading">RM Code</td>
+                <td class="selectwidth tableheading">Raw Material</td>
+
+                <td class="ratewidth tableheading">PUnit</td>
+                <td class="ratewidth tableheading">CUnit</td>
+                <td class="ratewidth tableheading">Con.</td>
+
+                <td class="selectwidth tableheading" bgcolor="#FFBF00">PUnit</td>
+                <td class="selectwidth tableheading" bgcolor="#FFBF00">CUnit</td>
+                <td class="ratewidth tableheading" bgcolor="#FFBF00">Conv.</td>
+                <td class="ratewidth tableheading" bgcolor="#FFBF00">PCS Weight</td>
+
+                <td class="selectwidth tableheading">RM Supplier</td>
+                <td class="selectwidth tableheading">Supplier Code</td>
+                <td class="selectwidth tableheading">&nbsp;</td>
+                <td class="selectwidth tableheading">SPrice</td>
+                <td class="selectwidth tableheading">SUnit</td>
+                <td class="ratewidth tableheading">Curr.</td>
+                <td class="ratewidth tableheading">Min Days</td>          
+            </tr>
+        </thead>
+
+        <tbody>
+            @if (Model.RItemSuppModel != null)
+            {
+                @for (int i = 0; i < Model.RItemSuppModel.Count; i++)
+                {
+                    <tr>
+                        @Html.HiddenFor(m => m.RItemSuppModel[i].RItem_Id, new{@class="rmid"})
+                        @Html.HiddenFor(m => m.RItemSuppModel[i].SupplierId, new { @class = "supplierid" })
+                        @Html.HiddenFor(m => m.RItemSuppModel[i].RItemSuppID, new { @class = "ritemsuppid" })
+                        @Html.HiddenFor(m => m.RItemSuppModel[i].OldPrice, new { @class = "oldprice" })
+
+                        <td>@Html.DisplayFor(m => m.RItemSuppModel[i].Code)</td>
+                        <td>@Html.DisplayFor(m => m.RItemSuppModel[i].Full_Name)</td>
+
+                        <td>@Html.DisplayFor(m => m.RItemSuppModel[i].PUnitSName)</td>
+                        <td>@Html.DisplayFor(m => m.RItemSuppModel[i].CUnitSName)</td>
+                        <td>@Html.DisplayFor(m => m.RItemSuppModel[i].ConversionFactor)</td>
+
+                        <td bgcolor="#FFBF00">@Html.DropDownListFor(m => m.RItemSuppModel[i].PUnit, new SelectList(Model.SuppUnitList, "Value", "Text", Model.RItemSuppModel[i].PUnit), "-- Select --", new { id = "cbo_punit" ,@class="ratewidth" })</td>
+                        <td bgcolor="#FFBF00">@Html.DropDownListFor(m => m.RItemSuppModel[i].CostUnit, new SelectList(Model.SuppUnitList, "Value", "Text", Model.RItemSuppModel[i].CostUnit), "-- Select --", new { id = "cbo_cunit",@class = "ratewidth" })</td>
+                        <td bgcolor="#FFBF00">@Html.TextBoxFor(m => m.RItemSuppModel[i].ConversionFactor, new { @class = "con_factor rightalign" })</td>
+                        <td bgcolor="#FFBF00">@Html.TextBoxFor(m => m.RItemSuppModel[i].PCSWeight, new { @class = "pcsweight rightalign" })</td>
+
+
+                        <td>@Html.DisplayFor(m => m.RItemSuppModel[i].SupplierName)</td>
+                        <td>@Html.TextBoxFor(m => m.RItemSuppModel[i].SupplierRMCode, new { @class = "supplierrmcode ratewidth" })</td>
+                        <td class="history"><a href='javascript:void(0);' onclick='showJqueryDialog(@Model.RItemSuppModel[i].RItem_Id,@Model.RItemSuppModel[i].SupplierId);'>History</a></td>
+                        <td>@Html.TextBoxFor(m => m.RItemSuppModel[i].Rate, "{0:0.000}", new { @required = "true", @class = "price rightalign ratewidth" })</td>
+                        <td>@Html.DropDownListFor(m => m.RItemSuppModel[i].SuppUnit, new SelectList(Model.SuppUnitList, "Value", "Text", Model.RItemSuppModel[i].SuppUnit), "-- Select --", new { id = "cbo_suppunit", @class = "ratewidth" })</td>
+                        <td>@Html.DisplayFor(m => m.RItemSuppModel[i].CurrencyName)</td>
+                        <td>@Html.TextBoxFor(m => m.RItemSuppModel[i].Min_Days, new { @class = "mindays" })</td>
+                    </tr>
+                }
+            }
+        </tbody>
+    </table>
+ 
+</div>
